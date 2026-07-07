@@ -1,0 +1,60 @@
+2026-07-07 23:30:42,717 - pipeline - INFO - Bắt đầu sinh 10 mẫu dữ liệu...
+2026-07-07 23:30:42,746 - pipeline - WARNING - Lỗi khi sinh mẫu (attempt 0): Cannot choose from an empty sequence
+2026-07-07 23:30:42,746 - pipeline - WARNING - Lỗi khi sinh mẫu (attempt 1): Cannot choose from an empty sequence
+2026-07-07 23:30:42,747 - pipeline - WARNING - Lỗi khi sinh mẫu (attempt 2): Cannot choose from an empty sequence
+2026-07-07 23:30:42,747 - pipeline - WARNING - Lỗi khi sinh mẫu (attempt 0): Cannot choose from an empty sequence
+2026-07-07 23:30:42,748 - pipeline - WARNING - Lỗi khi sinh mẫu (attempt 1): Cannot choose from an empty sequence
+2026-07-07 23:30:42,749 - pipeline - WARNING - Lỗi khi sinh mẫu (attempt 2): Cannot choose from an empty sequence
+2026-07-07 23:30:42,750 - pipeline - WARNING - Lỗi khi sinh mẫu (attempt 0): Cannot choose from an empty sequence
+2026-07-07 23:30:42,751 - pipeline - WARNING - Lỗi khi sinh mẫu (attempt 1): Cannot choose from an empty sequence
+2026-07-07 23:30:42,751 - pipeline - WARNING - Lỗi khi sinh mẫu (attempt 2): Cannot choose from an empty sequence
+2026-07-07 23:30:42,752 - pipeline - WARNING - Lỗi khi sinh mẫu (attempt 0): Cannot choose from an empty sequence
+2026-07-07 23:30:42,752 - pipeline - WARNING - Lỗi khi sinh mẫu (attempt 1): Cannot choose from an empty sequence
+2026-07-07 23:30:42,753 - pipeline - WARNING - Lỗi khi sinh mẫu (attempt 2): Cannot choose from an empty sequence
+2026-07-07 23:30:42,753 - pipeline - WARNING - Lỗi khi sinh mẫu (attempt 0): Cannot choose from an empty sequence
+2026-07-07 23:30:42,754 - pipeline - WARNING - Lỗi khi sinh mẫu (attempt 1): Cannot choose from an empty sequence
+2026-07-07 23:46:23,801 - pipeline - INFO - Bắt đầu sinh 20 mẫu dữ liệu...
+2026-07-07 23:46:23,819 - pipeline - WARNING - Lỗi khi sinh mẫu (attempt 0): Cannot choose from an empty sequence
+2026-07-07 23:46:23,820 - pipeline - WARNING - Lỗi khi sinh mẫu (attempt 1): Cannot choose from an empty sequence
+2026-07-07 23:46:23,820 - pipeline - WARNING - Lỗi khi sinh mẫu (attempt 2): Cannot choose from an empty sequence
+2026-07-07 23:50:25,912 - pipeline - WARNING - Lỗi khi sinh mẫu (attempt 1): Cannot choose from an empty sequence
+2026-07-07 23:50:25,913 - pipeline - WARNING - Lỗi khi sinh mẫu (attempt 2): Cannot choose from an empty sequence
+2026-07-07 23:54:41,343 - pipeline - WARNING - Lỗi khi sinh mẫu (attempt 0): Cannot choose from an empty sequence
+2026-07-07 23:54:41,344 - pipeline - WARNING - Lỗi khi sinh mẫu (attempt 1): Cannot choose from an empty sequence
+2026-07-07 23:55:07,520 - pipeline - WARNING - Lỗi khi sinh mẫu (attempt 0): 'TextGenerator' object has no attribute '_fuzzy_find'
+2026-07-07 23:55:07,522 - pipeline - WARNING - Lỗi khi sinh mẫu (attempt 1): Cannot choose from an empty sequence
+2026-07-07 23:55:14,747 - pipeline - WARNING - Lỗi khi sinh mẫu (attempt 0): Cannot choose from an empty sequence
+2026-07-07 23:55:40,319 - pipeline - WARNING - Lỗi khi sinh mẫu (attempt 2): Cannot choose from an empty sequence
+2026-07-07 23:55:40,321 - pipeline - WARNING - Lỗi khi sinh mẫu (attempt 0): Cannot choose from an empty sequence
+2026-07-07 23:55:40,323 - pipeline - WARNING - Lỗi khi sinh mẫu (attempt 1): Cannot choose from an empty sequence
+2026-07-07 23:55:40,324 - pipeline - WARNING - Lỗi khi sinh mẫu (attempt 2): Cannot choose from an empty sequence
+2026-07-07 23:59:58,588 - pipeline - WARNING - Lỗi khi sinh mẫu (attempt 2): Cannot choose from an empty sequence
+2026-07-08 00:03:14,316 - pipeline - WARNING - Lỗi khi sinh mẫu (attempt 0): Cannot choose from an empty sequence
+2026-07-08 00:03:14,317 - pipeline - WARNING - Lỗi khi sinh mẫu (attempt 1): Cannot choose from an empty sequence
+2026-07-08 00:03:14,318 - pipeline - WARNING - Lỗi khi sinh mẫu (attempt 2): Cannot choose from an empty sequence
+2026-07-08 00:03:53,963 - pipeline - WARNING - Lỗi khi sinh mẫu (attempt 0): Cannot choose from an empty sequence
+2026-07-08 00:03:53,965 - pipeline - WARNING - Lỗi khi sinh mẫu (attempt 1): Cannot choose from an empty sequence
+2026-07-08 00:03:53,966 - pipeline - WARNING - Lỗi khi sinh mẫu (attempt 2): Cannot choose from an empty sequence
+2026-07-08 00:04:58,650 - pipeline - WARNING - Lỗi khi sinh mẫu (attempt 1): Cannot choose from an empty sequence
+2026-07-08 00:04:58,652 - pipeline - WARNING - Lỗi khi sinh mẫu (attempt 2): Cannot choose from an empty sequence
+2026-07-08 00:06:54,845 - pipeline - WARNING - Lỗi khi sinh mẫu (attempt 1): 'TextGenerator' object has no attribute '_fuzzy_find'
+2026-07-08 00:07:44,820 - pipeline - INFO - Đã lưu 10 mẫu vào D:\MedicalRetrieval\data_generation\output\smoke\training_data_20260707_234623.json
+2026-07-08 00:07:44,822 - pipeline - INFO - Thống kê: {
+  "total_generated": 20,
+  "valid_samples": 10,
+  "invalid_samples": 10,
+  "retry_count": 14,
+  "entity_type_distribution": {
+    "TRIỆU_CHỨNG": 18,
+    "TÊN_XÉT_NGHIỆM": 4,
+    "KẾT_QUẢ_XÉT_NGHIỆM": 0,
+    "CHẨN_ĐOÁN": 10,
+    "THUỐC": 10
+  },
+  "assertion_distribution": {
+    "isNegated": 4,
+    "isFamily": 2,
+    "isHistorical": 5
+  }
+}
+2026-07-08 00:07:44,822 - pipeline - INFO - Hoàn thành! Sinh 10 mẫu hợp lệ.

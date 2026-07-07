@@ -519,3 +519,5 @@
 2026-07-07 21:09:55,677 - pipeline - WARNING - Lỗi khi sinh mẫu (attempt 0): API call failed: 500 Server Error: Internal Server Error for url: https://integrate.api.nvidia.com/v1/chat/completions
 2026-07-07 21:10:31,080 - pipeline - WARNING - Lỗi khi sinh mẫu (attempt 0): API call failed: 500 Server Error: Internal Server Error for url: https://integrate.api.nvidia.com/v1/chat/completions
 2026-07-07 21:56:45,838 - pipeline - WARNING - Lỗi khi sinh mẫu (attempt 4): API call failed: 500 Server Error: Internal Server Error for url: https://integrate.api.nvidia.com/v1/chat/completions
+2026-07-07 23:03:56,220 - pipeline - WARNING - Lỗi khi sinh mẫu (attempt 1): API call failed: 500 Server Error: Internal Server Error for url: https://integrate.api.nvidia.com/v1/chat/completions
+2026-07-07 23:28:15,980 - pipeline - WARNING - Lỗi khi sinh mẫu (attempt 2): API call failed: 500 Server Error: Internal Server Error for url: https://integrate.api.nvidia.com/v1/chat/completions

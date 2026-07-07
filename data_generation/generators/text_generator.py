@@ -140,24 +140,26 @@ class TextGenerator:
         parts = [drug["name_vi"]]
         
         # Liều
-        dose = random.choice(drug.get("common_doses", [""]))
+        dose = random.choice(drug.get("common_doses") or [""])
         if dose:
             parts.append(dose)
         
         # Đường dùng
-        route = random.choice(drug.get("routes", ["po"]))
+        route = random.choice(drug.get("routes") or ["po"])
         parts.append(route)
         
         # Tần suất
-        freq = random.choice(drug.get("frequencies", ["daily"]))
+        freq = random.choice(drug.get("frequencies") or ["daily"])
         parts.append(freq)
         
         return " ".join(parts)
     
     def _format_lab_result(self, test: Dict) -> str:
         """Định dạng kết quả xét nghiệm"""
-        value = random.choice(test.get("abnormal_values", ["bình thường"]))
-        unit = random.choice(test.get("units", [""]))
+        abn = test.get("abnormal_values") or ["bình thường"]
+        value = random.choice(abn)
+        units = test.get("units") or [""]
+        unit = random.choice(units)
         
         if unit and value != "bình thường":
             return f"{value}"
@@ -244,9 +246,6 @@ Trả về CHỈ văn bản thô theo đúng cấu trúc 3 phần trên, không 
     def _locate_entities(
         self, text: str, entities: List[EntityAnnotation]
     ) -> List[EntityAnnotation]:
-        """Xác định vị trí (start, end) của từng thực thể trong văn bản.
-        Tránh collision: tìm occurrence kế tiếp chưa bị chiếm.
-        """
         positioned: List[EntityAnnotation] = []
         used: List[tuple] = []
 
@@ -282,7 +281,6 @@ Trả về CHỈ văn bản thô theo đúng cấu trúc 3 phần trên, không 
                 ))
 
         return positioned
-    
     def _fuzzy_find(self, text: str, query: str) -> Optional[Tuple[int, int]]:
         """Tìm mờ vị trí thực thể trong văn bản"""
         # Sử dụng difflib để tìm tương đồng

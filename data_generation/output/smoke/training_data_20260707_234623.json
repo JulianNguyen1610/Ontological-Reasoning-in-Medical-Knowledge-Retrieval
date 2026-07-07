@@ -1,0 +1,544 @@
+[
+  {
+    "text": "1. Tiền sử bệnh\n- BN có tiền sử mắc Ung thư phổi (diễn biến đã được kiểm soát, không tái phát tại thời điểm này).\n- BN không có tiền sử ho mạn trong quá khứ.\n- BN không ghi nhận tiền sử ho ra máu.\n- BN không ghi nhận tiền sử sút cân đáng kể trước khi nhập viện.\n\n2. Tiền sử bệnh hiện tại\n- BN nhập viện vì lý do theo dõi tiến triển bệnh lý nền.\n- Trong giai đoạn điều trị ngoại trú trước đó, BN tuân thủ phác đồ dùng pemetrexed po daily.\n- BN cũng được chỉ định phối hợp paclitaxel po daily trong đợt điều trị gần nhất.\n- Không ghi nhận các cơn ho mạn cấp tính hay ho ra máu trong 2 tuần qua.\n- Cân nặng BN ổn định, không có biểu hiện sút cân.\n\n3. Đánh giá tại bệnh viện\n- Khảo sát lâm sàng: BN tỉnh, tiếp xúc tốt, da niêm mạc hồng, không có dấu hiệu thiếu máu.\n- Kết quả cận lâm sàng:\n  + KQXN công thức máu, sinh hóa cơ bản trong giới hạn bình thường.\n  + Chẩn đoán hình ảnh: Đã thực hiện PET-CT để đánh giá toàn diện, kết quả cho thấy ổ bệnh ổn định, không có vị trí di căn mới.\n- KQ thăm khám phổi: Rì rào phế nang clear, không nghe ran, không ho khan hay ho khạc đờm.\n- Đánh giá chung: Tình trạng bệnh lý Ung thư phổi ổn định dưới phác đồ điều trị hiện tại.",
+    "entities": [
+      {
+        "text": "Ung thư phổi",
+        "type": "CHẨN_ĐOÁN",
+        "assertions": [],
+        "candidates": [
+          "C34.9"
+        ],
+        "position": [
+          36,
+          48
+        ]
+      },
+      {
+        "text": "ho mạn",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+          "isNegated"
+        ],
+        "candidates": [],
+        "position": [
+          136,
+          142
+        ]
+      },
+      {
+        "text": "ho ra máu",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+          "isNegated"
+        ],
+        "candidates": [],
+        "position": [
+          186,
+          195
+        ]
+      },
+      {
+        "text": "sút cân",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+          "isNegated"
+        ],
+        "candidates": [],
+        "position": [
+          225,
+          232
+        ]
+      },
+      {
+        "text": "pemetrexed po daily",
+        "type": "THUỐC",
+        "assertions": [],
+        "candidates": [
+          "789232"
+        ],
+        "position": [
+          417,
+          436
+        ]
+      },
+      {
+        "text": "paclitaxel po daily",
+        "type": "THUỐC",
+        "assertions": [],
+        "candidates": [
+          "56994"
+        ],
+        "position": [
+          471,
+          490
+        ]
+      },
+      {
+        "text": "PET-CT",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "candidates": [],
+        "position": [
+          891,
+          897
+        ]
+      }
+    ],
+    "scenario_id": "sample_986464"
+  },
+  {
+    "text": "1. Tiền sử bệnh\n- Tiền sử mắc Rung nhĩ từ 2 năm trước\n- Đang dùng apixaban po daily để dự phòng huyết khối\n- Có yếu tố nguy cơ tăng huyết áp, đái tháo đường type 2\n\n2. Tiền sử bệnh hiện tại\n- BN nhập viện lý do: đánh trống ngực, khó thở tiến triển nặng 2 ngày\n- Triệu chứng khởi phát đột ngột, kèm theo mệt mỏi, vã mồ hôi\n- Đã dùng metoprolol po daily tại nhà nhưng triệu chứng không đỡ\n- Không có tiền sử người thân mắc bệnh lý tim mạch di truyền\n\n3. Đánh giá tại bệnh viện\n- Khám lâm sàng: Nhịp tim nhanh không đều, tiếng tim 1-2 không rõ, SpO2 94% khi thở khí trời\n- XV điện tâm đồ: Chẩn đoán xác nhận Rung nhĩ với tần số thất nhanh\n- KQXN: D-dimer bình thường, INR trong ngưỡng điều trị, điện giải đồ ổn định\n- CT ngực: Không thấy dấu hiệu viêm phổi hay tràn dịch màng phổi\n- Xử trí: Tiếp tục điều trị kháng đông, kiểm soát nhịp tim, theo dõi sát diễn biến",
+    "entities": [
+      {
+        "text": "Rung nhĩ",
+        "type": "CHẨN_ĐOÁN",
+        "assertions": [],
+        "candidates": [
+          "I48"
+        ],
+        "position": [
+          30,
+          38
+        ]
+      },
+      {
+        "text": "đánh trống ngực",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "candidates": [],
+        "position": [
+          212,
+          227
+        ]
+      },
+      {
+        "text": "khó thở",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "candidates": [],
+        "position": [
+          229,
+          236
+        ]
+      },
+      {
+        "text": "apixaban po daily",
+        "type": "THUỐC",
+        "assertions": [
+          "isHistorical"
+        ],
+        "candidates": [
+          "134215"
+        ],
+        "position": [
+          66,
+          83
+        ]
+      },
+      {
+        "text": "metoprolol po daily",
+        "type": "THUỐC",
+        "assertions": [],
+        "candidates": [
+          "68929"
+        ],
+        "position": [
+          332,
+          351
+        ]
+      }
+    ],
+    "scenario_id": "sample_979726"
+  },
+  {
+    "text": "1. Tiền sử bệnh\n- Tiền sử gia đình: Cha mắc 'Đau thắt lưng' mãn tính, đang điều trị tại nhà.\n- Người nhà ghi nhận tiền sử 'đau lan chân' ở mẹ, có liên quan đến thoát vị đĩa đệm.\n- Thuốc đang dùng trước khi nhập viện: NSAIDs, Vitamin B complex.\n\n2. Tiền sử bệnh hiện tại\n- Lý do nhập viện: Bệnh nhân đau vùng thắt lưng cấp tính sau khi bê vác nặng.\n- Diễn biến: Cơn đau xuất hiện đột ngột, kèm theo cảm giác 'đau lan chân' xuống mặt sau đùi phải.\n- Sự kiện trước nhập viện: Tự dùng thuốc giảm đau không hiệu quả, triệu chứng tăng dần trong 2 ngày qua.\n\n3. Đánh giá tại bệnh viện\n- Khám lâm sàng: Dấu hiệu Lasègue dương tính bên phải, giảm cảm giác vùng má đùi ngoài.\n- Chẩn đoán hình ảnh: MRI cột sống thắt lưng L4-L5 cho thấy thoát vị đĩa đệm chèn ép rễ thần kinh.\n- Xét nghiệm: CRP, ESR bình thường, loại trừ nhiễm trùng.\n- Thủ thuật: Tiêm epidural gây tê, kê đơn thuốc giảm đau và vật lý trị liệu.",
+    "entities": [
+      {
+        "text": "Đau thắt lưng",
+        "type": "CHẨN_ĐOÁN",
+        "assertions": [
+          "isFamily"
+        ],
+        "candidates": [
+          "M54.5"
+        ],
+        "position": [
+          45,
+          58
+        ]
+      },
+      {
+        "text": "đau lan chân",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+          "isFamily"
+        ],
+        "candidates": [],
+        "position": [
+          123,
+          135
+        ]
+      }
+    ],
+    "scenario_id": "sample_983896"
+  },
+  {
+    "text": "1. Tiền sử bệnh\n- BN có tiền sử Bệnh thận mạn từ 3 năm trước.\n- Đang điều trị ngoại trú với phác đồ: enalapril po daily, furosemide po daily, calcium carbonate po daily.\n- Tiền sử gia đình không ghi nhận các bệnh lý tương tự.\n\n2. Tiền sử bệnh hiện tại\n- BN nhập viện do tình trạng mệt mỏi tiến triển nặng trong 5 ngày qua.\n- Kèm theo các triệu chứng: phù hai chi dưới, ngứa da toàn thân, buồn nôn.\n- BN tự ý ngưng một số thuốc điều trị nền do khó chịu dạ dày trước khi nhập viện.\n\n3. Đánh giá tại bệnh viện\n- KH: Huyết áp 150/90 mmHg, nhịp tim 78 l/p, phù 2/4 hai chi dưới, da xanh xao, có cào gãi nhiều vùng da do ngứa.\n- KQXN: eGFR giảm còn 18 mL/min/1.73m2, BUN tăng cao, Creatinin 4.5 mg/dL.\n- Chẩn đoán: Suy thận giai đoạn cuối trên nền Bệnh thận mạn.\n- Chỉ định: Lọc máu cấp cứu, điều chỉnh lại phác đồ thuốc.",
+    "entities": [
+      {
+        "text": "Bệnh thận mạn",
+        "type": "CHẨN_ĐOÁN",
+        "assertions": [],
+        "candidates": [
+          "N18.9"
+        ],
+        "position": [
+          32,
+          45
+        ]
+      },
+      {
+        "text": "mệt mỏi",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "candidates": [],
+        "position": [
+          281,
+          288
+        ]
+      },
+      {
+        "text": "phù",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "candidates": [],
+        "position": [
+          351,
+          354
+        ]
+      },
+      {
+        "text": "ngứa",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "candidates": [],
+        "position": [
+          369,
+          373
+        ]
+      },
+      {
+        "text": "buồn nôn",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "candidates": [],
+        "position": [
+          388,
+          396
+        ]
+      },
+      {
+        "text": "enalapril po daily",
+        "type": "THUỐC",
+        "assertions": [],
+        "candidates": [
+          "31424"
+        ],
+        "position": [
+          101,
+          119
+        ]
+      },
+      {
+        "text": "furosemide po daily",
+        "type": "THUỐC",
+        "assertions": [],
+        "candidates": [
+          "4201"
+        ],
+        "position": [
+          121,
+          140
+        ]
+      },
+      {
+        "text": "calcium carbonate po daily",
+        "type": "THUỐC",
+        "assertions": [],
+        "candidates": [
+          "2293"
+        ],
+        "position": [
+          142,
+          168
+        ]
+      },
+      {
+        "text": "eGFR",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "candidates": [],
+        "position": [
+          629,
+          633
+        ]
+      }
+    ],
+    "scenario_id": "sample_14572"
+  },
+  {
+    "text": "1. Tiền sử bệnh\n- Bệnh nhân có tiền sử mắc Trào ngược dạ dày thực quản từ 3 năm trước.\n- Đã tự điều trị ngoại trú với domperidone po daily nhưng không đáp ứng hoàn toàn.\n- Tiền sử gia đình không ghi nhận các bệnh tiêu hóa di truyền.\n\n2. Tiền sử bệnh hiện tại\n- Lý do nhập viện: bệnh nhân than phiền ợ chua dữ dội kéo dài 2 ngày, nặng hơn sau ăn và khi nằm.\n- Diễn biến: các cơn ợ chua xuất hiện thường xuyên, kèm cảm giác nóng rát sau xương ức.\n- Không có tiền sử phẫu thuật ổ bụng trước đây.\n\n3. Đánh giá tại bệnh viện\n- Khám lâm sàng: bụng mềm, không chướng, điểm đau khi ấn nhẹ vùng thượng vị, không dấu hiệu peritoneum.\n- Cận lâm sàng: đã chỉ định và thực hiện nội soi dạ dày để đánh giá mức độ tổn thương niêm mạc.\n- Kết quả tạm thời: xác nhận chẩn đoán Trào ngược dạ dày thực quản mức độ vừa, niêm mạc thực quản viêm nhẹ.\n- Kế hoạch điều trị: tiếp tục điều trị y khoa, theo dõi đáp ứng triệu chứng.",
+    "entities": [
+      {
+        "text": "Trào ngược dạ dày thực quản",
+        "type": "CHẨN_ĐOÁN",
+        "assertions": [],
+        "candidates": [
+          "K21.9"
+        ],
+        "position": [
+          43,
+          70
+        ]
+      },
+      {
+        "text": "ợ chua",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "candidates": [],
+        "position": [
+          299,
+          305
+        ]
+      },
+      {
+        "text": "domperidone po daily",
+        "type": "THUỐC",
+        "assertions": [],
+        "candidates": [
+          "10638"
+        ],
+        "position": [
+          118,
+          138
+        ]
+      },
+      {
+        "text": "nội soi dạ dày",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "candidates": [],
+        "position": [
+          665,
+          679
+        ]
+      }
+    ],
+    "scenario_id": "sample_931982"
+  },
+  {
+    "text": "1. Tiền sử bệnh\n- Bệnh nhân có tiền sử mắc HIV/AIDS, được chẩn đoán từ 3 năm trước.\n- Đã được điều trị kháng virus tại ngoại trú với phác đồ gồm lamivudine po daily và tenofovir po daily trong thời gian dài trước khi nhập viện.\n\n2. Tiền sử bệnh hiện tại\n- Lý do nhập viện: Bệnh nhân tự đến viện vì tình trạng ho kéo dài, sốt kéo dài và tiêu chảy mạn tiến triển nặng hơn trong 2 tuần qua.\n- Các triệu chứng không đáp ứng với thuốc điều trị triệu chứng tại nhà.\n- Bệnh nhân ngừng thuốc kháng virus tự ý cách đây 1 tháng dẫn đến đợt cấp các triệu chứng.\n\n3. Đánh giá tại bệnh viện\n- Khám lâm sàng: Bệnh nhân gầy, suy kiệt, sốt 38.5 độ C, phổi nghe có ran nổ hai đáy, bụng mềm nhưng ỉa chảy nhiều lần/ngày.\n- Cận lâm sàng: Kết quả xét nghiệm viral load dương tính cao, CD4 thấp.\n- Chẩn đoán: HIV/AIDS giai đoạn AIDS, viêm phổi cơ hội, tiêu chảy do nhiễm trùng cơ hội.\n- Đã thực hiện thủ thuật: Lấy máu làm công thức máu, sinh hóa, và chụp X-quang phổi.",
+    "entities": [
+      {
+        "text": "HIV/AIDS",
+        "type": "CHẨN_ĐOÁN",
+        "assertions": [
+          "isHistorical"
+        ],
+        "candidates": [
+          "B20"
+        ],
+        "position": [
+          43,
+          51
+        ]
+      },
+      {
+        "text": "ho kéo dài",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "candidates": [],
+        "position": [
+          309,
+          319
+        ]
+      },
+      {
+        "text": "sốt kéo dài",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "candidates": [],
+        "position": [
+          321,
+          332
+        ]
+      },
+      {
+        "text": "tiêu chảy mạn",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "candidates": [],
+        "position": [
+          336,
+          349
+        ]
+      },
+      {
+        "text": "lamivudine po daily",
+        "type": "THUỐC",
+        "assertions": [
+          "isHistorical"
+        ],
+        "candidates": [
+          "3876"
+        ],
+        "position": [
+          145,
+          164
+        ]
+      },
+      {
+        "text": "tenofovir po daily",
+        "type": "THUỐC",
+        "assertions": [
+          "isHistorical"
+        ],
+        "candidates": [
+          "462075"
+        ],
+        "position": [
+          168,
+          186
+        ]
+      },
+      {
+        "text": "viral load",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "candidates": [],
+        "position": [
+          738,
+          748
+        ]
+      }
+    ],
+    "scenario_id": "sample_55245"
+  },
+  {
+    "text": "1. Tiền sử bệnh\n- Bệnh nhân nữ, 55 tuổi, tiền sử mắc Viêm khớp dạng thấp từ 8 năm trước.\n- Đã điều trị dài hạn với Methotrexate 15mg/tuần, Hydroxychloroquine 200mg/ngày.\n- Không có tiền sử dị ứng thuốc hoặc tiền sử gia đình mắc bệnh tự miễn.\n\n2. Tiền sử bệnh hiện tại\n- Nhập viện do đau hai bên khớp cổ tay và ngón tay tăng nặng trong 3 ngày qua, kèm theo cứng khớp buổi sáng kéo dài trên 2 giờ.\n- Bệnh nhân than phiền có sốt nhẹ, nhiệt độ đo được khoảng 37.8°C.\n- Các triệu chứng đau và sưng khớp không đáp ứng với thuốc giảm đau thông thường (NSAIDs) tại nhà.\n\n3. Đánh giá tại bệnh viện\n- Khám lâm sàng: Sưng nóng đỏ các khớp MCP, PIP hai bên, đối xứng. Giới hạn vận động các khớp.\n- Dấu hiệu sinh tồn: Nhiệt độ 37.9°C, huyết áp 130/80 mmHg, mạch 88 l/p, SpO2 98% khí room.\n- Cận lâm sàng:\n  + Xét nghiệm máu: CRP tăng (+), ESR tăng (65 mm/giờ), RF (+) mạnh, Anti-CCP (+).\n  + Chẩn đoán hình ảnh: X-quang khớp tay thấy hẹp khe khớp, có khuyết xương nhỏ ở đầu xương.\n- Chẩn đoán sơ bộ: Viêm khớp dạng thấp hoạt động.\n- Kế hoạch điều trị: Tăng liều thuốc chống thấp khớp, chỉ định thêm Corticoid liều thấp, theo dõi diễn biến nhiệt độ và phản ứng viêm.",
+    "entities": [
+      {
+        "text": "Viêm khớp dạng thấp",
+        "type": "CHẨN_ĐOÁN",
+        "assertions": [],
+        "candidates": [
+          "M06.9"
+        ],
+        "position": [
+          53,
+          72
+        ]
+      },
+      {
+        "text": "sốt nhẹ",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "candidates": [],
+        "position": [
+          422,
+          429
+        ]
+      }
+    ],
+    "scenario_id": "sample_550212"
+  },
+  {
+    "text": "1. Tiền sử bệnh\n- Bệnh nhân nam, 65 tuổi, có tiền sử tăng huyết áp 10 năm, đái tháo đường type 2 5 năm.\n- Đang điều trị: Amlodipine 5mg/ngày, Metformin 500mg x 2 viên/ngày, Aspirin 81mg/ngày.\n- Không có tiền sử dị ứng thuốc.\n- Tiền sử gia đình: Bố mất do đột quỵ, không ghi nhận người thân mắc bệnh tim mạch sớm.\n\n2. Tiền sử bệnh hiện tại\n- Lý do vào viện: Khốt đau ngực trái vùng trước tim lan lên hàm dưới và lan ra cánh tay trái.\n- Khởi phát: Cách nhập viện 4 giờ, đau dữ dội, vã mồ hôi, buồn nôn, không đỡ khi nghỉ ngơi hoặc uống thuốc giảm đau tại nhà.\n- Bệnh nhân tự đưa đến khoa Cấp cứu bằng xe cứu thương.\n- Trong quá trình diễn tiến: Có cơn đau tái phát nhưng không có biểu hiện 'đau ngực trái' khi tiếp xúc lần 2 sau khi dùng nitroglycerin sublingual.\n- Không có tiền sử nhồi máu não hoặc phẫu thuật tim trước đây.\n\n3. Đánh giá tại bệnh viện\n- Khám lâm sàng: Huyết áp 145/90 mmHg, Nhịp tim 110 l/p, SpO2 96% khí phòng. Tim nghe rõ tiếng thổi tâm thu độ 2/6 ở mỏm tim. Phổi thông khí tốt, không ran.\n- Điện tâm đồ: ST chênh lên >2mm ở các chuyển đạo V1-V4, nghịch đảo sóng T ở V5-V6.\n- Xét nghiệm: Troponin I tăng cao (12.5 ng/mL), CK-MB tăng.\n- Chẩn đoán hình ảnh: Siêu âm tim đánh giá chức năng thất trái giảm, vận động thành trước bất thường.\n- Thủ thuật: Đưa vào phòng can thiệp, thông động mạch, đặt stent drug-eluting thành công ở mạch vành trái trước (LAD).\n- Chẩn đoán cuối cùng: Hội chứng mạch vành cấp (ACS). Lưu ý: Không xác định 'Nhồi máu cơ tim cấp' theo tiêu chuẩn cũ do đã can thiệp sớm (isNegated: true trong ngữ cảnh chẩn đoán trước can thiệp).\n- Điều trị: Heparin, Aspirin, Clopidogrel, Statin liều cao, Beta-blocker.\n- Kế hoạch: Theo dõi tại CCU, tái khám sau 1 tuần.",
+    "entities": [
+      {
+        "text": "Nhồi máu cơ tim cấp",
+        "type": "CHẨN_ĐOÁN",
+        "assertions": [
+          "isNegated"
+        ],
+        "candidates": [
+          "I21.9"
+        ],
+        "position": [
+          1451,
+          1470
+        ]
+      },
+      {
+        "text": "đau ngực trái",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "candidates": [],
+        "position": [
+          362,
+          375
+        ]
+      }
+    ],
+    "scenario_id": "sample_731878"
+  },
+  {
+    "text": "1. Tiền sử bệnh\n- Chẩn đoán: Tăng huyết áp (đã được xác định từ 5 năm nay, tuân thủ điều trị không đều đặn).\n- Tiền sử: Bệnh nhân có tiền sử đau đầu tái phát nhiều lần trong quá khứ, thường xuất hiện kèm theo cơn tăng huyết áp.\n- Thuốc trước nhập viện: Amlodipine 5mg/ngày, không dùng thuốc hạ áp khác.\n\n2. Tiền sử bệnh hiện tại\n- Lý do nhập viện: Bệnh nhân nhập viện với tình trạng đau đầu dữ dội vùng chẩm, kèm theo chóng mặt và buồn nôn.\n- Diễn biến: Các cơn đau đầu tăng dần trong 2 ngày qua, không đáp ứng với thuốc giảm đau thông thường.\n- Sự kiện: Không có tiền sử tai biến mạch máu não, không tiền sử đái tháo đường.\n\n3. Đánh giá tại bệnh viện\n- Khám lâm sàng: HA 165/100 mmHg, mạch 88 lần/phút, không dấu hiệu màng não, thần kinh khu trú không rõ.\n- Cận lâm sàng:\n  + Công thức máu: Bình thường.\n  + Máu sinh hóa: Creatinin 0.9 mg/dL, đường huyết lúc đói 105 mg/dL.\n  + Điện tim: Nhịp xoang, không dấu hiệu phì đại thất trái.\n  + Siêu âm tim: Chức năng tâm thu thất trái bình thường (EF 60%).\n- Thủ thuật: Đo huyết áp liên tục, chỉ định điều trị hạ áp bằng Candesartan 8mg/ngày, theo dõi sát HA.\n- Chẩn đoán cuối cùng: Tăng huyết áp giai đoạn 2, kiểm soát chưa đạt.",
+    "entities": [
+      {
+        "text": "Tăng huyết áp",
+        "type": "CHẨN_ĐOÁN",
+        "assertions": [],
+        "candidates": [
+          "I10"
+        ],
+        "position": [
+          29,
+          42
+        ]
+      },
+      {
+        "text": "đau đầu",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+          "isHistorical"
+        ],
+        "candidates": [],
+        "position": [
+          141,
+          148
+        ]
+      }
+    ],
+    "scenario_id": "sample_751231"
+  },
+  {
+    "text": "1. Tiền sử bệnh\n- Bệnh nhân có tiền sử mắc Đái tháo đường type 2 đã được chẩn đoán từ 5 năm trước.\n- Đang điều trị duy trì với Metformin 500mg x 2 lần/ngày và Glimepiride 2mg x 1 lần/ngày.\n- Có tiền sử tăng huyết áp, đang điều trị Amlodipine.\n- Không có tiền sử dị ứng thuốc.\n\n2. Tiền sử bệnh hiện tại\n- Lý do nhập viện: Khát nước nhiều, tiểu nhiều, sụt cân không rõ nguyên nhân trong 1 tuần qua.\n- Bệnh nhân tự nhận thấy ăn nhiều hơn bình thường, kèm theo mệt mỏi và hoa mắt.\n- Các triệu chứng khởi phát từ khoảng 7 ngày trước, tự dùng thuốc không đúng liều dẫn đến tình trạng tăng đường huyết không kiểm soát.\n- Không có triệu chứng nhiễm toan ceton hay nhiễm trùng cấp.\n\n3. Đánh giá tại bệnh viện\n- Khám lâm sàng: Bệnh nhân tỉnh, da khô, nhãn cầu lõm nhẹ. Huyết áp 130/80 mmHg, mạch 88 lần/phút.\n- Xét nghiệm: Đường huyết mao mạch 18.5 mmol/L, HbA1c 9.2%, điện giải đồ trong giới hạn.\n- Chẩn đoán hình ảnh: Siêu âm ổ bụng không thấy bất thường.\n- Xử trí: Truyền bù dịch, bắt đầu điều trị Insulin nhanh theo phác đồ tăng liều, chuyển sang chế độ ăn kiêng kiểm soát lượng tinh bột.\n- Theo dõi sát đường huyết 4 lần/ngày.",
+    "entities": [
+      {
+        "text": "Đái tháo đường type 2",
+        "type": "CHẨN_ĐOÁN",
+        "assertions": [],
+        "candidates": [
+          "E11.9"
+        ],
+        "position": [
+          43,
+          64
+        ]
+      },
+      {
+        "text": "ăn nhiều",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "candidates": [],
+        "position": [
+          422,
+          430
+        ]
+      }
+    ],
+    "scenario_id": "sample_640178"
+  }
+]

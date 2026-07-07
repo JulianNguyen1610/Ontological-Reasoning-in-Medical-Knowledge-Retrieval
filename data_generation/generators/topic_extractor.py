@@ -143,18 +143,11 @@ class TopicExtractor:
         return random.sample(tests, min(num, len(tests)))
     
     def _select_assertions(self, complexity: str) -> List[str]:
-        """Chọn thuộc tính cần xuất hiện"""
         all_assertions = ["isNegated", "isFamily", "isHistorical"]
-        
-        if complexity == "single_entity":
-            return random.choice([[], [random.choice(all_assertions)]])
-        elif complexity == "few_entities":
-            return random.sample(all_assertions, random.randint(0, 1))
-        elif complexity == "many_entities":
-            return random.sample(all_assertions, random.randint(1, 2))
-        else:  # complex_mixed
-            return random.sample(all_assertions, random.randint(1, 3))
-    
+        weights = [0.20, 0.10, 0.30]
+        if random.random() < 0.40:
+            return []
+        return [random.choices(all_assertions, weights=weights, k=1)[0]]
     def generate_diverse_scenarios(self, num_samples: int = 10000) -> List[ClinicalScenario]:
         """Sinh tập hợp đa dạng các kịch bản lâm sàng"""
         scenarios = []
