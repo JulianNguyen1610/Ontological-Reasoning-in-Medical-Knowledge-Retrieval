@@ -1,0 +1,1376 @@
+[
+  {
+    "text": "buồn chán",
+    "synonyms": [
+      "buồn chán"
+    ],
+    "related_diagnoses": [
+      "Rối loạn trầm cảm"
+    ],
+    "context_patterns": [
+      "buồn chán"
+    ]
+  },
+  {
+    "text": "buồn nôn",
+    "synonyms": [
+      "buồn nôn"
+    ],
+    "related_diagnoses": [
+      "Nhồi máu cơ tim cấp",
+      "Trào ngược dạ dày thực quản",
+      "Loét dạ dày",
+      "Viêm dạ dày",
+      "Bệnh thận mạn",
+      "Sỏi thận",
+      "Đau nửa đầu Migraine"
+    ],
+    "context_patterns": [
+      "buồn nôn"
+    ]
+  },
+  {
+    "text": "chán ăn",
+    "synonyms": [
+      "chán ăn"
+    ],
+    "related_diagnoses": [
+      "Rối loạn trầm cảm",
+      "Viêm gan B"
+    ],
+    "context_patterns": [
+      "chán ăn"
+    ]
+  },
+  {
+    "text": "chóng mặt",
+    "synonyms": [
+      "chóng mặt"
+    ],
+    "related_diagnoses": [
+      "Tăng huyết áp",
+      "Rung nhĩ",
+      "Thiếu máu thiếu sắt"
+    ],
+    "context_patterns": [
+      "chóng mặt"
+    ]
+  },
+  {
+    "text": "chướng bụng",
+    "synonyms": [
+      "chướng bụng"
+    ],
+    "related_diagnoses": [
+      "Loét dạ dày",
+      "Viêm dạ dày"
+    ],
+    "context_patterns": [
+      "chướng bụng"
+    ]
+  },
+  {
+    "text": "chảy dịch",
+    "synonyms": [
+      "chảy dịch"
+    ],
+    "related_diagnoses": [
+      "Viêm da cơ địa"
+    ],
+    "context_patterns": [
+      "chảy dịch"
+    ]
+  },
+  {
+    "text": "chảy dịch vú",
+    "synonyms": [
+      "chảy dịch vú"
+    ],
+    "related_diagnoses": [
+      "Ung thư vú"
+    ],
+    "context_patterns": [
+      "chảy dịch vú"
+    ]
+  },
+  {
+    "text": "chảy mủ tai",
+    "synonyms": [
+      "chảy mủ tai"
+    ],
+    "related_diagnoses": [
+      "Viêm tai giữa"
+    ],
+    "context_patterns": [
+      "chảy mủ tai"
+    ]
+  },
+  {
+    "text": "co giật",
+    "synonyms": [
+      "co giật"
+    ],
+    "related_diagnoses": [
+      "Động kinh"
+    ],
+    "context_patterns": [
+      "co giật"
+    ]
+  },
+  {
+    "text": "căng cơ",
+    "synonyms": [
+      "căng cơ"
+    ],
+    "related_diagnoses": [
+      "Rối loạn lo âu"
+    ],
+    "context_patterns": [
+      "căng cơ"
+    ]
+  },
+  {
+    "text": "cứng gối sáng",
+    "synonyms": [
+      "cứng gối sáng"
+    ],
+    "related_diagnoses": [
+      "Thoái hóa khớp gối"
+    ],
+    "context_patterns": [
+      "cứng gối sáng"
+    ]
+  },
+  {
+    "text": "cứng khớp sáng",
+    "synonyms": [
+      "cứng khớp sáng"
+    ],
+    "related_diagnoses": [
+      "Viêm khớp dạng thấp"
+    ],
+    "context_patterns": [
+      "cứng khớp sáng"
+    ]
+  },
+  {
+    "text": "cứng lưng sáng",
+    "synonyms": [
+      "cứng lưng sáng"
+    ],
+    "related_diagnoses": [
+      "Đau thắt lưng"
+    ],
+    "context_patterns": [
+      "cứng lưng sáng"
+    ]
+  },
+  {
+    "text": "cứng người",
+    "synonyms": [
+      "cứng người"
+    ],
+    "related_diagnoses": [
+      "Động kinh"
+    ],
+    "context_patterns": [
+      "cứng người"
+    ]
+  },
+  {
+    "text": "da xanh",
+    "synonyms": [
+      "da xanh"
+    ],
+    "related_diagnoses": [
+      "Thiếu máu thiếu sắt"
+    ],
+    "context_patterns": [
+      "da xanh"
+    ]
+  },
+  {
+    "text": "gầy sút",
+    "synonyms": [
+      "gầy sút"
+    ],
+    "related_diagnoses": [
+      "Đái tháo đường type 2"
+    ],
+    "context_patterns": [
+      "gầy sút"
+    ]
+  },
+  {
+    "text": "gầy sút nhanh",
+    "synonyms": [
+      "gầy sút nhanh"
+    ],
+    "related_diagnoses": [
+      "Đái tháo đường type 1"
+    ],
+    "context_patterns": [
+      "gầy sút nhanh"
+    ]
+  },
+  {
+    "text": "ho",
+    "synonyms": [
+      "ho"
+    ],
+    "related_diagnoses": [
+      "Hen suyễn",
+      "Viêm phế quản cấp"
+    ],
+    "context_patterns": [
+      "ho"
+    ]
+  },
+  {
+    "text": "ho có đờ m",
+    "synonyms": [
+      "ho có đờ m"
+    ],
+    "related_diagnoses": [
+      "Viêm phổi"
+    ],
+    "context_patterns": [
+      "ho có đờ m"
+    ]
+  },
+  {
+    "text": "ho kéo dài",
+    "synonyms": [
+      "ho kéo dài"
+    ],
+    "related_diagnoses": [
+      "HIV/AIDS"
+    ],
+    "context_patterns": [
+      "ho kéo dài"
+    ]
+  },
+  {
+    "text": "ho mạn",
+    "synonyms": [
+      "ho mạn"
+    ],
+    "related_diagnoses": [
+      "Ung thư phổi"
+    ],
+    "context_patterns": [
+      "ho mạn"
+    ]
+  },
+  {
+    "text": "ho mạn tính",
+    "synonyms": [
+      "ho mạn tính"
+    ],
+    "related_diagnoses": [
+      "Bệnh phổi tắc nghẽn mạn tính"
+    ],
+    "context_patterns": [
+      "ho mạn tính"
+    ]
+  },
+  {
+    "text": "ho ra máu",
+    "synonyms": [
+      "ho ra máu"
+    ],
+    "related_diagnoses": [
+      "Ung thư phổi"
+    ],
+    "context_patterns": [
+      "ho ra máu"
+    ]
+  },
+  {
+    "text": "hoa mắt",
+    "synonyms": [
+      "hoa mắt"
+    ],
+    "related_diagnoses": [
+      "Tăng huyết áp"
+    ],
+    "context_patterns": [
+      "hoa mắt"
+    ]
+  },
+  {
+    "text": "hơi thở có mùi",
+    "synonyms": [
+      "hơi thở có mùi"
+    ],
+    "related_diagnoses": [
+      "Bệnh thận mạn"
+    ],
+    "context_patterns": [
+      "hơi thở có mùi"
+    ]
+  },
+  {
+    "text": "hồi hộp",
+    "synonyms": [
+      "hồi hộp"
+    ],
+    "related_diagnoses": [
+      "Rung nhĩ",
+      "Rối loạn lo âu"
+    ],
+    "context_patterns": [
+      "hồi hộp"
+    ]
+  },
+  {
+    "text": "khát nhiều",
+    "synonyms": [
+      "khát nhiều"
+    ],
+    "related_diagnoses": [
+      "Đái tháo đường type 2",
+      "Đái tháo đường type 1"
+    ],
+    "context_patterns": [
+      "khát nhiều"
+    ]
+  },
+  {
+    "text": "khò khè",
+    "synonyms": [
+      "khò khè"
+    ],
+    "related_diagnoses": [
+      "Hen suyễn",
+      "Viêm phế quản cấp",
+      "Bệnh phổi tắc nghẽn mạn tính"
+    ],
+    "context_patterns": [
+      "khò khè"
+    ]
+  },
+  {
+    "text": "khó nhìn ban đêm",
+    "synonyms": [
+      "khó nhìn ban đêm"
+    ],
+    "related_diagnoses": [
+      "Đục thủy tinh thể"
+    ],
+    "context_patterns": [
+      "khó nhìn ban đêm"
+    ]
+  },
+  {
+    "text": "khó nuốt",
+    "synonyms": [
+      "khó nuốt"
+    ],
+    "related_diagnoses": [
+      "Trào ngược dạ dày thực quản"
+    ],
+    "context_patterns": [
+      "khó nuốt"
+    ]
+  },
+  {
+    "text": "khó thở",
+    "synonyms": [
+      "khó thở"
+    ],
+    "related_diagnoses": [
+      "Hen suyễn",
+      "Viêm phổi",
+      "Viêm phế quản cấp",
+      "Bệnh phổi tắc nghẽn mạn tính",
+      "Nhồi máu cơ tim cấp",
+      "Suy tim",
+      "Rung nhĩ",
+      "Rối loạn lo âu",
+      "Ung thư phổi",
+      "Thiếu máu thiếu sắt"
+    ],
+    "context_patterns": [
+      "khó thở"
+    ]
+  },
+  {
+    "text": "khó thở về đêm",
+    "synonyms": [
+      "khó thở về đêm"
+    ],
+    "related_diagnoses": [
+      "Suy tim"
+    ],
+    "context_patterns": [
+      "khó thở về đêm"
+    ]
+  },
+  {
+    "text": "khó đi lại",
+    "synonyms": [
+      "khó đi lại"
+    ],
+    "related_diagnoses": [
+      "Thoái hóa khớp gối"
+    ],
+    "context_patterns": [
+      "khó đi lại"
+    ]
+  },
+  {
+    "text": "khô da",
+    "synonyms": [
+      "khô da"
+    ],
+    "related_diagnoses": [
+      "Viêm da cơ địa"
+    ],
+    "context_patterns": [
+      "khô da"
+    ]
+  },
+  {
+    "text": "lo lắng quá mức",
+    "synonyms": [
+      "lo lắng quá mức"
+    ],
+    "related_diagnoses": [
+      "Rối loạn lo âu"
+    ],
+    "context_patterns": [
+      "lo lắng quá mức"
+    ]
+  },
+  {
+    "text": "lo âu",
+    "synonyms": [
+      "lo âu"
+    ],
+    "related_diagnoses": [
+      "Rối loạn trầm cảm"
+    ],
+    "context_patterns": [
+      "lo âu"
+    ]
+  },
+  {
+    "text": "lóa mắt",
+    "synonyms": [
+      "lóa mắt"
+    ],
+    "related_diagnoses": [
+      "Đục thủy tinh thể"
+    ],
+    "context_patterns": [
+      "lóa mắt"
+    ]
+  },
+  {
+    "text": "mảng đỏ da",
+    "synonyms": [
+      "mảng đỏ da"
+    ],
+    "related_diagnoses": [
+      "Vảy nến"
+    ],
+    "context_patterns": [
+      "mảng đỏ da"
+    ]
+  },
+  {
+    "text": "mất ngủ",
+    "synonyms": [
+      "mất ngủ"
+    ],
+    "related_diagnoses": [
+      "Rối loạn trầm cảm",
+      "Rối loạn lo âu"
+    ],
+    "context_patterns": [
+      "mất ngủ"
+    ]
+  },
+  {
+    "text": "mất nước",
+    "synonyms": [
+      "mất nước"
+    ],
+    "related_diagnoses": [
+      "Viêm dạ dày ruột cấp"
+    ],
+    "context_patterns": [
+      "mất nước"
+    ]
+  },
+  {
+    "text": "mất tập trung",
+    "synonyms": [
+      "mất tập trung"
+    ],
+    "related_diagnoses": [
+      "Rối loạn trầm cảm"
+    ],
+    "context_patterns": [
+      "mất tập trung"
+    ]
+  },
+  {
+    "text": "mất ý thức",
+    "synonyms": [
+      "mất ý thức"
+    ],
+    "related_diagnoses": [
+      "Động kinh"
+    ],
+    "context_patterns": [
+      "mất ý thức"
+    ]
+  },
+  {
+    "text": "mẩn đỏ",
+    "synonyms": [
+      "mẩn đỏ"
+    ],
+    "related_diagnoses": [
+      "Viêm da cơ địa"
+    ],
+    "context_patterns": [
+      "mẩn đỏ"
+    ]
+  },
+  {
+    "text": "mệt mỏi",
+    "synonyms": [
+      "mệt mỏi"
+    ],
+    "related_diagnoses": [
+      "Tăng huyết áp",
+      "Suy tim",
+      "Rung nhĩ",
+      "Đái tháo đường type 2",
+      "Đái tháo đường type 1",
+      "Bệnh thận mạn",
+      "Rối loạn trầm cảm",
+      "Viêm khớp dạng thấp",
+      "Ung thư phổi",
+      "Thiếu máu thiếu sắt",
+      "Viêm gan B"
+    ],
+    "context_patterns": [
+      "mệt mỏi"
+    ]
+  },
+  {
+    "text": "mệt mỏi sau cơn",
+    "synonyms": [
+      "mệt mỏi sau cơn"
+    ],
+    "related_diagnoses": [
+      "Động kinh"
+    ],
+    "context_patterns": [
+      "mệt mỏi sau cơn"
+    ]
+  },
+  {
+    "text": "nghe kém",
+    "synonyms": [
+      "nghe kém"
+    ],
+    "related_diagnoses": [
+      "Viêm tai giữa"
+    ],
+    "context_patterns": [
+      "nghe kém"
+    ]
+  },
+  {
+    "text": "ngứa",
+    "synonyms": [
+      "ngứa"
+    ],
+    "related_diagnoses": [
+      "Bệnh thận mạn",
+      "Vảy nến",
+      "Viêm da cơ địa"
+    ],
+    "context_patterns": [
+      "ngứa"
+    ]
+  },
+  {
+    "text": "nhìn mờ",
+    "synonyms": [
+      "nhìn mờ"
+    ],
+    "related_diagnoses": [
+      "Đái tháo đường type 1",
+      "Đục thủy tinh thể",
+      "Glôcôm"
+    ],
+    "context_patterns": [
+      "nhìn mờ"
+    ]
+  },
+  {
+    "text": "nhìn đôi",
+    "synonyms": [
+      "nhìn đôi"
+    ],
+    "related_diagnoses": [
+      "Đục thủy tinh thể"
+    ],
+    "context_patterns": [
+      "nhìn đôi"
+    ]
+  },
+  {
+    "text": "nhức mắt",
+    "synonyms": [
+      "nhức mắt"
+    ],
+    "related_diagnoses": [
+      "Glôcôm"
+    ],
+    "context_patterns": [
+      "nhức mắt"
+    ]
+  },
+  {
+    "text": "nóng rát ngực",
+    "synonyms": [
+      "nóng rát ngực"
+    ],
+    "related_diagnoses": [
+      "Trào ngược dạ dày thực quản"
+    ],
+    "context_patterns": [
+      "nóng rát ngực"
+    ]
+  },
+  {
+    "text": "nôn ói",
+    "synonyms": [
+      "nôn ói"
+    ],
+    "related_diagnoses": [
+      "Viêm dạ dày ruột cấp"
+    ],
+    "context_patterns": [
+      "nôn ói"
+    ]
+  },
+  {
+    "text": "nổi hạch",
+    "synonyms": [
+      "nổi hạch"
+    ],
+    "related_diagnoses": [
+      "HIV/AIDS"
+    ],
+    "context_patterns": [
+      "nổi hạch"
+    ]
+  },
+  {
+    "text": "nứt da",
+    "synonyms": [
+      "nứt da"
+    ],
+    "related_diagnoses": [
+      "Viêm da cơ địa"
+    ],
+    "context_patterns": [
+      "nứt da"
+    ]
+  },
+  {
+    "text": "nứt nẻ da",
+    "synonyms": [
+      "nứt nẻ da"
+    ],
+    "related_diagnoses": [
+      "Vảy nến"
+    ],
+    "context_patterns": [
+      "nứt nẻ da"
+    ]
+  },
+  {
+    "text": "phù",
+    "synonyms": [
+      "phù"
+    ],
+    "related_diagnoses": [
+      "Bệnh thận mạn"
+    ],
+    "context_patterns": [
+      "phù"
+    ]
+  },
+  {
+    "text": "phù chân",
+    "synonyms": [
+      "phù chân"
+    ],
+    "related_diagnoses": [
+      "Suy tim"
+    ],
+    "context_patterns": [
+      "phù chân"
+    ]
+  },
+  {
+    "text": "run tay",
+    "synonyms": [
+      "run tay"
+    ],
+    "related_diagnoses": [
+      "Rối loạn lo âu"
+    ],
+    "context_patterns": [
+      "run tay"
+    ]
+  },
+  {
+    "text": "rối loạn thị giác",
+    "synonyms": [
+      "rối loạn thị giác"
+    ],
+    "related_diagnoses": [
+      "Đau nửa đầu Migraine"
+    ],
+    "context_patterns": [
+      "rối loạn thị giác"
+    ]
+  },
+  {
+    "text": "sút cân",
+    "synonyms": [
+      "sút cân"
+    ],
+    "related_diagnoses": [
+      "Ung thư vú",
+      "Ung thư phổi",
+      "HIV/AIDS"
+    ],
+    "context_patterns": [
+      "sút cân"
+    ]
+  },
+  {
+    "text": "sưng gối",
+    "synonyms": [
+      "sưng gối"
+    ],
+    "related_diagnoses": [
+      "Thoái hóa khớp gối"
+    ],
+    "context_patterns": [
+      "sưng gối"
+    ]
+  },
+  {
+    "text": "sưng khớp",
+    "synonyms": [
+      "sưng khớp"
+    ],
+    "related_diagnoses": [
+      "Viêm khớp dạng thấp"
+    ],
+    "context_patterns": [
+      "sưng khớp"
+    ]
+  },
+  {
+    "text": "sốt",
+    "synonyms": [
+      "sốt"
+    ],
+    "related_diagnoses": [
+      "Viêm phổi",
+      "Viêm dạ dày ruột cấp",
+      "Nhiễm trùng đường tiểu",
+      "Sỏi thận",
+      "Viêm tai giữa"
+    ],
+    "context_patterns": [
+      "sốt"
+    ]
+  },
+  {
+    "text": "sốt kéo dài",
+    "synonyms": [
+      "sốt kéo dài"
+    ],
+    "related_diagnoses": [
+      "HIV/AIDS"
+    ],
+    "context_patterns": [
+      "sốt kéo dài"
+    ]
+  },
+  {
+    "text": "sốt nhẹ",
+    "synonyms": [
+      "sốt nhẹ"
+    ],
+    "related_diagnoses": [
+      "Viêm phế quản cấp",
+      "Viêm khớp dạng thấp"
+    ],
+    "context_patterns": [
+      "sốt nhẹ"
+    ]
+  },
+  {
+    "text": "sợ tiếng ồn",
+    "synonyms": [
+      "sợ tiếng ồn"
+    ],
+    "related_diagnoses": [
+      "Đau nửa đầu Migraine"
+    ],
+    "context_patterns": [
+      "sợ tiếng ồn"
+    ]
+  },
+  {
+    "text": "sợ ánh sáng",
+    "synonyms": [
+      "sợ ánh sáng"
+    ],
+    "related_diagnoses": [
+      "Đau nửa đầu Migraine"
+    ],
+    "context_patterns": [
+      "sợ ánh sáng"
+    ]
+  },
+  {
+    "text": "thấy quầng sáng",
+    "synonyms": [
+      "thấy quầng sáng"
+    ],
+    "related_diagnoses": [
+      "Glôcôm"
+    ],
+    "context_patterns": [
+      "thấy quầng sáng"
+    ]
+  },
+  {
+    "text": "tim đập nhanh",
+    "synonyms": [
+      "tim đập nhanh"
+    ],
+    "related_diagnoses": [
+      "Thiếu máu thiếu sắt"
+    ],
+    "context_patterns": [
+      "tim đập nhanh"
+    ]
+  },
+  {
+    "text": "tiêu chảy",
+    "synonyms": [
+      "tiêu chảy"
+    ],
+    "related_diagnoses": [
+      "Viêm dạ dày ruột cấp"
+    ],
+    "context_patterns": [
+      "tiêu chảy"
+    ]
+  },
+  {
+    "text": "tiêu chảy mạn",
+    "synonyms": [
+      "tiêu chảy mạn"
+    ],
+    "related_diagnoses": [
+      "HIV/AIDS"
+    ],
+    "context_patterns": [
+      "tiêu chảy mạn"
+    ]
+  },
+  {
+    "text": "tiểu buốt",
+    "synonyms": [
+      "tiểu buốt"
+    ],
+    "related_diagnoses": [
+      "Nhiễm trùng đường tiểu"
+    ],
+    "context_patterns": [
+      "tiểu buốt"
+    ]
+  },
+  {
+    "text": "tiểu máu",
+    "synonyms": [
+      "tiểu máu"
+    ],
+    "related_diagnoses": [
+      "Nhiễm trùng đường tiểu",
+      "Sỏi thận"
+    ],
+    "context_patterns": [
+      "tiểu máu"
+    ]
+  },
+  {
+    "text": "tiểu nhiều",
+    "synonyms": [
+      "tiểu nhiều"
+    ],
+    "related_diagnoses": [
+      "Đái tháo đường type 2",
+      "Đái tháo đường type 1"
+    ],
+    "context_patterns": [
+      "tiểu nhiều"
+    ]
+  },
+  {
+    "text": "tiểu rắt",
+    "synonyms": [
+      "tiểu rắt"
+    ],
+    "related_diagnoses": [
+      "Nhiễm trùng đường tiểu"
+    ],
+    "context_patterns": [
+      "tiểu rắt"
+    ]
+  },
+  {
+    "text": "tiểu ít",
+    "synonyms": [
+      "tiểu ít"
+    ],
+    "related_diagnoses": [
+      "Suy tim",
+      "Bệnh thận mạn"
+    ],
+    "context_patterns": [
+      "tiểu ít"
+    ]
+  },
+  {
+    "text": "tiểu đục",
+    "synonyms": [
+      "tiểu đục"
+    ],
+    "related_diagnoses": [
+      "Nhiễm trùng đường tiểu"
+    ],
+    "context_patterns": [
+      "tiểu đục"
+    ]
+  },
+  {
+    "text": "tê bì",
+    "synonyms": [
+      "tê bì"
+    ],
+    "related_diagnoses": [
+      "Đau thắt lưng"
+    ],
+    "context_patterns": [
+      "tê bì"
+    ]
+  },
+  {
+    "text": "tụt núim vú",
+    "synonyms": [
+      "tụt núim vú"
+    ],
+    "related_diagnoses": [
+      "Ung thư vú"
+    ],
+    "context_patterns": [
+      "tụt núim vú"
+    ]
+  },
+  {
+    "text": "tức ngực",
+    "synonyms": [
+      "tức ngực"
+    ],
+    "related_diagnoses": [
+      "Hen suyễn"
+    ],
+    "context_patterns": [
+      "tức ngực"
+    ]
+  },
+  {
+    "text": "u vú",
+    "synonyms": [
+      "u vú"
+    ],
+    "related_diagnoses": [
+      "Ung thư vú"
+    ],
+    "context_patterns": [
+      "u vú"
+    ]
+  },
+  {
+    "text": "vàng da",
+    "synonyms": [
+      "vàng da"
+    ],
+    "related_diagnoses": [
+      "Viêm gan B"
+    ],
+    "context_patterns": [
+      "vàng da"
+    ]
+  },
+  {
+    "text": "vã mồ hôi",
+    "synonyms": [
+      "vã mồ hôi"
+    ],
+    "related_diagnoses": [
+      "Nhồi máu cơ tim cấp"
+    ],
+    "context_patterns": [
+      "vã mồ hôi"
+    ]
+  },
+  {
+    "text": "vảy trắng",
+    "synonyms": [
+      "vảy trắng"
+    ],
+    "related_diagnoses": [
+      "Vảy nến"
+    ],
+    "context_patterns": [
+      "vảy trắng"
+    ]
+  },
+  {
+    "text": "ù tai",
+    "synonyms": [
+      "ù tai"
+    ],
+    "related_diagnoses": [
+      "Tăng huyết áp",
+      "Viêm tai giữa"
+    ],
+    "context_patterns": [
+      "ù tai"
+    ]
+  },
+  {
+    "text": "ăn không tiêu",
+    "synonyms": [
+      "ăn không tiêu"
+    ],
+    "related_diagnoses": [
+      "Viêm dạ dày"
+    ],
+    "context_patterns": [
+      "ăn không tiêu"
+    ]
+  },
+  {
+    "text": "ăn nhiều",
+    "synonyms": [
+      "ăn nhiều"
+    ],
+    "related_diagnoses": [
+      "Đái tháo đường type 2"
+    ],
+    "context_patterns": [
+      "ăn nhiều"
+    ]
+  },
+  {
+    "text": "đau bụng",
+    "synonyms": [
+      "đau bụng"
+    ],
+    "related_diagnoses": [
+      "Viêm dạ dày ruột cấp"
+    ],
+    "context_patterns": [
+      "đau bụng"
+    ]
+  },
+  {
+    "text": "đau gối",
+    "synonyms": [
+      "đau gối"
+    ],
+    "related_diagnoses": [
+      "Thoái hóa khớp gối"
+    ],
+    "context_patterns": [
+      "đau gối"
+    ]
+  },
+  {
+    "text": "đau hông lưng",
+    "synonyms": [
+      "đau hông lưng"
+    ],
+    "related_diagnoses": [
+      "Nhiễm trùng đường tiểu",
+      "Sỏi thận"
+    ],
+    "context_patterns": [
+      "đau hông lưng"
+    ]
+  },
+  {
+    "text": "đau hạ sườn phải",
+    "synonyms": [
+      "đau hạ sườn phải"
+    ],
+    "related_diagnoses": [
+      "Viêm gan B"
+    ],
+    "context_patterns": [
+      "đau hạ sườn phải"
+    ]
+  },
+  {
+    "text": "đau khớp",
+    "synonyms": [
+      "đau khớp"
+    ],
+    "related_diagnoses": [
+      "Viêm khớp dạng thấp"
+    ],
+    "context_patterns": [
+      "đau khớp"
+    ]
+  },
+  {
+    "text": "đau lan chân",
+    "synonyms": [
+      "đau lan chân"
+    ],
+    "related_diagnoses": [
+      "Đau thắt lưng"
+    ],
+    "context_patterns": [
+      "đau lan chân"
+    ]
+  },
+  {
+    "text": "đau lan vai trái",
+    "synonyms": [
+      "đau lan vai trái"
+    ],
+    "related_diagnoses": [
+      "Nhồi máu cơ tim cấp"
+    ],
+    "context_patterns": [
+      "đau lan vai trái"
+    ]
+  },
+  {
+    "text": "đau lưng dưới",
+    "synonyms": [
+      "đau lưng dưới"
+    ],
+    "related_diagnoses": [
+      "Đau thắt lưng"
+    ],
+    "context_patterns": [
+      "đau lưng dưới"
+    ]
+  },
+  {
+    "text": "đau mắt",
+    "synonyms": [
+      "đau mắt"
+    ],
+    "related_diagnoses": [
+      "Glôcôm"
+    ],
+    "context_patterns": [
+      "đau mắt"
+    ]
+  },
+  {
+    "text": "đau ngực",
+    "synonyms": [
+      "đau ngực"
+    ],
+    "related_diagnoses": [
+      "Viêm phổi",
+      "Ung thư phổi"
+    ],
+    "context_patterns": [
+      "đau ngực"
+    ]
+  },
+  {
+    "text": "đau ngực trái",
+    "synonyms": [
+      "đau ngực trái"
+    ],
+    "related_diagnoses": [
+      "Nhồi máu cơ tim cấp"
+    ],
+    "context_patterns": [
+      "đau ngực trái"
+    ]
+  },
+  {
+    "text": "đau quặn",
+    "synonyms": [
+      "đau quặn"
+    ],
+    "related_diagnoses": [
+      "Sỏi thận"
+    ],
+    "context_patterns": [
+      "đau quặn"
+    ]
+  },
+  {
+    "text": "đau tai",
+    "synonyms": [
+      "đau tai"
+    ],
+    "related_diagnoses": [
+      "Viêm tai giữa"
+    ],
+    "context_patterns": [
+      "đau tai"
+    ]
+  },
+  {
+    "text": "đau thượng vị",
+    "synonyms": [
+      "đau thượng vị"
+    ],
+    "related_diagnoses": [
+      "Trào ngược dạ dày thực quản",
+      "Loét dạ dày",
+      "Viêm dạ dày"
+    ],
+    "context_patterns": [
+      "đau thượng vị"
+    ]
+  },
+  {
+    "text": "đau vú",
+    "synonyms": [
+      "đau vú"
+    ],
+    "related_diagnoses": [
+      "Ung thư vú"
+    ],
+    "context_patterns": [
+      "đau vú"
+    ]
+  },
+  {
+    "text": "đau đầu",
+    "synonyms": [
+      "đau đầu"
+    ],
+    "related_diagnoses": [
+      "Tăng huyết áp"
+    ],
+    "context_patterns": [
+      "đau đầu"
+    ]
+  },
+  {
+    "text": "đau đầu một bên",
+    "synonyms": [
+      "đau đầu một bên"
+    ],
+    "related_diagnoses": [
+      "Đau nửa đầu Migraine"
+    ],
+    "context_patterns": [
+      "đau đầu một bên"
+    ]
+  },
+  {
+    "text": "đi ngoài phân đen",
+    "synonyms": [
+      "đi ngoài phân đen"
+    ],
+    "related_diagnoses": [
+      "Loét dạ dày"
+    ],
+    "context_patterns": [
+      "đi ngoài phân đen"
+    ]
+  },
+  {
+    "text": "đánh trống ngực",
+    "synonyms": [
+      "đánh trống ngực"
+    ],
+    "related_diagnoses": [
+      "Rung nhĩ"
+    ],
+    "context_patterns": [
+      "đánh trống ngực"
+    ]
+  },
+  {
+    "text": "đờ m",
+    "synonyms": [
+      "đờ m"
+    ],
+    "related_diagnoses": [
+      "Viêm phế quản cấp"
+    ],
+    "context_patterns": [
+      "đờ m"
+    ]
+  },
+  {
+    "text": "đờ m nhiều",
+    "synonyms": [
+      "đờ m nhiều"
+    ],
+    "related_diagnoses": [
+      "Bệnh phổi tắc nghẽn mạn tính"
+    ],
+    "context_patterns": [
+      "đờ m nhiều"
+    ]
+  },
+  {
+    "text": "ợ chua",
+    "synonyms": [
+      "ợ chua"
+    ],
+    "related_diagnoses": [
+      "Trào ngược dạ dày thực quản"
+    ],
+    "context_patterns": [
+      "ợ chua"
+    ]
+  },
+  {
+    "text": "ợ hơi",
+    "synonyms": [
+      "ợ hơi"
+    ],
+    "related_diagnoses": [
+      "Viêm dạ dày"
+    ],
+    "context_patterns": [
+      "ợ hơi"
+    ]
+  }
+]

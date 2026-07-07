@@ -1,0 +1,1277 @@
+[
+  {
+    "test_name": "AFP",
+    "test_type": "TÊN_XÉT_NGHIỆM",
+    "result_type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "synonyms": [
+      "AFP"
+    ],
+    "units": [],
+    "normal_ranges": {},
+    "abnormal_values": [],
+    "related_diagnoses": [
+      "Viêm gan B"
+    ]
+  },
+  {
+    "test_name": "BNP",
+    "test_type": "TÊN_XÉT_NGHIỆM",
+    "result_type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "synonyms": [
+      "BNP"
+    ],
+    "units": [],
+    "normal_ranges": {},
+    "abnormal_values": [],
+    "related_diagnoses": [
+      "Suy tim"
+    ]
+  },
+  {
+    "test_name": "CD4 count",
+    "test_type": "TÊN_XÉT_NGHIỆM",
+    "result_type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "synonyms": [
+      "CD4 count"
+    ],
+    "units": [],
+    "normal_ranges": {},
+    "abnormal_values": [],
+    "related_diagnoses": [
+      "HIV/AIDS"
+    ]
+  },
+  {
+    "test_name": "CK-MB",
+    "test_type": "TÊN_XÉT_NGHIỆM",
+    "result_type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "synonyms": [
+      "CK-MB"
+    ],
+    "units": [],
+    "normal_ranges": {},
+    "abnormal_values": [],
+    "related_diagnoses": [
+      "Nhồi máu cơ tim cấp"
+    ]
+  },
+  {
+    "test_name": "CRP",
+    "test_type": "TÊN_XÉT_NGHIỆM",
+    "result_type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "synonyms": [
+      "CRP"
+    ],
+    "units": [],
+    "normal_ranges": {},
+    "abnormal_values": [],
+    "related_diagnoses": [
+      "Viêm phổi",
+      "Viêm phế quản cấp",
+      "Viêm dạ dày ruột cấp",
+      "Nhiễm trùng đường tiểu",
+      "Viêm khớp dạng thấp",
+      "Vảy nến"
+    ]
+  },
+  {
+    "test_name": "CT bụng",
+    "test_type": "TÊN_XÉT_NGHIỆM",
+    "result_type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "synonyms": [
+      "CT bụng"
+    ],
+    "units": [],
+    "normal_ranges": {},
+    "abnormal_values": [],
+    "related_diagnoses": [
+      "Loét dạ dày",
+      "Sỏi thận"
+    ]
+  },
+  {
+    "test_name": "CT cột sống",
+    "test_type": "TÊN_XÉT_NGHIỆM",
+    "result_type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "synonyms": [
+      "CT cột sống"
+    ],
+    "units": [],
+    "normal_ranges": {},
+    "abnormal_values": [],
+    "related_diagnoses": [
+      "Đau thắt lưng"
+    ]
+  },
+  {
+    "test_name": "CT ngực",
+    "test_type": "TÊN_XÉT_NGHIỆM",
+    "result_type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "synonyms": [
+      "CT ngực"
+    ],
+    "units": [],
+    "normal_ranges": {},
+    "abnormal_values": [],
+    "related_diagnoses": [
+      "Viêm phổi",
+      "Ung thư phổi"
+    ]
+  },
+  {
+    "test_name": "CT ngực-bụng",
+    "test_type": "TÊN_XÉT_NGHIỆM",
+    "result_type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "synonyms": [
+      "CT ngực-bụng"
+    ],
+    "units": [],
+    "normal_ranges": {},
+    "abnormal_values": [],
+    "related_diagnoses": [
+      "Ung thư vú"
+    ]
+  },
+  {
+    "test_name": "CT não",
+    "test_type": "TÊN_XÉT_NGHIỆM",
+    "result_type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "synonyms": [
+      "CT não"
+    ],
+    "units": [],
+    "normal_ranges": {},
+    "abnormal_values": [],
+    "related_diagnoses": [
+      "Động kinh",
+      "Đau nửa đầu Migraine"
+    ]
+  },
+  {
+    "test_name": "ECG",
+    "test_type": "TÊN_XÉT_NGHIỆM",
+    "result_type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "synonyms": [
+      "ECG"
+    ],
+    "units": [],
+    "normal_ranges": {},
+    "abnormal_values": [],
+    "related_diagnoses": [
+      "Tăng huyết áp",
+      "Nhồi máu cơ tim cấp",
+      "Suy tim",
+      "Rung nhĩ"
+    ]
+  },
+  {
+    "test_name": "EEG",
+    "test_type": "TÊN_XÉT_NGHIỆM",
+    "result_type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "synonyms": [
+      "EEG"
+    ],
+    "units": [],
+    "normal_ranges": {},
+    "abnormal_values": [],
+    "related_diagnoses": [
+      "Động kinh"
+    ]
+  },
+  {
+    "test_name": "HBV DNA",
+    "test_type": "TÊN_XÉT_NGHIỆM",
+    "result_type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "synonyms": [
+      "HBV DNA"
+    ],
+    "units": [],
+    "normal_ranges": {},
+    "abnormal_values": [],
+    "related_diagnoses": [
+      "Viêm gan B"
+    ]
+  },
+  {
+    "test_name": "HBeAg",
+    "test_type": "TÊN_XÉT_NGHIỆM",
+    "result_type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "synonyms": [
+      "HBeAg"
+    ],
+    "units": [],
+    "normal_ranges": {},
+    "abnormal_values": [],
+    "related_diagnoses": [
+      "Viêm gan B"
+    ]
+  },
+  {
+    "test_name": "HBsAg",
+    "test_type": "TÊN_XÉT_NGHIỆM",
+    "result_type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "synonyms": [
+      "HBsAg"
+    ],
+    "units": [],
+    "normal_ranges": {},
+    "abnormal_values": [],
+    "related_diagnoses": [
+      "Viêm gan B"
+    ]
+  },
+  {
+    "test_name": "HIV test",
+    "test_type": "TÊN_XÉT_NGHIỆM",
+    "result_type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "synonyms": [
+      "HIV test"
+    ],
+    "units": [],
+    "normal_ranges": {},
+    "abnormal_values": [],
+    "related_diagnoses": [
+      "HIV/AIDS"
+    ]
+  },
+  {
+    "test_name": "HbA1c",
+    "test_type": "TÊN_XÉT_NGHIỆM",
+    "result_type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "synonyms": [
+      "HbA1c"
+    ],
+    "units": [],
+    "normal_ranges": {},
+    "abnormal_values": [],
+    "related_diagnoses": [
+      "Đái tháo đường type 2",
+      "Đái tháo đường type 1"
+    ]
+  },
+  {
+    "test_name": "INR",
+    "test_type": "TÊN_XÉT_NGHIỆM",
+    "result_type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "synonyms": [
+      "INR"
+    ],
+    "units": [],
+    "normal_ranges": {},
+    "abnormal_values": [],
+    "related_diagnoses": [
+      "Rung nhĩ"
+    ]
+  },
+  {
+    "test_name": "IgE toàn phần",
+    "test_type": "TÊN_XÉT_NGHIỆM",
+    "result_type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "synonyms": [
+      "IgE toàn phần"
+    ],
+    "units": [],
+    "normal_ranges": {},
+    "abnormal_values": [],
+    "related_diagnoses": [
+      "Viêm da cơ địa"
+    ]
+  },
+  {
+    "test_name": "MRI cột sống",
+    "test_type": "TÊN_XÉT_NGHIỆM",
+    "result_type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "synonyms": [
+      "MRI cột sống"
+    ],
+    "units": [],
+    "normal_ranges": {},
+    "abnormal_values": [],
+    "related_diagnoses": [
+      "Đau thắt lưng"
+    ]
+  },
+  {
+    "test_name": "MRI gối",
+    "test_type": "TÊN_XÉT_NGHIỆM",
+    "result_type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "synonyms": [
+      "MRI gối"
+    ],
+    "units": [],
+    "normal_ranges": {},
+    "abnormal_values": [],
+    "related_diagnoses": [
+      "Thoái hóa khớp gối"
+    ]
+  },
+  {
+    "test_name": "MRI não",
+    "test_type": "TÊN_XÉT_NGHIỆM",
+    "result_type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "synonyms": [
+      "MRI não"
+    ],
+    "units": [],
+    "normal_ranges": {},
+    "abnormal_values": [],
+    "related_diagnoses": [
+      "Động kinh",
+      "Đau nửa đầu Migraine"
+    ]
+  },
+  {
+    "test_name": "PET-CT",
+    "test_type": "TÊN_XÉT_NGHIỆM",
+    "result_type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "synonyms": [
+      "PET-CT"
+    ],
+    "units": [],
+    "normal_ranges": {},
+    "abnormal_values": [],
+    "related_diagnoses": [
+      "Ung thư phổi"
+    ]
+  },
+  {
+    "test_name": "RF",
+    "test_type": "TÊN_XÉT_NGHIỆM",
+    "result_type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "synonyms": [
+      "RF"
+    ],
+    "units": [],
+    "normal_ranges": {},
+    "abnormal_values": [],
+    "related_diagnoses": [
+      "Viêm khớp dạng thấp"
+    ]
+  },
+  {
+    "test_name": "SGOT/SGPT",
+    "test_type": "TÊN_XÉT_NGHIỆM",
+    "result_type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "synonyms": [
+      "SGOT/SGPT"
+    ],
+    "units": [],
+    "normal_ranges": {},
+    "abnormal_values": [],
+    "related_diagnoses": [
+      "Viêm gan B"
+    ]
+  },
+  {
+    "test_name": "SpO2",
+    "test_type": "TÊN_XÉT_NGHIỆM",
+    "result_type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "synonyms": [
+      "SpO2"
+    ],
+    "units": [],
+    "normal_ranges": {},
+    "abnormal_values": [],
+    "related_diagnoses": [
+      "Hen suyễn",
+      "Bệnh phổi tắc nghẽn mạn tính"
+    ]
+  },
+  {
+    "test_name": "TIBC",
+    "test_type": "TÊN_XÉT_NGHIỆM",
+    "result_type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "synonyms": [
+      "TIBC"
+    ],
+    "units": [],
+    "normal_ranges": {},
+    "abnormal_values": [],
+    "related_diagnoses": [
+      "Thiếu máu thiếu sắt"
+    ]
+  },
+  {
+    "test_name": "VS",
+    "test_type": "TÊN_XÉT_NGHIỆM",
+    "result_type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "synonyms": [
+      "VS"
+    ],
+    "units": [],
+    "normal_ranges": {},
+    "abnormal_values": [],
+    "related_diagnoses": [
+      "Viêm khớp dạng thấp",
+      "Vảy nến"
+    ]
+  },
+  {
+    "test_name": "X-quang cột sống",
+    "test_type": "TÊN_XÉT_NGHIỆM",
+    "result_type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "synonyms": [
+      "X-quang cột sống"
+    ],
+    "units": [],
+    "normal_ranges": {},
+    "abnormal_values": [],
+    "related_diagnoses": [
+      "Đau thắt lưng"
+    ]
+  },
+  {
+    "test_name": "X-quang dạ dày",
+    "test_type": "TÊN_XÉT_NGHIỆM",
+    "result_type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "synonyms": [
+      "X-quang dạ dày"
+    ],
+    "units": [],
+    "normal_ranges": {},
+    "abnormal_values": [],
+    "related_diagnoses": [
+      "Loét dạ dày"
+    ]
+  },
+  {
+    "test_name": "X-quang gối",
+    "test_type": "TÊN_XÉT_NGHIỆM",
+    "result_type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "synonyms": [
+      "X-quang gối"
+    ],
+    "units": [],
+    "normal_ranges": {},
+    "abnormal_values": [],
+    "related_diagnoses": [
+      "Thoái hóa khớp gối"
+    ]
+  },
+  {
+    "test_name": "X-quang khớp",
+    "test_type": "TÊN_XÉT_NGHIỆM",
+    "result_type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "synonyms": [
+      "X-quang khớp"
+    ],
+    "units": [],
+    "normal_ranges": {},
+    "abnormal_values": [],
+    "related_diagnoses": [
+      "Viêm khớp dạng thấp"
+    ]
+  },
+  {
+    "test_name": "X-quang ngực",
+    "test_type": "TÊN_XÉT_NGHIỆM",
+    "result_type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "synonyms": [
+      "X-quang ngực"
+    ],
+    "units": [],
+    "normal_ranges": {},
+    "abnormal_values": [],
+    "related_diagnoses": [
+      "Viêm phổi",
+      "Viêm phế quản cấp",
+      "Bệnh phổi tắc nghẽn mạn tính",
+      "Suy tim",
+      "Ung thư phổi"
+    ]
+  },
+  {
+    "test_name": "X-quang thực quản",
+    "test_type": "TÊN_XÉT_NGHIỆM",
+    "result_type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "synonyms": [
+      "X-quang thực quản"
+    ],
+    "units": [],
+    "normal_ranges": {},
+    "abnormal_values": [],
+    "related_diagnoses": [
+      "Trào ngược dạ dày thực quản"
+    ]
+  },
+  {
+    "test_name": "anti-CCP",
+    "test_type": "TÊN_XÉT_NGHIỆM",
+    "result_type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "synonyms": [
+      "anti-CCP"
+    ],
+    "units": [],
+    "normal_ranges": {},
+    "abnormal_values": [],
+    "related_diagnoses": [
+      "Viêm khớp dạng thấp"
+    ]
+  },
+  {
+    "test_name": "bạch cầu",
+    "test_type": "TÊN_XÉT_NGHIỆM",
+    "result_type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "synonyms": [
+      "bạch cầu"
+    ],
+    "units": [],
+    "normal_ranges": {},
+    "abnormal_values": [],
+    "related_diagnoses": [
+      "Viêm phổi",
+      "Viêm phế quản cấp"
+    ]
+  },
+  {
+    "test_name": "c-peptide",
+    "test_type": "TÊN_XÉT_NGHIỆM",
+    "result_type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "synonyms": [
+      "c-peptide"
+    ],
+    "units": [],
+    "normal_ranges": {},
+    "abnormal_values": [],
+    "related_diagnoses": [
+      "Đái tháo đường type 1"
+    ]
+  },
+  {
+    "test_name": "chụp mạch vành",
+    "test_type": "TÊN_XÉT_NGHIỆM",
+    "result_type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "synonyms": [
+      "chụp mạch vành"
+    ],
+    "units": [],
+    "normal_ranges": {},
+    "abnormal_values": [],
+    "related_diagnoses": [
+      "Nhồi máu cơ tim cấp"
+    ]
+  },
+  {
+    "test_name": "creatinine máu",
+    "test_type": "TÊN_XÉT_NGHIỆM",
+    "result_type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "synonyms": [
+      "creatinine máu"
+    ],
+    "units": [],
+    "normal_ranges": {},
+    "abnormal_values": [],
+    "related_diagnoses": [
+      "Tăng huyết áp",
+      "Bệnh thận mạn"
+    ]
+  },
+  {
+    "test_name": "công thức máu",
+    "test_type": "TÊN_XÉT_NGHIỆM",
+    "result_type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "synonyms": [
+      "công thức máu"
+    ],
+    "units": [],
+    "normal_ranges": {},
+    "abnormal_values": [],
+    "related_diagnoses": [
+      "Thiếu máu thiếu sắt",
+      "HIV/AIDS"
+    ]
+  },
+  {
+    "test_name": "cấy dịch tai",
+    "test_type": "TÊN_XÉT_NGHIỆM",
+    "result_type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "synonyms": [
+      "cấy dịch tai"
+    ],
+    "units": [],
+    "normal_ranges": {},
+    "abnormal_values": [],
+    "related_diagnoses": [
+      "Viêm tai giữa"
+    ]
+  },
+  {
+    "test_name": "cấy nước tiểu",
+    "test_type": "TÊN_XÉT_NGHIỆM",
+    "result_type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "synonyms": [
+      "cấy nước tiểu"
+    ],
+    "units": [],
+    "normal_ranges": {},
+    "abnormal_values": [],
+    "related_diagnoses": [
+      "Nhiễm trùng đường tiểu"
+    ]
+  },
+  {
+    "test_name": "cấy đờ m",
+    "test_type": "TÊN_XÉT_NGHIỆM",
+    "result_type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "synonyms": [
+      "cấy đờ m"
+    ],
+    "units": [],
+    "normal_ranges": {},
+    "abnormal_values": [],
+    "related_diagnoses": [
+      "Viêm phổi"
+    ]
+  },
+  {
+    "test_name": "eGFR",
+    "test_type": "TÊN_XÉT_NGHIỆM",
+    "result_type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "synonyms": [
+      "eGFR"
+    ],
+    "units": [],
+    "normal_ranges": {},
+    "abnormal_values": [],
+    "related_diagnoses": [
+      "Bệnh thận mạn"
+    ]
+  },
+  {
+    "test_name": "ferritin",
+    "test_type": "TÊN_XÉT_NGHIỆM",
+    "result_type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "synonyms": [
+      "ferritin"
+    ],
+    "units": [],
+    "normal_ranges": {},
+    "abnormal_values": [],
+    "related_diagnoses": [
+      "Thiếu máu thiếu sắt"
+    ]
+  },
+  {
+    "test_name": "holter 24h",
+    "test_type": "TÊN_XÉT_NGHIỆM",
+    "result_type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "synonyms": [
+      "holter 24h"
+    ],
+    "units": [],
+    "normal_ranges": {},
+    "abnormal_values": [],
+    "related_diagnoses": [
+      "Rung nhĩ"
+    ]
+  },
+  {
+    "test_name": "ion đồ",
+    "test_type": "TÊN_XÉT_NGHIỆM",
+    "result_type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "synonyms": [
+      "ion đồ"
+    ],
+    "units": [],
+    "normal_ranges": {},
+    "abnormal_values": [],
+    "related_diagnoses": [
+      "Tăng huyết áp",
+      "Suy tim",
+      "Rung nhĩ",
+      "Đái tháo đường type 1",
+      "Viêm dạ dày ruột cấp",
+      "Bệnh thận mạn",
+      "Động kinh"
+    ]
+  },
+  {
+    "test_name": "khám mắt",
+    "test_type": "TÊN_XÉT_NGHIỆM",
+    "result_type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "synonyms": [
+      "khám mắt"
+    ],
+    "units": [],
+    "normal_ranges": {},
+    "abnormal_values": [],
+    "related_diagnoses": [
+      "Đục thủy tinh thể"
+    ]
+  },
+  {
+    "test_name": "khám thần kinh",
+    "test_type": "TÊN_XÉT_NGHIỆM",
+    "result_type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "synonyms": [
+      "khám thần kinh"
+    ],
+    "units": [],
+    "normal_ranges": {},
+    "abnormal_values": [],
+    "related_diagnoses": [
+      "Đau nửa đầu Migraine"
+    ]
+  },
+  {
+    "test_name": "kháng thể kháng insulin",
+    "test_type": "TÊN_XÉT_NGHIỆM",
+    "result_type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "synonyms": [
+      "kháng thể kháng insulin"
+    ],
+    "units": [],
+    "normal_ranges": {},
+    "abnormal_values": [],
+    "related_diagnoses": [
+      "Đái tháo đường type 1"
+    ]
+  },
+  {
+    "test_name": "khí máu động mạch",
+    "test_type": "TÊN_XÉT_NGHIỆM",
+    "result_type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "synonyms": [
+      "khí máu động mạch"
+    ],
+    "units": [],
+    "normal_ranges": {},
+    "abnormal_values": [],
+    "related_diagnoses": [
+      "Bệnh phổi tắc nghẽn mạn tính"
+    ]
+  },
+  {
+    "test_name": "mỡ máu",
+    "test_type": "TÊN_XÉT_NGHIỆM",
+    "result_type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "synonyms": [
+      "mỡ máu"
+    ],
+    "units": [],
+    "normal_ranges": {},
+    "abnormal_values": [],
+    "related_diagnoses": [
+      "Tăng huyết áp",
+      "Đái tháo đường type 2"
+    ]
+  },
+  {
+    "test_name": "nghiệm pháp dung nạp glucose",
+    "test_type": "TÊN_XÉT_NGHIỆM",
+    "result_type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "synonyms": [
+      "nghiệm pháp dung nạp glucose"
+    ],
+    "units": [],
+    "normal_ranges": {},
+    "abnormal_values": [],
+    "related_diagnoses": [
+      "Đái tháo đường type 2"
+    ]
+  },
+  {
+    "test_name": "nhũ ảnh",
+    "test_type": "TÊN_XÉT_NGHIỆM",
+    "result_type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "synonyms": [
+      "nhũ ảnh"
+    ],
+    "units": [],
+    "normal_ranges": {},
+    "abnormal_values": [],
+    "related_diagnoses": [
+      "Ung thư vú"
+    ]
+  },
+  {
+    "test_name": "nội soi dạ dày",
+    "test_type": "TÊN_XÉT_NGHIỆM",
+    "result_type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "synonyms": [
+      "nội soi dạ dày"
+    ],
+    "units": [],
+    "normal_ranges": {},
+    "abnormal_values": [],
+    "related_diagnoses": [
+      "Trào ngược dạ dày thực quản",
+      "Loét dạ dày",
+      "Viêm dạ dày"
+    ]
+  },
+  {
+    "test_name": "nội soi phế quản",
+    "test_type": "TÊN_XÉT_NGHIỆM",
+    "result_type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "synonyms": [
+      "nội soi phế quản"
+    ],
+    "units": [],
+    "normal_ranges": {},
+    "abnormal_values": [],
+    "related_diagnoses": [
+      "Ung thư phổi"
+    ]
+  },
+  {
+    "test_name": "pH thực quản 24h",
+    "test_type": "TÊN_XÉT_NGHIỆM",
+    "result_type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "synonyms": [
+      "pH thực quản 24h"
+    ],
+    "units": [],
+    "normal_ranges": {},
+    "abnormal_values": [],
+    "related_diagnoses": [
+      "Trào ngược dạ dày thực quản"
+    ]
+  },
+  {
+    "test_name": "phân cấy",
+    "test_type": "TÊN_XÉT_NGHIỆM",
+    "result_type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "synonyms": [
+      "phân cấy"
+    ],
+    "units": [],
+    "normal_ranges": {},
+    "abnormal_values": [],
+    "related_diagnoses": [
+      "Viêm dạ dày ruột cấp"
+    ]
+  },
+  {
+    "test_name": "sinh hiển vi đèn khe",
+    "test_type": "TÊN_XÉT_NGHIỆM",
+    "result_type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "synonyms": [
+      "sinh hiển vi đèn khe"
+    ],
+    "units": [],
+    "normal_ranges": {},
+    "abnormal_values": [],
+    "related_diagnoses": [
+      "Đục thủy tinh thể"
+    ]
+  },
+  {
+    "test_name": "sinh thiết da",
+    "test_type": "TÊN_XÉT_NGHIỆM",
+    "result_type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "synonyms": [
+      "sinh thiết da"
+    ],
+    "units": [],
+    "normal_ranges": {},
+    "abnormal_values": [],
+    "related_diagnoses": [
+      "Vảy nến"
+    ]
+  },
+  {
+    "test_name": "sinh thiết phổi",
+    "test_type": "TÊN_XÉT_NGHIỆM",
+    "result_type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "synonyms": [
+      "sinh thiết phổi"
+    ],
+    "units": [],
+    "normal_ranges": {},
+    "abnormal_values": [],
+    "related_diagnoses": [
+      "Ung thư phổi"
+    ]
+  },
+  {
+    "test_name": "sinh thiết vú",
+    "test_type": "TÊN_XÉT_NGHIỆM",
+    "result_type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "synonyms": [
+      "sinh thiết vú"
+    ],
+    "units": [],
+    "normal_ranges": {},
+    "abnormal_values": [],
+    "related_diagnoses": [
+      "Ung thư vú"
+    ]
+  },
+  {
+    "test_name": "siêu âm bụng",
+    "test_type": "TÊN_XÉT_NGHIỆM",
+    "result_type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "synonyms": [
+      "siêu âm bụng"
+    ],
+    "units": [],
+    "normal_ranges": {},
+    "abnormal_values": [],
+    "related_diagnoses": [
+      "Viêm dạ dày ruột cấp"
+    ]
+  },
+  {
+    "test_name": "siêu âm thận",
+    "test_type": "TÊN_XÉT_NGHIỆM",
+    "result_type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "synonyms": [
+      "siêu âm thận"
+    ],
+    "units": [],
+    "normal_ranges": {},
+    "abnormal_values": [],
+    "related_diagnoses": [
+      "Bệnh thận mạn",
+      "Nhiễm trùng đường tiểu",
+      "Sỏi thận"
+    ]
+  },
+  {
+    "test_name": "siêu âm tim",
+    "test_type": "TÊN_XÉT_NGHIỆM",
+    "result_type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "synonyms": [
+      "siêu âm tim"
+    ],
+    "units": [],
+    "normal_ranges": {},
+    "abnormal_values": [],
+    "related_diagnoses": [
+      "Nhồi máu cơ tim cấp",
+      "Suy tim",
+      "Rung nhĩ"
+    ]
+  },
+  {
+    "test_name": "siêu âm vú",
+    "test_type": "TÊN_XÉT_NGHIỆM",
+    "result_type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "synonyms": [
+      "siêu âm vú"
+    ],
+    "units": [],
+    "normal_ranges": {},
+    "abnormal_values": [],
+    "related_diagnoses": [
+      "Ung thư vú"
+    ]
+  },
+  {
+    "test_name": "soi tai",
+    "test_type": "TÊN_XÉT_NGHIỆM",
+    "result_type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "synonyms": [
+      "soi tai"
+    ],
+    "units": [],
+    "normal_ranges": {},
+    "abnormal_values": [],
+    "related_diagnoses": [
+      "Viêm tai giữa"
+    ]
+  },
+  {
+    "test_name": "soi đáy mắt",
+    "test_type": "TÊN_XÉT_NGHIỆM",
+    "result_type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "synonyms": [
+      "soi đáy mắt"
+    ],
+    "units": [],
+    "normal_ranges": {},
+    "abnormal_values": [],
+    "related_diagnoses": [
+      "Glôcôm"
+    ]
+  },
+  {
+    "test_name": "sắt huyết thanh",
+    "test_type": "TÊN_XÉT_NGHIỆM",
+    "result_type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "synonyms": [
+      "sắt huyết thanh"
+    ],
+    "units": [],
+    "normal_ranges": {},
+    "abnormal_values": [],
+    "related_diagnoses": [
+      "Thiếu máu thiếu sắt"
+    ]
+  },
+  {
+    "test_name": "test H.pylori",
+    "test_type": "TÊN_XÉT_NGHIỆM",
+    "result_type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "synonyms": [
+      "test H.pylori"
+    ],
+    "units": [],
+    "normal_ranges": {},
+    "abnormal_values": [],
+    "related_diagnoses": [
+      "Loét dạ dày",
+      "Viêm dạ dày"
+    ]
+  },
+  {
+    "test_name": "test dị ứng",
+    "test_type": "TÊN_XÉT_NGHIỆM",
+    "result_type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "synonyms": [
+      "test dị ứng"
+    ],
+    "units": [],
+    "normal_ranges": {},
+    "abnormal_values": [],
+    "related_diagnoses": [
+      "Hen suyễn",
+      "Viêm da cơ địa"
+    ]
+  },
+  {
+    "test_name": "thang điểm GAD-7",
+    "test_type": "TÊN_XÉT_NGHIỆM",
+    "result_type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "synonyms": [
+      "thang điểm GAD-7"
+    ],
+    "units": [],
+    "normal_ranges": {},
+    "abnormal_values": [],
+    "related_diagnoses": [
+      "Rối loạn lo âu"
+    ]
+  },
+  {
+    "test_name": "thang điểm PHQ-9",
+    "test_type": "TÊN_XÉT_NGHIỆM",
+    "result_type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "synonyms": [
+      "thang điểm PHQ-9"
+    ],
+    "units": [],
+    "normal_ranges": {},
+    "abnormal_values": [],
+    "related_diagnoses": [
+      "Rối loạn trầm cảm"
+    ]
+  },
+  {
+    "test_name": "thính lực",
+    "test_type": "TÊN_XÉT_NGHIỆM",
+    "result_type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "synonyms": [
+      "thính lực"
+    ],
+    "units": [],
+    "normal_ranges": {},
+    "abnormal_values": [],
+    "related_diagnoses": [
+      "Viêm tai giữa"
+    ]
+  },
+  {
+    "test_name": "thị trường",
+    "test_type": "TÊN_XÉT_NGHIỆM",
+    "result_type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "synonyms": [
+      "thị trường"
+    ],
+    "units": [],
+    "normal_ranges": {},
+    "abnormal_values": [],
+    "related_diagnoses": [
+      "Glôcôm"
+    ]
+  },
+  {
+    "test_name": "transferrin",
+    "test_type": "TÊN_XÉT_NGHIỆM",
+    "result_type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "synonyms": [
+      "transferrin"
+    ],
+    "units": [],
+    "normal_ranges": {},
+    "abnormal_values": [],
+    "related_diagnoses": [
+      "Thiếu máu thiếu sắt"
+    ]
+  },
+  {
+    "test_name": "troponin",
+    "test_type": "TÊN_XÉT_NGHIỆM",
+    "result_type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "synonyms": [
+      "troponin"
+    ],
+    "units": [],
+    "normal_ranges": {},
+    "abnormal_values": [],
+    "related_diagnoses": [
+      "Nhồi máu cơ tim cấp"
+    ]
+  },
+  {
+    "test_name": "tổng phân tích nước tiểu",
+    "test_type": "TÊN_XÉT_NGHIỆM",
+    "result_type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "synonyms": [
+      "tổng phân tích nước tiểu"
+    ],
+    "units": [],
+    "normal_ranges": {},
+    "abnormal_values": [],
+    "related_diagnoses": [
+      "Bệnh thận mạn",
+      "Nhiễm trùng đường tiểu",
+      "Sỏi thận"
+    ]
+  },
+  {
+    "test_name": "ure máu",
+    "test_type": "TÊN_XÉT_NGHIỆM",
+    "result_type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "synonyms": [
+      "ure máu"
+    ],
+    "units": [],
+    "normal_ranges": {},
+    "abnormal_values": [],
+    "related_diagnoses": [
+      "Bệnh thận mạn"
+    ]
+  },
+  {
+    "test_name": "viral load",
+    "test_type": "TÊN_XÉT_NGHIỆM",
+    "result_type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "synonyms": [
+      "viral load"
+    ],
+    "units": [],
+    "normal_ranges": {},
+    "abnormal_values": [],
+    "related_diagnoses": [
+      "HIV/AIDS"
+    ]
+  },
+  {
+    "test_name": "xét nghiệm tuyến giáp",
+    "test_type": "TÊN_XÉT_NGHIỆM",
+    "result_type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "synonyms": [
+      "xét nghiệm tuyến giáp"
+    ],
+    "units": [],
+    "normal_ranges": {},
+    "abnormal_values": [],
+    "related_diagnoses": [
+      "Rối loạn trầm cảm"
+    ]
+  },
+  {
+    "test_name": "đo chức năng hô hấp",
+    "test_type": "TÊN_XÉT_NGHIỆM",
+    "result_type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "synonyms": [
+      "đo chức năng hô hấp"
+    ],
+    "units": [],
+    "normal_ranges": {},
+    "abnormal_values": [],
+    "related_diagnoses": [
+      "Hen suyễn",
+      "Bệnh phổi tắc nghẽn mạn tính"
+    ]
+  },
+  {
+    "test_name": "đo huyết áp",
+    "test_type": "TÊN_XÉT_NGHIỆM",
+    "result_type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "synonyms": [
+      "đo huyết áp"
+    ],
+    "units": [],
+    "normal_ranges": {},
+    "abnormal_values": [],
+    "related_diagnoses": [
+      "Tăng huyết áp"
+    ]
+  },
+  {
+    "test_name": "đo nhãn áp",
+    "test_type": "TÊN_XÉT_NGHIỆM",
+    "result_type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "synonyms": [
+      "đo nhãn áp"
+    ],
+    "units": [],
+    "normal_ranges": {},
+    "abnormal_values": [],
+    "related_diagnoses": [
+      "Đục thủy tinh thể",
+      "Glôcôm"
+    ]
+  },
+  {
+    "test_name": "đo thị lực",
+    "test_type": "TÊN_XÉT_NGHIỆM",
+    "result_type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "synonyms": [
+      "đo thị lực"
+    ],
+    "units": [],
+    "normal_ranges": {},
+    "abnormal_values": [],
+    "related_diagnoses": [
+      "Đục thủy tinh thể"
+    ]
+  },
+  {
+    "test_name": "đánh giá tâm thần",
+    "test_type": "TÊN_XÉT_NGHIỆM",
+    "result_type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "synonyms": [
+      "đánh giá tâm thần"
+    ],
+    "units": [],
+    "normal_ranges": {},
+    "abnormal_values": [],
+    "related_diagnoses": [
+      "Rối loạn trầm cảm",
+      "Rối loạn lo âu"
+    ]
+  },
+  {
+    "test_name": "đường huyết",
+    "test_type": "TÊN_XÉT_NGHIỆM",
+    "result_type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "synonyms": [
+      "đường huyết"
+    ],
+    "units": [],
+    "normal_ranges": {},
+    "abnormal_values": [],
+    "related_diagnoses": [
+      "Đái tháo đường type 2",
+      "Đái tháo đường type 1"
+    ]
+  },
+  {
+    "test_name": "đường niệu",
+    "test_type": "TÊN_XÉT_NGHIỆM",
+    "result_type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "synonyms": [
+      "đường niệu"
+    ],
+    "units": [],
+    "normal_ranges": {},
+    "abnormal_values": [],
+    "related_diagnoses": [
+      "Đái tháo đường type 2"
+    ]
+  }
+]

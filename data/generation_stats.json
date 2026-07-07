@@ -1,0 +1,18 @@
+{
+  "total_generated": 100,
+  "valid_samples": 72,
+  "invalid_samples": 28,
+  "retry_count": 62,
+  "entity_type_distribution": {
+    "TRIỆU_CHỨNG": 176,
+    "TÊN_XÉT_NGHIỆM": 47,
+    "KẾT_QUẢ_XÉT_NGHIỆM": 30,
+    "CHẨN_ĐOÁN": 71,
+    "THUỐC": 102
+  },
+  "assertion_distribution": {
+    "isNegated": 50,
+    "isFamily": 15,
+    "isHistorical": 46
+  }
+}

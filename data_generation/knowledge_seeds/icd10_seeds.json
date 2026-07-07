@@ -1,0 +1,908 @@
+[
+  {
+    "code": "J45.9",
+    "name_vi": "Hen suyễn",
+    "name_en": "Asthma",
+    "synonyms": [],
+    "category": "hô hấp",
+    "related_symptoms": [
+      "khó thở",
+      "ho",
+      "khò khè",
+      "tức ngực"
+    ],
+    "related_tests": [
+      "đo chức năng hô hấp",
+      "SpO2",
+      "test dị ứng"
+    ],
+    "related_drugs": [
+      "salbutamol",
+      "budesonide",
+      "montelukast",
+      "fluticasone"
+    ]
+  },
+  {
+    "code": "J18.9",
+    "name_vi": "Viêm phổi",
+    "name_en": "Pneumonia",
+    "synonyms": [],
+    "category": "hô hấp",
+    "related_symptoms": [
+      "sốt",
+      "ho có đờ m",
+      "khó thở",
+      "đau ngực"
+    ],
+    "related_tests": [
+      "X-quang ngực",
+      "CT ngực",
+      "cấy đờ m",
+      "CRP",
+      "bạch cầu"
+    ],
+    "related_drugs": [
+      "amoxicillin",
+      "azithromycin",
+      "ceftriaxone",
+      "levofloxacin"
+    ]
+  },
+  {
+    "code": "J20.9",
+    "name_vi": "Viêm phế quản cấp",
+    "name_en": "Acute bronchitis",
+    "synonyms": [],
+    "category": "hô hấp",
+    "related_symptoms": [
+      "ho",
+      "khò khè",
+      "khó thở",
+      "sốt nhẹ",
+      "đờ m"
+    ],
+    "related_tests": [
+      "X-quang ngực",
+      "bạch cầu",
+      "CRP"
+    ],
+    "related_drugs": [
+      "dextromethorphan",
+      "guaifenesin",
+      "salbutamol",
+      "azithromycin"
+    ]
+  },
+  {
+    "code": "J44.9",
+    "name_vi": "Bệnh phổi tắc nghẽn mạn tính",
+    "name_en": "COPD",
+    "synonyms": [],
+    "category": "hô hấp",
+    "related_symptoms": [
+      "khó thở",
+      "ho mạn tính",
+      "khò khè",
+      "đờ m nhiều"
+    ],
+    "related_tests": [
+      "đo chức năng hô hấp",
+      "SpO2",
+      "khí máu động mạch",
+      "X-quang ngực"
+    ],
+    "related_drugs": [
+      "tiotropium",
+      "salmeterol",
+      "fluticasone",
+      "theophylline",
+      "prednisolone"
+    ]
+  },
+  {
+    "code": "I10",
+    "name_vi": "Tăng huyết áp",
+    "name_en": "Hypertension",
+    "synonyms": [],
+    "category": "tim mạch",
+    "related_symptoms": [
+      "đau đầu",
+      "chóng mặt",
+      "mệt mỏi",
+      "hoa mắt",
+      "ù tai"
+    ],
+    "related_tests": [
+      "đo huyết áp",
+      "ECG",
+      "mỡ máu",
+      "creatinine máu",
+      "ion đồ"
+    ],
+    "related_drugs": [
+      "amlodipine",
+      "losartan",
+      "metoprolol",
+      "enalapril",
+      "hydrochlorothiazide",
+      "nifedipine"
+    ]
+  },
+  {
+    "code": "I21.9",
+    "name_vi": "Nhồi máu cơ tim cấp",
+    "name_en": "Acute MI",
+    "synonyms": [],
+    "category": "tim mạch",
+    "related_symptoms": [
+      "đau ngực trái",
+      "khó thở",
+      "vã mồ hôi",
+      "buồn nôn",
+      "đau lan vai trái"
+    ],
+    "related_tests": [
+      "ECG",
+      "troponin",
+      "CK-MB",
+      "siêu âm tim",
+      "chụp mạch vành"
+    ],
+    "related_drugs": [
+      "aspirin",
+      "clopidogrel",
+      "atorvastatin",
+      "nitroglycerin",
+      "heparin",
+      "morphine"
+    ]
+  },
+  {
+    "code": "I50.9",
+    "name_vi": "Suy tim",
+    "name_en": "Heart failure",
+    "synonyms": [],
+    "category": "tim mạch",
+    "related_symptoms": [
+      "khó thở",
+      "phù chân",
+      "mệt mỏi",
+      "khó thở về đêm",
+      "tiểu ít"
+    ],
+    "related_tests": [
+      "siêu âm tim",
+      "BNP",
+      "ECG",
+      "X-quang ngực",
+      "ion đồ"
+    ],
+    "related_drugs": [
+      "furosemide",
+      "enalapril",
+      "metoprolol",
+      "spironolactone",
+      "digoxin",
+      "carvedilol"
+    ]
+  },
+  {
+    "code": "I48",
+    "name_vi": "Rung nhĩ",
+    "name_en": "Atrial fibrillation",
+    "synonyms": [],
+    "category": "tim mạch",
+    "related_symptoms": [
+      "hồi hộp",
+      "đánh trống ngực",
+      "khó thở",
+      "chóng mặt",
+      "mệt mỏi"
+    ],
+    "related_tests": [
+      "ECG",
+      "holter 24h",
+      "siêu âm tim",
+      "INR",
+      "ion đồ"
+    ],
+    "related_drugs": [
+      "warfarin",
+      "apixaban",
+      "amiodarone",
+      "metoprolol",
+      "digoxin",
+      "rivaroxaban"
+    ]
+  },
+  {
+    "code": "E11.9",
+    "name_vi": "Đái tháo đường type 2",
+    "name_en": "Diabetes type 2",
+    "synonyms": [],
+    "category": "nội tiết",
+    "related_symptoms": [
+      "khát nhiều",
+      "tiểu nhiều",
+      "ăn nhiều",
+      "gầy sút",
+      "mệt mỏi"
+    ],
+    "related_tests": [
+      "đường huyết",
+      "HbA1c",
+      "nghiệm pháp dung nạp glucose",
+      "đường niệu",
+      "mỡ máu"
+    ],
+    "related_drugs": [
+      "metformin",
+      "gliclazide",
+      "insulin",
+      "sitagliptin",
+      "empagliflozin"
+    ]
+  },
+  {
+    "code": "E10.9",
+    "name_vi": "Đái tháo đường type 1",
+    "name_en": "Diabetes type 1",
+    "synonyms": [],
+    "category": "nội tiết",
+    "related_symptoms": [
+      "khát nhiều",
+      "tiểu nhiều",
+      "gầy sút nhanh",
+      "mệt mỏi",
+      "nhìn mờ"
+    ],
+    "related_tests": [
+      "đường huyết",
+      "HbA1c",
+      "c-peptide",
+      "kháng thể kháng insulin",
+      "ion đồ"
+    ],
+    "related_drugs": [
+      "insulin",
+      "insulin glargine",
+      "insulin lispro",
+      "insulin detemir"
+    ]
+  },
+  {
+    "code": "K21.9",
+    "name_vi": "Trào ngược dạ dày thực quản",
+    "name_en": "GERD",
+    "synonyms": [],
+    "category": "tiêu hóa",
+    "related_symptoms": [
+      "ợ chua",
+      "nóng rát ngực",
+      "đau thượng vị",
+      "buồn nôn",
+      "khó nuốt"
+    ],
+    "related_tests": [
+      "nội soi dạ dày",
+      "pH thực quản 24h",
+      "X-quang thực quản"
+    ],
+    "related_drugs": [
+      "omeprazole",
+      "pantoprazole",
+      "ranitidine",
+      "domperidone",
+      "esomeprazole"
+    ]
+  },
+  {
+    "code": "K25.9",
+    "name_vi": "Loét dạ dày",
+    "name_en": "Gastric ulcer",
+    "synonyms": [],
+    "category": "tiêu hóa",
+    "related_symptoms": [
+      "đau thượng vị",
+      "buồn nôn",
+      "chướng bụng",
+      "đi ngoài phân đen"
+    ],
+    "related_tests": [
+      "nội soi dạ dày",
+      "test H.pylori",
+      "X-quang dạ dày",
+      "CT bụng"
+    ],
+    "related_drugs": [
+      "omeprazole",
+      "ranitidine",
+      "amoxicillin",
+      "clarithromycin",
+      "metronidazole"
+    ]
+  },
+  {
+    "code": "K29.7",
+    "name_vi": "Viêm dạ dày",
+    "name_en": "Gastritis",
+    "synonyms": [],
+    "category": "tiêu hóa",
+    "related_symptoms": [
+      "đau thượng vị",
+      "buồn nôn",
+      "chướng bụng",
+      "ăn không tiêu",
+      "ợ hơi"
+    ],
+    "related_tests": [
+      "nội soi dạ dày",
+      "test H.pylori"
+    ],
+    "related_drugs": [
+      "omeprazole",
+      "ranitidine",
+      "sucralfate",
+      "domperidone"
+    ]
+  },
+  {
+    "code": "A09.0",
+    "name_vi": "Viêm dạ dày ruột cấp",
+    "name_en": "Acute gastroenteritis",
+    "synonyms": [],
+    "category": "tiêu hóa",
+    "related_symptoms": [
+      "tiêu chảy",
+      "nôn ói",
+      "đau bụng",
+      "sốt",
+      "mất nước"
+    ],
+    "related_tests": [
+      "phân cấy",
+      "siêu âm bụng",
+      "ion đồ",
+      "CRP"
+    ],
+    "related_drugs": [
+      "ORS",
+      "loperamide",
+      "ciprofloxacin",
+      "metronidazole",
+      "racecadotril"
+    ]
+  },
+  {
+    "code": "N18.9",
+    "name_vi": "Bệnh thận mạn",
+    "name_en": "CKD",
+    "synonyms": [],
+    "category": "thận",
+    "related_symptoms": [
+      "phù",
+      "mệt mỏi",
+      "tiểu ít",
+      "ngứa",
+      "buồn nôn",
+      "hơi thở có mùi"
+    ],
+    "related_tests": [
+      "creatinine máu",
+      "ure máu",
+      "eGFR",
+      "ion đồ",
+      "tổng phân tích nước tiểu",
+      "siêu âm thận"
+    ],
+    "related_drugs": [
+      "furosemide",
+      "spironolactone",
+      "calcium carbonate",
+      "enalapril",
+      "losartan"
+    ]
+  },
+  {
+    "code": "N39.0",
+    "name_vi": "Nhiễm trùng đường tiểu",
+    "name_en": "UTI",
+    "synonyms": [],
+    "category": "thận",
+    "related_symptoms": [
+      "tiểu buốt",
+      "tiểu rắt",
+      "tiểu đục",
+      "tiểu máu",
+      "sốt",
+      "đau hông lưng"
+    ],
+    "related_tests": [
+      "tổng phân tích nước tiểu",
+      "cấy nước tiểu",
+      "siêu âm thận",
+      "CRP"
+    ],
+    "related_drugs": [
+      "ciprofloxacin",
+      "nitrofurantoin",
+      "ceftriaxone",
+      "fosfomycin",
+      "trimethoprim"
+    ]
+  },
+  {
+    "code": "N20.0",
+    "name_vi": "Sỏi thận",
+    "name_en": "Kidney stone",
+    "synonyms": [],
+    "category": "thận",
+    "related_symptoms": [
+      "đau hông lưng",
+      "đau quặn",
+      "tiểu máu",
+      "buồn nôn",
+      "sốt"
+    ],
+    "related_tests": [
+      "siêu âm thận",
+      "CT bụng",
+      "tổng phân tích nước tiểu"
+    ],
+    "related_drugs": [
+      "tamsulosin",
+      "ketorolac",
+      "paracetamol",
+      "ciprofloxacin"
+    ]
+  },
+  {
+    "code": "F32.9",
+    "name_vi": "Rối loạn trầm cảm",
+    "name_en": "Depression",
+    "synonyms": [],
+    "category": "tâm thần",
+    "related_symptoms": [
+      "mệt mỏi",
+      "mất ngủ",
+      "buồn chán",
+      "lo âu",
+      "chán ăn",
+      "mất tập trung"
+    ],
+    "related_tests": [
+      "đánh giá tâm thần",
+      "thang điểm PHQ-9",
+      "xét nghiệm tuyến giáp"
+    ],
+    "related_drugs": [
+      "sertraline",
+      "fluoxetine",
+      "escitalopram",
+      "mirtazapine",
+      "venlafaxine",
+      "amitriptyline"
+    ]
+  },
+  {
+    "code": "F41.9",
+    "name_vi": "Rối loạn lo âu",
+    "name_en": "Anxiety disorder",
+    "synonyms": [],
+    "category": "tâm thần",
+    "related_symptoms": [
+      "lo lắng quá mức",
+      "hồi hộp",
+      "khó thở",
+      "run tay",
+      "mất ngủ",
+      "căng cơ"
+    ],
+    "related_tests": [
+      "đánh giá tâm thần",
+      "thang điểm GAD-7"
+    ],
+    "related_drugs": [
+      "sertraline",
+      "escitalopram",
+      "alprazolam",
+      "clonazepam",
+      "propranolol"
+    ]
+  },
+  {
+    "code": "G40.9",
+    "name_vi": "Động kinh",
+    "name_en": "Epilepsy",
+    "synonyms": [],
+    "category": "thần kinh",
+    "related_symptoms": [
+      "co giật",
+      "mất ý thức",
+      "cứng người",
+      "mệt mỏi sau cơn"
+    ],
+    "related_tests": [
+      "EEG",
+      "MRI não",
+      "CT não",
+      "ion đồ"
+    ],
+    "related_drugs": [
+      "phenytoin",
+      "valproic acid",
+      "carbamazepine",
+      "levetiracetam",
+      "lamotrigine",
+      "clonazepam"
+    ]
+  },
+  {
+    "code": "G43.9",
+    "name_vi": "Đau nửa đầu Migraine",
+    "name_en": "Migraine",
+    "synonyms": [],
+    "category": "thần kinh",
+    "related_symptoms": [
+      "đau đầu một bên",
+      "buồn nôn",
+      "sợ ánh sáng",
+      "sợ tiếng ồn",
+      "rối loạn thị giác"
+    ],
+    "related_tests": [
+      "MRI não",
+      "CT não",
+      "khám thần kinh"
+    ],
+    "related_drugs": [
+      "sumatriptan",
+      "paracetamol",
+      "ibuprofen",
+      "metoclopramide",
+      "propranolol",
+      "amitriptyline"
+    ]
+  },
+  {
+    "code": "M06.9",
+    "name_vi": "Viêm khớp dạng thấp",
+    "name_en": "Rheumatoid arthritis",
+    "synonyms": [],
+    "category": "cơ xương khớp",
+    "related_symptoms": [
+      "đau khớp",
+      "sưng khớp",
+      "cứng khớp sáng",
+      "mệt mỏi",
+      "sốt nhẹ"
+    ],
+    "related_tests": [
+      "RF",
+      "anti-CCP",
+      "CRP",
+      "VS",
+      "X-quang khớp"
+    ],
+    "related_drugs": [
+      "methotrexate",
+      "prednisolone",
+      "ibuprofen",
+      "sulfasalazine",
+      "naproxen",
+      "hydroxychloroquine"
+    ]
+  },
+  {
+    "code": "M54.5",
+    "name_vi": "Đau thắt lưng",
+    "name_en": "Low back pain",
+    "synonyms": [],
+    "category": "cơ xương khớp",
+    "related_symptoms": [
+      "đau lưng dưới",
+      "đau lan chân",
+      "tê bì",
+      "cứng lưng sáng"
+    ],
+    "related_tests": [
+      "X-quang cột sống",
+      "MRI cột sống",
+      "CT cột sống"
+    ],
+    "related_drugs": [
+      "ibuprofen",
+      "paracetamol",
+      "naproxen",
+      "pregabalin",
+      "tramadol"
+    ]
+  },
+  {
+    "code": "M17.9",
+    "name_vi": "Thoái hóa khớp gối",
+    "name_en": "Knee osteoarthritis",
+    "synonyms": [],
+    "category": "cơ xương khớp",
+    "related_symptoms": [
+      "đau gối",
+      "cứng gối sáng",
+      "sưng gối",
+      "khó đi lại"
+    ],
+    "related_tests": [
+      "X-quang gối",
+      "MRI gối"
+    ],
+    "related_drugs": [
+      "paracetamol",
+      "ibuprofen",
+      "naproxen",
+      "tramadol"
+    ]
+  },
+  {
+    "code": "C50.9",
+    "name_vi": "Ung thư vú",
+    "name_en": "Breast cancer",
+    "synonyms": [],
+    "category": "ung thư",
+    "related_symptoms": [
+      "u vú",
+      "đau vú",
+      "tụt núim vú",
+      "chảy dịch vú",
+      "sút cân"
+    ],
+    "related_tests": [
+      "siêu âm vú",
+      "nhũ ảnh",
+      "sinh thiết vú",
+      "CT ngực-bụng"
+    ],
+    "related_drugs": [
+      "tamoxifen",
+      "doxorubicin",
+      "paclitaxel",
+      "trastuzumab",
+      "cyclophosphamide",
+      "letrozole"
+    ]
+  },
+  {
+    "code": "C34.9",
+    "name_vi": "Ung thư phổi",
+    "name_en": "Lung cancer",
+    "synonyms": [],
+    "category": "ung thư",
+    "related_symptoms": [
+      "ho mạn",
+      "khó thở",
+      "đau ngực",
+      "ho ra máu",
+      "sút cân",
+      "mệt mỏi"
+    ],
+    "related_tests": [
+      "X-quang ngực",
+      "CT ngực",
+      "sinh thiết phổi",
+      "nội soi phế quản",
+      "PET-CT"
+    ],
+    "related_drugs": [
+      "cisplatin",
+      "pemetrexed",
+      "erlotinib",
+      "paclitaxel",
+      "carboplatin",
+      "gemcitabine"
+    ]
+  },
+  {
+    "code": "D50.9",
+    "name_vi": "Thiếu máu thiếu sắt",
+    "name_en": "Iron deficiency anemia",
+    "synonyms": [],
+    "category": "huyết học",
+    "related_symptoms": [
+      "mệt mỏi",
+      "da xanh",
+      "chóng mặt",
+      "khó thở",
+      "tim đập nhanh"
+    ],
+    "related_tests": [
+      "công thức máu",
+      "ferritin",
+      "sắt huyết thanh",
+      "transferrin",
+      "TIBC"
+    ],
+    "related_drugs": [
+      "ferrous sulfate",
+      "ferrous gluconate",
+      "iron dextran",
+      "folic acid"
+    ]
+  },
+  {
+    "code": "B20",
+    "name_vi": "HIV/AIDS",
+    "name_en": "HIV disease",
+    "synonyms": [],
+    "category": "truyền nhiễm",
+    "related_symptoms": [
+      "sốt kéo dài",
+      "sút cân",
+      "tiêu chảy mạn",
+      "ho kéo dài",
+      "nổi hạch"
+    ],
+    "related_tests": [
+      "HIV test",
+      "CD4 count",
+      "viral load",
+      "công thức máu"
+    ],
+    "related_drugs": [
+      "tenofovir",
+      "emtricitabine",
+      "efavirenz",
+      "dolutegravir",
+      "lamivudine",
+      "zidovudine"
+    ]
+  },
+  {
+    "code": "B16.9",
+    "name_vi": "Viêm gan B",
+    "name_en": "Hepatitis B",
+    "synonyms": [],
+    "category": "truyền nhiễm",
+    "related_symptoms": [
+      "vàng da",
+      "mệt mỏi",
+      "chán ăn",
+      "đau hạ sườn phải"
+    ],
+    "related_tests": [
+      "HBsAg",
+      "HBeAg",
+      "SGOT/SGPT",
+      "HBV DNA",
+      "AFP"
+    ],
+    "related_drugs": [
+      "entecavir",
+      "tenofovir",
+      "lamivudine",
+      "interferon alfa"
+    ]
+  },
+  {
+    "code": "L40.0",
+    "name_vi": "Vảy nến",
+    "name_en": "Psoriasis",
+    "synonyms": [],
+    "category": "da liễu",
+    "related_symptoms": [
+      "mảng đỏ da",
+      "vảy trắng",
+      "ngứa",
+      "nứt nẻ da"
+    ],
+    "related_tests": [
+      "sinh thiết da",
+      "CRP",
+      "VS"
+    ],
+    "related_drugs": [
+      "methotrexate",
+      "prednisolone",
+      "betamethasone",
+      "cyclosporine"
+    ]
+  },
+  {
+    "code": "L30.9",
+    "name_vi": "Viêm da cơ địa",
+    "name_en": "Atopic dermatitis",
+    "synonyms": [],
+    "category": "da liễu",
+    "related_symptoms": [
+      "ngứa",
+      "mẩn đỏ",
+      "khô da",
+      "nứt da",
+      "chảy dịch"
+    ],
+    "related_tests": [
+      "test dị ứng",
+      "IgE toàn phần"
+    ],
+    "related_drugs": [
+      "betamethasone",
+      "hydrocortisone",
+      "cetirizine",
+      "loratadine"
+    ]
+  },
+  {
+    "code": "H25.9",
+    "name_vi": "Đục thủy tinh thể",
+    "name_en": "Cataract",
+    "synonyms": [],
+    "category": "mắt",
+    "related_symptoms": [
+      "nhìn mờ",
+      "lóa mắt",
+      "nhìn đôi",
+      "khó nhìn ban đêm"
+    ],
+    "related_tests": [
+      "khám mắt",
+      "đo thị lực",
+      "sinh hiển vi đèn khe",
+      "đo nhãn áp"
+    ],
+    "related_drugs": [
+      "ketorolac",
+      "prednisolone acetate",
+      "tropicamide",
+      "phenylephrine"
+    ]
+  },
+  {
+    "code": "H40.9",
+    "name_vi": "Glôcôm",
+    "name_en": "Glaucoma",
+    "synonyms": [],
+    "category": "mắt",
+    "related_symptoms": [
+      "đau mắt",
+      "nhìn mờ",
+      "thấy quầng sáng",
+      "nhức mắt"
+    ],
+    "related_tests": [
+      "đo nhãn áp",
+      "thị trường",
+      "soi đáy mắt"
+    ],
+    "related_drugs": [
+      "timolol",
+      "latanoprost",
+      "dorzolamide",
+      "pilocarpine",
+      "acetazolamide"
+    ]
+  },
+  {
+    "code": "H66.9",
+    "name_vi": "Viêm tai giữa",
+    "name_en": "Otitis media",
+    "synonyms": [],
+    "category": "tai mũi họng",
+    "related_symptoms": [
+      "đau tai",
+      "sốt",
+      "nghe kém",
+      "chảy mủ tai",
+      "ù tai"
+    ],
+    "related_tests": [
+      "soi tai",
+      "thính lực",
+      "cấy dịch tai"
+    ],
+    "related_drugs": [
+      "amoxicillin",
+      "azithromycin",
+      "ceftriaxone",
+      "paracetamol",
+      "ibuprofen"
+    ]
+  }
+]
