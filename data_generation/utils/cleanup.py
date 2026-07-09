@@ -5,7 +5,9 @@ import json, sys, io
 from pathlib import Path
 from collections import Counter
 
-if hasattr(sys.stdout, "buffer"):
+# Guard stdout reconfiguration — only when running as script.
+# Doing this at import time breaks pytest's capture.
+if __name__ == "__main__" and hasattr(sys.stdout, "buffer"):
     sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding="utf-8")
 
 VALID_TYPES = {"TRI\u1ec6U_CH\u1ee8NG", "T\u00caN_X\u00c9T_NGHI\u1ec6M", "K\u1ebeT_QU\u1ea2_X\u00c9T_NGHI\u1ec6M", "CH\u1ea8N_\u0110O\u00c1N", "THU\u1ed0C"}

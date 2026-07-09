@@ -58,3 +58,170 @@
   }
 }
 2026-07-08 00:07:44,822 - pipeline - INFO - Hoàn thành! Sinh 10 mẫu hợp lệ.
+2026-07-08 22:06:26,438 - pipeline - INFO - Bắt đầu sinh 100 mẫu dữ liệu...
+2026-07-08 22:41:08,262 - data_generation.pipeline - INFO - Bắt đầu sinh 5 mẫu dữ liệu...
+2026-07-08 22:41:08,364 - data_generation.pipeline - WARNING - Missing entities: located 0/12. Rejecting sample (attempt 0).
+2026-07-08 22:41:08,404 - data_generation.pipeline - WARNING - Missing entities: located 0/5. Rejecting sample (attempt 1).
+2026-07-08 22:41:08,479 - data_generation.pipeline - WARNING - Missing entities: located 0/7. Rejecting sample (attempt 2).
+2026-07-08 22:41:08,574 - data_generation.pipeline - WARNING - Missing entities: located 0/12. Rejecting sample (attempt 0).
+2026-07-08 22:41:08,678 - data_generation.pipeline - WARNING - Missing entities: located 0/15. Rejecting sample (attempt 1).
+2026-07-08 22:41:08,688 - data_generation.pipeline - WARNING - Missing entities: located 0/2. Rejecting sample (attempt 2).
+2026-07-08 22:41:08,723 - data_generation.pipeline - WARNING - Missing entities: located 0/6. Rejecting sample (attempt 0).
+2026-07-08 22:41:08,761 - data_generation.pipeline - WARNING - Missing entities: located 0/6. Rejecting sample (attempt 1).
+2026-07-08 22:41:08,798 - data_generation.pipeline - WARNING - Missing entities: located 0/7. Rejecting sample (attempt 2).
+2026-07-08 22:41:08,858 - data_generation.pipeline - WARNING - Missing entities: located 0/6. Rejecting sample (attempt 0).
+2026-07-08 22:41:08,889 - data_generation.pipeline - WARNING - Missing entities: located 0/4. Rejecting sample (attempt 1).
+2026-07-08 22:41:08,935 - data_generation.pipeline - WARNING - Missing entities: located 0/6. Rejecting sample (attempt 2).
+2026-07-08 22:41:08,988 - data_generation.pipeline - WARNING - Missing entities: located 0/5. Rejecting sample (attempt 0).
+2026-07-08 22:41:09,011 - data_generation.pipeline - WARNING - Missing entities: located 0/3. Rejecting sample (attempt 1).
+2026-07-08 22:41:09,097 - data_generation.pipeline - WARNING - Missing entities: located 1/10. Rejecting sample (attempt 2).
+2026-07-08 22:41:09,100 - data_generation.pipeline - INFO - Đã lưu 0 mẫu vào D:\MedicalRetrieval\data\raw_generated\training_data_20260708_224108.json
+2026-07-08 22:41:09,101 - data_generation.pipeline - INFO - Thống kê: {
+  "total_generated": 5,
+  "valid_samples": 0,
+  "invalid_samples": 5,
+  "retry_count": 15,
+  "entity_type_distribution": {
+    "TRIỆU_CHỨNG": 0,
+    "TÊN_XÉT_NGHIỆM": 0,
+    "KẾT_QUẢ_XÉT_NGHIỆM": 0,
+    "CHẨN_ĐOÁN": 0,
+    "THUỐC": 0
+  },
+  "assertion_distribution": {
+    "isNegated": 0,
+    "isFamily": 0,
+    "isHistorical": 0
+  }
+}
+2026-07-08 22:41:09,101 - data_generation.pipeline - INFO - Hoàn thành! Sinh 0 mẫu hợp lệ.
+2026-07-08 22:42:13,749 - data_generation.pipeline - INFO - Bắt đầu sinh 5 mẫu dữ liệu...
+2026-07-08 22:42:13,788 - data_generation.pipeline - INFO - Đã lưu 5 mẫu vào D:\MedicalRetrieval\data\raw_generated\training_data_20260708_224213.json
+2026-07-08 22:42:13,790 - data_generation.pipeline - INFO - Thống kê: {
+  "total_generated": 5,
+  "valid_samples": 5,
+  "invalid_samples": 0,
+  "retry_count": 0,
+  "entity_type_distribution": {
+    "TRIỆU_CHỨNG": 12,
+    "TÊN_XÉT_NGHIỆM": 4,
+    "KẾT_QUẢ_XÉT_NGHIỆM": 2,
+    "CHẨN_ĐOÁN": 5,
+    "THUỐC": 12
+  },
+  "assertion_distribution": {
+    "isNegated": 0,
+    "isFamily": 1,
+    "isHistorical": 3
+  }
+}
+2026-07-08 22:42:13,790 - data_generation.pipeline - INFO - Hoàn thành! Sinh 5 mẫu hợp lệ.
+2026-07-08 22:45:25,162 - data_generation.pipeline - INFO - Bắt đầu sinh 5 mẫu dữ liệu...
+2026-07-08 22:45:25,199 - data_generation.pipeline - INFO - Đã lưu 5 mẫu vào D:\MedicalRetrieval\data\raw_generated\training_data_20260708_224525.json
+2026-07-08 22:45:25,200 - data_generation.pipeline - INFO - Thống kê: {
+  "total_generated": 5,
+  "valid_samples": 5,
+  "invalid_samples": 0,
+  "retry_count": 0,
+  "entity_type_distribution": {
+    "TRIỆU_CHỨNG": 19,
+    "TÊN_XÉT_NGHIỆM": 9,
+    "KẾT_QUẢ_XÉT_NGHIỆM": 7,
+    "CHẨN_ĐOÁN": 5,
+    "THUỐC": 13
+  },
+  "assertion_distribution": {
+    "isNegated": 0,
+    "isFamily": 7,
+    "isHistorical": 9
+  }
+}
+2026-07-08 22:45:25,200 - data_generation.pipeline - INFO - Hoàn thành! Sinh 5 mẫu hợp lệ.
+2026-07-08 23:24:25,900 - data_generation.pipeline - INFO - Bắt đầu sinh 5 mẫu dữ liệu...
+2026-07-08 23:24:25,937 - data_generation.pipeline - INFO - Đã lưu 5 mẫu vào D:\MedicalRetrieval\data\raw_generated\training_data_20260708_232425.json
+2026-07-08 23:24:25,938 - data_generation.pipeline - INFO - Thống kê: {
+  "total_generated": 5,
+  "valid_samples": 5,
+  "invalid_samples": 0,
+  "retry_count": 0,
+  "entity_type_distribution": {
+    "TRIỆU_CHỨNG": 15,
+    "TÊN_XÉT_NGHIỆM": 5,
+    "KẾT_QUẢ_XÉT_NGHIỆM": 2,
+    "CHẨN_ĐOÁN": 5,
+    "THUỐC": 8
+  },
+  "assertion_distribution": {
+    "isNegated": 9,
+    "isFamily": 0,
+    "isHistorical": 7
+  }
+}
+2026-07-08 23:24:25,938 - data_generation.pipeline - INFO - Hoàn thành! Sinh 5 mẫu hợp lệ.
+2026-07-09 12:27:49,621 - data_generation.pipeline - INFO - Bắt đầu sinh 10 mẫu dữ liệu...
+2026-07-09 12:50:29,205 - data_generation.pipeline - WARNING - Lỗi khi sinh mẫu (attempt 1): API call failed: 429 Client Error: Too Many Requests for url: https://integrate.api.nvidia.com/v1/chat/completions
+2026-07-09 12:52:12,686 - data_generation.pipeline - INFO - Bắt đầu sinh 10 mẫu dữ liệu...
+2026-07-09 12:56:39,424 - data_generation.pipeline - WARNING - Lỗi khi sinh mẫu (attempt 4): API call failed: 429 Client Error: Too Many Requests for url: https://integrate.api.nvidia.com/v1/chat/completions
+2026-07-09 13:07:53,245 - data_generation.pipeline - INFO - Bắt đầu sinh 3 mẫu dữ liệu...
+2026-07-09 13:12:55,645 - data_generation.pipeline - INFO - Đã lưu 2 mẫu vào data\raw_generated\training_data_20260709_130753.json
+2026-07-09 13:12:55,646 - data_generation.pipeline - INFO - Thống kê: {
+  "total_generated": 3,
+  "valid_samples": 2,
+  "invalid_samples": 1,
+  "retry_count": 3,
+  "entity_type_distribution": {
+    "TRIỆU_CHỨNG": 6,
+    "TÊN_XÉT_NGHIỆM": 1,
+    "KẾT_QUẢ_XÉT_NGHIỆM": 0,
+    "CHẨN_ĐOÁN": 2,
+    "THUỐC": 5
+  },
+  "assertion_distribution": {
+    "isNegated": 0,
+    "isFamily": 0,
+    "isHistorical": 0
+  }
+}
+2026-07-09 13:12:55,648 - data_generation.pipeline - INFO - Hoàn thành! Sinh 2 mẫu hợp lệ.
+2026-07-09 13:33:52,130 - data_generation.pipeline - INFO - Bắt đầu sinh 3 mẫu dữ liệu...
+2026-07-09 13:42:39,789 - data_generation.pipeline - INFO - Đã lưu 2 mẫu vào data\raw_generated\training_data_20260709_133352.json
+2026-07-09 13:42:39,793 - data_generation.pipeline - INFO - Thống kê: {
+  "total_generated": 3,
+  "valid_samples": 2,
+  "invalid_samples": 1,
+  "retry_count": 5,
+  "entity_type_distribution": {
+    "TRIỆU_CHỨNG": 4,
+    "TÊN_XÉT_NGHIỆM": 0,
+    "KẾT_QUẢ_XÉT_NGHIỆM": 0,
+    "CHẨN_ĐOÁN": 2,
+    "THUỐC": 2
+  },
+  "assertion_distribution": {
+    "isNegated": 0,
+    "isFamily": 0,
+    "isHistorical": 0
+  }
+}
+2026-07-09 13:42:39,793 - data_generation.pipeline - INFO - Hoàn thành! Sinh 2 mẫu hợp lệ.
+2026-07-09 13:48:44,353 - data_generation.pipeline - INFO - Bắt đầu sinh 2 mẫu dữ liệu...
+2026-07-09 13:52:49,552 - data_generation.pipeline - INFO - Đã lưu 1 mẫu vào data\raw_generated\training_data_20260709_134844.json
+2026-07-09 13:52:49,553 - data_generation.pipeline - INFO - Thống kê: {
+  "total_generated": 2,
+  "valid_samples": 1,
+  "invalid_samples": 1,
+  "retry_count": 3,
+  "entity_type_distribution": {
+    "TRIỆU_CHỨNG": 3,
+    "TÊN_XÉT_NGHIỆM": 1,
+    "KẾT_QUẢ_XÉT_NGHIỆM": 0,
+    "CHẨN_ĐOÁN": 1,
+    "THUỐC": 1
+  },
+  "assertion_distribution": {
+    "isNegated": 0,
+    "isFamily": 0,
+    "isHistorical": 4
+  }
+}
+2026-07-09 13:52:49,554 - data_generation.pipeline - INFO - Hoàn thành! Sinh 1 mẫu hợp lệ.

@@ -1,0 +1,80 @@
+[
+  {
+    "text": "1. Tiền sử bệnh\n- Tiền sử ghi nhận Viêm da cơ địa\n- Tiền sử trước đây đã dùng loratadine po daily\n- Tiền sử ghi nhận IgE toàn phần\n- Tiền sử ghi nhận ngứa\n\n2. Tiền sử bệnh hiện tại\n- Ghi nhận mẩn đỏ\n- Ghi nhận nứt da\n- BN nhập viện vì tình trạng da ngày càng nặng hơn\n\n3. Đánh giá tại bệnh viện\n- Khám lâm sàng: da khô, nứt nẻ\n- Xét nghiệm: không có kết quả bất thường\n- Chẩn đoán hình ảnh: không cần thiết\n- Điều trị: sử dụng thuốc bôi và thuốc uống chống viêm, ngứa",
+    "entities": [
+      {
+        "text": "Viêm da cơ địa",
+        "type": "CHẨN_ĐOÁN",
+        "assertions": [
+          "isHistorical"
+        ],
+        "candidates": [
+          "L30.9"
+        ],
+        "position": [
+          35,
+          49
+        ]
+      },
+      {
+        "text": "mẩn đỏ",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "candidates": [],
+        "position": [
+          192,
+          198
+        ]
+      },
+      {
+        "text": "nứt da",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "candidates": [],
+        "position": [
+          210,
+          216
+        ]
+      },
+      {
+        "text": "ngứa",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+          "isHistorical"
+        ],
+        "candidates": [],
+        "position": [
+          150,
+          154
+        ]
+      },
+      {
+        "text": "loratadine po daily",
+        "type": "THUỐC",
+        "assertions": [
+          "isHistorical"
+        ],
+        "candidates": [
+          "5643"
+        ],
+        "position": [
+          78,
+          97
+        ]
+      },
+      {
+        "text": "IgE toàn phần",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [
+          "isHistorical"
+        ],
+        "candidates": [],
+        "position": [
+          117,
+          130
+        ]
+      }
+    ],
+    "scenario_id": "sample_375522"
+  }
+]

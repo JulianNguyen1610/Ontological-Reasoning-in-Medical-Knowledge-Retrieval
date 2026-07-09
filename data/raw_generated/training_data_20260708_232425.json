@@ -1,0 +1,440 @@
+[
+  {
+    "text": "1. Tiền sử bệnh\nBN 65t nam, TS bệnh lý.\n- Glôcôm\n\n2. Tiền sử bệnh hiện tại\nNV vì các triệu chứng sau:\n- đau mắt\n\n3. Đánh giá tại bệnh viện\nKhám và điều trị:",
+    "entities": [
+      {
+        "text": "Glôcôm",
+        "type": "CHẨN_ĐOÁN",
+        "assertions": [],
+        "candidates": [
+          "H40.9"
+        ],
+        "position": [
+          42,
+          48
+        ]
+      },
+      {
+        "text": "đau mắt",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+          "isHistorical"
+        ],
+        "candidates": [],
+        "position": [
+          104,
+          111
+        ]
+      }
+    ],
+    "scenario_id": "sample_984446"
+  },
+  {
+    "text": "1. Tiền sử bệnh\nBN 65t nam, TS bệnh lý.\n- Viêm da cơ địa\n\n2. Tiền sử bệnh hiện tại\nNV vì các triệu chứng sau:\n- khô da\n\n3. Đánh giá tại bệnh viện\nKhám và điều trị:\n- mẩn đỏ\n- cetirizine po daily",
+    "entities": [
+      {
+        "text": "Viêm da cơ địa",
+        "type": "CHẨN_ĐOÁN",
+        "assertions": [],
+        "candidates": [
+          "L30.9"
+        ],
+        "position": [
+          42,
+          56
+        ]
+      },
+      {
+        "text": "khô da",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "candidates": [],
+        "position": [
+          112,
+          118
+        ]
+      },
+      {
+        "text": "mẩn đỏ",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "candidates": [],
+        "position": [
+          166,
+          172
+        ]
+      },
+      {
+        "text": "cetirizine po daily",
+        "type": "THUỐC",
+        "assertions": [],
+        "candidates": [
+          "24643"
+        ],
+        "position": [
+          175,
+          194
+        ]
+      }
+    ],
+    "scenario_id": "sample_468994"
+  },
+  {
+    "text": "1. Tiền sử bệnh\nBN 65t nam, TS bệnh lý.\n- Bệnh phổi tắc nghẽn mạn tính\n\n2. Tiền sử bệnh hiện tại\nNV vì các triệu chứng sau:\n- khó thở\n\n3. Đánh giá tại bệnh viện\nKhám và điều trị:\n- ho mạn tính\n- prednisolone po daily",
+    "entities": [
+      {
+        "text": "Bệnh phổi tắc nghẽn mạn tính",
+        "type": "CHẨN_ĐOÁN",
+        "assertions": [
+          "isNegated"
+        ],
+        "candidates": [
+          "J44.9"
+        ],
+        "position": [
+          42,
+          70
+        ]
+      },
+      {
+        "text": "khó thở",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+          "isNegated"
+        ],
+        "candidates": [],
+        "position": [
+          126,
+          133
+        ]
+      },
+      {
+        "text": "ho mạn tính",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "candidates": [],
+        "position": [
+          181,
+          192
+        ]
+      },
+      {
+        "text": "prednisolone po daily",
+        "type": "THUỐC",
+        "assertions": [
+          "isNegated"
+        ],
+        "candidates": [
+          "4175"
+        ],
+        "position": [
+          195,
+          216
+        ]
+      }
+    ],
+    "scenario_id": "sample_7522"
+  },
+  {
+    "text": "1. Tiền sử bệnh\nBN 65t nam, TS bệnh lý.\n- Sỏi thận\n- buồn nôn\n- tiểu máu\n- đau hông lưng\n\n2. Tiền sử bệnh hiện tại\nNV vì các triệu chứng sau:\n- sốt\n- đau quặn\n- ciprofloxacin po daily\n- paracetamol po daily\n- tamsulosin po daily\n\n3. Đánh giá tại bệnh viện\nKhám và điều trị:\n- ketorolac po daily\n- tổng phân tích nước tiểu\n- tổng phân tích nước tiểu bình thường\n- CT bụng\n- siêu âm thận",
+    "entities": [
+      {
+        "text": "Sỏi thận",
+        "type": "CHẨN_ĐOÁN",
+        "assertions": [
+          "isHistorical"
+        ],
+        "candidates": [
+          "N20.0"
+        ],
+        "position": [
+          42,
+          50
+        ]
+      },
+      {
+        "text": "buồn nôn",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+          "isHistorical"
+        ],
+        "candidates": [],
+        "position": [
+          53,
+          61
+        ]
+      },
+      {
+        "text": "tiểu máu",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "candidates": [],
+        "position": [
+          64,
+          72
+        ]
+      },
+      {
+        "text": "đau hông lưng",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+          "isHistorical"
+        ],
+        "candidates": [],
+        "position": [
+          75,
+          88
+        ]
+      },
+      {
+        "text": "sốt",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "candidates": [],
+        "position": [
+          144,
+          147
+        ]
+      },
+      {
+        "text": "đau quặn",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "candidates": [],
+        "position": [
+          150,
+          158
+        ]
+      },
+      {
+        "text": "ciprofloxacin po daily",
+        "type": "THUỐC",
+        "assertions": [],
+        "candidates": [
+          "2551"
+        ],
+        "position": [
+          161,
+          183
+        ]
+      },
+      {
+        "text": "paracetamol po daily",
+        "type": "THUỐC",
+        "assertions": [
+          "isHistorical"
+        ],
+        "candidates": [
+          "4611"
+        ],
+        "position": [
+          186,
+          206
+        ]
+      },
+      {
+        "text": "tamsulosin po daily",
+        "type": "THUỐC",
+        "assertions": [],
+        "candidates": [
+          "77991"
+        ],
+        "position": [
+          209,
+          228
+        ]
+      },
+      {
+        "text": "ketorolac po daily",
+        "type": "THUỐC",
+        "assertions": [
+          "isHistorical"
+        ],
+        "candidates": [
+          "4950"
+        ],
+        "position": [
+          276,
+          294
+        ]
+      },
+      {
+        "text": "tổng phân tích nước tiểu",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "candidates": [],
+        "position": [
+          297,
+          321
+        ]
+      },
+      {
+        "text": "tổng phân tích nước tiểu bình thường",
+        "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+        "assertions": [],
+        "candidates": [],
+        "position": [
+          324,
+          360
+        ]
+      },
+      {
+        "text": "CT bụng",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "candidates": [],
+        "position": [
+          363,
+          370
+        ]
+      },
+      {
+        "text": "siêu âm thận",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [
+          "isHistorical"
+        ],
+        "candidates": [],
+        "position": [
+          373,
+          385
+        ]
+      }
+    ],
+    "scenario_id": "sample_889505"
+  },
+  {
+    "text": "1. Tiền sử bệnh\nBN 65t nam, TS bệnh lý.\n- Rối loạn trầm cảm\n- chán ăn\n- mệt mỏi\n\n2. Tiền sử bệnh hiện tại\nNV vì các triệu chứng sau:\n- mất ngủ\n- lo âu\n- buồn chán\n- amitriptyline po daily\n\n3. Đánh giá tại bệnh viện\nKhám và điều trị:\n- sertraline po daily\n- đánh giá tâm thần\n- xét nghiệm tuyến giáp\n- xét nghiệm tuyến giáp bình thường",
+    "entities": [
+      {
+        "text": "Rối loạn trầm cảm",
+        "type": "CHẨN_ĐOÁN",
+        "assertions": [],
+        "candidates": [
+          "F32.9"
+        ],
+        "position": [
+          42,
+          59
+        ]
+      },
+      {
+        "text": "chán ăn",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+          "isNegated"
+        ],
+        "candidates": [],
+        "position": [
+          62,
+          69
+        ]
+      },
+      {
+        "text": "mệt mỏi",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+          "isNegated"
+        ],
+        "candidates": [],
+        "position": [
+          72,
+          79
+        ]
+      },
+      {
+        "text": "mất ngủ",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "candidates": [],
+        "position": [
+          135,
+          142
+        ]
+      },
+      {
+        "text": "lo âu",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "candidates": [],
+        "position": [
+          145,
+          150
+        ]
+      },
+      {
+        "text": "buồn chán",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "candidates": [],
+        "position": [
+          153,
+          162
+        ]
+      },
+      {
+        "text": "amitriptyline po daily",
+        "type": "THUỐC",
+        "assertions": [
+          "isNegated"
+        ],
+        "candidates": [
+          "190"
+        ],
+        "position": [
+          165,
+          187
+        ]
+      },
+      {
+        "text": "sertraline po daily",
+        "type": "THUỐC",
+        "assertions": [
+          "isNegated"
+        ],
+        "candidates": [
+          "5743"
+        ],
+        "position": [
+          235,
+          254
+        ]
+      },
+      {
+        "text": "đánh giá tâm thần",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "candidates": [],
+        "position": [
+          257,
+          274
+        ]
+      },
+      {
+        "text": "xét nghiệm tuyến giáp",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [
+          "isNegated"
+        ],
+        "candidates": [],
+        "position": [
+          277,
+          298
+        ]
+      },
+      {
+        "text": "xét nghiệm tuyến giáp bình thường",
+        "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+        "assertions": [
+          "isNegated"
+        ],
+        "candidates": [],
+        "position": [
+          301,
+          334
+        ]
+      }
+    ],
+    "scenario_id": "sample_395002"
+  }
+]

@@ -1,0 +1,424 @@
+[
+  {
+    "text": "1. Tiền sử bệnh\nBN 65t nam, TS bệnh lý.\n- Rối loạn lo âu\n- khó thở\n- run tay\n\n2. Tiền sử bệnh hiện tại\nNV vì các triệu chứng sau:\n- sertraline po daily\n- clonazepam po daily\n- propranolol po daily\n\n3. Đánh giá tại bệnh viện\nKhám và điều trị:\n- alprazolam po daily\n- đánh giá tâm thần\n- đánh giá tâm thần bình thường\n- thang điểm GAD-7",
+    "entities": [
+      {
+        "text": "Rối loạn lo âu",
+        "type": "CHẨN_ĐOÁN",
+        "assertions": [],
+        "candidates": [
+          "F41.9"
+        ],
+        "position": [
+          42,
+          56
+        ]
+      },
+      {
+        "text": "khó thở",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "candidates": [],
+        "position": [
+          59,
+          66
+        ]
+      },
+      {
+        "text": "run tay",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "candidates": [],
+        "position": [
+          69,
+          76
+        ]
+      },
+      {
+        "text": "sertraline po daily",
+        "type": "THUỐC",
+        "assertions": [],
+        "candidates": [
+          "5743"
+        ],
+        "position": [
+          132,
+          151
+        ]
+      },
+      {
+        "text": "clonazepam po daily",
+        "type": "THUỐC",
+        "assertions": [],
+        "candidates": [
+          "2330"
+        ],
+        "position": [
+          154,
+          173
+        ]
+      },
+      {
+        "text": "propranolol po daily",
+        "type": "THUỐC",
+        "assertions": [
+          "isFamily"
+        ],
+        "candidates": [
+          "4915"
+        ],
+        "position": [
+          176,
+          196
+        ]
+      },
+      {
+        "text": "alprazolam po daily",
+        "type": "THUỐC",
+        "assertions": [],
+        "candidates": [
+          "2333"
+        ],
+        "position": [
+          244,
+          263
+        ]
+      },
+      {
+        "text": "đánh giá tâm thần",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "candidates": [],
+        "position": [
+          266,
+          283
+        ]
+      },
+      {
+        "text": "đánh giá tâm thần bình thường",
+        "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+        "assertions": [],
+        "candidates": [],
+        "position": [
+          286,
+          315
+        ]
+      },
+      {
+        "text": "thang điểm GAD-7",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "candidates": [],
+        "position": [
+          318,
+          334
+        ]
+      }
+    ],
+    "scenario_id": "sample_924998"
+  },
+  {
+    "text": "1. Tiền sử bệnh\nBN 65t nam, TS bệnh lý.\n- Viêm gan B\n\n2. Tiền sử bệnh hiện tại\nNV vì các triệu chứng sau:\n- vàng da\n- mệt mỏi\n\n3. Đánh giá tại bệnh viện\nKhám và điều trị:\n- tenofovir po daily\n- lamivudine po daily",
+    "entities": [
+      {
+        "text": "Viêm gan B",
+        "type": "CHẨN_ĐOÁN",
+        "assertions": [],
+        "candidates": [
+          "B16.9"
+        ],
+        "position": [
+          42,
+          52
+        ]
+      },
+      {
+        "text": "vàng da",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "candidates": [],
+        "position": [
+          108,
+          115
+        ]
+      },
+      {
+        "text": "mệt mỏi",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "candidates": [],
+        "position": [
+          118,
+          125
+        ]
+      },
+      {
+        "text": "tenofovir po daily",
+        "type": "THUỐC",
+        "assertions": [],
+        "candidates": [
+          "462075"
+        ],
+        "position": [
+          173,
+          191
+        ]
+      },
+      {
+        "text": "lamivudine po daily",
+        "type": "THUỐC",
+        "assertions": [],
+        "candidates": [
+          "3876"
+        ],
+        "position": [
+          194,
+          213
+        ]
+      }
+    ],
+    "scenario_id": "sample_95052"
+  },
+  {
+    "text": "1. Tiền sử bệnh\nBN 65t nam, TS bệnh lý.\n- Đau thắt lưng\n- cứng lưng sáng\n- tê bì\n\n2. Tiền sử bệnh hiện tại\nNV vì các triệu chứng sau:\n- đau lan chân\n- đau lưng dưới\n- tramadol po daily\n- pregabalin po daily\n\n3. Đánh giá tại bệnh viện\nKhám và điều trị:\n- ibuprofen po daily\n- MRI cột sống\n- CT cột sống\n- CT cột sống bình thường",
+    "entities": [
+      {
+        "text": "Đau thắt lưng",
+        "type": "CHẨN_ĐOÁN",
+        "assertions": [],
+        "candidates": [
+          "M54.5"
+        ],
+        "position": [
+          42,
+          55
+        ]
+      },
+      {
+        "text": "cứng lưng sáng",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "candidates": [],
+        "position": [
+          58,
+          72
+        ]
+      },
+      {
+        "text": "tê bì",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "candidates": [],
+        "position": [
+          75,
+          80
+        ]
+      },
+      {
+        "text": "đau lan chân",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "candidates": [],
+        "position": [
+          136,
+          148
+        ]
+      },
+      {
+        "text": "đau lưng dưới",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "candidates": [],
+        "position": [
+          151,
+          164
+        ]
+      },
+      {
+        "text": "tramadol po daily",
+        "type": "THUỐC",
+        "assertions": [],
+        "candidates": [
+          "5486"
+        ],
+        "position": [
+          167,
+          184
+        ]
+      },
+      {
+        "text": "pregabalin po daily",
+        "type": "THUỐC",
+        "assertions": [],
+        "candidates": [
+          "60247"
+        ],
+        "position": [
+          187,
+          206
+        ]
+      },
+      {
+        "text": "ibuprofen po daily",
+        "type": "THUỐC",
+        "assertions": [],
+        "candidates": [
+          "5461"
+        ],
+        "position": [
+          254,
+          272
+        ]
+      },
+      {
+        "text": "MRI cột sống",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "candidates": [],
+        "position": [
+          275,
+          287
+        ]
+      },
+      {
+        "text": "CT cột sống",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "candidates": [],
+        "position": [
+          290,
+          301
+        ]
+      },
+      {
+        "text": "CT cột sống bình thường",
+        "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+        "assertions": [],
+        "candidates": [],
+        "position": [
+          304,
+          327
+        ]
+      }
+    ],
+    "scenario_id": "sample_547625"
+  },
+  {
+    "text": "1. Tiền sử bệnh\nBN 65t nam, TS bệnh lý.\n- Rối loạn trầm cảm\n\n2. Tiền sử bệnh hiện tại\nNV vì các triệu chứng sau:\n- mất tập trung\n- lo âu\n\n3. Đánh giá tại bệnh viện\nKhám và điều trị:\n- mệt mỏi\n- mirtazapine po daily",
+    "entities": [
+      {
+        "text": "Rối loạn trầm cảm",
+        "type": "CHẨN_ĐOÁN",
+        "assertions": [],
+        "candidates": [
+          "F32.9"
+        ],
+        "position": [
+          42,
+          59
+        ]
+      },
+      {
+        "text": "mất tập trung",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "candidates": [],
+        "position": [
+          115,
+          128
+        ]
+      },
+      {
+        "text": "lo âu",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "candidates": [],
+        "position": [
+          131,
+          136
+        ]
+      },
+      {
+        "text": "mệt mỏi",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "candidates": [],
+        "position": [
+          184,
+          191
+        ]
+      },
+      {
+        "text": "mirtazapine po daily",
+        "type": "THUỐC",
+        "assertions": [],
+        "candidates": [
+          "33656"
+        ],
+        "position": [
+          194,
+          214
+        ]
+      }
+    ],
+    "scenario_id": "sample_509311"
+  },
+  {
+    "text": "1. Tiền sử bệnh\nBN 65t nam, TS bệnh lý.\n- Bệnh thận mạn\n\n2. Tiền sử bệnh hiện tại\nNV vì các triệu chứng sau:\n- tiểu ít\n\n3. Đánh giá tại bệnh viện\nKhám và điều trị:\n- calcium carbonate po daily\n- spironolactone po daily",
+    "entities": [
+      {
+        "text": "Bệnh thận mạn",
+        "type": "CHẨN_ĐOÁN",
+        "assertions": [
+          "isHistorical"
+        ],
+        "candidates": [
+          "N18.9"
+        ],
+        "position": [
+          42,
+          55
+        ]
+      },
+      {
+        "text": "tiểu ít",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "candidates": [],
+        "position": [
+          111,
+          118
+        ]
+      },
+      {
+        "text": "calcium carbonate po daily",
+        "type": "THUỐC",
+        "assertions": [
+          "isHistorical"
+        ],
+        "candidates": [
+          "2293"
+        ],
+        "position": [
+          166,
+          192
+        ]
+      },
+      {
+        "text": "spironolactone po daily",
+        "type": "THUỐC",
+        "assertions": [
+          "isHistorical"
+        ],
+        "candidates": [
+          "5340"
+        ],
+        "position": [
+          195,
+          218
+        ]
+      }
+    ],
+    "scenario_id": "sample_890534"
+  }
+]

@@ -521,3 +521,144 @@
 2026-07-07 21:56:45,838 - pipeline - WARNING - Lỗi khi sinh mẫu (attempt 4): API call failed: 500 Server Error: Internal Server Error for url: https://integrate.api.nvidia.com/v1/chat/completions
 2026-07-07 23:03:56,220 - pipeline - WARNING - Lỗi khi sinh mẫu (attempt 1): API call failed: 500 Server Error: Internal Server Error for url: https://integrate.api.nvidia.com/v1/chat/completions
 2026-07-07 23:28:15,980 - pipeline - WARNING - Lỗi khi sinh mẫu (attempt 2): API call failed: 500 Server Error: Internal Server Error for url: https://integrate.api.nvidia.com/v1/chat/completions
+2026-07-08 00:37:31,942 - pipeline - INFO - Bắt đầu sinh 500 mẫu dữ liệu...
+2026-07-08 15:36:38,383 - pipeline - INFO - Bắt đầu sinh 500 mẫu dữ liệu...
+2026-07-08 15:51:04,282 - pipeline - INFO - Bắt đầu sinh 100 mẫu dữ liệu...
+2026-07-08 16:13:18,695 - pipeline - WARNING - Lỗi khi sinh mẫu (attempt 0): API call failed: 429 Client Error: Too Many Requests for url: https://integrate.api.nvidia.com/v1/chat/completions
+2026-07-08 16:13:20,498 - pipeline - WARNING - Lỗi khi sinh mẫu (attempt 1): API call failed: 429 Client Error: Too Many Requests for url: https://integrate.api.nvidia.com/v1/chat/completions
+2026-07-08 16:13:22,299 - pipeline - WARNING - Lỗi khi sinh mẫu (attempt 2): API call failed: 429 Client Error: Too Many Requests for url: https://integrate.api.nvidia.com/v1/chat/completions
+2026-07-08 16:27:18,325 - pipeline - WARNING - Lỗi khi sinh mẫu (attempt 0): API call failed: 429 Client Error: Too Many Requests for url: https://integrate.api.nvidia.com/v1/chat/completions
+2026-07-08 16:27:20,126 - pipeline - WARNING - Lỗi khi sinh mẫu (attempt 1): API call failed: 429 Client Error: Too Many Requests for url: https://integrate.api.nvidia.com/v1/chat/completions
+2026-07-08 17:13:58,384 - pipeline - WARNING - Lỗi khi sinh mẫu (attempt 0): API call failed: 429 Client Error: Too Many Requests for url: https://integrate.api.nvidia.com/v1/chat/completions
+2026-07-08 17:29:00,347 - pipeline - WARNING - Lỗi khi sinh mẫu (attempt 0): API call failed: 429 Client Error: Too Many Requests for url: https://integrate.api.nvidia.com/v1/chat/completions
+2026-07-08 17:53:54,148 - pipeline - WARNING - Lỗi khi sinh mẫu (attempt 2): API call failed: 429 Client Error: Too Many Requests for url: https://integrate.api.nvidia.com/v1/chat/completions
+2026-07-08 17:53:55,948 - pipeline - WARNING - Lỗi khi sinh mẫu (attempt 3): API call failed: 429 Client Error: Too Many Requests for url: https://integrate.api.nvidia.com/v1/chat/completions
+2026-07-08 17:56:55,332 - pipeline - WARNING - Lỗi khi sinh mẫu (attempt 0): API call failed: 429 Client Error: Too Many Requests for url: https://integrate.api.nvidia.com/v1/chat/completions
+2026-07-08 18:10:10,836 - pipeline - WARNING - Lỗi khi sinh mẫu (attempt 0): API call failed: 429 Client Error: Too Many Requests for url: https://integrate.api.nvidia.com/v1/chat/completions
+2026-07-08 18:21:03,828 - pipeline - WARNING - Lỗi khi sinh mẫu (attempt 0): API call failed: 429 Client Error: Too Many Requests for url: https://integrate.api.nvidia.com/v1/chat/completions
+2026-07-08 18:21:05,629 - pipeline - WARNING - Lỗi khi sinh mẫu (attempt 1): API call failed: 429 Client Error: Too Many Requests for url: https://integrate.api.nvidia.com/v1/chat/completions
+2026-07-08 18:21:07,567 - pipeline - WARNING - Lỗi khi sinh mẫu (attempt 2): API call failed: 429 Client Error: Too Many Requests for url: https://integrate.api.nvidia.com/v1/chat/completions
+2026-07-08 18:21:09,398 - pipeline - WARNING - Lỗi khi sinh mẫu (attempt 3): API call failed: 429 Client Error: Too Many Requests for url: https://integrate.api.nvidia.com/v1/chat/completions
+2026-07-08 18:21:11,198 - pipeline - WARNING - Lỗi khi sinh mẫu (attempt 4): API call failed: 429 Client Error: Too Many Requests for url: https://integrate.api.nvidia.com/v1/chat/completions
+2026-07-08 18:21:12,998 - pipeline - WARNING - Lỗi khi sinh mẫu (attempt 0): API call failed: 429 Client Error: Too Many Requests for url: https://integrate.api.nvidia.com/v1/chat/completions
+2026-07-08 18:24:07,775 - pipeline - WARNING - Lỗi khi sinh mẫu (attempt 1): API call failed: 429 Client Error: Too Many Requests for url: https://integrate.api.nvidia.com/v1/chat/completions
+2026-07-08 18:31:34,076 - pipeline - WARNING - Lỗi khi sinh mẫu (attempt 3): API call failed: 429 Client Error: Too Many Requests for url: https://integrate.api.nvidia.com/v1/chat/completions
+2026-07-08 18:31:35,877 - pipeline - WARNING - Lỗi khi sinh mẫu (attempt 4): API call failed: 429 Client Error: Too Many Requests for url: https://integrate.api.nvidia.com/v1/chat/completions
+2026-07-08 22:04:15,572 - pipeline - INFO - Bắt đầu sinh 100 mẫu dữ liệu...
+2026-07-08 22:28:28,201 - pipeline - WARNING - Lỗi khi sinh mẫu (attempt 0): API call failed: 429 Client Error: Too Many Requests for url: https://integrate.api.nvidia.com/v1/chat/completions
+2026-07-08 22:31:46,435 - pipeline - WARNING - Lỗi khi sinh mẫu (attempt 0): API call failed: 429 Client Error: Too Many Requests for url: https://integrate.api.nvidia.com/v1/chat/completions
+2026-07-08 22:35:03,588 - pipeline - WARNING - Lỗi khi sinh mẫu (attempt 0): API call failed: 429 Client Error: Too Many Requests for url: https://integrate.api.nvidia.com/v1/chat/completions
+2026-07-08 22:47:27,399 - pipeline - WARNING - Lỗi khi sinh mẫu (attempt 0): API call failed: 429 Client Error: Too Many Requests for url: https://integrate.api.nvidia.com/v1/chat/completions
+2026-07-08 22:49:17,422 - pipeline - WARNING - Lỗi khi sinh mẫu (attempt 0): API call failed: 429 Client Error: Too Many Requests for url: https://integrate.api.nvidia.com/v1/chat/completions
+2026-07-08 22:49:19,224 - pipeline - WARNING - Lỗi khi sinh mẫu (attempt 1): API call failed: 429 Client Error: Too Many Requests for url: https://integrate.api.nvidia.com/v1/chat/completions
+2026-07-08 22:49:21,023 - pipeline - WARNING - Lỗi khi sinh mẫu (attempt 2): API call failed: 429 Client Error: Too Many Requests for url: https://integrate.api.nvidia.com/v1/chat/completions
+2026-07-08 22:59:08,918 - pipeline - WARNING - Lỗi khi sinh mẫu (attempt 1): API call failed: 429 Client Error: Too Many Requests for url: https://integrate.api.nvidia.com/v1/chat/completions
+2026-07-08 23:43:46,481 - pipeline - WARNING - Lỗi khi sinh mẫu (attempt 0): API call failed: 429 Client Error: Too Many Requests for url: https://integrate.api.nvidia.com/v1/chat/completions
+2026-07-08 23:43:48,366 - pipeline - WARNING - Lỗi khi sinh mẫu (attempt 1): API call failed: 429 Client Error: Too Many Requests for url: https://integrate.api.nvidia.com/v1/chat/completions
+2026-07-08 23:43:50,168 - pipeline - WARNING - Lỗi khi sinh mẫu (attempt 2): API call failed: 429 Client Error: Too Many Requests for url: https://integrate.api.nvidia.com/v1/chat/completions
+2026-07-08 23:54:15,292 - pipeline - WARNING - Lỗi khi sinh mẫu (attempt 1): API call failed: 429 Client Error: Too Many Requests for url: https://integrate.api.nvidia.com/v1/chat/completions
+2026-07-09 00:27:11,076 - pipeline - WARNING - Lỗi khi sinh mẫu (attempt 0): API call failed: 429 Client Error: Too Many Requests for url: https://integrate.api.nvidia.com/v1/chat/completions
+2026-07-09 01:01:01,358 - pipeline - WARNING - Lỗi khi sinh mẫu (attempt 1): API call failed: 429 Client Error: Too Many Requests for url: https://integrate.api.nvidia.com/v1/chat/completions
+2026-07-09 01:49:42,837 - pipeline - WARNING - Lỗi khi sinh mẫu (attempt 0): API call failed: 429 Client Error: Too Many Requests for url: https://integrate.api.nvidia.com/v1/chat/completions
+2026-07-09 01:52:17,342 - pipeline - WARNING - Lỗi khi sinh mẫu (attempt 0): API call failed: 429 Client Error: Too Many Requests for url: https://integrate.api.nvidia.com/v1/chat/completions
+2026-07-09 01:52:19,144 - pipeline - WARNING - Lỗi khi sinh mẫu (attempt 1): API call failed: 429 Client Error: Too Many Requests for url: https://integrate.api.nvidia.com/v1/chat/completions
+2026-07-09 02:27:47,733 - pipeline - WARNING - Lỗi khi sinh mẫu (attempt 0): API call failed: 429 Client Error: Too Many Requests for url: https://integrate.api.nvidia.com/v1/chat/completions
+2026-07-09 02:32:42,625 - pipeline - WARNING - Lỗi khi sinh mẫu (attempt 1): API call failed: 429 Client Error: Too Many Requests for url: https://integrate.api.nvidia.com/v1/chat/completions
+2026-07-09 02:47:24,970 - pipeline - WARNING - Lỗi khi sinh mẫu (attempt 0): API call failed: 429 Client Error: Too Many Requests for url: https://integrate.api.nvidia.com/v1/chat/completions
+2026-07-09 02:52:46,418 - pipeline - WARNING - Lỗi khi sinh mẫu (attempt 1): API call failed: 429 Client Error: Too Many Requests for url: https://integrate.api.nvidia.com/v1/chat/completions
+2026-07-09 03:05:55,184 - pipeline - WARNING - Lỗi khi sinh mẫu (attempt 0): API call failed: 429 Client Error: Too Many Requests for url: https://integrate.api.nvidia.com/v1/chat/completions
+2026-07-09 03:05:56,984 - pipeline - WARNING - Lỗi khi sinh mẫu (attempt 1): API call failed: 429 Client Error: Too Many Requests for url: https://integrate.api.nvidia.com/v1/chat/completions
+2026-07-09 03:05:58,787 - pipeline - WARNING - Lỗi khi sinh mẫu (attempt 2): API call failed: 429 Client Error: Too Many Requests for url: https://integrate.api.nvidia.com/v1/chat/completions
+2026-07-09 03:06:00,595 - pipeline - WARNING - Lỗi khi sinh mẫu (attempt 3): API call failed: 429 Client Error: Too Many Requests for url: https://integrate.api.nvidia.com/v1/chat/completions
+2026-07-09 03:06:02,397 - pipeline - WARNING - Lỗi khi sinh mẫu (attempt 4): API call failed: 429 Client Error: Too Many Requests for url: https://integrate.api.nvidia.com/v1/chat/completions
+2026-07-09 03:06:04,304 - pipeline - WARNING - Lỗi khi sinh mẫu (attempt 0): API call failed: 429 Client Error: Too Many Requests for url: https://integrate.api.nvidia.com/v1/chat/completions
+2026-07-09 03:06:06,139 - pipeline - WARNING - Lỗi khi sinh mẫu (attempt 1): API call failed: 429 Client Error: Too Many Requests for url: https://integrate.api.nvidia.com/v1/chat/completions
+2026-07-09 03:27:41,954 - pipeline - INFO - Đã lưu 98 mẫu vào output\training_data_20260708_220415.json
+2026-07-09 03:27:41,955 - pipeline - INFO - Thống kê: {
+  "total_generated": 100,
+  "valid_samples": 98,
+  "invalid_samples": 2,
+  "retry_count": 67,
+  "entity_type_distribution": {
+    "TRIỆU_CHỨNG": 288,
+    "TÊN_XÉT_NGHIỆM": 107,
+    "KẾT_QUẢ_XÉT_NGHIỆM": 18,
+    "CHẨN_ĐOÁN": 92,
+    "THUỐC": 221
+  },
+  "assertion_distribution": {
+    "isNegated": 41,
+    "isFamily": 8,
+    "isHistorical": 37
+  }
+}
+2026-07-09 03:27:41,956 - pipeline - INFO - Hoàn thành! Sinh 98 mẫu hợp lệ.
+2026-07-09 14:31:22,566 - data_generation.pipeline - INFO - Bắt đầu sinh 100 mẫu dữ liệu...
+2026-07-09 14:32:57,558 - data_generation.pipeline - WARNING - Lỗi khi sinh mẫu (attempt 1): API call failed: 429 Client Error: Too Many Requests for url: https://integrate.api.nvidia.com/v1/chat/completions
+2026-07-09 14:32:59,379 - data_generation.pipeline - WARNING - Lỗi khi sinh mẫu (attempt 2): API call failed: 429 Client Error: Too Many Requests for url: https://integrate.api.nvidia.com/v1/chat/completions
+2026-07-09 14:39:09,506 - data_generation.pipeline - WARNING - Lỗi khi sinh mẫu (attempt 0): API call failed: HTTPSConnectionPool(host='integrate.api.nvidia.com', port=443): Read timed out. (read timeout=300)
+2026-07-09 14:41:00,905 - data_generation.pipeline - WARNING - Lỗi khi sinh mẫu (attempt 2): API call failed: 429 Client Error: Too Many Requests for url: https://integrate.api.nvidia.com/v1/chat/completions
+2026-07-09 14:50:14,453 - data_generation.pipeline - WARNING - Lỗi khi sinh mẫu (attempt 3): API call failed: 429 Client Error: Too Many Requests for url: https://integrate.api.nvidia.com/v1/chat/completions
+2026-07-09 14:50:30,343 - data_generation.pipeline - WARNING - Lỗi khi sinh mẫu (attempt 0): API call failed: 429 Client Error: Too Many Requests for url: https://integrate.api.nvidia.com/v1/chat/completions
+2026-07-09 14:50:54,215 - data_generation.pipeline - WARNING - Lỗi khi sinh mẫu (attempt 2): API call failed: 429 Client Error: Too Many Requests for url: https://integrate.api.nvidia.com/v1/chat/completions
+2026-07-09 14:51:18,220 - data_generation.pipeline - WARNING - Lỗi khi sinh mẫu (attempt 0): API call failed: 429 Client Error: Too Many Requests for url: https://integrate.api.nvidia.com/v1/chat/completions
+2026-07-09 14:51:20,024 - data_generation.pipeline - WARNING - Lỗi khi sinh mẫu (attempt 1): API call failed: 429 Client Error: Too Many Requests for url: https://integrate.api.nvidia.com/v1/chat/completions
+2026-07-09 14:56:28,514 - data_generation.pipeline - WARNING - Lỗi khi sinh mẫu (attempt 1): API call failed: 429 Client Error: Too Many Requests for url: https://integrate.api.nvidia.com/v1/chat/completions
+2026-07-09 15:34:46,818 - data_generation.pipeline - WARNING - Lỗi khi sinh mẫu (attempt 3): API call failed: 429 Client Error: Too Many Requests for url: https://integrate.api.nvidia.com/v1/chat/completions
+2026-07-09 15:52:58,921 - data_generation.pipeline - WARNING - Lỗi khi sinh mẫu (attempt 4): API call failed: 429 Client Error: Too Many Requests for url: https://integrate.api.nvidia.com/v1/chat/completions
+2026-07-09 15:53:00,724 - data_generation.pipeline - WARNING - Lỗi khi sinh mẫu (attempt 0): API call failed: 429 Client Error: Too Many Requests for url: https://integrate.api.nvidia.com/v1/chat/completions
+2026-07-09 15:53:02,536 - data_generation.pipeline - WARNING - Lỗi khi sinh mẫu (attempt 1): API call failed: 429 Client Error: Too Many Requests for url: https://integrate.api.nvidia.com/v1/chat/completions
+2026-07-09 15:53:04,333 - data_generation.pipeline - WARNING - Lỗi khi sinh mẫu (attempt 2): API call failed: 429 Client Error: Too Many Requests for url: https://integrate.api.nvidia.com/v1/chat/completions
+2026-07-09 15:54:52,124 - data_generation.pipeline - WARNING - Lỗi khi sinh mẫu (attempt 0): API call failed: 429 Client Error: Too Many Requests for url: https://integrate.api.nvidia.com/v1/chat/completions
+2026-07-09 15:57:34,374 - data_generation.pipeline - WARNING - Lỗi khi sinh mẫu (attempt 0): API call failed: 429 Client Error: Too Many Requests for url: https://integrate.api.nvidia.com/v1/chat/completions
+2026-07-09 15:57:36,172 - data_generation.pipeline - WARNING - Lỗi khi sinh mẫu (attempt 1): API call failed: 429 Client Error: Too Many Requests for url: https://integrate.api.nvidia.com/v1/chat/completions
+2026-07-09 16:06:22,712 - data_generation.pipeline - WARNING - Lỗi khi sinh mẫu (attempt 0): API call failed: 429 Client Error: Too Many Requests for url: https://integrate.api.nvidia.com/v1/chat/completions
+2026-07-09 16:38:44,511 - data_generation.pipeline - WARNING - Lỗi khi sinh mẫu (attempt 1): API call failed: 429 Client Error: Too Many Requests for url: https://integrate.api.nvidia.com/v1/chat/completions
+2026-07-09 16:55:54,430 - data_generation.pipeline - WARNING - Lỗi khi sinh mẫu (attempt 0): API call failed: 429 Client Error: Too Many Requests for url: https://integrate.api.nvidia.com/v1/chat/completions
+2026-07-09 16:57:06,921 - data_generation.pipeline - WARNING - Lỗi khi sinh mẫu (attempt 2): API call failed: 429 Client Error: Too Many Requests for url: https://integrate.api.nvidia.com/v1/chat/completions
+2026-07-09 16:57:23,883 - data_generation.pipeline - WARNING - Lỗi khi sinh mẫu (attempt 4): API call failed: 429 Client Error: Too Many Requests for url: https://integrate.api.nvidia.com/v1/chat/completions
+2026-07-09 17:00:14,386 - data_generation.pipeline - WARNING - Lỗi khi sinh mẫu (attempt 2): API call failed: 429 Client Error: Too Many Requests for url: https://integrate.api.nvidia.com/v1/chat/completions
+2026-07-09 17:02:42,416 - data_generation.pipeline - WARNING - Lỗi khi sinh mẫu (attempt 4): API call failed: 429 Client Error: Too Many Requests for url: https://integrate.api.nvidia.com/v1/chat/completions
+2026-07-09 17:07:40,297 - data_generation.pipeline - WARNING - Lỗi khi sinh mẫu (attempt 0): API call failed: 429 Client Error: Too Many Requests for url: https://integrate.api.nvidia.com/v1/chat/completions
+2026-07-09 17:15:11,713 - data_generation.pipeline - WARNING - Lỗi khi sinh mẫu (attempt 1): API call failed: 429 Client Error: Too Many Requests for url: https://integrate.api.nvidia.com/v1/chat/completions
+2026-07-09 17:15:34,776 - data_generation.pipeline - WARNING - Lỗi khi sinh mẫu (attempt 3): API call failed: 429 Client Error: Too Many Requests for url: https://integrate.api.nvidia.com/v1/chat/completions
+2026-07-09 17:20:29,903 - data_generation.pipeline - WARNING - Lỗi khi sinh mẫu (attempt 0): API call failed: 429 Client Error: Too Many Requests for url: https://integrate.api.nvidia.com/v1/chat/completions
+2026-07-09 17:44:22,176 - data_generation.pipeline - WARNING - Lỗi khi sinh mẫu (attempt 2): API call failed: 429 Client Error: Too Many Requests for url: https://integrate.api.nvidia.com/v1/chat/completions
+2026-07-09 17:53:28,474 - data_generation.pipeline - WARNING - Lỗi khi sinh mẫu (attempt 1): API call failed: 429 Client Error: Too Many Requests for url: https://integrate.api.nvidia.com/v1/chat/completions
+2026-07-09 18:18:09,116 - data_generation.pipeline - WARNING - Lỗi khi sinh mẫu (attempt 0): API call failed: 429 Client Error: Too Many Requests for url: https://integrate.api.nvidia.com/v1/chat/completions
+2026-07-09 18:22:16,528 - data_generation.pipeline - WARNING - Lỗi khi sinh mẫu (attempt 0): API call failed: 429 Client Error: Too Many Requests for url: https://integrate.api.nvidia.com/v1/chat/completions
+2026-07-09 18:37:23,084 - data_generation.pipeline - WARNING - Lỗi khi sinh mẫu (attempt 0): API call failed: 429 Client Error: Too Many Requests for url: https://integrate.api.nvidia.com/v1/chat/completions
+2026-07-09 18:56:48,114 - data_generation.pipeline - WARNING - Lỗi khi sinh mẫu (attempt 1): API call failed: 429 Client Error: Too Many Requests for url: https://integrate.api.nvidia.com/v1/chat/completions
+2026-07-09 18:58:35,903 - data_generation.pipeline - WARNING - Lỗi khi sinh mẫu (attempt 0): API call failed: 429 Client Error: Too Many Requests for url: https://integrate.api.nvidia.com/v1/chat/completions
+2026-07-09 19:04:15,410 - data_generation.pipeline - WARNING - Lỗi khi sinh mẫu (attempt 0): API call failed: 429 Client Error: Too Many Requests for url: https://integrate.api.nvidia.com/v1/chat/completions
+2026-07-09 19:25:24,559 - data_generation.pipeline - WARNING - Lỗi khi sinh mẫu (attempt 1): API call failed: 429 Client Error: Too Many Requests for url: https://integrate.api.nvidia.com/v1/chat/completions
+2026-07-09 19:26:17,174 - data_generation.pipeline - WARNING - Lỗi khi sinh mẫu (attempt 4): API call failed: 429 Client Error: Too Many Requests for url: https://integrate.api.nvidia.com/v1/chat/completions
+2026-07-09 19:29:42,470 - data_generation.pipeline - WARNING - Lỗi khi sinh mẫu (attempt 0): API call failed: 429 Client Error: Too Many Requests for url: https://integrate.api.nvidia.com/v1/chat/completions
+2026-07-09 19:38:21,834 - data_generation.pipeline - WARNING - Lỗi khi sinh mẫu (attempt 1): API call failed: 429 Client Error: Too Many Requests for url: https://integrate.api.nvidia.com/v1/chat/completions
+2026-07-09 19:38:23,634 - data_generation.pipeline - WARNING - Lỗi khi sinh mẫu (attempt 2): API call failed: 429 Client Error: Too Many Requests for url: https://integrate.api.nvidia.com/v1/chat/completions
+2026-07-09 19:38:25,555 - data_generation.pipeline - WARNING - Lỗi khi sinh mẫu (attempt 3): API call failed: 429 Client Error: Too Many Requests for url: https://integrate.api.nvidia.com/v1/chat/completions
+2026-07-09 19:38:27,375 - data_generation.pipeline - WARNING - Lỗi khi sinh mẫu (attempt 4): API call failed: 429 Client Error: Too Many Requests for url: https://integrate.api.nvidia.com/v1/chat/completions
+2026-07-09 19:54:42,672 - data_generation.pipeline - WARNING - Lỗi khi sinh mẫu (attempt 1): API call failed: 429 Client Error: Too Many Requests for url: https://integrate.api.nvidia.com/v1/chat/completions
+2026-07-09 19:54:44,482 - data_generation.pipeline - WARNING - Lỗi khi sinh mẫu (attempt 2): API call failed: 429 Client Error: Too Many Requests for url: https://integrate.api.nvidia.com/v1/chat/completions
+2026-07-09 20:40:44,041 - data_generation.pipeline - WARNING - Lỗi khi sinh mẫu (attempt 0): API call failed: 429 Client Error: Too Many Requests for url: https://integrate.api.nvidia.com/v1/chat/completions
+2026-07-09 20:40:45,846 - data_generation.pipeline - WARNING - Lỗi khi sinh mẫu (attempt 1): API call failed: 429 Client Error: Too Many Requests for url: https://integrate.api.nvidia.com/v1/chat/completions
+2026-07-09 20:48:06,866 - data_generation.pipeline - INFO - Đã lưu 81 mẫu vào D:\MedicalRetrieval\data\raw_generated\training_data_20260709_143122.json
+2026-07-09 20:48:06,869 - data_generation.pipeline - INFO - Thống kê: {
+  "total_generated": 100,
+  "valid_samples": 81,
+  "invalid_samples": 19,
+  "retry_count": 164,
+  "entity_type_distribution": {
+    "TRIỆU_CHỨNG": 207,
+    "TÊN_XÉT_NGHIỆM": 77,
+    "KẾT_QUẢ_XÉT_NGHIỆM": 52,
+    "CHẨN_ĐOÁN": 82,
+    "THUỐC": 172
+  },
+  "assertion_distribution": {
+    "isNegated": 51,
+    "isFamily": 0,
+    "isHistorical": 97
+  }
+}
+2026-07-09 20:48:06,870 - data_generation.pipeline - INFO - Hoàn thành! Sinh 81 mẫu hợp lệ.

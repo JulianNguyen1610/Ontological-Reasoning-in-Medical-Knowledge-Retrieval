@@ -1,0 +1,630 @@
+[
+  {
+    "text": "1. Tiền sử bệnh\nBN 65t nam, TS bệnh lý.\n- Rung nhĩ\n- mệt mỏi\n- đánh trống ngực\n- khó thở\n- chóng mặt\n\n2. Tiền sử bệnh hiện tại\nNV vì các triệu chứng sau:\n- hồi hộp\n- rivaroxaban po daily\n- warfarin po daily\n- metoprolol po daily\n- amiodarone po daily\n- ECG\n\n3. Đánh giá tại bệnh viện\nKhám và điều trị:\n- ECG bình thường\n- holter 24h\n- holter 24h bình thường\n- INR\n- ion đồ\n- ion đồ bình thường",
+    "entities": [
+      {
+        "text": "Rung nhĩ",
+        "type": "CHẨN_ĐOÁN",
+        "assertions": [],
+        "candidates": [
+          "I48"
+        ],
+        "position": [
+          42,
+          50
+        ]
+      },
+      {
+        "text": "mệt mỏi",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "candidates": [],
+        "position": [
+          53,
+          60
+        ]
+      },
+      {
+        "text": "đánh trống ngực",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+          "isHistorical"
+        ],
+        "candidates": [],
+        "position": [
+          63,
+          78
+        ]
+      },
+      {
+        "text": "khó thở",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "candidates": [],
+        "position": [
+          81,
+          88
+        ]
+      },
+      {
+        "text": "chóng mặt",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+          "isHistorical"
+        ],
+        "candidates": [],
+        "position": [
+          91,
+          100
+        ]
+      },
+      {
+        "text": "hồi hộp",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "candidates": [],
+        "position": [
+          156,
+          163
+        ]
+      },
+      {
+        "text": "rivaroxaban po daily",
+        "type": "THUỐC",
+        "assertions": [
+          "isHistorical"
+        ],
+        "candidates": [
+          "110170"
+        ],
+        "position": [
+          166,
+          186
+        ]
+      },
+      {
+        "text": "warfarin po daily",
+        "type": "THUỐC",
+        "assertions": [],
+        "candidates": [
+          "4281"
+        ],
+        "position": [
+          189,
+          206
+        ]
+      },
+      {
+        "text": "metoprolol po daily",
+        "type": "THUỐC",
+        "assertions": [
+          "isHistorical"
+        ],
+        "candidates": [
+          "68929"
+        ],
+        "position": [
+          209,
+          228
+        ]
+      },
+      {
+        "text": "amiodarone po daily",
+        "type": "THUỐC",
+        "assertions": [
+          "isHistorical"
+        ],
+        "candidates": [
+          "3844"
+        ],
+        "position": [
+          231,
+          250
+        ]
+      },
+      {
+        "text": "ECG",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [
+          "isHistorical"
+        ],
+        "candidates": [],
+        "position": [
+          253,
+          256
+        ]
+      },
+      {
+        "text": "ECG bình thường",
+        "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+        "assertions": [
+          "isHistorical"
+        ],
+        "candidates": [],
+        "position": [
+          304,
+          319
+        ]
+      },
+      {
+        "text": "holter 24h",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "candidates": [],
+        "position": [
+          322,
+          332
+        ]
+      },
+      {
+        "text": "holter 24h bình thường",
+        "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+        "assertions": [],
+        "candidates": [],
+        "position": [
+          335,
+          357
+        ]
+      },
+      {
+        "text": "INR",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "candidates": [],
+        "position": [
+          360,
+          363
+        ]
+      },
+      {
+        "text": "ion đồ",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [
+          "isHistorical"
+        ],
+        "candidates": [],
+        "position": [
+          366,
+          372
+        ]
+      },
+      {
+        "text": "ion đồ bình thường",
+        "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+        "assertions": [
+          "isHistorical"
+        ],
+        "candidates": [],
+        "position": [
+          375,
+          393
+        ]
+      }
+    ],
+    "scenario_id": "sample_637657"
+  },
+  {
+    "text": "1. Tiền sử bệnh\nBN 65t nam, TS bệnh lý.\n- Ung thư vú\n\n2. Tiền sử bệnh hiện tại\nNV vì các triệu chứng sau:\n- đau vú\n\n3. Đánh giá tại bệnh viện\nKhám và điều trị:\n- u vú\n- letrozole po daily",
+    "entities": [
+      {
+        "text": "Ung thư vú",
+        "type": "CHẨN_ĐOÁN",
+        "assertions": [],
+        "candidates": [
+          "C50.9"
+        ],
+        "position": [
+          42,
+          52
+        ]
+      },
+      {
+        "text": "đau vú",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "candidates": [],
+        "position": [
+          108,
+          114
+        ]
+      },
+      {
+        "text": "u vú",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "candidates": [],
+        "position": [
+          162,
+          166
+        ]
+      },
+      {
+        "text": "letrozole po daily",
+        "type": "THUỐC",
+        "assertions": [],
+        "candidates": [
+          "35784"
+        ],
+        "position": [
+          169,
+          187
+        ]
+      }
+    ],
+    "scenario_id": "sample_55790"
+  },
+  {
+    "text": "1. Tiền sử bệnh\nBN 65t nam, TS bệnh lý.\n- Trào ngược dạ dày thực quản\n\n2. Tiền sử bệnh hiện tại\nNV vì các triệu chứng sau:\n- khó nuốt\n\n3. Đánh giá tại bệnh viện\nKhám và điều trị:\n- buồn nôn\n- pantoprazole po daily",
+    "entities": [
+      {
+        "text": "Trào ngược dạ dày thực quản",
+        "type": "CHẨN_ĐOÁN",
+        "assertions": [],
+        "candidates": [
+          "K21.9"
+        ],
+        "position": [
+          42,
+          69
+        ]
+      },
+      {
+        "text": "khó nuốt",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "candidates": [],
+        "position": [
+          125,
+          133
+        ]
+      },
+      {
+        "text": "buồn nôn",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "candidates": [],
+        "position": [
+          181,
+          189
+        ]
+      },
+      {
+        "text": "pantoprazole po daily",
+        "type": "THUỐC",
+        "assertions": [],
+        "candidates": [
+          "91897"
+        ],
+        "position": [
+          192,
+          213
+        ]
+      }
+    ],
+    "scenario_id": "sample_920333"
+  },
+  {
+    "text": "1. Tiền sử bệnh\nBN 65t nam, TS bệnh lý.\n- Viêm da cơ địa\n- mẩn đỏ\n- ngứa\n- nứt da\n\n2. Tiền sử bệnh hiện tại\nNV vì các triệu chứng sau:\n- khô da\n- chảy dịch\n- hydrocortisone po daily\n- cetirizine po daily\n\n3. Đánh giá tại bệnh viện\nKhám và điều trị:\n- betamethasone po daily\n- IgE toàn phần\n- IgE toàn phần bình thường\n- test dị ứng",
+    "entities": [
+      {
+        "text": "Viêm da cơ địa",
+        "type": "CHẨN_ĐOÁN",
+        "assertions": [],
+        "candidates": [
+          "L30.9"
+        ],
+        "position": [
+          42,
+          56
+        ]
+      },
+      {
+        "text": "mẩn đỏ",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "candidates": [],
+        "position": [
+          59,
+          65
+        ]
+      },
+      {
+        "text": "ngứa",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "candidates": [],
+        "position": [
+          68,
+          72
+        ]
+      },
+      {
+        "text": "nứt da",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "candidates": [],
+        "position": [
+          75,
+          81
+        ]
+      },
+      {
+        "text": "khô da",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "candidates": [],
+        "position": [
+          137,
+          143
+        ]
+      },
+      {
+        "text": "chảy dịch",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "candidates": [],
+        "position": [
+          146,
+          155
+        ]
+      },
+      {
+        "text": "hydrocortisone po daily",
+        "type": "THUỐC",
+        "assertions": [],
+        "candidates": [
+          "4166"
+        ],
+        "position": [
+          158,
+          181
+        ]
+      },
+      {
+        "text": "cetirizine po daily",
+        "type": "THUỐC",
+        "assertions": [],
+        "candidates": [
+          "24643"
+        ],
+        "position": [
+          184,
+          203
+        ]
+      },
+      {
+        "text": "betamethasone po daily",
+        "type": "THUỐC",
+        "assertions": [],
+        "candidates": [
+          "3051"
+        ],
+        "position": [
+          251,
+          273
+        ]
+      },
+      {
+        "text": "IgE toàn phần",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "candidates": [],
+        "position": [
+          276,
+          289
+        ]
+      },
+      {
+        "text": "IgE toàn phần bình thường",
+        "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+        "assertions": [],
+        "candidates": [],
+        "position": [
+          292,
+          317
+        ]
+      },
+      {
+        "text": "test dị ứng",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "candidates": [],
+        "position": [
+          320,
+          331
+        ]
+      }
+    ],
+    "scenario_id": "sample_576157"
+  },
+  {
+    "text": "1. Tiền sử bệnh\nBN 65t nam, TS bệnh lý.\n- Nhồi máu cơ tim cấp\n- đau ngực trái\n- khó thở\n- đau lan vai trái\n- vã mồ hôi\n\n2. Tiền sử bệnh hiện tại\nNV vì các triệu chứng sau:\n- buồn nôn\n- nitroglycerin po daily\n- atorvastatin po daily\n- aspirin po daily\n- clopidogrel po daily\n\n3. Đánh giá tại bệnh viện\nKhám và điều trị:\n- ECG\n- ECG bình thường\n- chụp mạch vành\n- chụp mạch vành bình thường\n- siêu âm tim\n- siêu âm tim bình thường",
+    "entities": [
+      {
+        "text": "Nhồi máu cơ tim cấp",
+        "type": "CHẨN_ĐOÁN",
+        "assertions": [],
+        "candidates": [
+          "I21.9"
+        ],
+        "position": [
+          42,
+          61
+        ]
+      },
+      {
+        "text": "đau ngực trái",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "candidates": [],
+        "position": [
+          64,
+          77
+        ]
+      },
+      {
+        "text": "khó thở",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "candidates": [],
+        "position": [
+          80,
+          87
+        ]
+      },
+      {
+        "text": "đau lan vai trái",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+          "isFamily"
+        ],
+        "candidates": [],
+        "position": [
+          90,
+          106
+        ]
+      },
+      {
+        "text": "vã mồ hôi",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "candidates": [],
+        "position": [
+          109,
+          118
+        ]
+      },
+      {
+        "text": "buồn nôn",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+          "isFamily"
+        ],
+        "candidates": [],
+        "position": [
+          174,
+          182
+        ]
+      },
+      {
+        "text": "nitroglycerin po daily",
+        "type": "THUỐC",
+        "assertions": [],
+        "candidates": [
+          "3766"
+        ],
+        "position": [
+          185,
+          207
+        ]
+      },
+      {
+        "text": "atorvastatin po daily",
+        "type": "THUỐC",
+        "assertions": [
+          "isFamily"
+        ],
+        "candidates": [
+          "83391"
+        ],
+        "position": [
+          210,
+          231
+        ]
+      },
+      {
+        "text": "aspirin po daily",
+        "type": "THUỐC",
+        "assertions": [
+          "isFamily"
+        ],
+        "candidates": [
+          "1191"
+        ],
+        "position": [
+          234,
+          250
+        ]
+      },
+      {
+        "text": "clopidogrel po daily",
+        "type": "THUỐC",
+        "assertions": [
+          "isFamily"
+        ],
+        "candidates": [
+          "153126"
+        ],
+        "position": [
+          253,
+          273
+        ]
+      },
+      {
+        "text": "ECG",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [
+          "isFamily"
+        ],
+        "candidates": [],
+        "position": [
+          321,
+          324
+        ]
+      },
+      {
+        "text": "ECG bình thường",
+        "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+        "assertions": [
+          "isFamily"
+        ],
+        "candidates": [],
+        "position": [
+          327,
+          342
+        ]
+      },
+      {
+        "text": "chụp mạch vành",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "candidates": [],
+        "position": [
+          345,
+          359
+        ]
+      },
+      {
+        "text": "chụp mạch vành bình thường",
+        "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+        "assertions": [],
+        "candidates": [],
+        "position": [
+          362,
+          388
+        ]
+      },
+      {
+        "text": "siêu âm tim",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "candidates": [],
+        "position": [
+          391,
+          402
+        ]
+      },
+      {
+        "text": "siêu âm tim bình thường",
+        "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+        "assertions": [],
+        "candidates": [],
+        "position": [
+          405,
+          428
+        ]
+      }
+    ],
+    "scenario_id": "sample_739127"
+  }
+]

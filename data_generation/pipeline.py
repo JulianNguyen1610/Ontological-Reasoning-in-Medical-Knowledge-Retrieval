@@ -11,11 +11,11 @@ from pathlib import Path
 from typing import List, Dict, Optional
 from tqdm import tqdm
 
-from config import GenerationConfig, VALID_ENTITY_TYPES, VALID_ASSERTIONS
-from generators.topic_extractor import TopicExtractor
-from generators.style_director import StyleDirector
-from generators.text_generator import TextGenerator, GeneratedSample
-from generators.critic_agent import CriticAgent
+from data_generation.config import GenerationConfig, VALID_ENTITY_TYPES, VALID_ASSERTIONS
+from data_generation.generators.topic_extractor import TopicExtractor
+from data_generation.generators.style_director import StyleDirector
+from data_generation.generators.text_generator import TextGenerator, GeneratedSample
+from data_generation.generators.critic_agent import CriticAgent
 
 # Cấu hình logging với UTF-8
 try:
@@ -116,13 +116,24 @@ class DataGenerationPipeline:
                     self.stats["retry_count"] += 1
                     continue
                 
+                # Bước 2.5: Kiểm tra entity bắt buộc
+                expected_count = self.text_generator.last_expected_entity_count
+                located_count = len(sample.entities)
+                if located_count < expected_count:
+                    logger.warning(
+                        f"Missing entities: located {located_count}/{expected_count}. "
+                        f"Rejecting sample (attempt {attempt})."
+                    )
+                    self.stats["retry_count"] += 1
+                    continue
+                
                 # Bước 3: Critic Agent kiểm duyệt
                 entities_dict = [self._entity_to_dict(e) for e in sample.entities]
                 critic_result = self.critic.review_sample(sample.text, entities_dict)
                 
                 if critic_result.is_valid:
                     # whitelist filter schema
-                    from utils.cleanup import clean_sample
+                    from data_generation.utils.cleanup import clean_sample
                     cleaned = clean_sample(self._sample_to_dict(sample))
                     if not cleaned['entities']:
                         self.stats['retry_count'] += 1
@@ -142,7 +153,7 @@ class DataGenerationPipeline:
                         sample.text = text
                         sample.entities = [self._dict_to_entity(e) for e in fixed_entities]
                         # whitelist filter schema
-                        from utils.cleanup import clean_sample
+                        from data_generation.utils.cleanup import clean_sample
                         cleaned = clean_sample(self._sample_to_dict(sample))
                         if not cleaned['entities']:
                             self.stats['retry_count'] += 1
@@ -177,7 +188,7 @@ class DataGenerationPipeline:
     
     def _dict_to_entity(self, d: Dict):
         """Chuyển dict thành EntityAnnotation"""
-        from generators.text_generator import EntityAnnotation
+        from data_generation.generators.text_generator import EntityAnnotation
         return EntityAnnotation(
             text=d["text"],
             type=d["type"],

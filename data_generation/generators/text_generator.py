@@ -4,8 +4,9 @@ Sinh văn bản thô từ kịch bản lâm sàng sử dụng Tree of Thought
 """
 import json
 import random
-from typing import Dict, List, Tuple, Optional  # <-- Thêm Optional
+from typing import Dict, List, Tuple, Optional
 from dataclasses import dataclass
+
 
 @dataclass
 class EntityAnnotation:
@@ -16,12 +17,14 @@ class EntityAnnotation:
     candidates: List[str]
     position: Tuple[int, int] = (0, 0)
 
-@dataclass 
+
+@dataclass
 class GeneratedSample:
     """Mẫu dữ liệu sinh ra"""
     text: str
     entities: List[EntityAnnotation]
     scenario_id: str
+
 
 class TextGenerator:
     def __init__(self, llm_client):
@@ -31,10 +34,40 @@ class TextGenerator:
         """
         self.llm = llm_client
         self.max_retries = 3
+        self.last_expected_entity_count = 0
+        self.assertion_cues = {
+            "isNegated": [
+                "không",
+                "không có",
+                "phủ nhận",
+                "chưa ghi nhận",
+                "âm tính",
+            ],
+            "isFamily": [
+                "gia đình",
+                "người nhà",
+                "mẹ",
+                "bố",
+                "anh chị em",
+                "họ hàng",
+            ],
+            "isHistorical": [
+                "tiền sử",
+                "trước đây",
+                "trong quá khứ",
+                "đã từng",
+                "ghi nhận trước đó",
+            ],
+        }
     
     def generate_sample(self, scenario, style_director) -> Optional[GeneratedSample]:
         """
-        Sinh một mẫu dữ liệu hoàn chỉnh qua đường ống Tree of Thought
+        Sinh một mẫu dữ liệu hoàn chỉnh qua đường ống Tree of Thought.
+
+        Trả None nếu:
+        - LLM không sinh được văn bản
+        - Văn bản thiếu entity bắt buộc (located < expected)
+        - Validation thất bại sau max_retries
         """
         # Bước 1: Tạo danh sách thực thể từ kịch bản
         entities = self._create_entity_list(scenario)
@@ -46,7 +79,13 @@ class TextGenerator:
             return None
         
         # Bước 3: Xác định vị trí thực thể trong văn bản
+        self.last_expected_entity_count = len(entities)
         positioned_entities = self._locate_entities(raw_text, entities)
+        
+        # Bước 3.5: Reject nếu thiếu entity bắt buộc
+        # Đảm bảo caller trực tiếp cũng bị chặn, không chỉ pipeline.
+        if len(positioned_entities) < len(entities):
+            return None
         
         # Bước 4: Kiểm tra và sửa lỗi
         for attempt in range(self.max_retries):
@@ -73,7 +112,9 @@ class TextGenerator:
         # Thêm chẩn đoán
         if scenario.diagnosis:
             assertions = self._assign_assertions_to_entity(
-                scenario.assertions, scenario.diagnosis["name_vi"]
+                scenario.assertions,
+                scenario.diagnosis["name_vi"],
+                "CHẨN_ĐOÁN",
             )
             entities.append(EntityAnnotation(
                 text=scenario.diagnosis["name_vi"],
@@ -87,7 +128,9 @@ class TextGenerator:
             # Chọn synonym ngẫu nhiên
             text = random.choice([symptom["text"]] + symptom.get("synonyms", []))
             assertions = self._assign_assertions_to_entity(
-                scenario.assertions, text
+                scenario.assertions,
+                text,
+                "TRIỆU_CHỨNG",
             )
             entities.append(EntityAnnotation(
                 text=text,
@@ -100,7 +143,9 @@ class TextGenerator:
         for drug in scenario.drugs:
             text = self._format_drug_text(drug)
             assertions = self._assign_assertions_to_entity(
-                scenario.assertions, text
+                scenario.assertions,
+                text,
+                "THUỐC",
             )
             entities.append(EntityAnnotation(
                 text=text,
@@ -114,7 +159,9 @@ class TextGenerator:
             # Tên xét nghiệm
             test_name = random.choice([test["test_name"]] + test.get("synonyms", []))
             assertions = self._assign_assertions_to_entity(
-                scenario.assertions, test_name
+                scenario.assertions,
+                test_name,
+                "TÊN_XÉT_NGHIỆM",
             )
             entities.append(EntityAnnotation(
                 text=test_name,
@@ -133,6 +180,7 @@ class TextGenerator:
                     candidates=[],
                 ))
         
+        self._ensure_assertion_coverage(entities, scenario.assertions)
         return entities
     
     def _format_drug_text(self, drug: Dict) -> str:
@@ -161,24 +209,74 @@ class TextGenerator:
         units = test.get("units") or [""]
         unit = random.choice(units)
         
-        if unit and value != "bình thường":
-            return f"{value}"
-        elif value == "bình thường":
+        if value == "bình thường":
             return f"{test['test_name']} bình thường"
+        elif unit:
+            return f"{value} {unit}".strip()
         else:
-            return f"{value} {unit}"
+            return value.strip()
     
     def _assign_assertions_to_entity(
-        self, scenario_assertions: List[str], entity_text: str
+        self,
+        scenario_assertions: List[str],
+        entity_text: str,
+        entity_type: str,
     ) -> List[str]:
         """Gán thuộc tính cho thực thể dựa trên kịch bản"""
-        assigned = []
-        
-        for assertion in scenario_assertions:
-            if random.random() < 0.4:  # 40% cơ hội mỗi thuộc tính được gán
-                assigned.append(assertion)
-        
-        return assigned
+        del entity_text
+
+        eligible_by_type = {
+            "CHẨN_ĐOÁN": {"isHistorical", "isFamily"},
+            "TRIỆU_CHỨNG": {"isNegated", "isHistorical", "isFamily"},
+            "THUỐC": {"isHistorical"},
+            "TÊN_XÉT_NGHIỆM": {"isNegated", "isHistorical"},
+            "KẾT_QUẢ_XÉT_NGHIỆM": {"isHistorical"},
+        }
+        eligible_assertions = [
+            assertion
+            for assertion in scenario_assertions
+            if assertion in eligible_by_type.get(entity_type, set())
+        ]
+
+        if not eligible_assertions or random.random() >= 0.75:
+            return []
+
+        return [random.choice(eligible_assertions)]
+
+    def _ensure_assertion_coverage(
+        self,
+        entities: List[EntityAnnotation],
+        scenario_assertions: List[str],
+    ) -> None:
+        if not entities or any(entity.assertions for entity in entities):
+            return
+
+        for preferred_assertion in ["isNegated", "isHistorical", "isFamily"]:
+            if preferred_assertion not in scenario_assertions:
+                continue
+            candidate = self._find_best_assertion_candidate(
+                entities,
+                preferred_assertion,
+            )
+            if candidate:
+                candidate.assertions = [preferred_assertion]
+                return
+
+    def _find_best_assertion_candidate(
+        self,
+        entities: List[EntityAnnotation],
+        assertion: str,
+    ) -> Optional[EntityAnnotation]:
+        priority_by_assertion = {
+            "isNegated": ["TRIỆU_CHỨNG", "TÊN_XÉT_NGHIỆM"],
+            "isHistorical": ["CHẨN_ĐOÁN", "TRIỆU_CHỨNG", "THUỐC"],
+            "isFamily": ["CHẨN_ĐOÁN", "TRIỆU_CHỨNG"],
+        }
+        for entity_type in priority_by_assertion.get(assertion, []):
+            for entity in entities:
+                if entity.type == entity_type:
+                    return entity
+        return None
     
     def _generate_raw_text(
         self, scenario, entities: List[EntityAnnotation], style_director
@@ -186,9 +284,22 @@ class TextGenerator:
         """Sinh văn bản thô từ kịch bản và danh sách thực thể"""
         
         # Tạo prompt
+        placement_plan = self._build_entity_placement_plan(entities)
         entity_list = "\n".join([
-            f"- '{e.text}' (loại: {e.type}, thuộc tính: {e.assertions})"
+            (
+                f"- '{e.text}' (loại: {e.type}, thuộc tính: {e.assertions}, "
+                f"hướng dẫn: {self._build_assertion_instruction(e)})"
+            )
             for e in entities
+        ])
+        placement_list = "\n".join([
+            (
+                f"- '{plan['text']}' -> phần: {plan['section']}; "
+                f"kiểu câu: {plan['sentence_style']}; "
+                f"cue bắt buộc: {plan['required_cue']}; "
+                f"câu mẫu: {plan['example_sentence']}"
+            )
+            for plan in placement_plan
         ])
         
         noise_instructions = style_director.generate_noise_instructions(0.3)
@@ -213,15 +324,22 @@ Văn bản của bạn PHẢI chứa đầy đủ 3 phần sau với các tiêu 
 Danh sách thực thể BẮT BUỘC phải xuất hiện trong văn bản (giữ NGUYÊN VĂN chuỗi text và đặt vào các phần phù hợp):
 {entity_list}
 
+Kế hoạch đặt thực thể theo section và ngữ cảnh (PHẢI tuân thủ):
+{placement_list}
+
 YÊU CẦU NGHIÊM NGẶT:
 1. PHẢI giữ NGUYÊN VĂN chuỗi text của mỗi thực thể - KHÔNG thêm, bớt, sửa bất kỳ ký tự nào
 2. Văn bản phải tự nhiên, giống ghi chú bác sĩ thực tế
 3. Có thể dùng từ viết tắt, ký hiệu chuyên ngành
 4. Không cần cấu trúc ngữ pháp hoàn chỉnh
 5. Các thực thể phải xuất hiện theo thứ tự logic trong văn bản
-6. Nếu thực thể có thuộc tính isNegated: phải dùng ngữ cảnh phủ định (không, không có, phủ nhận)
-7. Nếu thực thể có thuộc tính isFamily: phải nhắc đến người nhà/gia đình
-8. Nếu thực thể có thuộc tính isHistorical: phải nhắc đến tiền sử/quá khứ
+6. Nếu thực thể có thuộc tính isNegated: phải dùng từ/cụm phủ định ở ngay gần thực thể (không, không có, phủ nhận, chưa ghi nhận)
+7. Nếu thực thể có thuộc tính isFamily: phải nhắc đến người nhà/gia đình ở ngay gần thực thể
+8. Nếu thực thể có thuộc tính isHistorical: phải nhắc đến tiền sử/quá khứ ở ngay gần thực thể
+9. Không được gán ngữ cảnh phủ định cho thuốc đang dùng hiện tại
+10. Không được gộp nhiều thực thể có thuộc tính khác nhau vào cùng một câu mơ hồ
+11. Với mỗi dòng trong kế hoạch đặt thực thể, hãy viết ít nhất một câu hoặc bullet riêng đủ để thể hiện đúng cue bắt buộc
+12. Ưu tiên viết các thực thể có assertion trước, sau đó mới nối các thực thể không assertion
 
 {noise_instructions}
 
@@ -242,6 +360,81 @@ Trả về CHỈ văn bản thô theo đúng cấu trúc 3 phần trên, không 
             return text
         
         return None
+
+    def _build_assertion_instruction(self, entity: EntityAnnotation) -> str:
+        if "isNegated" in entity.assertions:
+            return "đặt trong câu phủ định rõ ràng ngay gần thực thể"
+        if "isFamily" in entity.assertions:
+            return "đặt trong ngữ cảnh gia đình/người nhà ngay gần thực thể"
+        if "isHistorical" in entity.assertions:
+            return "đặt trong ngữ cảnh tiền sử/quá khứ ngay gần thực thể"
+        return "không cần ngữ cảnh đặc biệt"
+
+    def _build_entity_placement_plan(
+        self, entities: List[EntityAnnotation]
+    ) -> List[Dict[str, str]]:
+        plan = []
+        for entity in entities:
+            plan.append({
+                "text": entity.text,
+                "section": self._select_section_for_entity(entity),
+                "sentence_style": self._select_sentence_style(entity),
+                "required_cue": self._select_required_cue(entity),
+                "example_sentence": self._build_example_sentence(entity),
+            })
+        return plan
+
+    def _select_section_for_entity(self, entity: EntityAnnotation) -> str:
+        if "isFamily" in entity.assertions or "isHistorical" in entity.assertions:
+            return "1. Tiền sử bệnh"
+        if "isNegated" in entity.assertions:
+            return "2. Tiền sử bệnh hiện tại"
+        if entity.type in {"THUỐC", "TÊN_XÉT_NGHIỆM", "KẾT_QUẢ_XÉT_NGHIỆM"}:
+            return "3. Đánh giá tại bệnh viện"
+        if entity.type == "CHẨN_ĐOÁN":
+            return "3. Đánh giá tại bệnh viện"
+        return "2. Tiền sử bệnh hiện tại"
+
+    def _select_sentence_style(self, entity: EntityAnnotation) -> str:
+        if "isNegated" in entity.assertions:
+            return "bullet hoặc câu ngắn phủ nhận riêng"
+        if "isFamily" in entity.assertions:
+            return "bullet mô tả tiền sử gia đình riêng"
+        if "isHistorical" in entity.assertions:
+            return "bullet mô tả tiền sử/quá khứ riêng"
+        if entity.type == "THUỐC":
+            return "bullet điều trị hoặc thuốc"
+        if entity.type in {"TÊN_XÉT_NGHIỆM", "KẾT_QUẢ_XÉT_NGHIỆM"}:
+            return "bullet cận lâm sàng"
+        return "bullet triệu chứng/chẩn đoán"
+
+    def _select_required_cue(self, entity: EntityAnnotation) -> str:
+        if "isNegated" in entity.assertions:
+            return "một trong các cụm: không, không có, phủ nhận, chưa ghi nhận"
+        if "isFamily" in entity.assertions:
+            return "một trong các cụm: gia đình, người nhà, mẹ, bố, anh chị em"
+        if "isHistorical" in entity.assertions:
+            return "một trong các cụm: tiền sử, trước đây, trong quá khứ, đã từng"
+        if entity.type == "THUỐC":
+            return "nêu rõ là thuốc đang dùng hoặc được chỉ định"
+        if entity.type in {"TÊN_XÉT_NGHIỆM", "KẾT_QUẢ_XÉT_NGHIỆM"}:
+            return "đặt trong ngữ cảnh xét nghiệm/cận lâm sàng"
+        return "không bắt buộc cue đặc biệt"
+
+    def _build_example_sentence(self, entity: EntityAnnotation) -> str:
+        if "isNegated" in entity.assertions:
+            return f"BN phủ nhận {entity.text}."
+        if "isFamily" in entity.assertions:
+            return f"Gia đình ghi nhận mẹ bệnh nhân có tiền sử {entity.text}."
+        if "isHistorical" in entity.assertions:
+            if entity.type == "THUỐC":
+                return f"Tiền sử trước đây đã dùng {entity.text}."
+            return f"Tiền sử ghi nhận {entity.text}."
+        if entity.type == "THUỐC":
+            return f"Chỉ định {entity.text}."
+        if entity.type in {"TÊN_XÉT_NGHIỆM", "KẾT_QUẢ_XÉT_NGHIỆM"}:
+            return f"Cận lâm sàng ghi nhận {entity.text}."
+        return f"Ghi nhận {entity.text}."
     
     def _locate_entities(
         self, text: str, entities: List[EntityAnnotation]
@@ -281,6 +474,7 @@ Trả về CHỈ văn bản thô theo đúng cấu trúc 3 phần trên, không 
                 ))
 
         return positioned
+
     def _fuzzy_find(self, text: str, query: str) -> Optional[Tuple[int, int]]:
         """Tìm mờ vị trí thực thể trong văn bản"""
         # Sử dụng difflib để tìm tương đồng
@@ -341,14 +535,49 @@ Trả về CHỈ văn bản thô theo đúng cấu trúc 3 phần trên, không 
                         "detail": f"Invalid assertion: {assertion}",
                         "suggestion": "Use one of: isNegated, isFamily, isHistorical"
                     })
+                elif not self._assertion_context_is_valid(text, entity):
+                    errors.append({
+                        "entity_index": i,
+                        "error_type": "assertion_context_error",
+                        "detail": (
+                            f"Assertion context mismatch for '{entity.text}' "
+                            f"with assertions {entity.assertions}"
+                        ),
+                        "suggestion": (
+                            "Regenerate the local sentence so the assertion is "
+                            "stated explicitly near the entity"
+                        ),
+                    })
         
         return {"valid": len(errors) == 0, "errors": errors}
+
+    def _assertion_context_is_valid(
+        self, text: str, entity: EntityAnnotation
+    ) -> bool:
+        if not entity.assertions:
+            return True
+
+        start, end = entity.position
+        context = text[max(0, start - 80):min(len(text), end + 80)].lower()
+
+        for assertion in entity.assertions:
+            cues = self.assertion_cues.get(assertion, [])
+            if not any(cue in context for cue in cues):
+                return False
+
+        return True
     
     def _fix_errors(
         self, text: str, entities: List[EntityAnnotation], errors: List[Dict],
         scenario, style_director
     ) -> Tuple[str, List[EntityAnnotation]]:
         """Sửa lỗi và regenerate"""
+        if any(error["error_type"] != "text_mismatch" for error in errors):
+            regenerated_text = self._generate_raw_text(scenario, entities, style_director)
+            if not regenerated_text:
+                return text, entities
+            return regenerated_text, self._locate_entities(regenerated_text, entities)
+
         # Cố gắng sửa vị trí
         for error in errors:
             if error["error_type"] == "text_mismatch":
