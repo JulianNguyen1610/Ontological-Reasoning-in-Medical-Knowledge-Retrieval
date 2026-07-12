@@ -344,6 +344,33 @@ class TestAssertionContextValidation:
 
         assert random_values <= {(), ("isHistorical",)}
 
+    def test_lab_name_does_not_receive_negated_assertion(self):
+        gen = self._make_generator()
+        random_values = {
+            tuple(sorted(gen._assign_assertions_to_entity(
+                ["isNegated", "isHistorical"],
+                "công thức máu",
+                "TÊN_XÉT_NGHIỆM",
+            )))
+            for _ in range(25)
+        }
+
+        assert random_values <= {(), ("isHistorical",)}
+
+    def test_negated_lab_result_uses_result_language(self):
+        gen = self._make_generator()
+        entity = EntityAnnotation(
+            text="công thức máu bình thường",
+            type="KẾT_QUẢ_XÉT_NGHIỆM",
+            assertions=["isNegated"],
+            candidates=[],
+        )
+
+        example = gen._build_example_sentence(entity)
+
+        assert example.startswith("Chưa có kết quả")
+        assert "phủ nhận" not in example.lower()
+
     def test_assertion_coverage_forces_best_candidate_when_missing(self):
         gen = self._make_generator()
         entities = [
@@ -365,6 +392,102 @@ class TestAssertionContextValidation:
 
         assert entities[0].assertions == []
         assert entities[1].assertions == ["isNegated"]
+
+    def test_family_coverage_can_select_diagnosis(self):
+        gen = self._make_generator()
+        entities = [
+            EntityAnnotation(
+                text="Đái tháo đường type 2",
+                type="CHẨN_ĐOÁN",
+                assertions=[],
+                candidates=["E11"],
+            ),
+            EntityAnnotation(
+                text="mệt mỏi",
+                type="TRIỆU_CHỨNG",
+                assertions=[],
+                candidates=[],
+            ),
+        ]
+
+        gen._ensure_assertion_coverage(entities, ["isFamily"])
+
+        assert entities[0].assertions == ["isFamily"]
+
+    def test_family_coverage_rejects_acute_diagnosis_and_symptoms(self):
+        gen = self._make_generator()
+        entities = [
+            EntityAnnotation(
+                text="Viêm dạ dày ruột cấp",
+                type="CHẨN_ĐOÁN",
+                assertions=[],
+                candidates=["A09.0"],
+            ),
+            EntityAnnotation(
+                text="đau bụng",
+                type="TRIỆU_CHỨNG",
+                assertions=[],
+                candidates=[],
+            ),
+        ]
+
+        gen._ensure_assertion_coverage(entities, ["isFamily"])
+
+        assert not any(entity.assertions for entity in entities)
+
+    def test_assertion_coverage_limits_entities_per_sample(self):
+        gen = self._make_generator()
+        entities = [
+            EntityAnnotation(text=f"triệu chứng {i}", type="TRIỆU_CHỨNG", assertions=["isHistorical"], candidates=[])
+            for i in range(6)
+        ]
+
+        gen._ensure_assertion_coverage(entities, ["isHistorical"])
+
+        assert 1 <= sum(bool(entity.assertions) for entity in entities) <= 2
+
+    def test_historical_examples_are_varied(self):
+        gen = self._make_generator()
+        entity = EntityAnnotation(
+            text="hen phế quản",
+            type="CHẨN_ĐOÁN",
+            assertions=["isHistorical"],
+            candidates=["J45.9"],
+        )
+
+        examples = {gen._build_example_sentence(entity) for _ in range(30)}
+
+        assert len(examples) > 1
+
+    def test_historical_diagnosis_examples_use_diagnosis_language(self):
+        gen = self._make_generator()
+        entity = EntityAnnotation(
+            text="Suy tim",
+            type="CHẨN_ĐOÁN",
+            assertions=["isHistorical"],
+            candidates=["I50.9"],
+        )
+
+        examples = {gen._build_example_sentence(entity) for _ in range(30)}
+
+        assert all("xuất hiện" not in example for example in examples)
+        assert all(
+            any(cue in example for cue in ["chẩn đoán", "điều trị", "theo dõi"])
+            for example in examples
+        )
+
+    def test_family_examples_are_varied(self):
+        gen = self._make_generator()
+        entity = EntityAnnotation(
+            text="đái tháo đường type 2",
+            type="CHẨN_ĐOÁN",
+            assertions=["isFamily"],
+            candidates=["E11"],
+        )
+
+        examples = {gen._build_example_sentence(entity) for _ in range(30)}
+
+        assert len(examples) > 1
 
     def test_entity_placement_plan_prefers_assertion_aware_sections(self):
         gen = self._make_generator()

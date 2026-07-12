@@ -1,0 +1,1518 @@
+[
+  {
+    "text": "1. Tiền sử bệnh\n- Không có tiền sử bệnh lý đáng kể\n\n2. Tiền sử bệnh hiện tại\n- Bệnh nhân nhập viện với triệu chứng ho mạn\n- Ghi nhận ho mạn trong 2 tháng gần đây\n- Không có các triệu chứng khác\n\n3. Đánh giá tại bệnh viện\n- Khám lâm sàng: Ghi nhận khối u ở phổi\n- Xét nghiệm máu: KQXN bình thường\n- Chẩn đoán hình ảnh: X-quang ngực cho thấy khối u ở phổi\n- Chẩn đoán: Ung thư phổi\n- Điều trị: Chỉ định carboplatin po daily\n- Điều trị: Chỉ định cisplatin po daily",
+    "entities": [
+      {
+        "text": "Ung thư phổi",
+        "type": "CHẨN_ĐOÁN",
+        "assertions": [],
+        "candidates": [
+          "C34.9"
+        ],
+        "position": [
+          367,
+          379
+        ]
+      },
+      {
+        "text": "ho mạn",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "candidates": [],
+        "position": [
+          115,
+          121
+        ]
+      },
+      {
+        "text": "carboplatin po daily",
+        "type": "THUỐC",
+        "assertions": [],
+        "candidates": [
+          "441"
+        ],
+        "position": [
+          401,
+          421
+        ]
+      },
+      {
+        "text": "cisplatin po daily",
+        "type": "THUỐC",
+        "assertions": [],
+        "candidates": [
+          "3779"
+        ],
+        "position": [
+          443,
+          461
+        ]
+      }
+    ],
+    "scenario_id": "sample_375019",
+    "challenge_profile": "basic"
+  },
+  {
+    "text": "**Tiền sử bệnh**\n\n- Bệnh nhân không có tiền sử bệnh lý đáng kể trước khi nhập viện.\n- Không có thông tin về các thuốc đã sử dụng trước khi nhập viện.\n- Không có yếu tố nguy cơ đặc biệt.\n\n**Tiền sử bệnh hiện tại**\n\n- Bệnh nhân được nhập viện với các triệu chứng:\n  • Nhìn mờ\n  • Tiểu nhiều\n  • Gầy sút nhanh\n  • Mệt mỏi\n  • Khát nhiều\n- Các triệu chứng trên đã xuất hiện trong vòng 1 tuần trước khi nhập viện.\n\n**Đánh giá tại bệnh viện**\n\n- Khám lâm sàng:\n  • Ghi nhận Đái tháo đường type 1\n- Cận lâm sàng:\n  • Cận lâm sàng ghi nhận đường huyết\n  • Cận lâm sàng ghi nhận đường huyết bình thường\n- Điều trị:\n  • Chỉ định insulin lispro po daily\n  • Chỉ định insulin glargine po daily",
+    "entities": [
+      {
+        "text": "Đái tháo đường type 1",
+        "type": "CHẨN_ĐOÁN",
+        "assertions": [],
+        "candidates": [
+          "E10.9"
+        ],
+        "position": [
+          468,
+          489
+        ]
+      },
+      {
+        "text": "Nhìn mờ",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "candidates": [],
+        "position": [
+          266,
+          273
+        ]
+      },
+      {
+        "text": "Tiểu nhiều",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "candidates": [],
+        "position": [
+          278,
+          288
+        ]
+      },
+      {
+        "text": "Gầy sút nhanh",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "candidates": [],
+        "position": [
+          293,
+          306
+        ]
+      },
+      {
+        "text": "Mệt mỏi",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "candidates": [],
+        "position": [
+          311,
+          318
+        ]
+      },
+      {
+        "text": "Khát nhiều",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "candidates": [],
+        "position": [
+          323,
+          333
+        ]
+      },
+      {
+        "text": "insulin lispro po daily",
+        "type": "THUỐC",
+        "assertions": [],
+        "candidates": [
+          ""
+        ],
+        "position": [
+          619,
+          642
+        ]
+      },
+      {
+        "text": "insulin glargine po daily",
+        "type": "THUỐC",
+        "assertions": [],
+        "candidates": [
+          ""
+        ],
+        "position": [
+          656,
+          681
+        ]
+      },
+      {
+        "text": "đường huyết",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "candidates": [],
+        "position": [
+          532,
+          543
+        ]
+      },
+      {
+        "text": "đường huyết bình thường",
+        "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+        "assertions": [],
+        "candidates": [],
+        "position": [
+          570,
+          593
+        ]
+      }
+    ],
+    "scenario_id": "sample_669911",
+    "challenge_profile": "basic"
+  },
+  {
+    "text": "Tiền sử bệnh\n\n- Theo giấy ra viện cũ, BN từng điều trị Vảy nến.\n- Tiền sử dị ứng: không có dị ứng thuốc.\n- Tiền sử bệnh lý khác: không có bệnh lý khác đáng kể.\n\nTiền sử bệnh hiện tại\n\n- Lý do nhập viện: BN nhập viện vì xuất hiện các triệu chứng da liễu.\n- Diễn biến các triệu chứng: BN bắt đầu xuất hiện các triệu chứng da liễu từ 1 tuần trước nhập viện, bao gồm vảy trắng.\n- Các sự kiện xảy ra trước khi nhập viện: BN đã tự điều trị tại nhà nhưng không thấy cải thiện.\n\nĐánh giá tại bệnh viện\n\n- Khám lâm sàng: da khô, có vảy trắng.\n- Xét nghiệm: không có xét nghiệm đặc biệt nào được thực hiện.\n- Chẩn đoán hình ảnh: không có chẩn đoán hình ảnh nào được thực hiện.\n- Các thủ thuật y tế đã thực hiện tại bệnh viện: BN được chỉ định điều trị bằng thuốc bôi và thuốc uống để kiểm soát các triệu chứng.",
+    "entities": [
+      {
+        "text": "Vảy nến",
+        "type": "CHẨN_ĐOÁN",
+        "assertions": [
+          "isHistorical"
+        ],
+        "candidates": [
+          "L40.0"
+        ],
+        "position": [
+          55,
+          62
+        ]
+      },
+      {
+        "text": "vảy trắng",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "candidates": [],
+        "position": [
+          363,
+          372
+        ]
+      }
+    ],
+    "scenario_id": "sample_810077",
+    "challenge_profile": "basic"
+  },
+  {
+    "text": "**Tiền sử bệnh**\n\n- Bệnh nhân không có tiền sử bệnh lý đáng kể.\n- Bệnh nhân không sử dụng thuốc nào trước khi nhập viện.\n\n**Tiền sử bệnh hiện tại**\n\n- Bệnh nhân được đưa vào viện vì có các triệu chứng liên quan đến mắt.\n- Bệnh nhân phủ nhận lóa mắt và nhìn mờ.\n- Bệnh nhân không có tiền sử chấn thương hoặc phẫu thuật mắt trước đây.\n\n**Đánh giá tại bệnh viện**\n\n- Ghi nhận Đục thủy tinh thể.\n- Chỉ định tropicamide po daily.\n- Cận lâm sàng ghi nhận đo thị lực, kết quả đo thị lực bình thường.\n- Bệnh nhân được chỉ định phẫu thuật thay thủy tinh thể.",
+    "entities": [
+      {
+        "text": "Đục thủy tinh thể",
+        "type": "CHẨN_ĐOÁN",
+        "assertions": [],
+        "candidates": [
+          "H25.9"
+        ],
+        "position": [
+          373,
+          390
+        ]
+      },
+      {
+        "text": "lóa mắt",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+          "isNegated"
+        ],
+        "candidates": [],
+        "position": [
+          241,
+          248
+        ]
+      },
+      {
+        "text": "nhìn mờ",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+          "isNegated"
+        ],
+        "candidates": [],
+        "position": [
+          252,
+          259
+        ]
+      },
+      {
+        "text": "tropicamide po daily",
+        "type": "THUỐC",
+        "assertions": [],
+        "candidates": [
+          "5408"
+        ],
+        "position": [
+          403,
+          423
+        ]
+      },
+      {
+        "text": "đo thị lực",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "candidates": [],
+        "position": [
+          449,
+          459
+        ]
+      },
+      {
+        "text": "đo thị lực bình thường",
+        "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+        "assertions": [],
+        "candidates": [],
+        "position": [
+          469,
+          491
+        ]
+      }
+    ],
+    "scenario_id": "sample_311519",
+    "challenge_profile": "lab_name_result_pair"
+  },
+  {
+    "text": "Tiền sử bệnh\n- Theo giấy ra viện cũ, BN từng điều trị HIV/AIDS\n- Theo lời bệnh nhân, trước đó đã xuất hiện sốt kéo dài\n\nTiền sử bệnh hiện tại\n- Ghi nhận ho kéo dài\n- Ghi nhận sút cân\n\nĐánh giá tại bệnh viện\n- Khám lâm sàng: BN có tình trạng suy giảm miễn dịch\n- Xét nghiệm: HIV RNA 100.000 copies/mL\n- Chỉ định dolutegravir po daily\n- Chỉ định tenofovir po daily",
+    "entities": [
+      {
+        "text": "HIV/AIDS",
+        "type": "CHẨN_ĐOÁN",
+        "assertions": [
+          "isHistorical"
+        ],
+        "candidates": [
+          "B20"
+        ],
+        "position": [
+          54,
+          62
+        ]
+      },
+      {
+        "text": "ho kéo dài",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "candidates": [],
+        "position": [
+          153,
+          163
+        ]
+      },
+      {
+        "text": "sốt kéo dài",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+          "isHistorical"
+        ],
+        "candidates": [],
+        "position": [
+          107,
+          118
+        ]
+      },
+      {
+        "text": "sút cân",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "candidates": [],
+        "position": [
+          175,
+          182
+        ]
+      },
+      {
+        "text": "dolutegravir po daily",
+        "type": "THUỐC",
+        "assertions": [],
+        "candidates": [
+          "1469375"
+        ],
+        "position": [
+          311,
+          332
+        ]
+      },
+      {
+        "text": "tenofovir po daily",
+        "type": "THUỐC",
+        "assertions": [],
+        "candidates": [
+          "462075"
+        ],
+        "position": [
+          344,
+          362
+        ]
+      }
+    ],
+    "scenario_id": "sample_230094",
+    "challenge_profile": "historical_scope"
+  },
+  {
+    "text": "1. Tiền sử bệnh\n * Không có tiền sử bệnh lý đáng kể\n * Không có thuốc đã sử dụng trước khi nhập viện\n * Không có yếu tố nguy cơ\n\n2. Tiền sử bệnh hiện tại\n * Lý do nhập viện: Triệu chứng đau thượng vị\n * Diễn biến triệu chứng: Bệnh nhân than phiền về đau thượng vị trong vài ngày qua\n * BN phủ nhận ăn không tiêu\n * BN phủ nhận ợ hơi\n\n3. Đánh giá tại bệnh viện\n * Khám lâm sàng: Ghi nhận Viêm dạ dày\n * Kết quả cận lâm sàng: Xét nghiệm máu và hình ảnh chưa ghi nhận bất thường\n * Chỉ định sucralfate po daily\n * Các thủ thuật y tế đã thực hiện: Không có",
+    "entities": [
+      {
+        "text": "Viêm dạ dày",
+        "type": "CHẨN_ĐOÁN",
+        "assertions": [],
+        "candidates": [
+          "K29.7"
+        ],
+        "position": [
+          387,
+          398
+        ]
+      },
+      {
+        "text": "đau thượng vị",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "candidates": [],
+        "position": [
+          186,
+          199
+        ]
+      },
+      {
+        "text": "ăn không tiêu",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+          "isNegated"
+        ],
+        "candidates": [],
+        "position": [
+          298,
+          311
+        ]
+      },
+      {
+        "text": "ợ hơi",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+          "isNegated"
+        ],
+        "candidates": [],
+        "position": [
+          327,
+          332
+        ]
+      },
+      {
+        "text": "sucralfate po daily",
+        "type": "THUỐC",
+        "assertions": [],
+        "candidates": [
+          "5443"
+        ],
+        "position": [
+          488,
+          507
+        ]
+      }
+    ],
+    "scenario_id": "sample_930592",
+    "challenge_profile": "negation_scope"
+  },
+  {
+    "text": "**Tiền sử bệnh**\n\n- Theo giấy ra viện cũ, BN từng điều trị Rối loạn lo âu.\n- BN có tiền sử sử dụng thuốc an thần.\n- BN không có tiền sử bệnh lý khác.\n\n**Tiền sử bệnh hiện tại**\n\n- BN nhập viện do lo lắng, căng thẳng kéo dài.\n- Ghi nhận căng cơ.\n- BN cho biết đã có các triệu chứng trên trong 2 tuần qua.\n\n**Đánh giá tại bệnh viện**\n\n- Khám lâm sàng: Huyết áp 120/80 mmHg, nhiệt độ 36,5°C, mạch 80 lần/phút.\n- Xét nghiệm máu: Công thức máu bình thường, men gan tăng nhẹ.\n- Chẩn đoán hình ảnh: X-quang ngực bình thường.\n- Chỉ định escitalopram po daily.\n- Chỉ định alprazolam po daily.\n- Hẹn tái khám sau 1 tuần để theo dõi tình trạng bệnh.",
+    "entities": [
+      {
+        "text": "Rối loạn lo âu",
+        "type": "CHẨN_ĐOÁN",
+        "assertions": [
+          "isHistorical"
+        ],
+        "candidates": [
+          "F41.9"
+        ],
+        "position": [
+          59,
+          73
+        ]
+      },
+      {
+        "text": "căng cơ",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "candidates": [],
+        "position": [
+          236,
+          243
+        ]
+      },
+      {
+        "text": "escitalopram po daily",
+        "type": "THUỐC",
+        "assertions": [],
+        "candidates": [
+          "287709"
+        ],
+        "position": [
+          529,
+          550
+        ]
+      },
+      {
+        "text": "alprazolam po daily",
+        "type": "THUỐC",
+        "assertions": [],
+        "candidates": [
+          "2333"
+        ],
+        "position": [
+          563,
+          582
+        ]
+      }
+    ],
+    "scenario_id": "sample_654228",
+    "challenge_profile": "basic"
+  },
+  {
+    "text": "**Tiền sử bệnh**\n\n* Tiền sử ghi nhận BN từng được chẩn đoán Viêm phổi.\n* Bệnh sử cũ có khó thở.\n* BN từng được điều trị bằng thuốc kháng sinh trong đợt khám trước.\n\n**Tiền sử bệnh hiện tại**\n\n* Ghi nhận sốt.\n* Ghi nhận đau ngực.\n* Bệnh nhân được chuyển đến viện với các triệu chứng trên.\n\n**Đánh giá tại bệnh viện**\n\n* Khám lâm sàng: sốt 38°C, khó thở, đau ngực.\n* Cận lâm sàng ghi nhận X-quang ngực.\n* Cận lâm sàng ghi nhận X-quang ngực bình thường.\n* Chỉ định ceftriaxone po daily.\n* Chỉ định levofloxacin po daily.\n* Theo dõi SpO2 và nhiệt độ hàng ngày.",
+    "entities": [
+      {
+        "text": "Viêm phổi",
+        "type": "CHẨN_ĐOÁN",
+        "assertions": [
+          "isHistorical"
+        ],
+        "candidates": [
+          "J18.9"
+        ],
+        "position": [
+          60,
+          69
+        ]
+      },
+      {
+        "text": "sốt",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "candidates": [],
+        "position": [
+          203,
+          206
+        ]
+      },
+      {
+        "text": "khó thở",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+          "isHistorical"
+        ],
+        "candidates": [],
+        "position": [
+          87,
+          94
+        ]
+      },
+      {
+        "text": "đau ngực",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "candidates": [],
+        "position": [
+          219,
+          227
+        ]
+      },
+      {
+        "text": "ceftriaxone po daily",
+        "type": "THUỐC",
+        "assertions": [],
+        "candidates": [
+          "6188"
+        ],
+        "position": [
+          462,
+          482
+        ]
+      },
+      {
+        "text": "levofloxacin po daily",
+        "type": "THUỐC",
+        "assertions": [],
+        "candidates": [
+          "82122"
+        ],
+        "position": [
+          495,
+          516
+        ]
+      },
+      {
+        "text": "X-quang ngực",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "candidates": [],
+        "position": [
+          387,
+          399
+        ]
+      },
+      {
+        "text": "X-quang ngực bình thường",
+        "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+        "assertions": [],
+        "candidates": [],
+        "position": [
+          425,
+          449
+        ]
+      }
+    ],
+    "scenario_id": "sample_5480",
+    "challenge_profile": "abbreviation_or_typo"
+  },
+  {
+    "text": "**Tiền sử bệnh**\n\n- Bên ngoại ghi nhận người thân mắc Hen suyễn.\n- Không có tiền sử bệnh lý khác.\n\n**Tiền sử bệnh hiện tại**\n\n- Ghi nhận khó thở.\n- Ghi nhận tức ngực.\n- Ghi nhận ho.\n- Bệnh nhân có các triệu chứng trên trong 3 ngày qua.\n\n**Đánh giá tại bệnh viện**\n\n- Khám lâm sàng: Ghi nhận khó thở, tức ngực, ho.\n- Cận lâm sàng: \n  - Test dị ứng.\n  - Test dị ứng bình thường.\n- Điều trị: \n  - Chỉ định salbutamol po daily.\n  - Chỉ định montelukast po daily.",
+    "entities": [
+      {
+        "text": "Hen suyễn",
+        "type": "CHẨN_ĐOÁN",
+        "assertions": [
+          "isFamily"
+        ],
+        "candidates": [
+          "J45.9"
+        ],
+        "position": [
+          54,
+          63
+        ]
+      },
+      {
+        "text": "khó thở",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "candidates": [],
+        "position": [
+          137,
+          144
+        ]
+      },
+      {
+        "text": "tức ngực",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "candidates": [],
+        "position": [
+          157,
+          165
+        ]
+      },
+      {
+        "text": "ho",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "candidates": [],
+        "position": [
+          178,
+          180
+        ]
+      },
+      {
+        "text": "salbutamol po daily",
+        "type": "THUỐC",
+        "assertions": [],
+        "candidates": [
+          "435"
+        ],
+        "position": [
+          403,
+          422
+        ]
+      },
+      {
+        "text": "montelukast po daily",
+        "type": "THUỐC",
+        "assertions": [],
+        "candidates": [
+          "199705"
+        ],
+        "position": [
+          437,
+          457
+        ]
+      },
+      {
+        "text": "Test dị ứng",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "candidates": [],
+        "position": [
+          335,
+          346
+        ]
+      },
+      {
+        "text": "Test dị ứng bình thường",
+        "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+        "assertions": [],
+        "candidates": [],
+        "position": [
+          352,
+          375
+        ]
+      }
+    ],
+    "scenario_id": "sample_181851",
+    "challenge_profile": "family_scope"
+  },
+  {
+    "text": "**Tiền sử bệnh**\n\n- Hồ sơ cũ cho thấy BN đã được chẩn đoán Động kinh.\n- Theo lời bệnh nhân, trước đó đã xuất hiện mất ý thức.\n- Bệnh nhân đã được điều trị bằng thuốc chống động kinh trong quá khứ.\n\n**Tiền sử bệnh hiện tại**\n\n- Ghi nhận mệt mỏi sau cơn.\n- Ghi nhận cứng người.\n- Bệnh nhân cho biết các triệu chứng trên xuất hiện sau khi bị cơn động kinh.\n\n**Đánh giá tại bệnh viện**\n\n- Khám lâm sàng: bệnh nhân có biểu hiện cứng người và mệt mỏi.\n- Xét nghiệm máu: không có bất thường.\n- Chẩn đoán hình ảnh: không có tổn thương não.\n- Chỉ định lamotrigine po daily.\n- Chỉ định levetiracetam po daily.\n- Theo dõi bệnh nhân tại khoa thần kinh để đánh giá đáp ứng điều trị.",
+    "entities": [
+      {
+        "text": "Động kinh",
+        "type": "CHẨN_ĐOÁN",
+        "assertions": [
+          "isHistorical"
+        ],
+        "candidates": [
+          "G40.9"
+        ],
+        "position": [
+          59,
+          68
+        ]
+      },
+      {
+        "text": "mất ý thức",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+          "isHistorical"
+        ],
+        "candidates": [],
+        "position": [
+          114,
+          124
+        ]
+      },
+      {
+        "text": "mệt mỏi sau cơn",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "candidates": [],
+        "position": [
+          236,
+          251
+        ]
+      },
+      {
+        "text": "cứng người",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "candidates": [],
+        "position": [
+          264,
+          274
+        ]
+      },
+      {
+        "text": "lamotrigine po daily",
+        "type": "THUỐC",
+        "assertions": [],
+        "candidates": [
+          "26237"
+        ],
+        "position": [
+          543,
+          563
+        ]
+      },
+      {
+        "text": "levetiracetam po daily",
+        "type": "THUỐC",
+        "assertions": [],
+        "candidates": [
+          "68819"
+        ],
+        "position": [
+          576,
+          598
+        ]
+      }
+    ],
+    "scenario_id": "sample_571919",
+    "challenge_profile": "repeated_mention"
+  },
+  {
+    "text": "**1. Tiền sử bệnh**\n\n* Hồ sơ cũ cho thấy BN đã được chẩn đoán Rung nhĩ.\n* BN đã sử dụng các thuốc điều trị trước đây, bao gồm thuốc chống loạn nhịp.\n\n**2. Tiền sử bệnh hiện tại**\n\n* Ghi nhận chóng mặt.\n* Ghi nhận khó thở.\n* Ghi nhận mệt mỏi.\n* BN được nhập viện do các triệu chứng trên.\n\n**3. Đánh giá tại bệnh viện**\n\n* Khám lâm sàng: ghi nhận nhịp tim nhanh, huyết áp bình thường.\n* Cận lâm sàng: \n  * INR.\n  * Cận lâm sàng ghi nhận INR bình thường.\n* Chỉ định amiodarone po daily.\n* BN được theo dõi và điều trị tại bệnh viện.",
+    "entities": [
+      {
+        "text": "Rung nhĩ",
+        "type": "CHẨN_ĐOÁN",
+        "assertions": [
+          "isHistorical"
+        ],
+        "candidates": [
+          "I48"
+        ],
+        "position": [
+          62,
+          70
+        ]
+      },
+      {
+        "text": "chóng mặt",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "candidates": [],
+        "position": [
+          191,
+          200
+        ]
+      },
+      {
+        "text": "khó thở",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "candidates": [],
+        "position": [
+          213,
+          220
+        ]
+      },
+      {
+        "text": "mệt mỏi",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "candidates": [],
+        "position": [
+          233,
+          240
+        ]
+      },
+      {
+        "text": "amiodarone po daily",
+        "type": "THUỐC",
+        "assertions": [],
+        "candidates": [
+          "3844"
+        ],
+        "position": [
+          463,
+          482
+        ]
+      },
+      {
+        "text": "INR",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "candidates": [],
+        "position": [
+          404,
+          407
+        ]
+      },
+      {
+        "text": "INR bình thường",
+        "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+        "assertions": [],
+        "candidates": [],
+        "position": [
+          435,
+          450
+        ]
+      }
+    ],
+    "scenario_id": "sample_710954",
+    "challenge_profile": "lab_name_result_pair"
+  },
+  {
+    "text": "**Tiền sử bệnh**\n\n* Bệnh nhân có tiền sử HIV/AIDS\n* Sử dụng thuốc lamivudine po daily và dolutegravir po daily\n* Không có tiền sử bệnh lý khác đáng kể\n\n**Tiền sử bệnh hiện tại**\n\n* Bệnh nhân nhập viện với triệu chứng sút cân và nổi hạch\n* Triệu chứng xuất hiện trong vòng 2 tuần trước khi nhập viện\n* Bệnh nhân không có tiền sử bệnh lý khác đáng kể trong thời gian gần đây\n\n**Đánh giá tại bệnh viện**\n\n* Khám lâm sàng: Ghi nhận HIV/AIDS, sút cân và nổi hạch\n* Xét nghiệm: CD4 200 cells/mm3, viral load 100.000 copies/mL\n* Chẩn đoán hình ảnh: Không có bất thường đáng kể\n* Điều trị:\n + Chỉ định lamivudine po daily\n + Chỉ định dolutegravir po daily\n + Theo dõi và điều trị triệu chứng\n* Kế hoạch theo dõi: Follow-up sau 2 tuần để đánh giá hiệu quả điều trị và theo dõi tình trạng bệnh lý.",
+    "entities": [
+      {
+        "text": "HIV/AIDS",
+        "type": "CHẨN_ĐOÁN",
+        "assertions": [],
+        "candidates": [
+          "B20"
+        ],
+        "position": [
+          41,
+          49
+        ]
+      },
+      {
+        "text": "sút cân",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "candidates": [],
+        "position": [
+          217,
+          224
+        ]
+      },
+      {
+        "text": "nổi hạch",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "candidates": [],
+        "position": [
+          228,
+          236
+        ]
+      },
+      {
+        "text": "lamivudine po daily",
+        "type": "THUỐC",
+        "assertions": [],
+        "candidates": [
+          "3876"
+        ],
+        "position": [
+          66,
+          85
+        ]
+      },
+      {
+        "text": "dolutegravir po daily",
+        "type": "THUỐC",
+        "assertions": [],
+        "candidates": [
+          "1469375"
+        ],
+        "position": [
+          89,
+          110
+        ]
+      }
+    ],
+    "scenario_id": "sample_793828",
+    "challenge_profile": "mixed_language"
+  },
+  {
+    "text": "**Tiền sử bệnh**\n\n- Tiền sử ghi nhận BN từng được chẩn đoán Viêm gan B.\n- Hồ sơ cũ ghi nhận BN từng sử dụng lamivudine po daily.\n\n**Tiền sử bệnh hiện tại**\n\n- Ghi nhận vàng da.\n- Ghi nhận đau hạ sườn phải.\n- BN được chuyển đến bệnh viện để điều trị.\n\n**Đánh giá tại bệnh viện**\n\n- Khám lâm sàng: vàng da, đau hạ sườn phải.\n- Xét nghiệm: HBsAg, HBV DNA.\n- Kết quả xét nghiệm: HBsAg bình thường, HBV DNA bình thường.\n- Điều trị: chỉ định entecavir po daily, tenofovir po daily.",
+    "entities": [
+      {
+        "text": "Viêm gan B",
+        "type": "CHẨN_ĐOÁN",
+        "assertions": [
+          "isHistorical"
+        ],
+        "candidates": [
+          "B16.9"
+        ],
+        "position": [
+          60,
+          70
+        ]
+      },
+      {
+        "text": "vàng da",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "candidates": [],
+        "position": [
+          168,
+          175
+        ]
+      },
+      {
+        "text": "đau hạ sườn phải",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "candidates": [],
+        "position": [
+          188,
+          204
+        ]
+      },
+      {
+        "text": "entecavir po daily",
+        "type": "THUỐC",
+        "assertions": [],
+        "candidates": [
+          "291740"
+        ],
+        "position": [
+          436,
+          454
+        ]
+      },
+      {
+        "text": "tenofovir po daily",
+        "type": "THUỐC",
+        "assertions": [],
+        "candidates": [
+          "462075"
+        ],
+        "position": [
+          456,
+          474
+        ]
+      },
+      {
+        "text": "lamivudine po daily",
+        "type": "THUỐC",
+        "assertions": [],
+        "candidates": [
+          "3876"
+        ],
+        "position": [
+          108,
+          127
+        ]
+      },
+      {
+        "text": "HBsAg",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "candidates": [],
+        "position": [
+          337,
+          342
+        ]
+      },
+      {
+        "text": "HBsAg bình thường",
+        "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+        "assertions": [],
+        "candidates": [],
+        "position": [
+          375,
+          392
+        ]
+      },
+      {
+        "text": "HBV DNA",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "candidates": [],
+        "position": [
+          344,
+          351
+        ]
+      },
+      {
+        "text": "HBV DNA bình thường",
+        "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+        "assertions": [],
+        "candidates": [],
+        "position": [
+          394,
+          413
+        ]
+      }
+    ],
+    "scenario_id": "sample_974853",
+    "challenge_profile": "historical_scope"
+  },
+  {
+    "text": "Tiền sử bệnh\n- Tiền sử bệnh lý: không ghi nhận bệnh lý đáng kể\n- Thuốc đã sử dụng trước khi nhập viện: không có thông tin về thuốc đã sử dụng trước đó\n\nTiền sử bệnh hiện tại\n- Lý do nhập viện: Bệnh nhân nhập viện vì các triệu chứng hô hấp\n- Diễn biến các triệu chứng: Ghi nhận đờ m, sốt nhẹ. BN phủ nhận ho.\n- Các sự kiện xảy ra trước khi nhập viện: không có thông tin cụ thể về các sự kiện trước khi nhập viện\n\nĐánh giá tại bệnh viện\n- Khám lâm sàng: \n  • Ghi nhận Viêm phế quản cấp\n- Cận lâm sàng: \n  • Cận lâm sàng ghi nhận CRP\n- Điều trị: \n  • Chỉ định dextromethorphan po daily\n  • Chỉ định salbutamol po daily\n- Theo dõi và kế hoạch: Theo dõi và đánh giá lại sau 2 ngày, follow-up về tình trạng bệnh và điều trị.",
+    "entities": [
+      {
+        "text": "Viêm phế quản cấp",
+        "type": "CHẨN_ĐOÁN",
+        "assertions": [],
+        "candidates": [
+          "J20.9"
+        ],
+        "position": [
+          466,
+          483
+        ]
+      },
+      {
+        "text": "đờ m",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "candidates": [],
+        "position": [
+          277,
+          281
+        ]
+      },
+      {
+        "text": "sốt nhẹ",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "candidates": [],
+        "position": [
+          283,
+          290
+        ]
+      },
+      {
+        "text": "ho",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+          "isNegated"
+        ],
+        "candidates": [],
+        "position": [
+          304,
+          306
+        ]
+      },
+      {
+        "text": "dextromethorphan po daily",
+        "type": "THUỐC",
+        "assertions": [],
+        "candidates": [
+          "3463"
+        ],
+        "position": [
+          557,
+          582
+        ]
+      },
+      {
+        "text": "salbutamol po daily",
+        "type": "THUỐC",
+        "assertions": [],
+        "candidates": [
+          "435"
+        ],
+        "position": [
+          596,
+          615
+        ]
+      },
+      {
+        "text": "CRP",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "candidates": [],
+        "position": [
+          527,
+          530
+        ]
+      }
+    ],
+    "scenario_id": "sample_247372",
+    "challenge_profile": "mixed_language"
+  },
+  {
+    "text": "Tiền sử bệnh\n• Hồ sơ cũ cho thấy BN đã được chẩn đoán Nhồi máu cơ tim cấp.\n• Tiền sử ghi nhận đau lan vai trái.\n\nTiền sử bệnh hiện tại\n• Ghi nhận vã mồ hôi.\n\nĐánh giá tại bệnh viện\n• Chỉ định clopidogrel po daily.\n• Chỉ định nitroglycerin po daily.\n• Cận lâm sàng ghi nhận CK-MB.\n• Cận lâm sàng ghi nhận CK-MB bình thường.",
+    "entities": [
+      {
+        "text": "Nhồi máu cơ tim cấp",
+        "type": "CHẨN_ĐOÁN",
+        "assertions": [
+          "isHistorical"
+        ],
+        "candidates": [
+          "I21.9"
+        ],
+        "position": [
+          54,
+          73
+        ]
+      },
+      {
+        "text": "vã mồ hôi",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "candidates": [],
+        "position": [
+          146,
+          155
+        ]
+      },
+      {
+        "text": "đau lan vai trái",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+          "isHistorical"
+        ],
+        "candidates": [],
+        "position": [
+          94,
+          110
+        ]
+      },
+      {
+        "text": "clopidogrel po daily",
+        "type": "THUỐC",
+        "assertions": [],
+        "candidates": [
+          "153126"
+        ],
+        "position": [
+          192,
+          212
+        ]
+      },
+      {
+        "text": "nitroglycerin po daily",
+        "type": "THUỐC",
+        "assertions": [],
+        "candidates": [
+          "3766"
+        ],
+        "position": [
+          225,
+          247
+        ]
+      },
+      {
+        "text": "CK-MB",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "candidates": [],
+        "position": [
+          273,
+          278
+        ]
+      },
+      {
+        "text": "CK-MB bình thường",
+        "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+        "assertions": [],
+        "candidates": [],
+        "position": [
+          304,
+          321
+        ]
+      }
+    ],
+    "scenario_id": "sample_671016",
+    "challenge_profile": "basic"
+  },
+  {
+    "text": "**Tiền sử bệnh**\n\n- Theo giấy ra viện cũ, BN từng điều trị Tăng huyết áp.\n- Theo lời bệnh nhân, trước đó đã xuất hiện chóng mặt.\n\n**Tiền sử bệnh hiện tại**\n\n- Ghi nhận ù tai.\n- Ghi nhận hoa mắt.\n- Ghi nhận mệt mỏi.\n- Ghi nhận đau đầu.\n\n**Đánh giá tại bệnh viện**\n\n- Khám lâm sàng: Huyết áp 180/100 mmHg.\n- Chỉ định nifedipine po daily.\n- Chỉ định metoprolol po daily.\n- Cận lâm sàng ghi nhận ion đồ.\n- Cận lâm sàng ghi nhận ion đồ bình thường.\n- Cận lâm sàng ghi nhận ECG.\n- Cận lâm sàng ghi nhận ECG bình thường.",
+    "entities": [
+      {
+        "text": "Tăng huyết áp",
+        "type": "CHẨN_ĐOÁN",
+        "assertions": [
+          "isHistorical"
+        ],
+        "candidates": [
+          "I10"
+        ],
+        "position": [
+          59,
+          72
+        ]
+      },
+      {
+        "text": "chóng mặt",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+          "isHistorical"
+        ],
+        "candidates": [],
+        "position": [
+          118,
+          127
+        ]
+      },
+      {
+        "text": "ù tai",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "candidates": [],
+        "position": [
+          168,
+          173
+        ]
+      },
+      {
+        "text": "hoa mắt",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "candidates": [],
+        "position": [
+          186,
+          193
+        ]
+      },
+      {
+        "text": "mệt mỏi",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "candidates": [],
+        "position": [
+          206,
+          213
+        ]
+      },
+      {
+        "text": "đau đầu",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "candidates": [],
+        "position": [
+          226,
+          233
+        ]
+      },
+      {
+        "text": "nifedipine po daily",
+        "type": "THUỐC",
+        "assertions": [],
+        "candidates": [
+          "3940"
+        ],
+        "position": [
+          315,
+          334
+        ]
+      },
+      {
+        "text": "metoprolol po daily",
+        "type": "THUỐC",
+        "assertions": [],
+        "candidates": [
+          "68929"
+        ],
+        "position": [
+          347,
+          366
+        ]
+      },
+      {
+        "text": "ion đồ",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "candidates": [],
+        "position": [
+          392,
+          398
+        ]
+      },
+      {
+        "text": "ion đồ bình thường",
+        "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+        "assertions": [],
+        "candidates": [],
+        "position": [
+          424,
+          442
+        ]
+      },
+      {
+        "text": "ECG",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "candidates": [],
+        "position": [
+          468,
+          471
+        ]
+      },
+      {
+        "text": "ECG bình thường",
+        "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+        "assertions": [],
+        "candidates": [],
+        "position": [
+          497,
+          512
+        ]
+      }
+    ],
+    "scenario_id": "sample_396853",
+    "challenge_profile": "lab_name_result_pair"
+  },
+  {
+    "text": "Tiền sử bệnh\n\n- Không có tiền sử bệnh lý đáng kể\n- Không có thuốc đang sử dụng trước khi nhập viện\n- Không có yếu tố nguy cơ đáng kể\n\nTiền sử bệnh hiện tại\n\n- Ghi nhận khó thở\n- Ghi nhận sốt nhẹ\n- BN phủ nhận khò khè\n- Không có triệu chứng khác đáng kể\n\nĐánh giá tại bệnh viện\n\n- Ghi nhận Viêm phế quản cấp\n- Chỉ định dextromethorphan po daily\n- Cận lâm sàng ghi nhận bạch cầu\n- Ghi nhận Viêm phế quản cấp với khó thở và sốt nhẹ\n- Chỉ định dextromethorphan po daily để điều trị Viêm phế quản cấp",
+    "entities": [
+      {
+        "text": "Viêm phế quản cấp",
+        "type": "CHẨN_ĐOÁN",
+        "assertions": [],
+        "candidates": [
+          "J20.9"
+        ],
+        "position": [
+          289,
+          306
+        ]
+      },
+      {
+        "text": "khó thở",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "candidates": [],
+        "position": [
+          168,
+          175
+        ]
+      },
+      {
+        "text": "khò khè",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+          "isNegated"
+        ],
+        "candidates": [],
+        "position": [
+          209,
+          216
+        ]
+      },
+      {
+        "text": "sốt nhẹ",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "candidates": [],
+        "position": [
+          187,
+          194
+        ]
+      },
+      {
+        "text": "dextromethorphan po daily",
+        "type": "THUỐC",
+        "assertions": [],
+        "candidates": [
+          "3463"
+        ],
+        "position": [
+          318,
+          343
+        ]
+      },
+      {
+        "text": "bạch cầu",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "candidates": [],
+        "position": [
+          368,
+          376
+        ]
+      }
+    ],
+    "scenario_id": "sample_914607",
+    "challenge_profile": "repeated_mention"
+  },
+  {
+    "text": "**Tiền sử bệnh**\n\n* Bệnh nhân nữ, 35 tuổi, có tiền sử gia đình mắc bệnh Đau nửa đầu Migraine\n* Sử dụng thuốc giảm đau Paracetamol 500mg khi cần thiết\n* Không có tiền sử bệnh lý khác đáng kể\n\n**Tiền sử bệnh hiện tại**\n\n* Bệnh nhân nhập viện do bị Đau đầu dữ dội và buồn nôn\n* Ghi nhận buồn nôn trong 2 ngày qua\n* Không có các triệu chứng khác như sốt, nôn mửa, hoặc thay đổi về nhận thức\n* Bệnh nhân cho biết đã sử dụng thuốc giảm đau Paracetamol 500mg trước khi nhập viện nhưng không có hiệu quả\n\n**Đánh giá tại bệnh viện**\n\n* Khám lâm sàng: Ghi nhận Đau nửa đầu Migraine, không có dấu hiệu của bệnh lý khác\n* Xét nghiệm: CRP 10mg/L, WBC 8.000/mm3, không có dấu hiệu của nhiễm trùng hoặc viêm\n* Chẩn đoán hình ảnh: MRI sọ não bình thường\n* Điều trị: Bệnh nhân được điều trị bằng thuốc Sumatriptan 50mg và thuốc giảm đau Paracetamol 500mg\n* Theo dõi: Bệnh nhân được theo dõi về các triệu chứng và hiệu quả của điều trị",
+    "entities": [
+      {
+        "text": "Đau nửa đầu Migraine",
+        "type": "CHẨN_ĐOÁN",
+        "assertions": [],
+        "candidates": [
+          "G43.9"
+        ],
+        "position": [
+          72,
+          92
+        ]
+      },
+      {
+        "text": "buồn nôn",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "candidates": [],
+        "position": [
+          264,
+          272
+        ]
+      }
+    ],
+    "scenario_id": "sample_881673",
+    "challenge_profile": "abbreviation_or_typo"
+  },
+  {
+    "text": "**Tiền sử bệnh**\n\n- Tiền sử bệnh lý: \n  + Bên ngoại ghi nhận người thân mắc Động kinh\n- Tiền sử điều trị: \n  + Không ghi nhận điều trị trước đây\n\n**Tiền sử bệnh hiện tại**\n\n- Lý do nhập viện: \n  + Ghi nhận co giật\n- Diễn biến triệu chứng: \n  + Ghi nhận mệt mỏi sau cơn\n- Các sự kiện xảy ra trước khi nhập viện: \n  + Không ghi nhận sự kiện đặc biệt\n\n**Đánh giá tại bệnh viện**\n\n- Khám lâm sàng: \n  + Tình trạng bệnh nhân ổn định\n- Cận lâm sàng: \n  + Cận lâm sàng ghi nhận MRI não\n  + Cận lâm sàng ghi nhận MRI não bình thường\n- Điều trị: \n  + Chỉ định clonazepam po daily",
+    "entities": [
+      {
+        "text": "Động kinh",
+        "type": "CHẨN_ĐOÁN",
+        "assertions": [
+          "isFamily"
+        ],
+        "candidates": [
+          "G40.9"
+        ],
+        "position": [
+          76,
+          85
+        ]
+      },
+      {
+        "text": "co giật",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "candidates": [],
+        "position": [
+          206,
+          213
+        ]
+      },
+      {
+        "text": "mệt mỏi sau cơn",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "candidates": [],
+        "position": [
+          253,
+          268
+        ]
+      },
+      {
+        "text": "clonazepam po daily",
+        "type": "THUỐC",
+        "assertions": [],
+        "candidates": [
+          "2330"
+        ],
+        "position": [
+          551,
+          570
+        ]
+      },
+      {
+        "text": "MRI não",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "candidates": [],
+        "position": [
+          471,
+          478
+        ]
+      },
+      {
+        "text": "MRI não bình thường",
+        "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+        "assertions": [],
+        "candidates": [],
+        "position": [
+          505,
+          524
+        ]
+      }
+    ],
+    "scenario_id": "sample_863718",
+    "challenge_profile": "family_scope"
+  },
+  {
+    "text": "**Tiền sử bệnh**\n\n- Bệnh nhân không có tiền sử bệnh lý đáng kể.\n- Bệnh nhân không sử dụng thuốc nào trước khi nhập viện.\n- Không có yếu tố nguy cơ đáng kể.\n\n**Tiền sử bệnh hiện tại**\n\n- Bệnh nhân nhập viện vì các triệu chứng về mắt.\n- Bệnh nhân phủ nhận lóa mắt.\n- Bệnh nhân có các triệu chứng khác như nhìn mờ, khó đọc.\n\n**Đánh giá tại bệnh viện**\n\n- Khám lâm sàng: Ghi nhận Đục thủy tinh thể.\n- Xét nghiệm: Không có kết quả đáng kể.\n- Chẩn đoán hình ảnh: Không có kết quả đáng kể.\n- Thủ thuật y tế: Bệnh nhân được chỉ định phẫu thuật thay thủy tinh thể.",
+    "entities": [
+      {
+        "text": "Đục thủy tinh thể",
+        "type": "CHẨN_ĐOÁN",
+        "assertions": [],
+        "candidates": [
+          "H25.9"
+        ],
+        "position": [
+          376,
+          393
+        ]
+      },
+      {
+        "text": "lóa mắt",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+          "isNegated"
+        ],
+        "candidates": [],
+        "position": [
+          254,
+          261
+        ]
+      }
+    ],
+    "scenario_id": "sample_214556",
+    "challenge_profile": "negation_scope"
+  }
+]

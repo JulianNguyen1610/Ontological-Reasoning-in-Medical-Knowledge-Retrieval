@@ -4,7 +4,7 @@ Cấu hình hệ thống sinh dữ liệu nhân tạo định hướng tri thứ
 import os
 from pathlib import Path
 from dataclasses import dataclass, field
-from typing import List, Dict
+from typing import List, Dict, Optional
 from dotenv import load_dotenv
 
 # Load environment variables
@@ -14,6 +14,12 @@ load_dotenv()
 PROJECT_ROOT = Path(__file__).parent.parent
 DATA_DIR = PROJECT_ROOT / "data"
 SEEDS_DIR = Path(__file__).parent / "knowledge_seeds"
+
+# Chỉ các chẩn đoán này có ngữ cảnh tiền sử gia đình đủ tự nhiên trong seed hiện tại.
+FAMILY_HISTORY_DIAGNOSIS_CODES = frozenset({
+    "J45.9", "I10", "I21.9", "E11.9", "E10.9", "G40.9", "G43.9",
+    "M06.9", "C50.9", "C34.9", "L40.0", "L30.9", "H40.9",
+})
 
 @dataclass
 class GenerationConfig:
@@ -33,10 +39,10 @@ class GenerationConfig:
     
     # Tỷ lệ phân phối thuộc tính
     assertion_distribution: Dict[str, float] = field(default_factory=lambda: {
-        "isNegated": 0.20,
-        "isFamily": 0.10,
-        "isHistorical": 0.30,
-        "none": 0.40,  # Không có thuộc tính đặc biệt
+        "isNegated": 0.30,
+        "isFamily": 0.25,
+        "isHistorical": 0.45,
+        "none": 0.20,  # Không có thuộc tính đặc biệt
     })
     
     # Tỷ lệ các kịch bản lâm sàng
@@ -50,6 +56,19 @@ class GenerationConfig:
     # Ngưỡng验证
     min_similarity_threshold: float = 0.95
     max_retries: int = 3
+
+    # Relative curriculum targets; ChallengePlanner converts these to batch quotas.
+    challenge_profile_quotas: Dict[str, float] = field(default_factory=lambda: {
+        "basic": 0.25, "negation_scope": 0.12, "historical_scope": 0.12,
+        "family_scope": 0.08, "lab_name_result_pair": 0.15,
+        "repeated_mention": 0.10, "abbreviation_or_typo": 0.10,
+        "mixed_language": 0.08,
+    })
+    previous_evaluation_report: Optional[str] = None
+    force_critic_all: bool = False
+    checkpoint_interval: int = 25
+    resume_from_checkpoint: Optional[str] = None
+    max_total_attempts: Optional[int] = None
     
     # Phong cách văn bản
     style_variants: List[str] = field(default_factory=lambda: [
@@ -84,7 +103,12 @@ class GenerationConfig:
     max_tokens: int = 2000
     
     # Cấu hình delay để tránh giới hạn RPM (40 RPM tương đương trung bình 1.5s/request)
-    request_delay: float = 1.5
+    request_delay: float = 4.0
+    api_max_retries: int = 5
+    api_retry_base_delay: float = 5.0
+    api_retry_max_delay: float = 60.0
+    api_retry_jitter: float = 0.25
+    api_rate_limit_cooldown: float = 15.0
 
 # Các loại thực thể hợp lệ
 VALID_ENTITY_TYPES = [

@@ -6,6 +6,7 @@ import json
 import random
 from typing import Dict, List, Tuple, Optional
 from dataclasses import dataclass
+from data_generation.config import FAMILY_HISTORY_DIAGNOSIS_CODES
 
 
 @dataclass
@@ -41,6 +42,9 @@ class TextGenerator:
                 "không có",
                 "phủ nhận",
                 "chưa ghi nhận",
+                "chưa chỉ định",
+                "chưa có kết quả",
+                "không ghi nhận",
                 "âm tính",
             ],
             "isFamily": [
@@ -48,7 +52,12 @@ class TextGenerator:
                 "người nhà",
                 "mẹ",
                 "bố",
+                "cha",
                 "anh chị em",
+                "anh ruột",
+                "chị ruột",
+                "bên ngoại",
+                "bên nội",
                 "họ hàng",
             ],
             "isHistorical": [
@@ -57,6 +66,12 @@ class TextGenerator:
                 "trong quá khứ",
                 "đã từng",
                 "ghi nhận trước đó",
+                "hồ sơ cũ",
+                "bệnh sử cũ",
+                "giấy ra viện cũ",
+                "đợt khám trước",
+                "tuyến trước",
+                "theo lời bệnh nhân",
             ],
         }
     
@@ -171,7 +186,7 @@ class TextGenerator:
             ))
             
             # Kết quả xét nghiệm
-            if random.random() < 0.7:
+            if getattr(scenario, "challenge_profile", "basic") == "lab_name_result_pair" or random.random() < 0.7:
                 result_text = self._format_lab_result(test)
                 entities.append(EntityAnnotation(
                     text=result_text,
@@ -227,10 +242,10 @@ class TextGenerator:
 
         eligible_by_type = {
             "CHẨN_ĐOÁN": {"isHistorical", "isFamily"},
-            "TRIỆU_CHỨNG": {"isNegated", "isHistorical", "isFamily"},
+            "TRIỆU_CHỨNG": {"isNegated", "isHistorical"},
             "THUỐC": {"isHistorical"},
-            "TÊN_XÉT_NGHIỆM": {"isNegated", "isHistorical"},
-            "KẾT_QUẢ_XÉT_NGHIỆM": {"isHistorical"},
+            "TÊN_XÉT_NGHIỆM": {"isHistorical"},
+            "KẾT_QUẢ_XÉT_NGHIỆM": {"isNegated", "isHistorical"},
         }
         eligible_assertions = [
             assertion
@@ -248,35 +263,76 @@ class TextGenerator:
         entities: List[EntityAnnotation],
         scenario_assertions: List[str],
     ) -> None:
-        if not entities or any(entity.assertions for entity in entities):
+        if not entities:
             return
 
-        for preferred_assertion in ["isNegated", "isHistorical", "isFamily"]:
-            if preferred_assertion not in scenario_assertions:
-                continue
+        valid_assertions = [
+            assertion
+            for assertion in scenario_assertions
+            if assertion in {"isNegated", "isFamily", "isHistorical"}
+        ]
+        if not valid_assertions:
+            return
+
+        # Reset các gán ngẫu nhiên trước đó và phân bổ có giới hạn theo sample.
+        # Điều này tránh một assertion bị lặp trên hầu hết entity trong cùng note.
+        for entity in entities:
+            entity.assertions = []
+
+        target_count = 1
+        if len(entities) >= 4 and random.random() < 0.35:
+            target_count = 2
+
+        selected_entities = []
+        assertion_order = list(valid_assertions)
+        random.shuffle(assertion_order)
+        while len(selected_entities) < target_count:
+            assertion = assertion_order[len(selected_entities) % len(assertion_order)]
             candidate = self._find_best_assertion_candidate(
                 entities,
-                preferred_assertion,
+                assertion,
+                excluded_entities=selected_entities,
             )
-            if candidate:
-                candidate.assertions = [preferred_assertion]
-                return
+            if not candidate:
+                break
+            candidate.assertions = [assertion]
+            selected_entities.append(candidate)
 
     def _find_best_assertion_candidate(
         self,
         entities: List[EntityAnnotation],
         assertion: str,
+        excluded_entities: Optional[List[EntityAnnotation]] = None,
     ) -> Optional[EntityAnnotation]:
+        excluded_entities = excluded_entities or []
         priority_by_assertion = {
-            "isNegated": ["TRIỆU_CHỨNG", "TÊN_XÉT_NGHIỆM"],
+            "isNegated": ["TRIỆU_CHỨNG", "KẾT_QUẢ_XÉT_NGHIỆM"],
             "isHistorical": ["CHẨN_ĐOÁN", "TRIỆU_CHỨNG", "THUỐC"],
             "isFamily": ["CHẨN_ĐOÁN", "TRIỆU_CHỨNG"],
         }
         for entity_type in priority_by_assertion.get(assertion, []):
-            for entity in entities:
-                if entity.type == entity_type:
-                    return entity
+            candidates = [
+                entity
+                for entity in entities
+                if entity.type == entity_type and entity not in excluded_entities
+                and (assertion != "isFamily" or self._is_family_history_eligible(entity))
+            ]
+            if candidates:
+                return random.choice(candidates)
         return None
+
+    @staticmethod
+    def _is_family_history_eligible(entity: EntityAnnotation) -> bool:
+        """Chỉ dùng tiền sử gia đình cho chẩn đoán có ý nghĩa lâm sàng phù hợp."""
+        return (
+            entity.type == "CHẨN_ĐOÁN"
+            and any(
+                code == allowed_code
+                or code.split(".")[0] == allowed_code.split(".")[0]
+                for code in entity.candidates
+                for allowed_code in FAMILY_HISTORY_DIAGNOSIS_CODES
+            )
+        )
     
     def _generate_raw_text(
         self, scenario, entities: List[EntityAnnotation], style_director
@@ -303,6 +359,9 @@ class TextGenerator:
         ])
         
         noise_instructions = style_director.generate_noise_instructions(0.3)
+        profile_instruction = self._build_challenge_profile_instruction(
+            getattr(scenario, "challenge_profile", "basic"), entities
+        )
         
         prompt = f"""Bạn là một bác sĩ đang ghi chú bệnh án. 
 Hãy chuyển kịch bản sau thành văn bản y khoa có cấu trúc theo 3 phần chính (sử dụng định dạng danh sách và gạch đầu dòng cho các mục con như mẫu bệnh án thực tế), theo phong cách {scenario.text_style}.
@@ -340,6 +399,7 @@ YÊU CẦU NGHIÊM NGẶT:
 10. Không được gộp nhiều thực thể có thuộc tính khác nhau vào cùng một câu mơ hồ
 11. Với mỗi dòng trong kế hoạch đặt thực thể, hãy viết ít nhất một câu hoặc bullet riêng đủ để thể hiện đúng cue bắt buộc
 12. Ưu tiên viết các thực thể có assertion trước, sau đó mới nối các thực thể không assertion
+13. Ràng buộc hard feature của batch: {profile_instruction}
 
 {noise_instructions}
 
@@ -360,6 +420,21 @@ Trả về CHỈ văn bản thô theo đúng cấu trúc 3 phần trên, không 
             return text
         
         return None
+
+    @staticmethod
+    def _build_challenge_profile_instruction(profile: str, entities: List[EntityAnnotation]) -> str:
+        """Make each curriculum profile change the generated note, not only metadata."""
+        instructions = {
+            "basic": "ghi chú chuẩn, rõ ràng, không bắt buộc nhiễu khó.",
+            "negation_scope": "đặt cue phủ định sát đúng thực thể bị isNegated, không phủ định lan sang thực thể khác.",
+            "historical_scope": "đặt cue tiền sử/quá khứ sát đúng thực thể isHistorical và tách khỏi diễn tiến hiện tại.",
+            "family_scope": "ghi rõ người thân hoặc gia đình ngay cạnh chẩn đoán isFamily, không gán cho bệnh nhân.",
+            "lab_name_result_pair": "mỗi tên xét nghiệm phải có kết quả tương ứng trong cùng câu hoặc bullet rõ quan hệ.",
+            "repeated_mention": "lặp lại nguyên văn ít nhất một thực thể bắt buộc ở hai câu khác nhau với ngữ cảnh khác nhau.",
+            "abbreviation_or_typo": "dùng ít nhất một viết tắt y khoa chuẩn (BN, HA, CRP, WBC, ECG, MRI, CT hoặc SpO2) ngoài chuỗi entity bắt buộc; có thể thêm typo nhẹ.",
+            "mixed_language": "dùng chính xác cụm tiếng Anh 'follow-up' ngoài chuỗi entity bắt buộc.",
+        }
+        return instructions.get(profile, instructions["basic"])
 
     def _build_assertion_instruction(self, entity: EntityAnnotation) -> str:
         if "isNegated" in entity.assertions:
@@ -397,7 +472,9 @@ Trả về CHỈ văn bản thô theo đúng cấu trúc 3 phần trên, không 
 
     def _select_sentence_style(self, entity: EntityAnnotation) -> str:
         if "isNegated" in entity.assertions:
-            return "bullet hoặc câu ngắn phủ nhận riêng"
+            if entity.type == "TRIỆU_CHỨNG":
+                return "bullet hoặc câu ngắn phủ nhận triệu chứng riêng"
+            return "bullet mô tả xét nghiệm/kết quả chưa ghi nhận riêng"
         if "isFamily" in entity.assertions:
             return "bullet mô tả tiền sử gia đình riêng"
         if "isHistorical" in entity.assertions:
@@ -410,11 +487,15 @@ Trả về CHỈ văn bản thô theo đúng cấu trúc 3 phần trên, không 
 
     def _select_required_cue(self, entity: EntityAnnotation) -> str:
         if "isNegated" in entity.assertions:
-            return "một trong các cụm: không, không có, phủ nhận, chưa ghi nhận"
+            if entity.type == "TRIỆU_CHỨNG":
+                return "một trong các cụm: không, không có, phủ nhận"
+            if entity.type == "KẾT_QUẢ_XÉT_NGHIỆM":
+                return "một trong các cụm: chưa có kết quả, chưa ghi nhận, không ghi nhận"
+            return "một trong các cụm: chưa ghi nhận, không ghi nhận"
         if "isFamily" in entity.assertions:
-            return "một trong các cụm: gia đình, người nhà, mẹ, bố, anh chị em"
+            return "một trong các cụm: gia đình, người nhà, mẹ, bố/cha, anh/chị ruột, bên nội/bên ngoại"
         if "isHistorical" in entity.assertions:
-            return "một trong các cụm: tiền sử, trước đây, trong quá khứ, đã từng"
+            return "một trong các cụm: tiền sử, trước đây, hồ sơ cũ, giấy ra viện cũ, đợt khám trước, tuyến trước"
         if entity.type == "THUỐC":
             return "nêu rõ là thuốc đang dùng hoặc được chỉ định"
         if entity.type in {"TÊN_XÉT_NGHIỆM", "KẾT_QUẢ_XÉT_NGHIỆM"}:
@@ -423,13 +504,54 @@ Trả về CHỈ văn bản thô theo đúng cấu trúc 3 phần trên, không 
 
     def _build_example_sentence(self, entity: EntityAnnotation) -> str:
         if "isNegated" in entity.assertions:
-            return f"BN phủ nhận {entity.text}."
+            if entity.type == "TRIỆU_CHỨNG":
+                return f"BN phủ nhận {entity.text}."
+            if entity.type == "KẾT_QUẢ_XÉT_NGHIỆM":
+                return f"Chưa có kết quả {entity.text}."
+            return f"Chưa ghi nhận {entity.text}."
         if "isFamily" in entity.assertions:
-            return f"Gia đình ghi nhận mẹ bệnh nhân có tiền sử {entity.text}."
+            templates = [
+                f"Mẹ bệnh nhân có tiền sử {entity.text}.",
+                f"Cha của BN từng được chẩn đoán {entity.text}.",
+                f"Anh ruột đang theo dõi vì {entity.text}.",
+                f"Chị ruột của người bệnh đã từng điều trị {entity.text}.",
+                f"Bên ngoại ghi nhận người thân mắc {entity.text}.",
+                f"Bên nội có tiền sử gia đình liên quan đến {entity.text}.",
+                f"Người nhà cho biết trong gia đình có {entity.text}.",
+                f"Họ hàng gần từng được ghi nhận {entity.text}.",
+            ]
+            return random.choice(templates)
         if "isHistorical" in entity.assertions:
             if entity.type == "THUỐC":
-                return f"Tiền sử trước đây đã dùng {entity.text}."
-            return f"Tiền sử ghi nhận {entity.text}."
+                templates = [
+                    f"Trước đây đã dùng {entity.text}.",
+                    f"Hồ sơ cũ ghi nhận đã điều trị bằng {entity.text}.",
+                    f"Tiền sử dùng {entity.text} trước nhập viện.",
+                    f"Theo giấy ra viện cũ, BN từng được kê {entity.text}.",
+                    f"Đợt khám trước có chỉ định {entity.text}.",
+                    f"Theo lời bệnh nhân, đã từng sử dụng {entity.text}.",
+                ]
+                return random.choice(templates)
+            if entity.type == "CHẨN_ĐOÁN":
+                templates = [
+                    f"Tiền sử ghi nhận BN từng được chẩn đoán {entity.text}.",
+                    f"Hồ sơ cũ cho thấy BN đã được chẩn đoán {entity.text}.",
+                    f"Theo giấy ra viện cũ, BN từng điều trị {entity.text}.",
+                    f"Đợt khám trước, BN được theo dõi vì {entity.text}.",
+                    f"Tuyến trước đã ghi nhận chẩn đoán {entity.text}.",
+                ]
+                return random.choice(templates)
+            templates = [
+                f"Tiền sử ghi nhận {entity.text}.",
+                f"Trước đây từng có {entity.text}.",
+                f"Bệnh sử cũ có {entity.text}.",
+                f"Hồ sơ cũ ghi nhận {entity.text}.",
+                f"Theo giấy ra viện cũ, BN từng được chẩn đoán {entity.text}.",
+                f"Đợt khám trước đã ghi nhận {entity.text}.",
+                f"Tuyến trước từng theo dõi {entity.text}.",
+                f"Theo lời bệnh nhân, trước đó đã xuất hiện {entity.text}.",
+            ]
+            return random.choice(templates)
         if entity.type == "THUỐC":
             return f"Chỉ định {entity.text}."
         if entity.type in {"TÊN_XÉT_NGHIỆM", "KẾT_QUẢ_XÉT_NGHIỆM"}:

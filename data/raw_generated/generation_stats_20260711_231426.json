@@ -1,0 +1,102 @@
+{
+  "total_generated": 72,
+  "valid_samples": 50,
+  "invalid_samples": 22,
+  "retry_count": 179,
+  "entity_type_distribution": {
+    "TRIỆU_CHỨNG": 117,
+    "TÊN_XÉT_NGHIỆM": 47,
+    "KẾT_QUẢ_XÉT_NGHIỆM": 26,
+    "CHẨN_ĐOÁN": 50,
+    "THUỐC": 99
+  },
+  "assertion_distribution": {
+    "isNegated": 20,
+    "isFamily": 6,
+    "isHistorical": 19
+  },
+  "profile_coverage": {
+    "base_quota_target": {
+      "basic": 13,
+      "negation_scope": 6,
+      "historical_scope": 6,
+      "family_scope": 4,
+      "lab_name_result_pair": 7,
+      "repeated_mention": 5,
+      "abbreviation_or_typo": 5,
+      "mixed_language": 4
+    },
+    "quota_target": {
+      "basic": 13,
+      "negation_scope": 6,
+      "historical_scope": 6,
+      "family_scope": 4,
+      "lab_name_result_pair": 7,
+      "repeated_mention": 5,
+      "abbreviation_or_typo": 5,
+      "mixed_language": 4
+    },
+    "quota_actual": {
+      "basic": 13,
+      "negation_scope": 6,
+      "historical_scope": 6,
+      "family_scope": 4,
+      "lab_name_result_pair": 7,
+      "repeated_mention": 5,
+      "abbreviation_or_typo": 5,
+      "mixed_language": 4
+    },
+    "profiles_missing_quota": [],
+    "error_driven_adjustments": {
+      "basic": 1.0,
+      "negation_scope": 1.0,
+      "historical_scope": 1.0,
+      "family_scope": 1.0,
+      "lab_name_result_pair": 1.0,
+      "repeated_mention": 1.0,
+      "abbreviation_or_typo": 1.0,
+      "mixed_language": 1.0
+    }
+  },
+  "validation_routing": {
+    "local_validator_passed": 117,
+    "local_validator_rejected": 40,
+    "local_validator_warnings": 0,
+    "critic_called": 108,
+    "critic_rejected": 67,
+    "critic_fixed": 0
+  },
+  "resume": {
+    "resumed": true,
+    "checkpoint": "..\\data\\raw_generated\\checkpoints\\checkpoint_20260711_231426_50.json",
+    "completed_attempts": 50
+  },
+  "generation_target": {
+    "valid_samples": 50,
+    "max_total_attempts": 150,
+    "target_reached": true
+  },
+  "api_retry": {
+    "api_retries": 15,
+    "retry_reasons": {
+      "http_429": 15
+    },
+    "rate_limit_cooldowns": [
+      30.0,
+      30.0,
+      30.0,
+      30.0,
+      30.0,
+      30.0,
+      30.0,
+      30.0,
+      30.0,
+      30.0,
+      30.0,
+      30.0,
+      30.0,
+      30.0,
+      30.0
+    ]
+  }
+}

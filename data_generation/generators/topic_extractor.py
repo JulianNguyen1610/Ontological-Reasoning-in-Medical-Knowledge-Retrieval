@@ -7,6 +7,8 @@ import random
 from pathlib import Path
 from typing import List, Dict, Tuple
 from dataclasses import dataclass
+from data_generation.config import FAMILY_HISTORY_DIAGNOSIS_CODES
+from data_generation.generation_planner import CHALLENGE_PROFILES
 
 @dataclass
 class ClinicalScenario:
@@ -18,6 +20,7 @@ class ClinicalScenario:
     assertions: List[str]  # Thuộc tính cần xuất hiện
     text_style: str  # Phong cách văn bản
     complexity: str  # Mức độ phức tạp
+    challenge_profile: str = "basic"
 
 class TopicExtractor:
     def __init__(self, seeds_dir: Path):
@@ -30,13 +33,23 @@ class TopicExtractor:
         with open(filepath, 'r', encoding='utf-8') as f:
             return json.load(f)
     
-    def extract_topic(self, complexity: str = "few_entities") -> ClinicalScenario:
+    def extract_topic(self, complexity: str = "few_entities", challenge_profile: str = "basic") -> ClinicalScenario:
         """
         Trích xuất một chủ đề lâm sàng dựa trên knowledge seeds
         Đảm bảo tính logic: chẩn đoán ↔ triệu chứng ↔ thuốc ↔ xét nghiệm
         """
-        # 1. Chọn chẩn đoán ngẫu nhiên từ ICD-10 seeds
-        diagnosis = random.choice(self.icd10_seeds)
+        if challenge_profile not in CHALLENGE_PROFILES:
+            raise ValueError(f"Unsupported challenge profile: {challenge_profile}")
+
+        if challenge_profile in {"repeated_mention", "lab_name_result_pair", "mixed_language"} and complexity == "single_entity":
+            complexity = "few_entities"
+
+        # Family scope needs a diagnosis for which family history is clinically plausible.
+        diagnosis_pool = self.icd10_seeds
+        if challenge_profile == "family_scope":
+            eligible = [seed for seed in self.icd10_seeds if seed.get("code") in FAMILY_HISTORY_DIAGNOSIS_CODES]
+            diagnosis_pool = eligible or self.icd10_seeds
+        diagnosis = random.choice(diagnosis_pool)
         
         # 2. Chọn triệu chứng liên quan đến chẩn đoán
         related_symptoms = self._get_related_symptoms(diagnosis)
@@ -54,7 +67,7 @@ class TopicExtractor:
         selected_tests = self._select_tests(related_tests, num_tests)
         
         # 5. Xác định thuộc tính cần xuất hiện
-        assertions = self._select_assertions(complexity)
+        assertions = self._select_assertions(diagnosis, challenge_profile)
         
         # 6. Chọn phong cách văn bản
         text_style = random.choice([
@@ -62,6 +75,8 @@ class TopicExtractor:
             "progress_note", "medication_list", "lab_report", "imaging_report"
         ])
         
+        if challenge_profile == "lab_name_result_pair" and not selected_tests:
+            selected_tests = self._select_tests(related_tests, 1)
         return ClinicalScenario(
             diagnosis=diagnosis,
             drugs=selected_drugs,
@@ -69,7 +84,8 @@ class TopicExtractor:
             lab_tests=selected_tests,
             assertions=assertions,
             text_style=text_style,
-            complexity=complexity
+            complexity=complexity,
+            challenge_profile=challenge_profile,
         )
     
     def _get_related_symptoms(self, diagnosis: Dict) -> List[Dict]:
@@ -142,11 +158,27 @@ class TopicExtractor:
             return []
         return random.sample(tests, min(num, len(tests)))
     
-    def _select_assertions(self, complexity: str) -> List[str]:
-        all_assertions = ["isNegated", "isFamily", "isHistorical"]
-        weights = [0.20, 0.10, 0.30]
-        if random.random() < 0.40:
+    def _select_assertions(self, diagnosis: Dict, challenge_profile: str = "basic") -> List[str]:
+        """Chọn assertion với tỷ lệ đủ cao để tạo dữ liệu huấn luyện cân bằng."""
+        profile_assertion = {
+            "negation_scope": "isNegated",
+            "historical_scope": "isHistorical",
+            "family_scope": "isFamily",
+        }.get(challenge_profile)
+        if profile_assertion:
+            if profile_assertion == "isFamily" and diagnosis.get("code") not in FAMILY_HISTORY_DIAGNOSIS_CODES:
+                return []
+            return [profile_assertion]
+
+        if random.random() < 0.20:
             return []
+
+        if diagnosis.get("code") in FAMILY_HISTORY_DIAGNOSIS_CODES:
+            all_assertions = ["isNegated", "isFamily", "isHistorical"]
+            weights = [0.30, 0.25, 0.45]
+        else:
+            all_assertions = ["isNegated", "isHistorical"]
+            weights = [0.40, 0.60]
         return [random.choices(all_assertions, weights=weights, k=1)[0]]
     def generate_diverse_scenarios(self, num_samples: int = 10000) -> List[ClinicalScenario]:
         """Sinh tập hợp đa dạng các kịch bản lâm sàng"""

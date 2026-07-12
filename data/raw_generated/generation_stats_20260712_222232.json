@@ -1,0 +1,111 @@
+{
+  "total_generated": 30,
+  "valid_samples": 20,
+  "invalid_samples": 10,
+  "retry_count": 81,
+  "entity_type_distribution": {
+    "TRIỆU_CHỨNG": 49,
+    "TÊN_XÉT_NGHIỆM": 13,
+    "KẾT_QUẢ_XÉT_NGHIỆM": 11,
+    "CHẨN_ĐOÁN": 20,
+    "THUỐC": 30
+  },
+  "assertion_distribution": {
+    "isNegated": 7,
+    "isFamily": 2,
+    "isHistorical": 14
+  },
+  "profile_coverage": {
+    "base_quota_target": {
+      "basic": 5,
+      "negation_scope": 2,
+      "historical_scope": 2,
+      "family_scope": 2,
+      "lab_name_result_pair": 3,
+      "repeated_mention": 2,
+      "abbreviation_or_typo": 2,
+      "mixed_language": 2
+    },
+    "quota_target": {
+      "basic": 5,
+      "negation_scope": 2,
+      "historical_scope": 2,
+      "family_scope": 2,
+      "lab_name_result_pair": 3,
+      "repeated_mention": 2,
+      "abbreviation_or_typo": 2,
+      "mixed_language": 2
+    },
+    "quota_actual": {
+      "basic": 5,
+      "negation_scope": 2,
+      "historical_scope": 2,
+      "family_scope": 2,
+      "lab_name_result_pair": 3,
+      "repeated_mention": 2,
+      "abbreviation_or_typo": 2,
+      "mixed_language": 2
+    },
+    "profiles_missing_quota": [],
+    "error_driven_adjustments": {
+      "basic": 1.0,
+      "negation_scope": 1.0,
+      "historical_scope": 1.0,
+      "family_scope": 1.0,
+      "lab_name_result_pair": 1.0,
+      "repeated_mention": 1.0,
+      "abbreviation_or_typo": 1.0,
+      "mixed_language": 1.0
+    }
+  },
+  "validation_routing": {
+    "local_validator_passed": 47,
+    "local_validator_rejected": 6,
+    "local_validator_warnings": 0,
+    "critic_called": 44,
+    "critic_rejected": 27,
+    "critic_fixed": 0
+  },
+  "resume": {
+    "resumed": false,
+    "checkpoint": null,
+    "completed_attempts": 0
+  },
+  "generation_target": {
+    "valid_samples": 20,
+    "max_total_attempts": 60,
+    "target_reached": true
+  },
+  "api_retry": {
+    "api_retries": 24,
+    "retry_reasons": {
+      "http_429": 24
+    },
+    "rate_limit_cooldowns": [
+      5.243104719494269,
+      5.00807920629617,
+      5.123510184315182,
+      5.111038228417028,
+      5.111811192977821,
+      5.148948944888085,
+      5.041344176733532,
+      5.121726414137288,
+      10.184295281029193,
+      5.102614443110399,
+      5.123877352800716,
+      5.248120481736597,
+      5.03704037356451,
+      10.22964849924436,
+      5.223941423027776,
+      5.209809088053206,
+      5.111592244895671,
+      5.210605898723327,
+      10.11979226526364,
+      5.215696357199578,
+      10.169065073777155,
+      20.09668699383041,
+      5.009745267660323,
+      5.132967383651519
+    ]
+  }
+}

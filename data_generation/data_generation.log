@@ -662,3 +662,84 @@
   }
 }
 2026-07-09 20:48:06,870 - data_generation.pipeline - INFO - Hoàn thành! Sinh 81 mẫu hợp lệ.
+2026-07-09 22:03:14,077 - data_generation.pipeline - INFO - Bắt đầu sinh 100 mẫu dữ liệu...
+2026-07-09 22:07:58,775 - data_generation.pipeline - INFO - Bắt đầu sinh 100 mẫu dữ liệu...
+2026-07-09 22:09:30,965 - data_generation.pipeline - INFO - Bắt đầu sinh 20 mẫu dữ liệu...
+2026-07-09 23:48:09,818 - data_generation.pipeline - WARNING - Lỗi khi sinh mẫu (attempt 1): API call failed: 429 Client Error: Too Many Requests for url: https://integrate.api.nvidia.com/v1/chat/completions
+2026-07-10 00:50:52,050 - data_generation.pipeline - INFO - Đã lưu 20 mẫu vào D:\MedicalRetrieval\data\raw_generated\training_data_20260709_220930.json
+2026-07-10 00:50:52,054 - data_generation.pipeline - INFO - Thống kê: {
+  "total_generated": 20,
+  "valid_samples": 20,
+  "invalid_samples": 0,
+  "retry_count": 23,
+  "entity_type_distribution": {
+    "TRIỆU_CHỨNG": 52,
+    "TÊN_XÉT_NGHIỆM": 17,
+    "KẾT_QUẢ_XÉT_NGHIỆM": 11,
+    "CHẨN_ĐOÁN": 22,
+    "THUỐC": 33
+  },
+  "assertion_distribution": {
+    "isNegated": 6,
+    "isFamily": 6,
+    "isHistorical": 13
+  }
+}
+2026-07-10 00:50:52,054 - data_generation.pipeline - INFO - Hoàn thành! Sinh 20 mẫu hợp lệ.
+2026-07-10 07:23:46,335 - data_generation.pipeline - INFO - Bắt đầu sinh 20 mẫu dữ liệu...
+2026-07-10 07:42:11,773 - data_generation.pipeline - WARNING - Lỗi khi sinh mẫu (attempt 3): API call failed: 429 Client Error: Too Many Requests for url: https://integrate.api.nvidia.com/v1/chat/completions
+2026-07-10 07:42:48,085 - data_generation.pipeline - WARNING - Lỗi khi sinh mẫu (attempt 1): API call failed: 429 Client Error: Too Many Requests for url: https://integrate.api.nvidia.com/v1/chat/completions
+2026-07-10 07:43:38,794 - data_generation.pipeline - WARNING - Lỗi khi sinh mẫu (attempt 4): API call failed: 429 Client Error: Too Many Requests for url: https://integrate.api.nvidia.com/v1/chat/completions
+2026-07-10 07:45:30,249 - data_generation.pipeline - WARNING - Lỗi khi sinh mẫu (attempt 0): API call failed: 429 Client Error: Too Many Requests for url: https://integrate.api.nvidia.com/v1/chat/completions
+2026-07-10 07:50:39,223 - data_generation.pipeline - WARNING - Lỗi khi sinh mẫu (attempt 4): API call failed: 429 Client Error: Too Many Requests for url: https://integrate.api.nvidia.com/v1/chat/completions
+2026-07-10 08:12:22,034 - data_generation.pipeline - WARNING - Lỗi khi sinh mẫu (attempt 1): API call failed: 429 Client Error: Too Many Requests for url: https://integrate.api.nvidia.com/v1/chat/completions
+2026-07-10 08:17:21,206 - data_generation.pipeline - WARNING - Lỗi khi sinh mẫu (attempt 4): API call failed: 429 Client Error: Too Many Requests for url: https://integrate.api.nvidia.com/v1/chat/completions
+2026-07-10 08:19:28,449 - data_generation.pipeline - WARNING - Lỗi khi sinh mẫu (attempt 0): API call failed: 429 Client Error: Too Many Requests for url: https://integrate.api.nvidia.com/v1/chat/completions
+2026-07-10 08:20:25,394 - data_generation.pipeline - WARNING - Lỗi khi sinh mẫu (attempt 0): API call failed: 429 Client Error: Too Many Requests for url: https://integrate.api.nvidia.com/v1/chat/completions
+2026-07-10 08:43:12,713 - data_generation.pipeline - INFO - Đã lưu 14 mẫu vào D:\MedicalRetrieval\data\raw_generated\training_data_20260710_072346.json
+2026-07-10 08:43:12,715 - data_generation.pipeline - INFO - Thống kê: {
+  "total_generated": 20,
+  "valid_samples": 14,
+  "invalid_samples": 6,
+  "retry_count": 38,
+  "entity_type_distribution": {
+    "TRIỆU_CHỨNG": 32,
+    "TÊN_XÉT_NGHIỆM": 9,
+    "KẾT_QUẢ_XÉT_NGHIỆM": 4,
+    "CHẨN_ĐOÁN": 13,
+    "THUỐC": 26
+  },
+  "assertion_distribution": {
+    "isNegated": 4,
+    "isFamily": 0,
+    "isHistorical": 3
+  }
+}
+2026-07-10 08:43:12,716 - data_generation.pipeline - INFO - Hoàn thành! Sinh 14 mẫu hợp lệ.
+2026-07-10 09:10:50,323 - data_generation.pipeline - INFO - Bắt đầu sinh 20 mẫu dữ liệu...
+2026-07-10 09:11:11,952 - data_generation.pipeline - INFO - Bắt đầu sinh 50 mẫu dữ liệu...
+2026-07-10 09:15:16,054 - data_generation.pipeline - WARNING - Lỗi khi sinh mẫu (attempt 1): API call failed: 429 Client Error: Too Many Requests for url: https://integrate.api.nvidia.com/v1/chat/completions
+2026-07-10 09:15:19,350 - data_generation.pipeline - WARNING - Lỗi khi sinh mẫu (attempt 2): API call failed: 429 Client Error: Too Many Requests for url: https://integrate.api.nvidia.com/v1/chat/completions
+2026-07-10 10:18:31,502 - data_generation.pipeline - WARNING - Lỗi khi sinh mẫu (attempt 0): API call failed: ('Connection aborted.', ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None))
+2026-07-10 12:06:26,755 - data_generation.pipeline - WARNING - Lỗi khi sinh mẫu (attempt 1): API call failed: 429 Client Error: Too Many Requests for url: https://integrate.api.nvidia.com/v1/chat/completions
+2026-07-10 12:13:09,982 - data_generation.pipeline - WARNING - Lỗi khi sinh mẫu (attempt 0): API call failed: 429 Client Error: Too Many Requests for url: https://integrate.api.nvidia.com/v1/chat/completions
+2026-07-10 13:19:15,746 - data_generation.pipeline - INFO - Đã lưu 46 mẫu vào D:\MedicalRetrieval\data\raw_generated\training_data_20260710_091111.json
+2026-07-10 13:19:15,747 - data_generation.pipeline - INFO - Thống kê: {
+  "total_generated": 50,
+  "valid_samples": 46,
+  "invalid_samples": 4,
+  "retry_count": 65,
+  "entity_type_distribution": {
+    "TRIỆU_CHỨNG": 136,
+    "TÊN_XÉT_NGHIỆM": 41,
+    "KẾT_QUẢ_XÉT_NGHIỆM": 24,
+    "CHẨN_ĐOÁN": 45,
+    "THUỐC": 92
+  },
+  "assertion_distribution": {
+    "isNegated": 17,
+    "isFamily": 4,
+    "isHistorical": 26
+  }
+}
+2026-07-10 13:19:15,748 - data_generation.pipeline - INFO - Hoàn thành! Sinh 46 mẫu hợp lệ.

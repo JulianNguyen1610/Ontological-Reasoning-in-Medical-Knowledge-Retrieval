@@ -117,7 +117,7 @@ def main():
 
     # Cấu hình
     config = GenerationConfig(
-        num_samples=100,  # Bắt đầu với 100 mẫu để test
+        num_samples=100,  # Bắt đầu với 20 mẫu để test
         max_retries=3,
     )
 
