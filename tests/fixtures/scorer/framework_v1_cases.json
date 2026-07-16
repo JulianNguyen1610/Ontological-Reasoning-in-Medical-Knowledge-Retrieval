@@ -1,0 +1,40 @@
+{
+  "perfect": {
+    "gold": [{"text": "ho", "type": "TRIỆU_CHỨNG", "position": [3, 5], "assertions": ["isNegated"], "candidates": []}],
+    "prediction": [{"text": "ho", "type": "TRIỆU_CHỨNG", "position": [3, 5], "assertions": ["isNegated"], "candidates": []}],
+    "entity_f1": 1.0,
+    "final_score": 1.0
+  },
+  "empty": {"gold": [], "prediction": [], "entity_f1": 1.0, "final_score": 1.0},
+  "extra": {
+    "gold": [],
+    "prediction": [{"text": "ho", "type": "TRIỆU_CHỨNG", "position": [0, 2]}],
+    "entity_f1": 0.0
+  },
+  "missing": {
+    "gold": [{"text": "ho", "type": "TRIỆU_CHỨNG", "position": [0, 2]}],
+    "prediction": [],
+    "entity_f1": 0.0
+  },
+  "wrong_type": {
+    "gold": [{"text": "ho", "type": "TRIỆU_CHỨNG", "position": [0, 2]}],
+    "prediction": [{"text": "ho", "type": "CHẨN_ĐOÁN", "position": [0, 2]}],
+    "entity_f1": 0.0
+  },
+  "shifted_span": {
+    "gold": [{"text": "ho", "type": "TRIỆU_CHỨNG", "position": [3, 5]}],
+    "prediction": [{"text": "ho", "type": "TRIỆU_CHỨNG", "position": [4, 6]}],
+    "entity_f1": 0.0
+  },
+  "repeated": {
+    "gold": [
+      {"text": "ho", "type": "TRIỆU_CHỨNG", "position": [0, 2]},
+      {"text": "ho", "type": "TRIỆU_CHỨNG", "position": [8, 10]}
+    ],
+    "prediction": [
+      {"text": "ho", "type": "TRIỆU_CHỨNG", "position": [8, 10]},
+      {"text": "ho", "type": "TRIỆU_CHỨNG", "position": [0, 2]}
+    ],
+    "entity_f1": 1.0
+  }
+}
