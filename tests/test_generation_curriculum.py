@@ -68,9 +68,13 @@ def test_critic_routing_is_risk_based(tmp_path):
 
 def test_hard_profiles_have_deterministic_validation():
     validator = LocalSampleValidator(TextGenerator(NoopClient()).assertion_cues)
-    repeated = {"text": "pain", "type": "TRIỆU_CHỨNG", "assertions": [], "candidates": [], "position": [0, 4]}
-    assert validator.validate("pain. pain.", [repeated], "repeated_mention")["valid"]
-    assert not validator.validate("pain once.", [repeated], "repeated_mention")["valid"]
+    repeated = [
+        {"text": "pain", "type": "TRIỆU_CHỨNG", "assertions": [], "candidates": [], "position": [0, 4]},
+        {"text": "pain", "type": "TRIỆU_CHỨNG", "assertions": [], "candidates": [], "position": [6, 10]},
+    ]
+    assert validator.validate("pain. pain.", repeated, "repeated_mention")["valid"]
+    assert not validator.validate("pain. pain.", repeated[:1], "repeated_mention")["valid"]
+    assert not validator.validate("pain once.", repeated[:1], "repeated_mention")["valid"]
 
     abbreviation = {"text": "pain", "type": "TRIỆU_CHỨNG", "assertions": [], "candidates": [], "position": [3, 7]}
     assert validator.validate("BN pain.", [abbreviation], "abbreviation_or_typo")["valid"]

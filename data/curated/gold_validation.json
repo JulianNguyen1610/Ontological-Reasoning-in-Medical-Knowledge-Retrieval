@@ -1,0 +1,350 @@
+[
+  {
+    "text": "Tiền sử bệnh\n- Tiền sử bệnh lý: không ghi nhận bệnh lý đáng kể\n- Thuốc đã sử dụng trước khi nhập viện: không có thông tin về thuốc đã sử dụng trước đó\n\nTiền sử bệnh hiện tại\n- Lý do nhập viện: Bệnh nhân nhập viện vì các triệu chứng hô hấp\n- Diễn biến các triệu chứng: Ghi nhận đờ m, sốt nhẹ. BN phủ nhận ho.\n- Các sự kiện xảy ra trước khi nhập viện: không có thông tin cụ thể về các sự kiện trước khi nhập viện\n\nĐánh giá tại bệnh viện\n- Khám lâm sàng: \n  • Ghi nhận Viêm phế quản cấp\n- Cận lâm sàng: \n  • Cận lâm sàng ghi nhận CRP\n- Điều trị: \n  • Chỉ định dextromethorphan po daily\n  • Chỉ định salbutamol po daily\n- Theo dõi và kế hoạch: Theo dõi và đánh giá lại sau 2 ngày, follow-up về tình trạng bệnh và điều trị.",
+    "entities": [
+      {
+        "text": "Viêm phế quản cấp",
+        "type": "CHẨN_ĐOÁN",
+        "assertions": [],
+        "candidates": [
+          "J20.9"
+        ],
+        "position": [
+          466,
+          483
+        ]
+      },
+      {
+        "text": "đờ m",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "candidates": [],
+        "position": [
+          277,
+          281
+        ]
+      },
+      {
+        "text": "sốt nhẹ",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "candidates": [],
+        "position": [
+          283,
+          290
+        ]
+      },
+      {
+        "text": "ho",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+          "isNegated"
+        ],
+        "candidates": [],
+        "position": [
+          304,
+          306
+        ]
+      },
+      {
+        "text": "dextromethorphan po daily",
+        "type": "THUỐC",
+        "assertions": [],
+        "candidates": [
+          "3463"
+        ],
+        "position": [
+          557,
+          582
+        ]
+      },
+      {
+        "text": "salbutamol po daily",
+        "type": "THUỐC",
+        "assertions": [],
+        "candidates": [
+          "435"
+        ],
+        "position": [
+          596,
+          615
+        ]
+      },
+      {
+        "text": "CRP",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "candidates": [],
+        "position": [
+          527,
+          530
+        ]
+      }
+    ],
+    "scenario_id": "sample_247372",
+    "challenge_profile": "mixed_language"
+  },
+  {
+    "text": "**Tiền sử bệnh**\n\n* Bệnh nhân có tiền sử HIV/AIDS\n* Sử dụng thuốc lamivudine po daily và dolutegravir po daily\n* Không có tiền sử bệnh lý khác đáng kể\n\n**Tiền sử bệnh hiện tại**\n\n* Bệnh nhân nhập viện với triệu chứng sút cân và nổi hạch\n* Triệu chứng xuất hiện trong vòng 2 tuần trước khi nhập viện\n* Bệnh nhân không có tiền sử bệnh lý khác đáng kể trong thời gian gần đây\n\n**Đánh giá tại bệnh viện**\n\n* Khám lâm sàng: Ghi nhận HIV/AIDS, sút cân và nổi hạch\n* Xét nghiệm: CD4 200 cells/mm3, viral load 100.000 copies/mL\n* Chẩn đoán hình ảnh: Không có bất thường đáng kể\n* Điều trị:\n + Chỉ định lamivudine po daily\n + Chỉ định dolutegravir po daily\n + Theo dõi và điều trị triệu chứng\n* Kế hoạch theo dõi: Follow-up sau 2 tuần để đánh giá hiệu quả điều trị và theo dõi tình trạng bệnh lý.",
+    "entities": [
+      {
+        "text": "HIV/AIDS",
+        "type": "CHẨN_ĐOÁN",
+        "assertions": [],
+        "candidates": [
+          "B20"
+        ],
+        "position": [
+          41,
+          49
+        ]
+      },
+      {
+        "text": "sút cân",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "candidates": [],
+        "position": [
+          217,
+          224
+        ]
+      },
+      {
+        "text": "nổi hạch",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "candidates": [],
+        "position": [
+          228,
+          236
+        ]
+      },
+      {
+        "text": "lamivudine po daily",
+        "type": "THUỐC",
+        "assertions": [],
+        "candidates": [
+          "3876"
+        ],
+        "position": [
+          66,
+          85
+        ]
+      },
+      {
+        "text": "dolutegravir po daily",
+        "type": "THUỐC",
+        "assertions": [],
+        "candidates": [
+          "1469375"
+        ],
+        "position": [
+          89,
+          110
+        ]
+      }
+    ],
+    "scenario_id": "sample_793828",
+    "challenge_profile": "mixed_language"
+  },
+  {
+    "text": "Tiền sử bệnh\n\n- Không có tiền sử bệnh lý đáng kể\n- Không có thuốc đang sử dụng trước khi nhập viện\n- Không có yếu tố nguy cơ đáng kể\n\nTiền sử bệnh hiện tại\n\n- Ghi nhận khó thở\n- Ghi nhận sốt nhẹ\n- BN phủ nhận khò khè\n- Không có triệu chứng khác đáng kể\n\nĐánh giá tại bệnh viện\n\n- Ghi nhận Viêm phế quản cấp\n- Chỉ định dextromethorphan po daily\n- Cận lâm sàng ghi nhận bạch cầu\n- Ghi nhận Viêm phế quản cấp với khó thở và sốt nhẹ\n- Chỉ định dextromethorphan po daily để điều trị Viêm phế quản cấp",
+    "entities": [
+      {
+        "text": "Viêm phế quản cấp",
+        "type": "CHẨN_ĐOÁN",
+        "assertions": [],
+        "candidates": [
+          "J20.9"
+        ],
+        "position": [
+          289,
+          306
+        ]
+      },
+      {
+        "text": "khó thở",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "candidates": [],
+        "position": [
+          168,
+          175
+        ]
+      },
+      {
+        "text": "khò khè",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [
+          "isNegated"
+        ],
+        "candidates": [],
+        "position": [
+          209,
+          216
+        ]
+      },
+      {
+        "text": "sốt nhẹ",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "candidates": [],
+        "position": [
+          187,
+          194
+        ]
+      },
+      {
+        "text": "dextromethorphan po daily",
+        "type": "THUỐC",
+        "assertions": [],
+        "candidates": [
+          "3463"
+        ],
+        "position": [
+          318,
+          343
+        ]
+      },
+      {
+        "text": "bạch cầu",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "candidates": [],
+        "position": [
+          368,
+          376
+        ]
+      }
+    ],
+    "scenario_id": "sample_914607",
+    "challenge_profile": "repeated_mention"
+  },
+  {
+    "text": "**Tiền sử bệnh**\n\n- Hồ sơ cũ cho thấy BN đã được chẩn đoán Loét dạ dày.\n- Tiền sử sử dụng thuốc: không ghi nhận.\n\n**Tiền sử bệnh hiện tại**\n\n- Ghi nhận buồn nôn.\n- Ghi nhận chướng bụng.\n- Ghi nhận đi ngoài phân đen.\n- Ghi nhận đau thượng vị.\n- Lý do nhập viện: các triệu chứng trên.\n\n**Đánh giá tại bệnh viện**\n\n- Khám lâm sàng: ghi nhận tình trạng sức khỏe tổng thể kém.\n- Xét nghiệm cận lâm sàng:\n  • Nội soi dạ dày: không ghi nhận bất thường.\n  • X-quang dạ dày: KQXN ghi nhận X-quang dạ dày bình thường.\n- Điều trị:\n  • Chỉ định metronidazole po daily.\n  • Chỉ định amoxicillin po daily.\n  • Chỉ định omeprazole po daily.",
+    "entities": [
+      {
+        "text": "Loét dạ dày",
+        "type": "CHẨN_ĐOÁN",
+        "assertions": [
+          "isHistorical"
+        ],
+        "candidates": [
+          "K25.9"
+        ],
+        "position": [
+          59,
+          70
+        ]
+      },
+      {
+        "text": "buồn nôn",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "candidates": [],
+        "position": [
+          152,
+          160
+        ]
+      },
+      {
+        "text": "chướng bụng",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "candidates": [],
+        "position": [
+          173,
+          184
+        ]
+      },
+      {
+        "text": "đi ngoài phân đen",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "candidates": [],
+        "position": [
+          197,
+          214
+        ]
+      },
+      {
+        "text": "đau thượng vị",
+        "type": "TRIỆU_CHỨNG",
+        "assertions": [],
+        "candidates": [],
+        "position": [
+          227,
+          240
+        ]
+      },
+      {
+        "text": "metronidazole po daily",
+        "type": "THUỐC",
+        "assertions": [],
+        "candidates": [
+          "6065"
+        ],
+        "position": [
+          533,
+          555
+        ]
+      },
+      {
+        "text": "amoxicillin po daily",
+        "type": "THUỐC",
+        "assertions": [],
+        "candidates": [
+          "7234"
+        ],
+        "position": [
+          570,
+          590
+        ]
+      },
+      {
+        "text": "omeprazole po daily",
+        "type": "THUỐC",
+        "assertions": [],
+        "candidates": [
+          "7646"
+        ],
+        "position": [
+          605,
+          624
+        ]
+      },
+      {
+        "text": "Nội soi dạ dày",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "candidates": [],
+        "position": [
+          403,
+          417
+        ]
+      },
+      {
+        "text": "X-quang dạ dày",
+        "type": "TÊN_XÉT_NGHIỆM",
+        "assertions": [],
+        "candidates": [],
+        "position": [
+          450,
+          464
+        ]
+      },
+      {
+        "text": "X-quang dạ dày bình thường",
+        "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+        "assertions": [],
+        "candidates": [],
+        "position": [
+          480,
+          506
+        ]
+      }
+    ],
+    "scenario_id": "sample_630043",
+    "challenge_profile": "repeated_mention"
+  }
+]

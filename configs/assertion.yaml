@@ -1,0 +1,3 @@
+assertions:
+  enabled: true
+  labels: [isNegated, isHistorical, isFamily]

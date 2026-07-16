@@ -1,0 +1,21 @@
+{
+  "format_version": 1,
+  "description": "Curated views of immutable raw generated batches.",
+  "datasets": {
+    "gold": "gold.json",
+    "gold_train": "gold_train.json",
+    "gold_validation": "gold_validation.json",
+    "standard": "standard.json",
+    "rejected": "rejected.json"
+  },
+  "report": "curation_report.json",
+  "provenance": "provenance.json",
+  "counts": {
+    "input": 251,
+    "gold": 30,
+    "gold_train": 26,
+    "gold_validation": 4,
+    "standard": 211,
+    "rejected": 10
+  }
+}

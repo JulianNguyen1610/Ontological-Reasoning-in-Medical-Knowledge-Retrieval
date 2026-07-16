@@ -1,0 +1,2246 @@
+{
+  "gold": [
+    {
+      "source_file": "training_data_20260711_231426.json",
+      "source_index": 49,
+      "scenario_id": "sample_470967",
+      "challenge_profile": "lab_name_result_pair",
+      "quality_score": 125,
+      "quality_flags": []
+    },
+    {
+      "source_file": "training_data_20260711_231426.json",
+      "source_index": 6,
+      "scenario_id": "sample_262174",
+      "challenge_profile": "lab_name_result_pair",
+      "quality_score": 130,
+      "quality_flags": []
+    },
+    {
+      "source_file": "training_data_20260711_231426.json",
+      "source_index": 8,
+      "scenario_id": "sample_145335",
+      "challenge_profile": "lab_name_result_pair",
+      "quality_score": 130,
+      "quality_flags": []
+    },
+    {
+      "source_file": "training_data_20260711_231426.json",
+      "source_index": 14,
+      "scenario_id": "sample_680131",
+      "challenge_profile": "abbreviation_or_typo",
+      "quality_score": 130,
+      "quality_flags": []
+    },
+    {
+      "source_file": "training_data_20260711_231426.json",
+      "source_index": 15,
+      "scenario_id": "sample_431249",
+      "challenge_profile": "lab_name_result_pair",
+      "quality_score": 130,
+      "quality_flags": []
+    },
+    {
+      "source_file": "training_data_20260711_231426.json",
+      "source_index": 17,
+      "scenario_id": "sample_977813",
+      "challenge_profile": "repeated_mention",
+      "quality_score": 130,
+      "quality_flags": []
+    },
+    {
+      "source_file": "training_data_20260711_231426.json",
+      "source_index": 18,
+      "scenario_id": "sample_463902",
+      "challenge_profile": "abbreviation_or_typo",
+      "quality_score": 125,
+      "quality_flags": []
+    },
+    {
+      "source_file": "training_data_20260711_231426.json",
+      "source_index": 19,
+      "scenario_id": "sample_691190",
+      "challenge_profile": "lab_name_result_pair",
+      "quality_score": 130,
+      "quality_flags": []
+    },
+    {
+      "source_file": "training_data_20260711_231426.json",
+      "source_index": 23,
+      "scenario_id": "sample_483981",
+      "challenge_profile": "repeated_mention",
+      "quality_score": 130,
+      "quality_flags": []
+    },
+    {
+      "source_file": "training_data_20260711_231426.json",
+      "source_index": 25,
+      "scenario_id": "sample_497953",
+      "challenge_profile": "mixed_language",
+      "quality_score": 130,
+      "quality_flags": []
+    },
+    {
+      "source_file": "training_data_20260711_231426.json",
+      "source_index": 28,
+      "scenario_id": "sample_103854",
+      "challenge_profile": "abbreviation_or_typo",
+      "quality_score": 130,
+      "quality_flags": []
+    },
+    {
+      "source_file": "training_data_20260711_231426.json",
+      "source_index": 29,
+      "scenario_id": "sample_630043",
+      "challenge_profile": "repeated_mention",
+      "quality_score": 130,
+      "quality_flags": []
+    },
+    {
+      "source_file": "training_data_20260711_231426.json",
+      "source_index": 31,
+      "scenario_id": "sample_980382",
+      "challenge_profile": "lab_name_result_pair",
+      "quality_score": 130,
+      "quality_flags": []
+    },
+    {
+      "source_file": "training_data_20260711_231426.json",
+      "source_index": 33,
+      "scenario_id": "sample_823664",
+      "challenge_profile": "mixed_language",
+      "quality_score": 130,
+      "quality_flags": [
+        "soft_near_duplicate"
+      ]
+    },
+    {
+      "source_file": "training_data_20260711_231426.json",
+      "source_index": 35,
+      "scenario_id": "sample_569832",
+      "challenge_profile": "abbreviation_or_typo",
+      "quality_score": 130,
+      "quality_flags": []
+    },
+    {
+      "source_file": "training_data_20260711_231426.json",
+      "source_index": 36,
+      "scenario_id": "sample_19181",
+      "challenge_profile": "repeated_mention",
+      "quality_score": 125,
+      "quality_flags": [
+        "soft_near_duplicate"
+      ]
+    },
+    {
+      "source_file": "training_data_20260711_231426.json",
+      "source_index": 40,
+      "scenario_id": "sample_246318",
+      "challenge_profile": "lab_name_result_pair",
+      "quality_score": 125,
+      "quality_flags": []
+    },
+    {
+      "source_file": "training_data_20260711_231426.json",
+      "source_index": 41,
+      "scenario_id": "sample_232624",
+      "challenge_profile": "mixed_language",
+      "quality_score": 130,
+      "quality_flags": []
+    },
+    {
+      "source_file": "training_data_20260711_231426.json",
+      "source_index": 43,
+      "scenario_id": "sample_831677",
+      "challenge_profile": "mixed_language",
+      "quality_score": 130,
+      "quality_flags": []
+    },
+    {
+      "source_file": "training_data_20260711_231426.json",
+      "source_index": 46,
+      "scenario_id": "sample_93122",
+      "challenge_profile": "abbreviation_or_typo",
+      "quality_score": 130,
+      "quality_flags": []
+    },
+    {
+      "source_file": "training_data_20260711_231426.json",
+      "source_index": 47,
+      "scenario_id": "sample_47556",
+      "challenge_profile": "repeated_mention",
+      "quality_score": 130,
+      "quality_flags": []
+    },
+    {
+      "source_file": "training_data_20260712_222232.json",
+      "source_index": 3,
+      "scenario_id": "sample_311519",
+      "challenge_profile": "lab_name_result_pair",
+      "quality_score": 130,
+      "quality_flags": []
+    },
+    {
+      "source_file": "training_data_20260712_222232.json",
+      "source_index": 7,
+      "scenario_id": "sample_5480",
+      "challenge_profile": "abbreviation_or_typo",
+      "quality_score": 130,
+      "quality_flags": []
+    },
+    {
+      "source_file": "training_data_20260712_222232.json",
+      "source_index": 9,
+      "scenario_id": "sample_571919",
+      "challenge_profile": "repeated_mention",
+      "quality_score": 130,
+      "quality_flags": []
+    },
+    {
+      "source_file": "training_data_20260712_222232.json",
+      "source_index": 10,
+      "scenario_id": "sample_710954",
+      "challenge_profile": "lab_name_result_pair",
+      "quality_score": 130,
+      "quality_flags": []
+    },
+    {
+      "source_file": "training_data_20260712_222232.json",
+      "source_index": 11,
+      "scenario_id": "sample_793828",
+      "challenge_profile": "mixed_language",
+      "quality_score": 125,
+      "quality_flags": []
+    },
+    {
+      "source_file": "training_data_20260712_222232.json",
+      "source_index": 13,
+      "scenario_id": "sample_247372",
+      "challenge_profile": "mixed_language",
+      "quality_score": 130,
+      "quality_flags": []
+    },
+    {
+      "source_file": "training_data_20260712_222232.json",
+      "source_index": 15,
+      "scenario_id": "sample_396853",
+      "challenge_profile": "lab_name_result_pair",
+      "quality_score": 130,
+      "quality_flags": []
+    },
+    {
+      "source_file": "training_data_20260712_222232.json",
+      "source_index": 16,
+      "scenario_id": "sample_914607",
+      "challenge_profile": "repeated_mention",
+      "quality_score": 130,
+      "quality_flags": []
+    },
+    {
+      "source_file": "training_data_20260712_222232.json",
+      "source_index": 17,
+      "scenario_id": "sample_881673",
+      "challenge_profile": "abbreviation_or_typo",
+      "quality_score": 125,
+      "quality_flags": []
+    }
+  ],
+  "gold_train": [
+    {
+      "source_file": "training_data_20260711_231426.json",
+      "source_index": 8,
+      "scenario_id": "sample_145335",
+      "challenge_profile": "lab_name_result_pair",
+      "quality_score": 130,
+      "quality_flags": []
+    },
+    {
+      "source_file": "training_data_20260711_231426.json",
+      "source_index": 41,
+      "scenario_id": "sample_232624",
+      "challenge_profile": "mixed_language",
+      "quality_score": 130,
+      "quality_flags": []
+    },
+    {
+      "source_file": "training_data_20260711_231426.json",
+      "source_index": 47,
+      "scenario_id": "sample_47556",
+      "challenge_profile": "repeated_mention",
+      "quality_score": 130,
+      "quality_flags": []
+    },
+    {
+      "source_file": "training_data_20260711_231426.json",
+      "source_index": 33,
+      "scenario_id": "sample_823664",
+      "challenge_profile": "mixed_language",
+      "quality_score": 130,
+      "quality_flags": [
+        "soft_near_duplicate"
+      ]
+    },
+    {
+      "source_file": "training_data_20260711_231426.json",
+      "source_index": 15,
+      "scenario_id": "sample_431249",
+      "challenge_profile": "lab_name_result_pair",
+      "quality_score": 130,
+      "quality_flags": []
+    },
+    {
+      "source_file": "training_data_20260711_231426.json",
+      "source_index": 40,
+      "scenario_id": "sample_246318",
+      "challenge_profile": "lab_name_result_pair",
+      "quality_score": 125,
+      "quality_flags": []
+    },
+    {
+      "source_file": "training_data_20260711_231426.json",
+      "source_index": 23,
+      "scenario_id": "sample_483981",
+      "challenge_profile": "repeated_mention",
+      "quality_score": 130,
+      "quality_flags": []
+    },
+    {
+      "source_file": "training_data_20260711_231426.json",
+      "source_index": 43,
+      "scenario_id": "sample_831677",
+      "challenge_profile": "mixed_language",
+      "quality_score": 130,
+      "quality_flags": []
+    },
+    {
+      "source_file": "training_data_20260712_222232.json",
+      "source_index": 10,
+      "scenario_id": "sample_710954",
+      "challenge_profile": "lab_name_result_pair",
+      "quality_score": 130,
+      "quality_flags": []
+    },
+    {
+      "source_file": "training_data_20260711_231426.json",
+      "source_index": 25,
+      "scenario_id": "sample_497953",
+      "challenge_profile": "mixed_language",
+      "quality_score": 130,
+      "quality_flags": []
+    },
+    {
+      "source_file": "training_data_20260711_231426.json",
+      "source_index": 19,
+      "scenario_id": "sample_691190",
+      "challenge_profile": "lab_name_result_pair",
+      "quality_score": 130,
+      "quality_flags": []
+    },
+    {
+      "source_file": "training_data_20260711_231426.json",
+      "source_index": 28,
+      "scenario_id": "sample_103854",
+      "challenge_profile": "abbreviation_or_typo",
+      "quality_score": 130,
+      "quality_flags": []
+    },
+    {
+      "source_file": "training_data_20260711_231426.json",
+      "source_index": 6,
+      "scenario_id": "sample_262174",
+      "challenge_profile": "lab_name_result_pair",
+      "quality_score": 130,
+      "quality_flags": []
+    },
+    {
+      "source_file": "training_data_20260712_222232.json",
+      "source_index": 9,
+      "scenario_id": "sample_571919",
+      "challenge_profile": "repeated_mention",
+      "quality_score": 130,
+      "quality_flags": []
+    },
+    {
+      "source_file": "training_data_20260711_231426.json",
+      "source_index": 46,
+      "scenario_id": "sample_93122",
+      "challenge_profile": "abbreviation_or_typo",
+      "quality_score": 130,
+      "quality_flags": []
+    },
+    {
+      "source_file": "training_data_20260712_222232.json",
+      "source_index": 17,
+      "scenario_id": "sample_881673",
+      "challenge_profile": "abbreviation_or_typo",
+      "quality_score": 125,
+      "quality_flags": []
+    },
+    {
+      "source_file": "training_data_20260711_231426.json",
+      "source_index": 35,
+      "scenario_id": "sample_569832",
+      "challenge_profile": "abbreviation_or_typo",
+      "quality_score": 130,
+      "quality_flags": []
+    },
+    {
+      "source_file": "training_data_20260711_231426.json",
+      "source_index": 18,
+      "scenario_id": "sample_463902",
+      "challenge_profile": "abbreviation_or_typo",
+      "quality_score": 125,
+      "quality_flags": []
+    },
+    {
+      "source_file": "training_data_20260712_222232.json",
+      "source_index": 7,
+      "scenario_id": "sample_5480",
+      "challenge_profile": "abbreviation_or_typo",
+      "quality_score": 130,
+      "quality_flags": []
+    },
+    {
+      "source_file": "training_data_20260711_231426.json",
+      "source_index": 14,
+      "scenario_id": "sample_680131",
+      "challenge_profile": "abbreviation_or_typo",
+      "quality_score": 130,
+      "quality_flags": []
+    },
+    {
+      "source_file": "training_data_20260712_222232.json",
+      "source_index": 15,
+      "scenario_id": "sample_396853",
+      "challenge_profile": "lab_name_result_pair",
+      "quality_score": 130,
+      "quality_flags": []
+    },
+    {
+      "source_file": "training_data_20260711_231426.json",
+      "source_index": 17,
+      "scenario_id": "sample_977813",
+      "challenge_profile": "repeated_mention",
+      "quality_score": 130,
+      "quality_flags": []
+    },
+    {
+      "source_file": "training_data_20260711_231426.json",
+      "source_index": 36,
+      "scenario_id": "sample_19181",
+      "challenge_profile": "repeated_mention",
+      "quality_score": 125,
+      "quality_flags": [
+        "soft_near_duplicate"
+      ]
+    },
+    {
+      "source_file": "training_data_20260711_231426.json",
+      "source_index": 31,
+      "scenario_id": "sample_980382",
+      "challenge_profile": "lab_name_result_pair",
+      "quality_score": 130,
+      "quality_flags": []
+    },
+    {
+      "source_file": "training_data_20260712_222232.json",
+      "source_index": 3,
+      "scenario_id": "sample_311519",
+      "challenge_profile": "lab_name_result_pair",
+      "quality_score": 130,
+      "quality_flags": []
+    },
+    {
+      "source_file": "training_data_20260711_231426.json",
+      "source_index": 49,
+      "scenario_id": "sample_470967",
+      "challenge_profile": "lab_name_result_pair",
+      "quality_score": 125,
+      "quality_flags": []
+    }
+  ],
+  "gold_validation": [
+    {
+      "source_file": "training_data_20260712_222232.json",
+      "source_index": 13,
+      "scenario_id": "sample_247372",
+      "challenge_profile": "mixed_language",
+      "quality_score": 130,
+      "quality_flags": []
+    },
+    {
+      "source_file": "training_data_20260712_222232.json",
+      "source_index": 11,
+      "scenario_id": "sample_793828",
+      "challenge_profile": "mixed_language",
+      "quality_score": 125,
+      "quality_flags": []
+    },
+    {
+      "source_file": "training_data_20260712_222232.json",
+      "source_index": 16,
+      "scenario_id": "sample_914607",
+      "challenge_profile": "repeated_mention",
+      "quality_score": 130,
+      "quality_flags": []
+    },
+    {
+      "source_file": "training_data_20260711_231426.json",
+      "source_index": 29,
+      "scenario_id": "sample_630043",
+      "challenge_profile": "repeated_mention",
+      "quality_score": 130,
+      "quality_flags": []
+    }
+  ],
+  "standard": [
+    {
+      "source_file": "training_data_20260708_224213.json",
+      "source_index": 1,
+      "scenario_id": "sample_95052",
+      "challenge_profile": "basic",
+      "quality_score": 100,
+      "quality_flags": [
+        "soft_near_duplicate"
+      ]
+    },
+    {
+      "source_file": "training_data_20260708_224213.json",
+      "source_index": 2,
+      "scenario_id": "sample_547625",
+      "challenge_profile": "basic",
+      "quality_score": 100,
+      "quality_flags": []
+    },
+    {
+      "source_file": "training_data_20260708_224213.json",
+      "source_index": 3,
+      "scenario_id": "sample_509311",
+      "challenge_profile": "basic",
+      "quality_score": 100,
+      "quality_flags": [
+        "soft_near_duplicate"
+      ]
+    },
+    {
+      "source_file": "training_data_20260708_224213.json",
+      "source_index": 4,
+      "scenario_id": "sample_890534",
+      "challenge_profile": "basic",
+      "quality_score": 105,
+      "quality_flags": [
+        "soft_near_duplicate"
+      ]
+    },
+    {
+      "source_file": "training_data_20260708_224525.json",
+      "source_index": 0,
+      "scenario_id": "sample_637657",
+      "challenge_profile": "basic",
+      "quality_score": 105,
+      "quality_flags": []
+    },
+    {
+      "source_file": "training_data_20260708_232425.json",
+      "source_index": 0,
+      "scenario_id": "sample_984446",
+      "challenge_profile": "basic",
+      "quality_score": 105,
+      "quality_flags": [
+        "soft_near_duplicate"
+      ]
+    },
+    {
+      "source_file": "training_data_20260708_224525.json",
+      "source_index": 2,
+      "scenario_id": "sample_920333",
+      "challenge_profile": "basic",
+      "quality_score": 100,
+      "quality_flags": [
+        "soft_near_duplicate"
+      ]
+    },
+    {
+      "source_file": "training_data_20260708_232425.json",
+      "source_index": 1,
+      "scenario_id": "sample_468994",
+      "challenge_profile": "basic",
+      "quality_score": 100,
+      "quality_flags": [
+        "soft_near_duplicate"
+      ]
+    },
+    {
+      "source_file": "training_data_20260708_232425.json",
+      "source_index": 2,
+      "scenario_id": "sample_7522",
+      "challenge_profile": "basic",
+      "quality_score": 105,
+      "quality_flags": [
+        "soft_near_duplicate"
+      ]
+    },
+    {
+      "source_file": "training_data_20260708_232425.json",
+      "source_index": 3,
+      "scenario_id": "sample_889505",
+      "challenge_profile": "basic",
+      "quality_score": 105,
+      "quality_flags": []
+    },
+    {
+      "source_file": "training_data_20260708_232425.json",
+      "source_index": 4,
+      "scenario_id": "sample_395002",
+      "challenge_profile": "basic",
+      "quality_score": 105,
+      "quality_flags": [
+        "soft_near_duplicate"
+      ]
+    },
+    {
+      "source_file": "training_data_20260709_130753.json",
+      "source_index": 0,
+      "scenario_id": "sample_834300",
+      "challenge_profile": "basic",
+      "quality_score": 100,
+      "quality_flags": []
+    },
+    {
+      "source_file": "training_data_20260709_130753.json",
+      "source_index": 1,
+      "scenario_id": "sample_976769",
+      "challenge_profile": "basic",
+      "quality_score": 100,
+      "quality_flags": []
+    },
+    {
+      "source_file": "training_data_20260709_133352.json",
+      "source_index": 0,
+      "scenario_id": "sample_809639",
+      "challenge_profile": "basic",
+      "quality_score": 100,
+      "quality_flags": []
+    },
+    {
+      "source_file": "training_data_20260709_133352.json",
+      "source_index": 1,
+      "scenario_id": "sample_456464",
+      "challenge_profile": "basic",
+      "quality_score": 100,
+      "quality_flags": []
+    },
+    {
+      "source_file": "training_data_20260709_134844.json",
+      "source_index": 0,
+      "scenario_id": "sample_375522",
+      "challenge_profile": "basic",
+      "quality_score": 105,
+      "quality_flags": []
+    },
+    {
+      "source_file": "training_data_20260709_143122.json",
+      "source_index": 0,
+      "scenario_id": "sample_596615",
+      "challenge_profile": "basic",
+      "quality_score": 100,
+      "quality_flags": []
+    },
+    {
+      "source_file": "training_data_20260709_143122.json",
+      "source_index": 1,
+      "scenario_id": "sample_499566",
+      "challenge_profile": "basic",
+      "quality_score": 100,
+      "quality_flags": [
+        "soft_near_duplicate"
+      ]
+    },
+    {
+      "source_file": "training_data_20260709_143122.json",
+      "source_index": 2,
+      "scenario_id": "sample_497707",
+      "challenge_profile": "basic",
+      "quality_score": 100,
+      "quality_flags": []
+    },
+    {
+      "source_file": "training_data_20260709_143122.json",
+      "source_index": 3,
+      "scenario_id": "sample_829915",
+      "challenge_profile": "basic",
+      "quality_score": 105,
+      "quality_flags": []
+    },
+    {
+      "source_file": "training_data_20260709_143122.json",
+      "source_index": 4,
+      "scenario_id": "sample_76586",
+      "challenge_profile": "basic",
+      "quality_score": 100,
+      "quality_flags": []
+    },
+    {
+      "source_file": "training_data_20260709_143122.json",
+      "source_index": 6,
+      "scenario_id": "sample_965817",
+      "challenge_profile": "basic",
+      "quality_score": 100,
+      "quality_flags": []
+    },
+    {
+      "source_file": "training_data_20260709_143122.json",
+      "source_index": 7,
+      "scenario_id": "sample_672866",
+      "challenge_profile": "basic",
+      "quality_score": 100,
+      "quality_flags": []
+    },
+    {
+      "source_file": "training_data_20260709_143122.json",
+      "source_index": 8,
+      "scenario_id": "sample_167252",
+      "challenge_profile": "basic",
+      "quality_score": 100,
+      "quality_flags": []
+    },
+    {
+      "source_file": "training_data_20260709_143122.json",
+      "source_index": 9,
+      "scenario_id": "sample_888011",
+      "challenge_profile": "basic",
+      "quality_score": 105,
+      "quality_flags": [
+        "soft_near_duplicate"
+      ]
+    },
+    {
+      "source_file": "training_data_20260709_143122.json",
+      "source_index": 10,
+      "scenario_id": "sample_312045",
+      "challenge_profile": "basic",
+      "quality_score": 100,
+      "quality_flags": [
+        "soft_near_duplicate"
+      ]
+    },
+    {
+      "source_file": "training_data_20260709_143122.json",
+      "source_index": 11,
+      "scenario_id": "sample_562910",
+      "challenge_profile": "basic",
+      "quality_score": 105,
+      "quality_flags": []
+    },
+    {
+      "source_file": "training_data_20260709_143122.json",
+      "source_index": 12,
+      "scenario_id": "sample_791757",
+      "challenge_profile": "basic",
+      "quality_score": 105,
+      "quality_flags": []
+    },
+    {
+      "source_file": "training_data_20260709_143122.json",
+      "source_index": 13,
+      "scenario_id": "sample_687196",
+      "challenge_profile": "basic",
+      "quality_score": 105,
+      "quality_flags": []
+    },
+    {
+      "source_file": "training_data_20260709_143122.json",
+      "source_index": 14,
+      "scenario_id": "sample_988680",
+      "challenge_profile": "basic",
+      "quality_score": 105,
+      "quality_flags": []
+    },
+    {
+      "source_file": "training_data_20260709_143122.json",
+      "source_index": 15,
+      "scenario_id": "sample_86669",
+      "challenge_profile": "basic",
+      "quality_score": 100,
+      "quality_flags": []
+    },
+    {
+      "source_file": "training_data_20260709_143122.json",
+      "source_index": 16,
+      "scenario_id": "sample_795939",
+      "challenge_profile": "basic",
+      "quality_score": 100,
+      "quality_flags": [
+        "soft_near_duplicate"
+      ]
+    },
+    {
+      "source_file": "training_data_20260709_143122.json",
+      "source_index": 17,
+      "scenario_id": "sample_365547",
+      "challenge_profile": "basic",
+      "quality_score": 100,
+      "quality_flags": []
+    },
+    {
+      "source_file": "training_data_20260709_143122.json",
+      "source_index": 18,
+      "scenario_id": "sample_458815",
+      "challenge_profile": "basic",
+      "quality_score": 100,
+      "quality_flags": []
+    },
+    {
+      "source_file": "training_data_20260709_143122.json",
+      "source_index": 19,
+      "scenario_id": "sample_465611",
+      "challenge_profile": "basic",
+      "quality_score": 100,
+      "quality_flags": []
+    },
+    {
+      "source_file": "training_data_20260709_143122.json",
+      "source_index": 20,
+      "scenario_id": "sample_962368",
+      "challenge_profile": "basic",
+      "quality_score": 105,
+      "quality_flags": []
+    },
+    {
+      "source_file": "training_data_20260709_143122.json",
+      "source_index": 21,
+      "scenario_id": "sample_6807",
+      "challenge_profile": "basic",
+      "quality_score": 100,
+      "quality_flags": []
+    },
+    {
+      "source_file": "training_data_20260709_143122.json",
+      "source_index": 22,
+      "scenario_id": "sample_116954",
+      "challenge_profile": "basic",
+      "quality_score": 105,
+      "quality_flags": []
+    },
+    {
+      "source_file": "training_data_20260709_143122.json",
+      "source_index": 23,
+      "scenario_id": "sample_492325",
+      "challenge_profile": "basic",
+      "quality_score": 105,
+      "quality_flags": []
+    },
+    {
+      "source_file": "training_data_20260709_143122.json",
+      "source_index": 24,
+      "scenario_id": "sample_688723",
+      "challenge_profile": "basic",
+      "quality_score": 105,
+      "quality_flags": []
+    },
+    {
+      "source_file": "training_data_20260709_143122.json",
+      "source_index": 25,
+      "scenario_id": "sample_603844",
+      "challenge_profile": "basic",
+      "quality_score": 100,
+      "quality_flags": []
+    },
+    {
+      "source_file": "training_data_20260709_143122.json",
+      "source_index": 26,
+      "scenario_id": "sample_156199",
+      "challenge_profile": "basic",
+      "quality_score": 105,
+      "quality_flags": [
+        "soft_near_duplicate"
+      ]
+    },
+    {
+      "source_file": "training_data_20260709_143122.json",
+      "source_index": 27,
+      "scenario_id": "sample_36383",
+      "challenge_profile": "basic",
+      "quality_score": 100,
+      "quality_flags": []
+    },
+    {
+      "source_file": "training_data_20260709_143122.json",
+      "source_index": 28,
+      "scenario_id": "sample_811122",
+      "challenge_profile": "basic",
+      "quality_score": 105,
+      "quality_flags": []
+    },
+    {
+      "source_file": "training_data_20260709_143122.json",
+      "source_index": 29,
+      "scenario_id": "sample_928697",
+      "challenge_profile": "basic",
+      "quality_score": 100,
+      "quality_flags": []
+    },
+    {
+      "source_file": "training_data_20260709_143122.json",
+      "source_index": 30,
+      "scenario_id": "sample_212997",
+      "challenge_profile": "basic",
+      "quality_score": 100,
+      "quality_flags": []
+    },
+    {
+      "source_file": "training_data_20260709_143122.json",
+      "source_index": 31,
+      "scenario_id": "sample_615956",
+      "challenge_profile": "basic",
+      "quality_score": 105,
+      "quality_flags": []
+    },
+    {
+      "source_file": "training_data_20260709_143122.json",
+      "source_index": 32,
+      "scenario_id": "sample_904079",
+      "challenge_profile": "basic",
+      "quality_score": 105,
+      "quality_flags": [
+        "soft_near_duplicate"
+      ]
+    },
+    {
+      "source_file": "training_data_20260709_143122.json",
+      "source_index": 33,
+      "scenario_id": "sample_601402",
+      "challenge_profile": "basic",
+      "quality_score": 105,
+      "quality_flags": []
+    },
+    {
+      "source_file": "training_data_20260709_143122.json",
+      "source_index": 34,
+      "scenario_id": "sample_892099",
+      "challenge_profile": "basic",
+      "quality_score": 105,
+      "quality_flags": []
+    },
+    {
+      "source_file": "training_data_20260709_143122.json",
+      "source_index": 35,
+      "scenario_id": "sample_955174",
+      "challenge_profile": "basic",
+      "quality_score": 100,
+      "quality_flags": []
+    },
+    {
+      "source_file": "training_data_20260709_143122.json",
+      "source_index": 36,
+      "scenario_id": "sample_42928",
+      "challenge_profile": "basic",
+      "quality_score": 105,
+      "quality_flags": [
+        "soft_near_duplicate"
+      ]
+    },
+    {
+      "source_file": "training_data_20260709_143122.json",
+      "source_index": 37,
+      "scenario_id": "sample_688681",
+      "challenge_profile": "basic",
+      "quality_score": 100,
+      "quality_flags": []
+    },
+    {
+      "source_file": "training_data_20260709_143122.json",
+      "source_index": 38,
+      "scenario_id": "sample_132741",
+      "challenge_profile": "basic",
+      "quality_score": 100,
+      "quality_flags": []
+    },
+    {
+      "source_file": "training_data_20260709_143122.json",
+      "source_index": 39,
+      "scenario_id": "sample_112004",
+      "challenge_profile": "basic",
+      "quality_score": 100,
+      "quality_flags": []
+    },
+    {
+      "source_file": "training_data_20260709_143122.json",
+      "source_index": 40,
+      "scenario_id": "sample_882020",
+      "challenge_profile": "basic",
+      "quality_score": 100,
+      "quality_flags": []
+    },
+    {
+      "source_file": "training_data_20260709_143122.json",
+      "source_index": 41,
+      "scenario_id": "sample_852025",
+      "challenge_profile": "basic",
+      "quality_score": 100,
+      "quality_flags": []
+    },
+    {
+      "source_file": "training_data_20260709_143122.json",
+      "source_index": 42,
+      "scenario_id": "sample_433324",
+      "challenge_profile": "basic",
+      "quality_score": 100,
+      "quality_flags": []
+    },
+    {
+      "source_file": "training_data_20260709_143122.json",
+      "source_index": 43,
+      "scenario_id": "sample_65993",
+      "challenge_profile": "basic",
+      "quality_score": 105,
+      "quality_flags": []
+    },
+    {
+      "source_file": "training_data_20260709_143122.json",
+      "source_index": 44,
+      "scenario_id": "sample_928724",
+      "challenge_profile": "basic",
+      "quality_score": 105,
+      "quality_flags": []
+    },
+    {
+      "source_file": "training_data_20260709_143122.json",
+      "source_index": 45,
+      "scenario_id": "sample_988072",
+      "challenge_profile": "basic",
+      "quality_score": 100,
+      "quality_flags": [
+        "soft_near_duplicate"
+      ]
+    },
+    {
+      "source_file": "training_data_20260709_143122.json",
+      "source_index": 46,
+      "scenario_id": "sample_621736",
+      "challenge_profile": "basic",
+      "quality_score": 100,
+      "quality_flags": []
+    },
+    {
+      "source_file": "training_data_20260709_143122.json",
+      "source_index": 47,
+      "scenario_id": "sample_474231",
+      "challenge_profile": "basic",
+      "quality_score": 100,
+      "quality_flags": []
+    },
+    {
+      "source_file": "training_data_20260709_143122.json",
+      "source_index": 48,
+      "scenario_id": "sample_257207",
+      "challenge_profile": "basic",
+      "quality_score": 100,
+      "quality_flags": []
+    },
+    {
+      "source_file": "training_data_20260709_143122.json",
+      "source_index": 49,
+      "scenario_id": "sample_218218",
+      "challenge_profile": "basic",
+      "quality_score": 105,
+      "quality_flags": []
+    },
+    {
+      "source_file": "training_data_20260709_143122.json",
+      "source_index": 50,
+      "scenario_id": "sample_480663",
+      "challenge_profile": "basic",
+      "quality_score": 100,
+      "quality_flags": []
+    },
+    {
+      "source_file": "training_data_20260710_072346.json",
+      "source_index": 8,
+      "scenario_id": "sample_474145",
+      "challenge_profile": "basic",
+      "quality_score": 105,
+      "quality_flags": [
+        "soft_near_duplicate"
+      ]
+    },
+    {
+      "source_file": "training_data_20260709_143122.json",
+      "source_index": 52,
+      "scenario_id": "sample_529978",
+      "challenge_profile": "basic",
+      "quality_score": 105,
+      "quality_flags": []
+    },
+    {
+      "source_file": "training_data_20260709_143122.json",
+      "source_index": 53,
+      "scenario_id": "sample_344609",
+      "challenge_profile": "basic",
+      "quality_score": 100,
+      "quality_flags": []
+    },
+    {
+      "source_file": "training_data_20260709_143122.json",
+      "source_index": 54,
+      "scenario_id": "sample_757219",
+      "challenge_profile": "basic",
+      "quality_score": 105,
+      "quality_flags": []
+    },
+    {
+      "source_file": "training_data_20260709_143122.json",
+      "source_index": 55,
+      "scenario_id": "sample_966516",
+      "challenge_profile": "basic",
+      "quality_score": 100,
+      "quality_flags": []
+    },
+    {
+      "source_file": "training_data_20260709_143122.json",
+      "source_index": 56,
+      "scenario_id": "sample_717831",
+      "challenge_profile": "basic",
+      "quality_score": 105,
+      "quality_flags": []
+    },
+    {
+      "source_file": "training_data_20260709_143122.json",
+      "source_index": 57,
+      "scenario_id": "sample_919172",
+      "challenge_profile": "basic",
+      "quality_score": 100,
+      "quality_flags": []
+    },
+    {
+      "source_file": "training_data_20260709_143122.json",
+      "source_index": 58,
+      "scenario_id": "sample_529162",
+      "challenge_profile": "basic",
+      "quality_score": 105,
+      "quality_flags": [
+        "soft_near_duplicate"
+      ]
+    },
+    {
+      "source_file": "training_data_20260709_143122.json",
+      "source_index": 59,
+      "scenario_id": "sample_777291",
+      "challenge_profile": "basic",
+      "quality_score": 100,
+      "quality_flags": []
+    },
+    {
+      "source_file": "training_data_20260709_143122.json",
+      "source_index": 60,
+      "scenario_id": "sample_639903",
+      "challenge_profile": "basic",
+      "quality_score": 100,
+      "quality_flags": []
+    },
+    {
+      "source_file": "training_data_20260709_143122.json",
+      "source_index": 61,
+      "scenario_id": "sample_673929",
+      "challenge_profile": "basic",
+      "quality_score": 105,
+      "quality_flags": []
+    },
+    {
+      "source_file": "training_data_20260709_143122.json",
+      "source_index": 62,
+      "scenario_id": "sample_345929",
+      "challenge_profile": "basic",
+      "quality_score": 100,
+      "quality_flags": []
+    },
+    {
+      "source_file": "training_data_20260709_143122.json",
+      "source_index": 63,
+      "scenario_id": "sample_536461",
+      "challenge_profile": "basic",
+      "quality_score": 100,
+      "quality_flags": []
+    },
+    {
+      "source_file": "training_data_20260709_143122.json",
+      "source_index": 64,
+      "scenario_id": "sample_961618",
+      "challenge_profile": "basic",
+      "quality_score": 100,
+      "quality_flags": []
+    },
+    {
+      "source_file": "training_data_20260709_143122.json",
+      "source_index": 65,
+      "scenario_id": "sample_263587",
+      "challenge_profile": "basic",
+      "quality_score": 105,
+      "quality_flags": []
+    },
+    {
+      "source_file": "training_data_20260709_143122.json",
+      "source_index": 66,
+      "scenario_id": "sample_832552",
+      "challenge_profile": "basic",
+      "quality_score": 105,
+      "quality_flags": []
+    },
+    {
+      "source_file": "training_data_20260709_143122.json",
+      "source_index": 67,
+      "scenario_id": "sample_477357",
+      "challenge_profile": "basic",
+      "quality_score": 100,
+      "quality_flags": []
+    },
+    {
+      "source_file": "training_data_20260709_143122.json",
+      "source_index": 68,
+      "scenario_id": "sample_738605",
+      "challenge_profile": "basic",
+      "quality_score": 105,
+      "quality_flags": []
+    },
+    {
+      "source_file": "training_data_20260709_143122.json",
+      "source_index": 69,
+      "scenario_id": "sample_971453",
+      "challenge_profile": "basic",
+      "quality_score": 100,
+      "quality_flags": []
+    },
+    {
+      "source_file": "training_data_20260709_143122.json",
+      "source_index": 70,
+      "scenario_id": "sample_436921",
+      "challenge_profile": "basic",
+      "quality_score": 100,
+      "quality_flags": []
+    },
+    {
+      "source_file": "training_data_20260709_143122.json",
+      "source_index": 71,
+      "scenario_id": "sample_254090",
+      "challenge_profile": "basic",
+      "quality_score": 100,
+      "quality_flags": []
+    },
+    {
+      "source_file": "training_data_20260709_143122.json",
+      "source_index": 72,
+      "scenario_id": "sample_414111",
+      "challenge_profile": "basic",
+      "quality_score": 100,
+      "quality_flags": []
+    },
+    {
+      "source_file": "training_data_20260709_143122.json",
+      "source_index": 73,
+      "scenario_id": "sample_370482",
+      "challenge_profile": "basic",
+      "quality_score": 105,
+      "quality_flags": []
+    },
+    {
+      "source_file": "training_data_20260709_143122.json",
+      "source_index": 74,
+      "scenario_id": "sample_46116",
+      "challenge_profile": "basic",
+      "quality_score": 105,
+      "quality_flags": []
+    },
+    {
+      "source_file": "training_data_20260709_143122.json",
+      "source_index": 75,
+      "scenario_id": "sample_711044",
+      "challenge_profile": "basic",
+      "quality_score": 105,
+      "quality_flags": []
+    },
+    {
+      "source_file": "training_data_20260709_143122.json",
+      "source_index": 76,
+      "scenario_id": "sample_914679",
+      "challenge_profile": "basic",
+      "quality_score": 100,
+      "quality_flags": []
+    },
+    {
+      "source_file": "training_data_20260709_143122.json",
+      "source_index": 77,
+      "scenario_id": "sample_752706",
+      "challenge_profile": "basic",
+      "quality_score": 100,
+      "quality_flags": []
+    },
+    {
+      "source_file": "training_data_20260709_143122.json",
+      "source_index": 78,
+      "scenario_id": "sample_76041",
+      "challenge_profile": "basic",
+      "quality_score": 100,
+      "quality_flags": []
+    },
+    {
+      "source_file": "training_data_20260709_143122.json",
+      "source_index": 79,
+      "scenario_id": "sample_614196",
+      "challenge_profile": "basic",
+      "quality_score": 100,
+      "quality_flags": []
+    },
+    {
+      "source_file": "training_data_20260709_143122.json",
+      "source_index": 80,
+      "scenario_id": "sample_813856",
+      "challenge_profile": "basic",
+      "quality_score": 100,
+      "quality_flags": [
+        "soft_near_duplicate"
+      ]
+    },
+    {
+      "source_file": "training_data_20260709_220930.json",
+      "source_index": 0,
+      "scenario_id": "sample_311483",
+      "challenge_profile": "basic",
+      "quality_score": 100,
+      "quality_flags": [
+        "soft_near_duplicate"
+      ]
+    },
+    {
+      "source_file": "training_data_20260709_220930.json",
+      "source_index": 1,
+      "scenario_id": "sample_461529",
+      "challenge_profile": "basic",
+      "quality_score": 105,
+      "quality_flags": []
+    },
+    {
+      "source_file": "training_data_20260709_220930.json",
+      "source_index": 2,
+      "scenario_id": "sample_415881",
+      "challenge_profile": "basic",
+      "quality_score": 100,
+      "quality_flags": []
+    },
+    {
+      "source_file": "training_data_20260709_220930.json",
+      "source_index": 3,
+      "scenario_id": "sample_144592",
+      "challenge_profile": "basic",
+      "quality_score": 100,
+      "quality_flags": []
+    },
+    {
+      "source_file": "training_data_20260709_220930.json",
+      "source_index": 4,
+      "scenario_id": "sample_171079",
+      "challenge_profile": "basic",
+      "quality_score": 105,
+      "quality_flags": []
+    },
+    {
+      "source_file": "training_data_20260709_220930.json",
+      "source_index": 5,
+      "scenario_id": "sample_794917",
+      "challenge_profile": "basic",
+      "quality_score": 105,
+      "quality_flags": []
+    },
+    {
+      "source_file": "training_data_20260709_220930.json",
+      "source_index": 6,
+      "scenario_id": "sample_495788",
+      "challenge_profile": "basic",
+      "quality_score": 100,
+      "quality_flags": [
+        "soft_near_duplicate"
+      ]
+    },
+    {
+      "source_file": "training_data_20260709_220930.json",
+      "source_index": 7,
+      "scenario_id": "sample_50350",
+      "challenge_profile": "basic",
+      "quality_score": 100,
+      "quality_flags": []
+    },
+    {
+      "source_file": "training_data_20260709_220930.json",
+      "source_index": 8,
+      "scenario_id": "sample_886908",
+      "challenge_profile": "basic",
+      "quality_score": 105,
+      "quality_flags": []
+    },
+    {
+      "source_file": "training_data_20260709_220930.json",
+      "source_index": 9,
+      "scenario_id": "sample_620687",
+      "challenge_profile": "basic",
+      "quality_score": 100,
+      "quality_flags": []
+    },
+    {
+      "source_file": "training_data_20260709_220930.json",
+      "source_index": 10,
+      "scenario_id": "sample_402492",
+      "challenge_profile": "basic",
+      "quality_score": 100,
+      "quality_flags": []
+    },
+    {
+      "source_file": "training_data_20260709_220930.json",
+      "source_index": 11,
+      "scenario_id": "sample_917085",
+      "challenge_profile": "basic",
+      "quality_score": 105,
+      "quality_flags": [
+        "soft_near_duplicate"
+      ]
+    },
+    {
+      "source_file": "training_data_20260709_220930.json",
+      "source_index": 12,
+      "scenario_id": "sample_181455",
+      "challenge_profile": "basic",
+      "quality_score": 100,
+      "quality_flags": []
+    },
+    {
+      "source_file": "training_data_20260709_220930.json",
+      "source_index": 13,
+      "scenario_id": "sample_243442",
+      "challenge_profile": "basic",
+      "quality_score": 100,
+      "quality_flags": []
+    },
+    {
+      "source_file": "training_data_20260709_220930.json",
+      "source_index": 15,
+      "scenario_id": "sample_715414",
+      "challenge_profile": "basic",
+      "quality_score": 100,
+      "quality_flags": [
+        "soft_near_duplicate"
+      ]
+    },
+    {
+      "source_file": "training_data_20260709_220930.json",
+      "source_index": 16,
+      "scenario_id": "sample_563838",
+      "challenge_profile": "basic",
+      "quality_score": 100,
+      "quality_flags": []
+    },
+    {
+      "source_file": "training_data_20260709_220930.json",
+      "source_index": 17,
+      "scenario_id": "sample_526604",
+      "challenge_profile": "basic",
+      "quality_score": 100,
+      "quality_flags": []
+    },
+    {
+      "source_file": "training_data_20260709_220930.json",
+      "source_index": 19,
+      "scenario_id": "sample_89298",
+      "challenge_profile": "basic",
+      "quality_score": 100,
+      "quality_flags": []
+    },
+    {
+      "source_file": "training_data_20260710_072346.json",
+      "source_index": 0,
+      "scenario_id": "sample_576178",
+      "challenge_profile": "basic",
+      "quality_score": 100,
+      "quality_flags": []
+    },
+    {
+      "source_file": "training_data_20260710_072346.json",
+      "source_index": 1,
+      "scenario_id": "sample_199481",
+      "challenge_profile": "basic",
+      "quality_score": 105,
+      "quality_flags": []
+    },
+    {
+      "source_file": "training_data_20260710_072346.json",
+      "source_index": 2,
+      "scenario_id": "sample_294847",
+      "challenge_profile": "basic",
+      "quality_score": 100,
+      "quality_flags": []
+    },
+    {
+      "source_file": "training_data_20260710_072346.json",
+      "source_index": 3,
+      "scenario_id": "sample_837750",
+      "challenge_profile": "basic",
+      "quality_score": 105,
+      "quality_flags": []
+    },
+    {
+      "source_file": "training_data_20260710_072346.json",
+      "source_index": 4,
+      "scenario_id": "sample_633698",
+      "challenge_profile": "basic",
+      "quality_score": 100,
+      "quality_flags": []
+    },
+    {
+      "source_file": "training_data_20260710_072346.json",
+      "source_index": 5,
+      "scenario_id": "sample_316059",
+      "challenge_profile": "basic",
+      "quality_score": 100,
+      "quality_flags": []
+    },
+    {
+      "source_file": "training_data_20260710_072346.json",
+      "source_index": 6,
+      "scenario_id": "sample_216430",
+      "challenge_profile": "basic",
+      "quality_score": 100,
+      "quality_flags": []
+    },
+    {
+      "source_file": "training_data_20260710_072346.json",
+      "source_index": 7,
+      "scenario_id": "sample_24824",
+      "challenge_profile": "basic",
+      "quality_score": 100,
+      "quality_flags": []
+    },
+    {
+      "source_file": "training_data_20260710_072346.json",
+      "source_index": 9,
+      "scenario_id": "sample_759172",
+      "challenge_profile": "basic",
+      "quality_score": 105,
+      "quality_flags": []
+    },
+    {
+      "source_file": "training_data_20260710_072346.json",
+      "source_index": 10,
+      "scenario_id": "sample_766547",
+      "challenge_profile": "basic",
+      "quality_score": 105,
+      "quality_flags": []
+    },
+    {
+      "source_file": "training_data_20260710_072346.json",
+      "source_index": 11,
+      "scenario_id": "sample_625103",
+      "challenge_profile": "basic",
+      "quality_score": 100,
+      "quality_flags": []
+    },
+    {
+      "source_file": "training_data_20260710_072346.json",
+      "source_index": 12,
+      "scenario_id": "sample_705441",
+      "challenge_profile": "basic",
+      "quality_score": 105,
+      "quality_flags": []
+    },
+    {
+      "source_file": "training_data_20260710_072346.json",
+      "source_index": 13,
+      "scenario_id": "sample_962257",
+      "challenge_profile": "basic",
+      "quality_score": 105,
+      "quality_flags": []
+    },
+    {
+      "source_file": "training_data_20260710_091111.json",
+      "source_index": 0,
+      "scenario_id": "sample_662329",
+      "challenge_profile": "basic",
+      "quality_score": 100,
+      "quality_flags": []
+    },
+    {
+      "source_file": "training_data_20260710_091111.json",
+      "source_index": 1,
+      "scenario_id": "sample_657779",
+      "challenge_profile": "basic",
+      "quality_score": 100,
+      "quality_flags": []
+    },
+    {
+      "source_file": "training_data_20260710_091111.json",
+      "source_index": 2,
+      "scenario_id": "sample_823097",
+      "challenge_profile": "basic",
+      "quality_score": 105,
+      "quality_flags": []
+    },
+    {
+      "source_file": "training_data_20260710_091111.json",
+      "source_index": 3,
+      "scenario_id": "sample_515619",
+      "challenge_profile": "basic",
+      "quality_score": 105,
+      "quality_flags": []
+    },
+    {
+      "source_file": "training_data_20260710_091111.json",
+      "source_index": 4,
+      "scenario_id": "sample_347300",
+      "challenge_profile": "basic",
+      "quality_score": 105,
+      "quality_flags": []
+    },
+    {
+      "source_file": "training_data_20260710_091111.json",
+      "source_index": 5,
+      "scenario_id": "sample_448136",
+      "challenge_profile": "basic",
+      "quality_score": 100,
+      "quality_flags": []
+    },
+    {
+      "source_file": "training_data_20260710_091111.json",
+      "source_index": 6,
+      "scenario_id": "sample_830302",
+      "challenge_profile": "basic",
+      "quality_score": 105,
+      "quality_flags": []
+    },
+    {
+      "source_file": "training_data_20260710_091111.json",
+      "source_index": 7,
+      "scenario_id": "sample_930714",
+      "challenge_profile": "basic",
+      "quality_score": 105,
+      "quality_flags": []
+    },
+    {
+      "source_file": "training_data_20260710_091111.json",
+      "source_index": 8,
+      "scenario_id": "sample_569174",
+      "challenge_profile": "basic",
+      "quality_score": 105,
+      "quality_flags": [
+        "soft_near_duplicate"
+      ]
+    },
+    {
+      "source_file": "training_data_20260710_091111.json",
+      "source_index": 9,
+      "scenario_id": "sample_198283",
+      "challenge_profile": "basic",
+      "quality_score": 100,
+      "quality_flags": []
+    },
+    {
+      "source_file": "training_data_20260710_091111.json",
+      "source_index": 10,
+      "scenario_id": "sample_298338",
+      "challenge_profile": "basic",
+      "quality_score": 105,
+      "quality_flags": [
+        "soft_near_duplicate"
+      ]
+    },
+    {
+      "source_file": "training_data_20260710_091111.json",
+      "source_index": 12,
+      "scenario_id": "sample_595910",
+      "challenge_profile": "basic",
+      "quality_score": 105,
+      "quality_flags": []
+    },
+    {
+      "source_file": "training_data_20260710_091111.json",
+      "source_index": 13,
+      "scenario_id": "sample_305902",
+      "challenge_profile": "basic",
+      "quality_score": 105,
+      "quality_flags": []
+    },
+    {
+      "source_file": "training_data_20260710_091111.json",
+      "source_index": 14,
+      "scenario_id": "sample_588045",
+      "challenge_profile": "basic",
+      "quality_score": 105,
+      "quality_flags": []
+    },
+    {
+      "source_file": "training_data_20260710_091111.json",
+      "source_index": 15,
+      "scenario_id": "sample_94412",
+      "challenge_profile": "basic",
+      "quality_score": 105,
+      "quality_flags": []
+    },
+    {
+      "source_file": "training_data_20260710_091111.json",
+      "source_index": 16,
+      "scenario_id": "sample_949689",
+      "challenge_profile": "basic",
+      "quality_score": 105,
+      "quality_flags": []
+    },
+    {
+      "source_file": "training_data_20260710_091111.json",
+      "source_index": 17,
+      "scenario_id": "sample_932153",
+      "challenge_profile": "basic",
+      "quality_score": 105,
+      "quality_flags": []
+    },
+    {
+      "source_file": "training_data_20260710_091111.json",
+      "source_index": 18,
+      "scenario_id": "sample_823211",
+      "challenge_profile": "basic",
+      "quality_score": 105,
+      "quality_flags": [
+        "soft_near_duplicate"
+      ]
+    },
+    {
+      "source_file": "training_data_20260710_091111.json",
+      "source_index": 19,
+      "scenario_id": "sample_20390",
+      "challenge_profile": "basic",
+      "quality_score": 100,
+      "quality_flags": []
+    },
+    {
+      "source_file": "training_data_20260710_091111.json",
+      "source_index": 20,
+      "scenario_id": "sample_476592",
+      "challenge_profile": "basic",
+      "quality_score": 105,
+      "quality_flags": []
+    },
+    {
+      "source_file": "training_data_20260710_091111.json",
+      "source_index": 21,
+      "scenario_id": "sample_29601",
+      "challenge_profile": "basic",
+      "quality_score": 105,
+      "quality_flags": []
+    },
+    {
+      "source_file": "training_data_20260710_091111.json",
+      "source_index": 22,
+      "scenario_id": "sample_157795",
+      "challenge_profile": "basic",
+      "quality_score": 105,
+      "quality_flags": []
+    },
+    {
+      "source_file": "training_data_20260710_091111.json",
+      "source_index": 23,
+      "scenario_id": "sample_200254",
+      "challenge_profile": "basic",
+      "quality_score": 100,
+      "quality_flags": []
+    },
+    {
+      "source_file": "training_data_20260710_091111.json",
+      "source_index": 24,
+      "scenario_id": "sample_890157",
+      "challenge_profile": "basic",
+      "quality_score": 100,
+      "quality_flags": []
+    },
+    {
+      "source_file": "training_data_20260710_091111.json",
+      "source_index": 25,
+      "scenario_id": "sample_927133",
+      "challenge_profile": "basic",
+      "quality_score": 105,
+      "quality_flags": []
+    },
+    {
+      "source_file": "training_data_20260710_091111.json",
+      "source_index": 26,
+      "scenario_id": "sample_55482",
+      "challenge_profile": "basic",
+      "quality_score": 105,
+      "quality_flags": []
+    },
+    {
+      "source_file": "training_data_20260710_091111.json",
+      "source_index": 27,
+      "scenario_id": "sample_696601",
+      "challenge_profile": "basic",
+      "quality_score": 105,
+      "quality_flags": []
+    },
+    {
+      "source_file": "training_data_20260710_091111.json",
+      "source_index": 28,
+      "scenario_id": "sample_370585",
+      "challenge_profile": "basic",
+      "quality_score": 105,
+      "quality_flags": []
+    },
+    {
+      "source_file": "training_data_20260710_091111.json",
+      "source_index": 29,
+      "scenario_id": "sample_550250",
+      "challenge_profile": "basic",
+      "quality_score": 100,
+      "quality_flags": []
+    },
+    {
+      "source_file": "training_data_20260710_091111.json",
+      "source_index": 30,
+      "scenario_id": "sample_333031",
+      "challenge_profile": "basic",
+      "quality_score": 105,
+      "quality_flags": []
+    },
+    {
+      "source_file": "training_data_20260710_091111.json",
+      "source_index": 31,
+      "scenario_id": "sample_453450",
+      "challenge_profile": "basic",
+      "quality_score": 100,
+      "quality_flags": []
+    },
+    {
+      "source_file": "training_data_20260710_091111.json",
+      "source_index": 32,
+      "scenario_id": "sample_218447",
+      "challenge_profile": "basic",
+      "quality_score": 100,
+      "quality_flags": []
+    },
+    {
+      "source_file": "training_data_20260710_091111.json",
+      "source_index": 33,
+      "scenario_id": "sample_979535",
+      "challenge_profile": "basic",
+      "quality_score": 100,
+      "quality_flags": []
+    },
+    {
+      "source_file": "training_data_20260710_091111.json",
+      "source_index": 35,
+      "scenario_id": "sample_658010",
+      "challenge_profile": "basic",
+      "quality_score": 105,
+      "quality_flags": [
+        "soft_near_duplicate"
+      ]
+    },
+    {
+      "source_file": "training_data_20260710_091111.json",
+      "source_index": 36,
+      "scenario_id": "sample_664339",
+      "challenge_profile": "basic",
+      "quality_score": 105,
+      "quality_flags": []
+    },
+    {
+      "source_file": "training_data_20260710_091111.json",
+      "source_index": 37,
+      "scenario_id": "sample_746019",
+      "challenge_profile": "basic",
+      "quality_score": 105,
+      "quality_flags": []
+    },
+    {
+      "source_file": "training_data_20260710_091111.json",
+      "source_index": 38,
+      "scenario_id": "sample_420265",
+      "challenge_profile": "basic",
+      "quality_score": 105,
+      "quality_flags": []
+    },
+    {
+      "source_file": "training_data_20260710_091111.json",
+      "source_index": 39,
+      "scenario_id": "sample_317814",
+      "challenge_profile": "basic",
+      "quality_score": 100,
+      "quality_flags": []
+    },
+    {
+      "source_file": "training_data_20260710_091111.json",
+      "source_index": 40,
+      "scenario_id": "sample_310170",
+      "challenge_profile": "basic",
+      "quality_score": 105,
+      "quality_flags": []
+    },
+    {
+      "source_file": "training_data_20260710_091111.json",
+      "source_index": 41,
+      "scenario_id": "sample_328679",
+      "challenge_profile": "basic",
+      "quality_score": 100,
+      "quality_flags": []
+    },
+    {
+      "source_file": "training_data_20260710_091111.json",
+      "source_index": 42,
+      "scenario_id": "sample_184114",
+      "challenge_profile": "basic",
+      "quality_score": 105,
+      "quality_flags": []
+    },
+    {
+      "source_file": "training_data_20260710_091111.json",
+      "source_index": 43,
+      "scenario_id": "sample_112595",
+      "challenge_profile": "basic",
+      "quality_score": 105,
+      "quality_flags": []
+    },
+    {
+      "source_file": "training_data_20260710_091111.json",
+      "source_index": 44,
+      "scenario_id": "sample_113027",
+      "challenge_profile": "basic",
+      "quality_score": 100,
+      "quality_flags": []
+    },
+    {
+      "source_file": "training_data_20260710_091111.json",
+      "source_index": 45,
+      "scenario_id": "sample_335873",
+      "challenge_profile": "basic",
+      "quality_score": 105,
+      "quality_flags": []
+    },
+    {
+      "source_file": "training_data_20260711_231426.json",
+      "source_index": 0,
+      "scenario_id": "sample_149318",
+      "challenge_profile": "basic",
+      "quality_score": 105,
+      "quality_flags": []
+    },
+    {
+      "source_file": "training_data_20260711_231426.json",
+      "source_index": 1,
+      "scenario_id": "sample_892106",
+      "challenge_profile": "basic",
+      "quality_score": 105,
+      "quality_flags": []
+    },
+    {
+      "source_file": "training_data_20260711_231426.json",
+      "source_index": 2,
+      "scenario_id": "sample_396874",
+      "challenge_profile": "basic",
+      "quality_score": 105,
+      "quality_flags": []
+    },
+    {
+      "source_file": "training_data_20260711_231426.json",
+      "source_index": 3,
+      "scenario_id": "sample_303658",
+      "challenge_profile": "basic",
+      "quality_score": 100,
+      "quality_flags": [
+        "soft_near_duplicate"
+      ]
+    },
+    {
+      "source_file": "training_data_20260711_231426.json",
+      "source_index": 4,
+      "scenario_id": "sample_259199",
+      "challenge_profile": "basic",
+      "quality_score": 100,
+      "quality_flags": []
+    },
+    {
+      "source_file": "training_data_20260711_231426.json",
+      "source_index": 5,
+      "scenario_id": "sample_239328",
+      "challenge_profile": "basic",
+      "quality_score": 105,
+      "quality_flags": []
+    },
+    {
+      "source_file": "training_data_20260711_231426.json",
+      "source_index": 7,
+      "scenario_id": "sample_692523",
+      "challenge_profile": "basic",
+      "quality_score": 100,
+      "quality_flags": []
+    },
+    {
+      "source_file": "training_data_20260711_231426.json",
+      "source_index": 9,
+      "scenario_id": "sample_8794",
+      "challenge_profile": "historical_scope",
+      "quality_score": 110,
+      "quality_flags": []
+    },
+    {
+      "source_file": "training_data_20260711_231426.json",
+      "source_index": 10,
+      "scenario_id": "sample_990468",
+      "challenge_profile": "negation_scope",
+      "quality_score": 110,
+      "quality_flags": [
+        "soft_near_duplicate"
+      ]
+    },
+    {
+      "source_file": "training_data_20260711_231426.json",
+      "source_index": 11,
+      "scenario_id": "sample_3611",
+      "challenge_profile": "basic",
+      "quality_score": 100,
+      "quality_flags": []
+    },
+    {
+      "source_file": "training_data_20260711_231426.json",
+      "source_index": 12,
+      "scenario_id": "sample_351527",
+      "challenge_profile": "basic",
+      "quality_score": 105,
+      "quality_flags": []
+    },
+    {
+      "source_file": "training_data_20260711_231426.json",
+      "source_index": 13,
+      "scenario_id": "sample_551502",
+      "challenge_profile": "negation_scope",
+      "quality_score": 110,
+      "quality_flags": []
+    },
+    {
+      "source_file": "training_data_20260711_231426.json",
+      "source_index": 16,
+      "scenario_id": "sample_852872",
+      "challenge_profile": "historical_scope",
+      "quality_score": 110,
+      "quality_flags": []
+    },
+    {
+      "source_file": "training_data_20260711_231426.json",
+      "source_index": 20,
+      "scenario_id": "sample_14864",
+      "challenge_profile": "negation_scope",
+      "quality_score": 110,
+      "quality_flags": []
+    },
+    {
+      "source_file": "training_data_20260711_231426.json",
+      "source_index": 21,
+      "scenario_id": "sample_645003",
+      "challenge_profile": "family_scope",
+      "quality_score": 110,
+      "quality_flags": []
+    },
+    {
+      "source_file": "training_data_20260711_231426.json",
+      "source_index": 22,
+      "scenario_id": "sample_187006",
+      "challenge_profile": "basic",
+      "quality_score": 100,
+      "quality_flags": []
+    },
+    {
+      "source_file": "training_data_20260711_231426.json",
+      "source_index": 24,
+      "scenario_id": "sample_230651",
+      "challenge_profile": "historical_scope",
+      "quality_score": 110,
+      "quality_flags": []
+    },
+    {
+      "source_file": "training_data_20260711_231426.json",
+      "source_index": 26,
+      "scenario_id": "sample_808732",
+      "challenge_profile": "basic",
+      "quality_score": 100,
+      "quality_flags": [
+        "soft_near_duplicate"
+      ]
+    },
+    {
+      "source_file": "training_data_20260711_231426.json",
+      "source_index": 27,
+      "scenario_id": "sample_745344",
+      "challenge_profile": "historical_scope",
+      "quality_score": 110,
+      "quality_flags": []
+    },
+    {
+      "source_file": "training_data_20260711_231426.json",
+      "source_index": 30,
+      "scenario_id": "sample_179860",
+      "challenge_profile": "negation_scope",
+      "quality_score": 110,
+      "quality_flags": []
+    },
+    {
+      "source_file": "training_data_20260711_231426.json",
+      "source_index": 32,
+      "scenario_id": "sample_675327",
+      "challenge_profile": "family_scope",
+      "quality_score": 110,
+      "quality_flags": []
+    },
+    {
+      "source_file": "training_data_20260711_231426.json",
+      "source_index": 34,
+      "scenario_id": "sample_769754",
+      "challenge_profile": "basic",
+      "quality_score": 100,
+      "quality_flags": []
+    },
+    {
+      "source_file": "training_data_20260711_231426.json",
+      "source_index": 37,
+      "scenario_id": "sample_965230",
+      "challenge_profile": "family_scope",
+      "quality_score": 110,
+      "quality_flags": []
+    },
+    {
+      "source_file": "training_data_20260711_231426.json",
+      "source_index": 38,
+      "scenario_id": "sample_76555",
+      "challenge_profile": "negation_scope",
+      "quality_score": 110,
+      "quality_flags": []
+    },
+    {
+      "source_file": "training_data_20260711_231426.json",
+      "source_index": 39,
+      "scenario_id": "sample_793505",
+      "challenge_profile": "historical_scope",
+      "quality_score": 110,
+      "quality_flags": []
+    },
+    {
+      "source_file": "training_data_20260711_231426.json",
+      "source_index": 42,
+      "scenario_id": "sample_550150",
+      "challenge_profile": "family_scope",
+      "quality_score": 110,
+      "quality_flags": []
+    },
+    {
+      "source_file": "training_data_20260711_231426.json",
+      "source_index": 44,
+      "scenario_id": "sample_583953",
+      "challenge_profile": "negation_scope",
+      "quality_score": 110,
+      "quality_flags": []
+    },
+    {
+      "source_file": "training_data_20260711_231426.json",
+      "source_index": 45,
+      "scenario_id": "sample_635253",
+      "challenge_profile": "basic",
+      "quality_score": 100,
+      "quality_flags": []
+    },
+    {
+      "source_file": "training_data_20260711_231426.json",
+      "source_index": 48,
+      "scenario_id": "sample_527704",
+      "challenge_profile": "historical_scope",
+      "quality_score": 110,
+      "quality_flags": []
+    },
+    {
+      "source_file": "training_data_20260712_222232.json",
+      "source_index": 0,
+      "scenario_id": "sample_375019",
+      "challenge_profile": "basic",
+      "quality_score": 100,
+      "quality_flags": []
+    },
+    {
+      "source_file": "training_data_20260712_222232.json",
+      "source_index": 1,
+      "scenario_id": "sample_669911",
+      "challenge_profile": "basic",
+      "quality_score": 100,
+      "quality_flags": []
+    },
+    {
+      "source_file": "training_data_20260712_222232.json",
+      "source_index": 2,
+      "scenario_id": "sample_810077",
+      "challenge_profile": "basic",
+      "quality_score": 105,
+      "quality_flags": []
+    },
+    {
+      "source_file": "training_data_20260712_222232.json",
+      "source_index": 4,
+      "scenario_id": "sample_230094",
+      "challenge_profile": "historical_scope",
+      "quality_score": 110,
+      "quality_flags": []
+    },
+    {
+      "source_file": "training_data_20260712_222232.json",
+      "source_index": 5,
+      "scenario_id": "sample_930592",
+      "challenge_profile": "negation_scope",
+      "quality_score": 110,
+      "quality_flags": []
+    },
+    {
+      "source_file": "training_data_20260712_222232.json",
+      "source_index": 6,
+      "scenario_id": "sample_654228",
+      "challenge_profile": "basic",
+      "quality_score": 105,
+      "quality_flags": []
+    },
+    {
+      "source_file": "training_data_20260712_222232.json",
+      "source_index": 8,
+      "scenario_id": "sample_181851",
+      "challenge_profile": "family_scope",
+      "quality_score": 110,
+      "quality_flags": []
+    },
+    {
+      "source_file": "training_data_20260712_222232.json",
+      "source_index": 12,
+      "scenario_id": "sample_974853",
+      "challenge_profile": "historical_scope",
+      "quality_score": 110,
+      "quality_flags": []
+    },
+    {
+      "source_file": "training_data_20260712_222232.json",
+      "source_index": 14,
+      "scenario_id": "sample_671016",
+      "challenge_profile": "basic",
+      "quality_score": 105,
+      "quality_flags": []
+    },
+    {
+      "source_file": "training_data_20260712_222232.json",
+      "source_index": 18,
+      "scenario_id": "sample_863718",
+      "challenge_profile": "family_scope",
+      "quality_score": 110,
+      "quality_flags": []
+    },
+    {
+      "source_file": "training_data_20260712_222232.json",
+      "source_index": 19,
+      "scenario_id": "sample_214556",
+      "challenge_profile": "negation_scope",
+      "quality_score": 110,
+      "quality_flags": []
+    }
+  ]
+}

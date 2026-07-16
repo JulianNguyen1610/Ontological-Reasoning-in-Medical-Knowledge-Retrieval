@@ -1,0 +1,5 @@
+proposal_sources:
+  medication_rules: true
+  lab_rules: true
+  span_model: false
+  llm_proposer: false

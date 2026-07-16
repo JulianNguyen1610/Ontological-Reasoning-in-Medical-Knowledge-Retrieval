@@ -1,0 +1,37 @@
+schema_version: 1
+note: Initial values only. Fit and tune on grouped, human-reviewed validation using the official scorer clone.
+
+grounding:
+  fuzzy_enabled: true
+  fuzzy_min_similarity_short: 0.98
+  fuzzy_min_similarity_long: 0.95
+  token_boundary_required: true
+
+span_acceptance:
+  exact_unique_alias: 0.90
+  high_precision_rule: 0.90
+  supervised_model: 0.85
+  llm_only: 0.95
+
+minimum_type_margin:
+  THUỐC: 0.08
+  CHẨN_ĐOÁN: 0.12
+  TRIỆU_CHỨNG: 0.12
+  TÊN_XÉT_NGHIỆM: 0.10
+  KẾT_QUẢ_XÉT_NGHIỆM: 0.10
+
+assertion:
+  isNegated: 0.90
+  isHistorical: 0.90
+  isFamily: 0.95
+
+link:
+  CHẨN_ĐOÁN: 0.87
+  THUỐC: 0.89
+  max_retrieval_pool: 50
+  max_rerank_pool: 20
+  max_final_candidates: 3
+
+ontology_gate:
+  enabled: true
+  top1_top2_margin: 0.08

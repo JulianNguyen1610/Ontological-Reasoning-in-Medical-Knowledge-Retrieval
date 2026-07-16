@@ -1,0 +1,34 @@
+# Template only. Replace every TBD value with organizer-provided provenance
+# before loading it with medlink_ie.provenance.manifest.
+schema_version: 1
+
+icd:
+  source: organizer_provided
+  variant: TBD # ICD-10, ICD-10-CM, or ICD-11
+  version: TBD
+  release_date: TBD # YYYY-MM-DD
+  source_path: data/terminology/icd
+  checksum_sha256: TBD
+  license_or_usage_basis: TBD
+  include_inactive: false
+  allowed_code_levels: [TBD]
+
+rxnorm:
+  source: organizer_provided
+  release: TBD
+  release_date: TBD # YYYY-MM-DD
+  source_path: data/terminology/rxnorm
+  checksum_sha256: TBD
+  license_or_usage_basis: TBD
+  include_obsolete: false
+  allowed_ttys: [TBD]
+  granularity: TBD
+
+alias_enrichment_sources:
+  - name: organizer_aliases
+    kind: alias # alias or enrichment
+    source: organizer_provided
+    version: TBD
+    source_path: data/terminology/aliases
+    checksum_sha256: TBD
+    license_or_usage_basis: TBD

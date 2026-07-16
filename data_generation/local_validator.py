@@ -37,7 +37,13 @@ class LocalSampleValidator:
     @staticmethod
     def _profile_errors(text: str, entities: List[Dict], profile: str) -> List[str]:
         if profile == "repeated_mention":
-            if not any(entity.get("text") and text.count(entity["text"]) >= 2 for entity in entities):
+            positions_by_text = {}
+            for entity in entities:
+                entity_text = entity.get("text")
+                position = entity.get("position")
+                if entity_text and isinstance(position, (list, tuple)) and len(position) == 2:
+                    positions_by_text.setdefault(entity_text, set()).add(tuple(position))
+            if not any(len(positions) >= 2 for positions in positions_by_text.values()):
                 return ["missing_repeated_mention"]
         elif profile == "abbreviation_or_typo":
             masked = LocalSampleValidator._mask_entity_spans(text, entities)

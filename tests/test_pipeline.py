@@ -590,3 +590,30 @@ class TestCleanupPositions:
         cleaned = clean_sample(sample)
         assert len(cleaned["entities"]) == 1
         assert cleaned["entities"][0]["assertions"] == ["isNegated"]
+
+
+class TestEntityLocationCapabilities:
+    def test_repeated_profile_can_emit_one_annotation_per_occurrence(self):
+        generator = TextGenerator(MockLLMClient())
+        text = "BN ho buổi sáng, chiều vẫn ho."
+        planned = [EntityAnnotation("ho", "TRIỆU_CHỨNG", [], [])]
+
+        positioned = generator._locate_entities(
+            text, planned, include_all_occurrences=True
+        )
+
+        assert [entity.position for entity in positioned] == [(3, 5), (27, 29)]
+
+    def test_overlap_remains_opt_in(self):
+        generator = TextGenerator(MockLLMClient())
+        text = "BN đau ngực."
+        planned = [
+            EntityAnnotation("đau ngực", "TRIỆU_CHỨNG", [], []),
+            EntityAnnotation("ngực", "TRIỆU_CHỨNG", [], []),
+        ]
+
+        strict = generator._locate_entities(text, planned)
+        permitted = generator._locate_entities(text, planned, allow_overlaps=True)
+
+        assert [entity.text for entity in strict] == ["đau ngực"]
+        assert [entity.text for entity in permitted] == ["đau ngực", "ngực"]

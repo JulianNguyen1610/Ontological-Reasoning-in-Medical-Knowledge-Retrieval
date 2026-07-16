@@ -1,0 +1,3 @@
+profile: development
+seed: 42
+offline: true

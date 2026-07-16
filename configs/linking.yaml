@@ -1,0 +1,4 @@
+linking:
+  enabled: true
+  retrieval: [exact_alias, bm25]
+  max_final_candidates: 3

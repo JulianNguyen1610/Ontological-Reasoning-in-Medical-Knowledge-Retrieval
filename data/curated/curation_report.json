@@ -1,0 +1,368 @@
+{
+  "format_version": 1,
+  "source_dir": "data\\raw_generated",
+  "thresholds": {
+    "hard_duplicate": 0.72,
+    "soft_duplicate": 0.62,
+    "validation_ratio": 0.15
+  },
+  "source_counts": {
+    "training_data_20260708_224108.json": 0,
+    "training_data_20260708_224213.json": 5,
+    "training_data_20260708_224525.json": 5,
+    "training_data_20260708_232425.json": 5,
+    "training_data_20260709_130753.json": 2,
+    "training_data_20260709_133352.json": 2,
+    "training_data_20260709_134844.json": 1,
+    "training_data_20260709_143122.json": 81,
+    "training_data_20260709_220930.json": 20,
+    "training_data_20260710_072346.json": 14,
+    "training_data_20260710_091111.json": 46,
+    "training_data_20260711_231426.json": 50,
+    "training_data_20260712_222232.json": 20
+  },
+  "counts": {
+    "input": 251,
+    "gold": 30,
+    "gold_train": 26,
+    "gold_validation": 4,
+    "standard": 211,
+    "rejected": 10
+  },
+  "rejection_reasons": {
+    "validation_failed": 6,
+    "hard_near_duplicate": 4
+  },
+  "soft_near_duplicate_pairs": [
+    {
+      "similarity": 0.6383,
+      "left": {
+        "source_file": "training_data_20260708_224213.json",
+        "source_index": 1
+      },
+      "right": {
+        "source_file": "training_data_20260708_224213.json",
+        "source_index": 3
+      }
+    },
+    {
+      "similarity": 0.6364,
+      "left": {
+        "source_file": "training_data_20260708_224213.json",
+        "source_index": 1
+      },
+      "right": {
+        "source_file": "training_data_20260708_224213.json",
+        "source_index": 4
+      }
+    },
+    {
+      "similarity": 0.6512,
+      "left": {
+        "source_file": "training_data_20260708_224213.json",
+        "source_index": 1
+      },
+      "right": {
+        "source_file": "training_data_20260708_224525.json",
+        "source_index": 1
+      }
+    },
+    {
+      "similarity": 0.65,
+      "left": {
+        "source_file": "training_data_20260708_224213.json",
+        "source_index": 1
+      },
+      "right": {
+        "source_file": "training_data_20260708_232425.json",
+        "source_index": 0
+      }
+    },
+    {
+      "similarity": 0.6977,
+      "left": {
+        "source_file": "training_data_20260708_224213.json",
+        "source_index": 1
+      },
+      "right": {
+        "source_file": "training_data_20260708_232425.json",
+        "source_index": 1
+      }
+    },
+    {
+      "similarity": 0.6852,
+      "left": {
+        "source_file": "training_data_20260708_224213.json",
+        "source_index": 3
+      },
+      "right": {
+        "source_file": "training_data_20260708_232425.json",
+        "source_index": 4
+      }
+    },
+    {
+      "similarity": 0.6829,
+      "left": {
+        "source_file": "training_data_20260708_224213.json",
+        "source_index": 4
+      },
+      "right": {
+        "source_file": "training_data_20260708_224525.json",
+        "source_index": 1
+      }
+    },
+    {
+      "similarity": 0.6842,
+      "left": {
+        "source_file": "training_data_20260708_224213.json",
+        "source_index": 4
+      },
+      "right": {
+        "source_file": "training_data_20260708_232425.json",
+        "source_index": 0
+      }
+    },
+    {
+      "similarity": 0.6512,
+      "left": {
+        "source_file": "training_data_20260708_224213.json",
+        "source_index": 4
+      },
+      "right": {
+        "source_file": "training_data_20260708_232425.json",
+        "source_index": 1
+      }
+    },
+    {
+      "similarity": 0.6744,
+      "left": {
+        "source_file": "training_data_20260708_224213.json",
+        "source_index": 4
+      },
+      "right": {
+        "source_file": "training_data_20260708_232425.json",
+        "source_index": 2
+      }
+    },
+    {
+      "similarity": 0.6222,
+      "left": {
+        "source_file": "training_data_20260708_224525.json",
+        "source_index": 1
+      },
+      "right": {
+        "source_file": "training_data_20260708_224525.json",
+        "source_index": 2
+      }
+    },
+    {
+      "similarity": 0.6667,
+      "left": {
+        "source_file": "training_data_20260708_224525.json",
+        "source_index": 1
+      },
+      "right": {
+        "source_file": "training_data_20260708_232425.json",
+        "source_index": 1
+      }
+    },
+    {
+      "similarity": 0.6512,
+      "left": {
+        "source_file": "training_data_20260708_224525.json",
+        "source_index": 1
+      },
+      "right": {
+        "source_file": "training_data_20260708_232425.json",
+        "source_index": 2
+      }
+    },
+    {
+      "similarity": 0.6667,
+      "left": {
+        "source_file": "training_data_20260708_232425.json",
+        "source_index": 0
+      },
+      "right": {
+        "source_file": "training_data_20260708_232425.json",
+        "source_index": 1
+      }
+    },
+    {
+      "similarity": 0.65,
+      "left": {
+        "source_file": "training_data_20260708_232425.json",
+        "source_index": 0
+      },
+      "right": {
+        "source_file": "training_data_20260708_232425.json",
+        "source_index": 2
+      }
+    },
+    {
+      "similarity": 0.6222,
+      "left": {
+        "source_file": "training_data_20260708_232425.json",
+        "source_index": 1
+      },
+      "right": {
+        "source_file": "training_data_20260708_232425.json",
+        "source_index": 2
+      }
+    },
+    {
+      "similarity": 0.7188,
+      "left": {
+        "source_file": "training_data_20260709_143122.json",
+        "source_index": 1
+      },
+      "right": {
+        "source_file": "training_data_20260709_220930.json",
+        "source_index": 11
+      }
+    },
+    {
+      "similarity": 0.6322,
+      "left": {
+        "source_file": "training_data_20260709_143122.json",
+        "source_index": 1
+      },
+      "right": {
+        "source_file": "training_data_20260710_091111.json",
+        "source_index": 10
+      }
+    },
+    {
+      "similarity": 0.6429,
+      "left": {
+        "source_file": "training_data_20260709_143122.json",
+        "source_index": 9
+      },
+      "right": {
+        "source_file": "training_data_20260710_091111.json",
+        "source_index": 35
+      }
+    },
+    {
+      "similarity": 0.6421,
+      "left": {
+        "source_file": "training_data_20260709_143122.json",
+        "source_index": 10
+      },
+      "right": {
+        "source_file": "training_data_20260709_143122.json",
+        "source_index": 80
+      }
+    },
+    {
+      "similarity": 0.679,
+      "left": {
+        "source_file": "training_data_20260709_143122.json",
+        "source_index": 16
+      },
+      "right": {
+        "source_file": "training_data_20260709_143122.json",
+        "source_index": 45
+      }
+    },
+    {
+      "similarity": 0.6625,
+      "left": {
+        "source_file": "training_data_20260709_143122.json",
+        "source_index": 26
+      },
+      "right": {
+        "source_file": "training_data_20260710_072346.json",
+        "source_index": 8
+      }
+    },
+    {
+      "similarity": 0.6735,
+      "left": {
+        "source_file": "training_data_20260709_143122.json",
+        "source_index": 32
+      },
+      "right": {
+        "source_file": "training_data_20260709_143122.json",
+        "source_index": 36
+      }
+    },
+    {
+      "similarity": 0.625,
+      "left": {
+        "source_file": "training_data_20260709_143122.json",
+        "source_index": 58
+      },
+      "right": {
+        "source_file": "training_data_20260710_091111.json",
+        "source_index": 8
+      }
+    },
+    {
+      "similarity": 0.6447,
+      "left": {
+        "source_file": "training_data_20260709_220930.json",
+        "source_index": 0
+      },
+      "right": {
+        "source_file": "training_data_20260710_072346.json",
+        "source_index": 8
+      }
+    },
+    {
+      "similarity": 0.6364,
+      "left": {
+        "source_file": "training_data_20260709_220930.json",
+        "source_index": 6
+      },
+      "right": {
+        "source_file": "training_data_20260711_231426.json",
+        "source_index": 10
+      }
+    },
+    {
+      "similarity": 0.6951,
+      "left": {
+        "source_file": "training_data_20260709_220930.json",
+        "source_index": 11
+      },
+      "right": {
+        "source_file": "training_data_20260710_091111.json",
+        "source_index": 10
+      }
+    },
+    {
+      "similarity": 0.6429,
+      "left": {
+        "source_file": "training_data_20260709_220930.json",
+        "source_index": 15
+      },
+      "right": {
+        "source_file": "training_data_20260711_231426.json",
+        "source_index": 26
+      }
+    },
+    {
+      "similarity": 0.6286,
+      "left": {
+        "source_file": "training_data_20260710_091111.json",
+        "source_index": 18
+      },
+      "right": {
+        "source_file": "training_data_20260711_231426.json",
+        "source_index": 36
+      }
+    },
+    {
+      "similarity": 0.6452,
+      "left": {
+        "source_file": "training_data_20260711_231426.json",
+        "source_index": 3
+      },
+      "right": {
+        "source_file": "training_data_20260711_231426.json",
+        "source_index": 33
+      }
+    }
+  ]
+}

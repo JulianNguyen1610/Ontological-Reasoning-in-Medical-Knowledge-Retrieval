@@ -94,13 +94,25 @@ class TextGenerator:
             return None
         
         # Bước 3: Xác định vị trí thực thể trong văn bản
-        self.last_expected_entity_count = len(entities)
-        positioned_entities = self._locate_entities(raw_text, entities)
+        expected_entity_count = len(entities)
+        self.last_expected_entity_count = expected_entity_count
+        positioned_entities = self._locate_entities(
+            raw_text,
+            entities,
+            include_all_occurrences=(
+                getattr(scenario, "challenge_profile", "basic") == "repeated_mention"
+            ),
+        )
         
         # Bước 3.5: Reject nếu thiếu entity bắt buộc
         # Đảm bảo caller trực tiếp cũng bị chặn, không chỉ pipeline.
-        if len(positioned_entities) < len(entities):
+        if len(positioned_entities) < expected_entity_count:
             return None
+
+        # A repeated-mention profile intentionally expands one planned entity into
+        # annotations at each exact occurrence.  The pipeline's later cleanup
+        # check must therefore use the located count, rather than the seed count.
+        self.last_expected_entity_count = len(positioned_entities)
         
         # Bước 4: Kiểm tra và sửa lỗi
         for attempt in range(self.max_retries):
@@ -559,8 +571,21 @@ Trả về CHỈ văn bản thô theo đúng cấu trúc 3 phần trên, không 
         return f"Ghi nhận {entity.text}."
     
     def _locate_entities(
-        self, text: str, entities: List[EntityAnnotation]
+        self,
+        text: str,
+        entities: List[EntityAnnotation],
+        *,
+        allow_overlaps: bool = False,
+        include_all_occurrences: bool = False,
     ) -> List[EntityAnnotation]:
+        """Ground planned entities against exact source spans.
+
+        The defaults preserve the existing conservative synthetic-data policy:
+        use one non-overlapping occurrence per planned entity.  Callers can opt
+        into all repeated occurrences or overlapping spans for an adjudicated
+        challenge profile; this method itself does not decide whether either
+        annotation pattern is valid for the competition contract.
+        """
         positioned: List[EntityAnnotation] = []
         used: List[tuple] = []
 
@@ -569,24 +594,25 @@ Trả về CHỈ văn bản thô theo đúng cấu trúc 3 phần trên, không 
 
         for entity in entities:
             target = entity.text
-            span = None
+            spans = []
             start = 0
             while True:
                 pos = text.find(target, start)
                 if pos < 0:
                     break
                 end = pos + len(target)
-                if not any(_overlap((pos, end), u) for u in used):
-                    span = (pos, end)
-                    used.append(span)
-                    break
+                span = (pos, end)
+                if allow_overlaps or not any(_overlap(span, used_span) for used_span in used):
+                    spans.append(span)
+                    if not include_all_occurrences:
+                        break
                 start = pos + 1
-            if span is None:
+            if not spans:
                 fuzzy = self._fuzzy_find(text, target)
-                if fuzzy and not any(_overlap(fuzzy, u) for u in used):
-                    span = fuzzy
-                    used.append(span)
-            if span:
+                if fuzzy and (allow_overlaps or not any(_overlap(fuzzy, used_span) for used_span in used)):
+                    spans.append(fuzzy)
+            for span in spans:
+                used.append(span)
                 positioned.append(EntityAnnotation(
                     text=target,
                     type=entity.type,
