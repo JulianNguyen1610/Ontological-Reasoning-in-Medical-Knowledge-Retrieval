@@ -1,0 +1,15 @@
+# Copy one block per adjudicated fixture. Do not fill entities or positions
+# until BTC confirms the relevant rule and offset convention.
+case_id: ""
+raw_text: ""
+expected_entities: null
+rationale: ""
+rule_ids: []
+ambiguity_status: NEEDS_ADJUDICATION
+reviewer_decision:
+  status: PENDING # PENDING | CONFIRMED | REJECTED
+  reviewer: null
+  decided_at: null
+  entities: null
+  rationale: null
+  btc_reference: null

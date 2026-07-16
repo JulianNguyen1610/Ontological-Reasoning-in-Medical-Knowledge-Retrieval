@@ -1,0 +1,602 @@
+fixture_version: 1
+status: NEEDS_ADJUDICATION
+defaults: &pending
+  expected_entities: []
+  expected_rejection:
+    policy: framework_v1
+    reason: "No exact type/assertion/laboratory/overlap policy is authorized for this case."
+    rule_ids: [GEN-005]
+  ambiguity_status: FRAMEWORK_V1_REJECTED
+  reviewer_decision:
+    status: REJECTED
+    reviewer: null
+    decided_at: null
+    entities: null
+    rationale: null
+    btc_reference: null
+cases:
+  # Symptom versus diagnosis
+  - <<: *pending
+    case_id: SD01
+    raw_text: "BN đau ngực 2 giờ, chưa rõ nguyên nhân."
+    rationale: "Symptom wording without confirmed diagnostic trigger policy."
+    rule_ids: [TYPE-001, SPAN-001]
+  - <<: *pending
+    case_id: SD02
+    raw_text: "Chẩn đoán đau ngực không điển hình."
+    rationale: "Diagnostic trigger may change type or boundary."
+    rule_ids: [TYPE-001, SPAN-003]
+  - <<: *pending
+    case_id: SD03
+    raw_text: "BN có sốt và được chẩn đoán viêm phổi."
+    rationale: "Symptom and diagnosis coexist."
+    rule_ids: [TYPE-001]
+  - <<: *pending
+    case_id: SD04
+    raw_text: "Theo dõi tăng huyết áp, hiện không đau đầu."
+    rationale: "Follow-up wording and negation require policy."
+    rule_ids: [TYPE-001, ASSERT-002]
+  - <<: *pending
+    case_id: SD05
+    raw_text: "Khó thở do suy tim mất bù."
+    rationale: "Cause phrase may produce separate or merged spans."
+    rule_ids: [TYPE-001, SPAN-004]
+  - <<: *pending
+    case_id: SD06
+    raw_text: "Nghi viêm ruột thừa vì đau hố chậu phải."
+    rationale: "Possible diagnosis treatment is unresolved."
+    rule_ids: [TYPE-001, ASSERT-002]
+  - <<: *pending
+    case_id: SD07
+    raw_text: "Ho kéo dài, chẩn đoán theo dõi lao phổi."
+    rationale: "Follow-up diagnosis policy is unresolved."
+    rule_ids: [TYPE-001, ASSERT-002]
+  - <<: *pending
+    case_id: SD08
+    raw_text: "Bệnh nhân béo phì kèm đau gối."
+    rationale: "Condition versus diagnosis is unresolved."
+    rule_ids: [TYPE-001]
+  - <<: *pending
+    case_id: SD09
+    raw_text: "Tiền sử migraine, hôm nay đau đầu dữ dội."
+    rationale: "Historical diagnosis and current symptom differ."
+    rule_ids: [TYPE-001, ASSERT-003]
+  - <<: *pending
+    case_id: SD10
+    raw_text: "Kết luận: đau thần kinh tọa."
+    rationale: "Section wording does not resolve symptom versus diagnosis."
+    rule_ids: [TYPE-001]
+  # Test name versus result
+  - <<: *pending
+    case_id: LR01
+    raw_text: "Xét nghiệm glucose máu: 8,2 mmol/L."
+    rationale: "Analyte, value, and unit boundaries are unresolved."
+    rule_ids: [TYPE-002, LAB-002]
+  - <<: *pending
+    case_id: LR02
+    raw_text: "HbA1c 7,1%."
+    rationale: "Abbreviation and numeric result."
+    rule_ids: [TYPE-002, LAB-001, LAB-002]
+  - <<: *pending
+    case_id: LR03
+    raw_text: "Men gan AST tăng 125 U/L."
+    rationale: "Qualifier inclusion is unresolved."
+    rule_ids: [TYPE-002, LAB-002]
+  - <<: *pending
+    case_id: LR04
+    raw_text: "Siêu âm bụng: gan nhiễm mỡ độ 2."
+    rationale: "Imaging finding type is unresolved."
+    rule_ids: [TYPE-004, LAB-004]
+  - <<: *pending
+    case_id: LR05
+    raw_text: "Cấy máu âm tính."
+    rationale: "Qualitative result boundary."
+    rule_ids: [TYPE-002, LAB-003]
+  - <<: *pending
+    case_id: LR06
+    raw_text: "CRP: 30 mg/L (bình thường <5)."
+    rationale: "Reference range inclusion is unresolved."
+    rule_ids: [TYPE-002, LAB-002]
+  - <<: *pending
+    case_id: LR07
+    raw_text: "Test nhanh cúm A dương tính."
+    rationale: "Procedure name versus qualitative result."
+    rule_ids: [TYPE-002, LAB-003]
+  - <<: *pending
+    case_id: LR08
+    raw_text: "Kết quả INR 1,8, cao."
+    rationale: "Flag inclusion is unresolved."
+    rule_ids: [TYPE-002, LAB-002]
+  - <<: *pending
+    case_id: LR09
+    raw_text: "X-quang phổi không thấy tổn thương cấp."
+    rationale: "Imaging, finding, and negation interact."
+    rule_ids: [TYPE-004, LAB-004, ASSERT-001]
+  - <<: *pending
+    case_id: LR10
+    raw_text: "Protein niệu vết (+/-)."
+    rationale: "Analyte/result split is unresolved."
+    rule_ids: [TYPE-002, LAB-003]
+  # Historical medication lists
+  - <<: *pending
+    case_id: HM01
+    raw_text: "Tiền sử dùng amlodipine 5 mg mỗi sáng."
+    rationale: "Historical scope and medication components."
+    rule_ids: [MED-002, MED-004, ASSERT-003]
+  - <<: *pending
+    case_id: HM02
+    raw_text: "Thuốc trước nhập viện: metformin 500 mg x 2 lần/ngày."
+    rationale: "List-heading propagation is unresolved."
+    rule_ids: [MED-002, MED-004, ASSERT-003]
+  - <<: *pending
+    case_id: HM03
+    raw_text: "Đã ngừng warfarin 3 tháng trước."
+    rationale: "Discontinued medication assertion is unresolved."
+    rule_ids: [MED-004, ASSERT-003]
+  - <<: *pending
+    case_id: HM04
+    raw_text: "Từng dị ứng penicillin, không còn dùng thuốc."
+    rationale: "Past exposure and negation scope."
+    rule_ids: [MED-001, ASSERT-003, ASSERT-001]
+  - <<: *pending
+    case_id: HM05
+    raw_text: "Đơn cũ gồm insulin glargine và aspirin."
+    rationale: "Medication-list scope and coordination."
+    rule_ids: [MED-001, MED-004, SPAN-003]
+  - <<: *pending
+    case_id: HM06
+    raw_text: "Hiện đang dùng losartan; trước đây dùng enalapril."
+    rationale: "Local temporal scope differs by mention."
+    rule_ids: [MED-004, ASSERT-003, SPAN-005]
+  - <<: *pending
+    case_id: HM07
+    raw_text: "Ra viện tiếp tục atorvastatin 20 mg mỗi tối."
+    rationale: "Discharge-plan assertion is unresolved."
+    rule_ids: [MED-002, MED-004]
+  - <<: *pending
+    case_id: HM08
+    raw_text: "Bệnh sử ghi nhận đã tự mua paracetamol khi sốt."
+    rationale: "Narrative past event scope."
+    rule_ids: [MED-001, MED-004, ASSERT-003]
+  - <<: *pending
+    case_id: HM09
+    raw_text: "Danh sách thuốc cũ: vitamin D, canxi, omeprazole."
+    rationale: "List boundaries and historical propagation."
+    rule_ids: [MED-001, MED-004, SPAN-003]
+  - <<: *pending
+    case_id: HM10
+    raw_text: "BN quên tên thuốc huyết áp đã dùng trước đó."
+    rationale: "Generic medication-class mention."
+    rule_ids: [TYPE-003, MED-004]
+  # Negation and contrast
+  - <<: *pending
+    case_id: NG01
+    raw_text: "Không sốt, ho khan 3 ngày."
+    rationale: "Negation clause boundary."
+    rule_ids: [ASSERT-001]
+  - <<: *pending
+    case_id: NG02
+    raw_text: "Không ho hoặc khó thở khi nghỉ."
+    rationale: "Coordination scope."
+    rule_ids: [ASSERT-001, SPAN-003]
+  - <<: *pending
+    case_id: NG03
+    raw_text: "Không đau ngực nhưng có hồi hộp."
+    rationale: "Contrast-clause scope."
+    rule_ids: [ASSERT-001]
+  - <<: *pending
+    case_id: NG04
+    raw_text: "Bác sĩ không loại trừ viêm phổi."
+    rationale: "Rule-out wording."
+    rule_ids: [ASSERT-002]
+  - <<: *pending
+    case_id: NG05
+    raw_text: "Không thấy phù chân, trừ mắt cá phải hơi sưng."
+    rationale: "Exception to a negative clause."
+    rule_ids: [ASSERT-001]
+  - <<: *pending
+    case_id: NG06
+    raw_text: "Phủ nhận buồn nôn, nôn và tiêu chảy."
+    rationale: "List propagation."
+    rule_ids: [ASSERT-001, SPAN-003]
+  - <<: *pending
+    case_id: NG07
+    raw_text: "Không còn đau đầu sau khi uống thuốc."
+    rationale: "Temporal negation wording."
+    rule_ids: [ASSERT-001]
+  - <<: *pending
+    case_id: NG08
+    raw_text: "Chưa ghi nhận suy hô hấp, đang thở oxy."
+    rationale: "Unconfirmed finding wording."
+    rule_ids: [ASSERT-001, ASSERT-002]
+  - <<: *pending
+    case_id: NG09
+    raw_text: "Không chỉ định xét nghiệm troponin hôm nay."
+    rationale: "Negation of a plan versus entity assertion."
+    rule_ids: [TYPE-002, ASSERT-001]
+  - <<: *pending
+    case_id: NG10
+    raw_text: "BN không sốt cao, chỉ 37,5°C."
+    rationale: "Modifier scope and quantitative value."
+    rule_ids: [ASSERT-001, LAB-002]
+  # Family history and multi-label cases
+  - <<: *pending
+    case_id: FS01
+    raw_text: "Mẹ bệnh nhân bị đái tháo đường."
+    rationale: "Kinship scope."
+    rule_ids: [ASSERT-004]
+  - <<: *pending
+    case_id: FS02
+    raw_text: "Bố từng tăng huyết áp, BN hiện khỏe."
+    rationale: "Family and historical scope."
+    rule_ids: [ASSERT-003, ASSERT-004]
+  - <<: *pending
+    case_id: FS03
+    raw_text: "Chị gái ho kéo dài, bệnh nhân không ho."
+    rationale: "Repeated text with family and negated patient contexts."
+    rule_ids: [ASSERT-001, ASSERT-004, SPAN-005]
+  - <<: *pending
+    case_id: FS04
+    raw_text: "Gia đình có người mắc ung thư đại tràng."
+    rationale: "Indefinite family-member scope."
+    rule_ids: [ASSERT-004]
+  - <<: *pending
+    case_id: FS05
+    raw_text: "Mẹ dùng insulin, BN dùng metformin."
+    rationale: "Family propagation across clauses."
+    rule_ids: [ASSERT-004, MED-001]
+  - <<: *pending
+    case_id: FS06
+    raw_text: "Tiền sử gia đình: bố và em trai hen phế quản."
+    rationale: "Multiple relatives share a condition."
+    rule_ids: [ASSERT-004]
+  - <<: *pending
+    case_id: FS07
+    raw_text: "Con bệnh nhân sốt, BN đến khám vì đau họng."
+    rationale: "Subject switch."
+    rule_ids: [ASSERT-004, TYPE-001]
+  - <<: *pending
+    case_id: FS08
+    raw_text: "Bệnh nhân kể dì ruột từng bị đột quỵ."
+    rationale: "Extended kinship list."
+    rule_ids: [ASSERT-003, ASSERT-004]
+  - <<: *pending
+    case_id: FS09
+    raw_text: "Anh trai không bị lao phổi."
+    rationale: "Family plus negation simultaneous assertion."
+    rule_ids: [ASSERT-001, ASSERT-004, ASSERT-006]
+  - <<: *pending
+    case_id: FS10
+    raw_text: "Gia đình không ai dị ứng thuốc."
+    rationale: "Group-family negation and type ambiguity."
+    rule_ids: [ASSERT-001, ASSERT-004, ASSERT-006]
+  # Overlap and nesting
+  - <<: *pending
+    case_id: OV01
+    raw_text: "Đau ngực do nhồi máu cơ tim."
+    rationale: "Separate versus merged causal spans."
+    rule_ids: [SPAN-004, TYPE-001]
+  - <<: *pending
+    case_id: OV02
+    raw_text: "Viêm phổi cộng đồng nặng."
+    rationale: "Nested same-type diagnosis candidates."
+    rule_ids: [SPAN-004]
+  - <<: *pending
+    case_id: OV03
+    raw_text: "Kết quả xét nghiệm glucose máu tăng."
+    rationale: "Partially overlapping name and result candidates."
+    rule_ids: [SPAN-004, TYPE-002]
+  - <<: *pending
+    case_id: OV04
+    raw_text: "Dùng aspirin 81 mg để phòng nhồi máu cơ tim."
+    rationale: "Medication boundary and indication."
+    rule_ids: [MED-002, SPAN-004]
+  - <<: *pending
+    case_id: OV05
+    raw_text: "Đau bụng cấp do viêm ruột thừa cấp."
+    rationale: "Multiple candidate adjective boundaries."
+    rule_ids: [SPAN-004, TYPE-001]
+  - <<: *pending
+    case_id: OV06
+    raw_text: "Hb 8 g/dL, thiếu máu nặng."
+    rationale: "Adjacent test/result and diagnosis."
+    rule_ids: [SPAN-004, TYPE-002]
+  - <<: *pending
+    case_id: OV07
+    raw_text: "Không có dấu hiệu suy tim cấp."
+    rationale: "Nested phrase with negation."
+    rule_ids: [SPAN-004, ASSERT-001]
+  - <<: *pending
+    case_id: OV08
+    raw_text: "X-quang cho thấy tràn dịch màng phổi."
+    rationale: "Imaging finding type and nesting."
+    rule_ids: [SPAN-004, TYPE-004]
+  - <<: *pending
+    case_id: OV09
+    raw_text: "Tăng men gan AST."
+    rationale: "Overlapping analyte and result phrase."
+    rule_ids: [SPAN-004, TYPE-002]
+  - <<: *pending
+    case_id: OV10
+    raw_text: "Đau lưng do thoát vị đĩa đệm thắt lưng."
+    rationale: "Cause phrase has competing spans."
+    rule_ids: [SPAN-004, TYPE-001]
+  # Repeated mentions with different contexts
+  - <<: *pending
+    case_id: RP01
+    raw_text: "BN ho buổi sáng, chiều vẫn ho."
+    rationale: "Repeated identical surface form."
+    rule_ids: [SPAN-005]
+  - <<: *pending
+    case_id: RP02
+    raw_text: "Đau đầu giảm rồi đau đầu trở lại."
+    rationale: "Repeated symptom with temporal change."
+    rule_ids: [SPAN-005]
+  - <<: *pending
+    case_id: RP03
+    raw_text: "Metformin sáng và metformin tối."
+    rationale: "Repeated medication mention policy."
+    rule_ids: [SPAN-005, MED-002]
+  - <<: *pending
+    case_id: RP04
+    raw_text: "CRP tăng, sau điều trị CRP giảm."
+    rationale: "Same test name with distinct local results."
+    rule_ids: [SPAN-005, TYPE-002]
+  - <<: *pending
+    case_id: RP05
+    raw_text: "Không sốt hôm qua, hôm nay sốt 39°C."
+    rationale: "Repeated symptom with different assertion context."
+    rule_ids: [SPAN-005, ASSERT-001]
+  - <<: *pending
+    case_id: RP06
+    raw_text: "Mẹ bị hen, BN cũng bị hen."
+    rationale: "Family scope differs by repeated mention."
+    rule_ids: [SPAN-005, ASSERT-004]
+  - <<: *pending
+    case_id: RP07
+    raw_text: "Aspirin gây đau dạ dày, ngừng aspirin."
+    rationale: "Repeated medicine with action."
+    rule_ids: [SPAN-005, MED-004]
+  - <<: *pending
+    case_id: RP08
+    raw_text: "Siêu âm lần 1 bình thường, siêu âm lần 2 có sỏi mật."
+    rationale: "Repeated procedure in distinct contexts."
+    rule_ids: [SPAN-005, LAB-004]
+  - <<: *pending
+    case_id: RP09
+    raw_text: "BN không đau ngực nhưng sau đó đau ngực tăng."
+    rationale: "Negation must not leak between repeats."
+    rule_ids: [SPAN-005, ASSERT-001]
+  - <<: *pending
+    case_id: RP10
+    raw_text: "Chẩn đoán đái tháo đường, kiểm soát đái tháo đường kém."
+    rationale: "Repeated diagnosis-term boundaries."
+    rule_ids: [SPAN-005, TYPE-001]
+  # Medication strength, form, route, frequency, PRN
+  - <<: *pending
+    case_id: MF01
+    raw_text: "Paracetamol 500 mg viên uống khi sốt."
+    rationale: "Strength, form, route, and PRN inclusion."
+    rule_ids: [MED-002]
+    expected_entities:
+      - text: "Paracetamol 500 mg viên uống khi sốt"
+        type: THUỐC
+        position: [0, 36]
+        assertions: []
+        candidates: []
+    expected_rejection: null
+    ambiguity_status: CONFIRMED_FRAMEWORK_V1
+    reviewer_decision:
+      status: CONFIRMED
+      reviewer: framework_v1
+      decided_at: "2026-07-16"
+      entities: "MED-002 exact raw medication span"
+      rationale: "Framework-derived medication boundary policy."
+      btc_reference: "Framework §§1.2, 8.1, 13.1"
+  - <<: *pending
+    case_id: MF02
+    raw_text: "Insulin glargine 100 đơn vị/mL, tiêm 10 đơn vị tối."
+    rationale: "Strength versus administration span."
+    rule_ids: [MED-002]
+  - <<: *pending
+    case_id: MF03
+    raw_text: "Amoxicillin/clavulanate 875/125 mg po bid."
+    rationale: "Combination product and mixed-language route/frequency."
+    rule_ids: [MED-002, MED-003]
+    expected_entities:
+      - text: "Amoxicillin/clavulanate 875/125 mg po bid"
+        type: THUỐC
+        position: [0, 41]
+        assertions: []
+        candidates: []
+    expected_rejection: null
+    ambiguity_status: CONFIRMED_FRAMEWORK_V1
+    reviewer_decision:
+      status: CONFIRMED
+      reviewer: framework_v1
+      decided_at: "2026-07-16"
+      entities: "MED-002/MED-003 exact raw medication span"
+      rationale: "Framework-derived combination medication boundary policy."
+      btc_reference: "Framework §§8.1, 13.1"
+  - <<: *pending
+    case_id: MF04
+    raw_text: "Salbutamol xịt 100 mcg, 2 nhát khi khó thở."
+    rationale: "Device, dose, and PRN boundaries."
+    rule_ids: [MED-002]
+  - <<: *pending
+    case_id: MF05
+    raw_text: "Furosemide 40 mg IV mỗi 12 giờ."
+    rationale: "Route and frequency inclusion."
+    rule_ids: [MED-002]
+    expected_entities:
+      - text: "Furosemide 40 mg IV mỗi 12 giờ"
+        type: THUỐC
+        position: [0, 30]
+        assertions: []
+        candidates: []
+    expected_rejection: null
+    ambiguity_status: CONFIRMED_FRAMEWORK_V1
+    reviewer_decision:
+      status: CONFIRMED
+      reviewer: framework_v1
+      decided_at: "2026-07-16"
+      entities: "MED-002 exact raw medication span"
+      rationale: "Framework-derived medication boundary policy."
+      btc_reference: "Framework §§8.1, 13.1"
+  - <<: *pending
+    case_id: MF06
+    raw_text: "Kem clotrimazole 1% bôi vùng tổn thương."
+    rationale: "Topical form and application text."
+    rule_ids: [MED-002]
+  - <<: *pending
+    case_id: MF07
+    raw_text: "Prednisolone 5 mg giảm liều dần."
+    rationale: "Taper instruction boundary."
+    rule_ids: [MED-002]
+  - <<: *pending
+    case_id: MF08
+    raw_text: "Ceftriaxone 2 g truyền tĩnh mạch mỗi ngày."
+    rationale: "Infusion route and frequency."
+    rule_ids: [MED-002]
+    expected_entities:
+      - text: "Ceftriaxone 2 g truyền tĩnh mạch mỗi ngày"
+        type: THUỐC
+        position: [0, 41]
+        assertions: []
+        candidates: []
+    expected_rejection: null
+    ambiguity_status: CONFIRMED_FRAMEWORK_V1
+    reviewer_decision:
+      status: CONFIRMED
+      reviewer: framework_v1
+      decided_at: "2026-07-16"
+      entities: "MED-002 exact raw medication span"
+      rationale: "Framework-derived medication boundary policy."
+      btc_reference: "Framework §§8.1, 13.1"
+  - <<: *pending
+    case_id: MF09
+    raw_text: "Thuốc nhỏ mắt timolol 0,5%, 1 giọt mỗi bên."
+    rationale: "Form, concentration, site, and count."
+    rule_ids: [MED-002]
+  - <<: *pending
+    case_id: MF10
+    raw_text: "Aspirin 81-mg enteric-coated tablet daily."
+    rationale: "Mixed Vietnamese/English form and frequency."
+    rule_ids: [MED-002]
+    expected_entities:
+      - text: "Aspirin 81-mg enteric-coated tablet daily"
+        type: THUỐC
+        position: [0, 41]
+        assertions: []
+        candidates: []
+    expected_rejection: null
+    ambiguity_status: CONFIRMED_FRAMEWORK_V1
+    reviewer_decision:
+      status: CONFIRMED
+      reviewer: framework_v1
+      decided_at: "2026-07-16"
+      entities: "MED-002 exact raw medication span"
+      rationale: "Framework-derived medication boundary policy."
+      btc_reference: "Framework §§8.1, 13.1"
+  # Qualitative and quantitative laboratory results
+  - <<: *pending
+    case_id: QL01
+    raw_text: "Nước tiểu trong, không có protein."
+    rationale: "Qualitative finding and negation."
+    rule_ids: [LAB-003, ASSERT-001]
+  - <<: *pending
+    case_id: QL02
+    raw_text: "Cấy đờm mọc Klebsiella pneumoniae."
+    rationale: "Microbiology result boundary."
+    rule_ids: [LAB-003]
+  - <<: *pending
+    case_id: QL03
+    raw_text: "HBsAg dương tính yếu."
+    rationale: "Qualitative qualifier inclusion."
+    rule_ids: [LAB-001, LAB-003]
+  - <<: *pending
+    case_id: QL04
+    raw_text: "Xét nghiệm HIV âm tính."
+    rationale: "Test naming versus qualitative result."
+    rule_ids: [TYPE-002, LAB-003]
+  - <<: *pending
+    case_id: QL05
+    raw_text: "Soi phân không thấy trứng giun."
+    rationale: "Negative qualitative result scope."
+    rule_ids: [LAB-003, ASSERT-001]
+  - <<: *pending
+    case_id: QL06
+    raw_text: "Dịch màng phổi màu vàng chanh."
+    rationale: "Descriptive qualitative laboratory phrase."
+    rule_ids: [LAB-003]
+  - <<: *pending
+    case_id: QL07
+    raw_text: "Hồng cầu niệu ++."
+    rationale: "Analyte/result split."
+    rule_ids: [TYPE-002, LAB-003]
+  - <<: *pending
+    case_id: QL08
+    raw_text: "Phết máu ngoại vi có blast."
+    rationale: "Procedure and finding boundaries."
+    rule_ids: [TYPE-002, LAB-003]
+  - <<: *pending
+    case_id: QL09
+    raw_text: "Men tim troponin I tăng nhẹ."
+    rationale: "Test boundary and result qualifier."
+    rule_ids: [TYPE-002, LAB-002]
+  - <<: *pending
+    case_id: QL10
+    raw_text: "PCR SARS-CoV-2 không phát hiện."
+    rationale: "Negative qualitative result wording."
+    rule_ids: [LAB-003, ASSERT-001]
+  # Punctuation, abbreviations, typos, mixed language, and cross-category cases
+  - <<: *pending
+    case_id: MX01
+    raw_text: "TS mẹ bị THA; BN ko THA."
+    rationale: "Abbreviations, typo, family, and negation."
+    rule_ids: [ASSERT-001, ASSERT-004, ASSERT-006]
+  - <<: *pending
+    case_id: MX02
+    raw_text: "Không thấy viêm phổi trên X-quang, nhưng CRP tăng."
+    rationale: "Imaging negation and quantitative laboratory result."
+    rule_ids: [TYPE-004, LAB-002, ASSERT-001]
+  - <<: *pending
+    case_id: MX03
+    raw_text: "Danh sách thuốc cũ: aspirin 81 mg; hiện ngừng aspirin."
+    rationale: "Punctuation, medication list, and repeated medicine."
+    rule_ids: [MED-002, MED-004, SPAN-005]
+  - <<: *pending
+    case_id: MX04
+    raw_text: "Bố ho, BN ho kèm sốt."
+    rationale: "Repeated symptom with family and patient subjects."
+    rule_ids: [ASSERT-004, SPAN-005]
+  - <<: *pending
+    case_id: MX05
+    raw_text: "Siêu âm: gan nhiễm mỡ, men gan ALT bình thường."
+    rationale: "Imaging finding and qualitative laboratory result."
+    rule_ids: [TYPE-004, LAB-003]
+  - <<: *pending
+    case_id: MX06
+    raw_text: "Không đau bụng sau dùng omeprazole 20 mg po daily."
+    rationale: "Negation plus mixed-language medication administration."
+    rule_ids: [ASSERT-001, MED-002]
+  - <<: *pending
+    case_id: MX07
+    raw_text: "Nghi sốt xuất huyết vì tiểu cầu 70 G/L."
+    rationale: "Possible diagnosis and numeric laboratory result."
+    rule_ids: [TYPE-001, ASSERT-002, LAB-002]
+  - <<: *pending
+    case_id: MX08
+    raw_text: "Không có khó thở, trừ khi gắng sức; mẹ có hen."
+    rationale: "Negation exception and family-history scope."
+    rule_ids: [ASSERT-001, ASSERT-004]
+  - <<: *pending
+    case_id: MX09
+    raw_text: "Metformin 500 mg x 2 lần/ngày điều trị đái tháo đường."
+    rationale: "Medication boundary and indication diagnosis."
+    rule_ids: [MED-002, TYPE-001]
+  - <<: *pending
+    case_id: MX10
+    raw_text: "Cấy nước tiểu âm tính, nhưng tiểu buốt vẫn tái diễn."
+    rationale: "Qualitative test result and current symptom."
+    rule_ids: [LAB-003, TYPE-001]
