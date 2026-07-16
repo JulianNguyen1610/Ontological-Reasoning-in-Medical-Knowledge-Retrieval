@@ -9,7 +9,6 @@ from pathlib import Path
 
 from medlink_ie.domain import SourceDocument
 
-
 _UTF8_BOM = b"\xef\xbb\xbf"
 
 
@@ -56,7 +55,8 @@ class DocumentDecodeError(RawLoaderError):
         self.byte_length = byte_length
         super().__init__(
             "unable to decode input "
-            f"(encoding={encoding}, byte_range=[{byte_start},{byte_end}), byte_length={byte_length})"
+            f"(encoding={encoding}, byte_range=[{byte_start},{byte_end}), "
+            f"byte_length={byte_length})"
         )
 
 
@@ -73,9 +73,7 @@ class RawLoaderConfig:
         try:
             codec = codecs.lookup(self.encoding)
         except LookupError as error:
-            raise RawLoaderConfigurationError(
-                "encoding is not a registered codec"
-            ) from error
+            raise RawLoaderConfigurationError("encoding is not a registered codec") from error
         if codec.name == "utf-8-sig":
             raise RawLoaderConfigurationError(
                 "utf-8-sig is not supported; configure bom_policy instead"
@@ -84,9 +82,7 @@ class RawLoaderConfig:
             raise RawLoaderConfigurationError("bom_policy must be a BomPolicy")
 
 
-def load_path(
-    path: str | Path, config: RawLoaderConfig = RawLoaderConfig()
-) -> SourceDocument:
+def load_path(path: str | Path, config: RawLoaderConfig = RawLoaderConfig()) -> SourceDocument:
     """Load *path* without changing its bytes, newlines, or decoded text."""
 
     source_path = Path(path)

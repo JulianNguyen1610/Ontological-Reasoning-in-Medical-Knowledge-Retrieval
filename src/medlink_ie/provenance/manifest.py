@@ -11,7 +11,6 @@ from typing import Any, Mapping
 
 import yaml
 
-
 _SUPPORTED_ICD_VARIANTS = frozenset({"ICD-10", "ICD-10-CM", "ICD-11"})
 _SHA256_LENGTH = 64
 _MAX_MODEL_PARAMETERS = 9_000_000_000
@@ -68,9 +67,20 @@ def _required_int(data: Mapping[str, Any], field_name: str) -> int:
     return value
 
 
+def _required_bool(data: Mapping[str, Any], field_name: str) -> bool:
+    value = data.get(field_name)
+    if not isinstance(value, bool):
+        raise TypeError(f"{field_name} must be bool")
+    return value
+
+
 def _required_string_tuple(data: Mapping[str, Any], field_name: str) -> tuple[str, ...]:
     value = data.get(field_name)
-    if not isinstance(value, list) or not value or any(not isinstance(item, str) or not item for item in value):
+    if (
+        not isinstance(value, list)
+        or not value
+        or any(not isinstance(item, str) or not item for item in value)
+    ):
         raise ValueError(f"{field_name} must be a non-empty list of strings")
     return tuple(value)
 
@@ -184,7 +194,9 @@ class TerminologyManifest:
     alias_enrichment_sources: tuple[AliasEnrichmentSource, ...]
 
     @classmethod
-    def from_mapping(cls, data: Mapping[str, Any], base_path: Path | None = None) -> "TerminologyManifest":
+    def from_mapping(
+        cls, data: Mapping[str, Any], base_path: Path | None = None
+    ) -> "TerminologyManifest":
         _validate_no_secrets(data)
         root = _mapping(data, "manifest")
         if _required_int(root, "schema_version") != 1:
@@ -192,17 +204,25 @@ class TerminologyManifest:
         icd_data = _mapping(root.get("icd"), "icd")
         rxnorm_data = _mapping(root.get("rxnorm"), "rxnorm")
         icd = ICDProvenance(
-            _required_str(icd_data, "source"), _required_str(icd_data, "variant"),
-            _required_str(icd_data, "version"), _required_date(icd_data, "release_date"),
-            _path_from(icd_data, "source_path", base_path), _required_checksum(icd_data),
+            _required_str(icd_data, "source"),
+            _required_str(icd_data, "variant"),
+            _required_str(icd_data, "version"),
+            _required_date(icd_data, "release_date"),
+            _path_from(icd_data, "source_path", base_path),
+            _required_checksum(icd_data),
             _required_str(icd_data, "license_or_usage_basis"),
-            icd_data.get("include_inactive"), _required_string_tuple(icd_data, "allowed_code_levels"),
+            _required_bool(icd_data, "include_inactive"),
+            _required_string_tuple(icd_data, "allowed_code_levels"),
         )
         rxnorm = RxNormProvenance(
-            _required_str(rxnorm_data, "source"), _required_str(rxnorm_data, "release"),
-            _required_date(rxnorm_data, "release_date"), _path_from(rxnorm_data, "source_path", base_path),
-            _required_checksum(rxnorm_data), _required_str(rxnorm_data, "license_or_usage_basis"),
-            rxnorm_data.get("include_obsolete"), _required_string_tuple(rxnorm_data, "allowed_ttys"),
+            _required_str(rxnorm_data, "source"),
+            _required_str(rxnorm_data, "release"),
+            _required_date(rxnorm_data, "release_date"),
+            _path_from(rxnorm_data, "source_path", base_path),
+            _required_checksum(rxnorm_data),
+            _required_str(rxnorm_data, "license_or_usage_basis"),
+            _required_bool(rxnorm_data, "include_obsolete"),
+            _required_string_tuple(rxnorm_data, "allowed_ttys"),
             _required_str(rxnorm_data, "granularity"),
         )
         sources_data = root.get("alias_enrichment_sources", [])
@@ -211,9 +231,12 @@ class TerminologyManifest:
         sources = tuple(
             AliasEnrichmentSource(
                 _required_str(item_data := _mapping(item, "alias_enrichment_sources item"), "name"),
-                _required_str(item_data, "kind"), _required_str(item_data, "source"),
-                _required_str(item_data, "version"), _path_from(item_data, "source_path", base_path),
-                _required_checksum(item_data), _required_str(item_data, "license_or_usage_basis"),
+                _required_str(item_data, "kind"),
+                _required_str(item_data, "source"),
+                _required_str(item_data, "version"),
+                _path_from(item_data, "source_path", base_path),
+                _required_checksum(item_data),
+                _required_str(item_data, "license_or_usage_basis"),
             )
             for item in sources_data
         )
@@ -240,8 +263,12 @@ class ModelArtifact:
     seed: int = 0
 
     def __post_init__(self) -> None:
-        object.__setattr__(self, "training_config", _mapping(self.training_config, "training_config"))
-        object.__setattr__(self, "dataset_versions", _mapping(self.dataset_versions, "dataset_versions"))
+        object.__setattr__(
+            self, "training_config", _mapping(self.training_config, "training_config")
+        )
+        object.__setattr__(
+            self, "dataset_versions", _mapping(self.dataset_versions, "dataset_versions")
+        )
 
     def validate(self, verify_path: bool = False) -> None:
         _validate_nonempty_text(self.model_name, "model_name")
@@ -269,8 +296,12 @@ class SyntheticDataProvenance:
     seed: int
 
     def __post_init__(self) -> None:
-        object.__setattr__(self, "generation_config", _mapping(self.generation_config, "generation_config"))
-        object.__setattr__(self, "dataset_versions", _mapping(self.dataset_versions, "dataset_versions"))
+        object.__setattr__(
+            self, "generation_config", _mapping(self.generation_config, "generation_config")
+        )
+        object.__setattr__(
+            self, "dataset_versions", _mapping(self.dataset_versions, "dataset_versions")
+        )
 
     def validate(self, verify_path: bool = False) -> None:
         _validate_nonempty_text(self.generator_name, "generator_name")
@@ -290,7 +321,9 @@ class ArtifactManifest:
     synthetic_data: SyntheticDataProvenance
 
     @classmethod
-    def from_mapping(cls, data: Mapping[str, Any], base_path: Path | None = None) -> "ArtifactManifest":
+    def from_mapping(
+        cls, data: Mapping[str, Any], base_path: Path | None = None
+    ) -> "ArtifactManifest":
         _validate_no_secrets(data)
         root = _mapping(data, "manifest")
         if _required_int(root, "schema_version") != 1:
@@ -298,8 +331,12 @@ class ArtifactManifest:
         models_data = root.get("model_artifacts")
         if not isinstance(models_data, list) or not models_data:
             raise ValueError("model_artifacts must be a non-empty list")
-        models = tuple(_model_from_mapping(_mapping(item, "model_artifact"), base_path) for item in models_data)
-        synthetic = _synthetic_from_mapping(_mapping(root.get("synthetic_data"), "synthetic_data"), base_path)
+        models = tuple(
+            _model_from_mapping(_mapping(item, "model_artifact"), base_path) for item in models_data
+        )
+        synthetic = _synthetic_from_mapping(
+            _mapping(root.get("synthetic_data"), "synthetic_data"), base_path
+        )
         manifest = cls(1, models, synthetic)
         manifest.validate()
         return manifest
@@ -312,22 +349,33 @@ class ArtifactManifest:
 
 def _model_from_mapping(data: Mapping[str, Any], base_path: Path | None) -> ModelArtifact:
     parameter_count = data.get("parameter_count")
-    if parameter_count is not None and (isinstance(parameter_count, bool) or not isinstance(parameter_count, int)):
+    if parameter_count is not None and (
+        isinstance(parameter_count, bool) or not isinstance(parameter_count, int)
+    ):
         raise TypeError("parameter_count must be an integer or null")
     return ModelArtifact(
-        _required_str(data, "model_name"), parameter_count, _path_from(data, "path", base_path),
-        _required_checksum(data), _mapping(data.get("training_config"), "training_config"),
-        _mapping(data.get("dataset_versions"), "dataset_versions"), _required_str(data, "code_commit"),
+        _required_str(data, "model_name"),
+        parameter_count,
+        _path_from(data, "path", base_path),
+        _required_checksum(data),
+        _mapping(data.get("training_config"), "training_config"),
+        _mapping(data.get("dataset_versions"), "dataset_versions"),
+        _required_str(data, "code_commit"),
         _required_int(data, "seed"),
     )
 
 
-def _synthetic_from_mapping(data: Mapping[str, Any], base_path: Path | None) -> SyntheticDataProvenance:
+def _synthetic_from_mapping(
+    data: Mapping[str, Any], base_path: Path | None
+) -> SyntheticDataProvenance:
     return SyntheticDataProvenance(
-        _required_str(data, "generator_name"), _required_str(data, "generator_version"),
-        _path_from(data, "path", base_path), _required_checksum(data),
+        _required_str(data, "generator_name"),
+        _required_str(data, "generator_version"),
+        _path_from(data, "path", base_path),
+        _required_checksum(data),
         _mapping(data.get("generation_config"), "generation_config"),
-        _mapping(data.get("dataset_versions"), "dataset_versions"), _required_str(data, "code_commit"),
+        _mapping(data.get("dataset_versions"), "dataset_versions"),
+        _required_str(data, "code_commit"),
         _required_int(data, "seed"),
     )
 

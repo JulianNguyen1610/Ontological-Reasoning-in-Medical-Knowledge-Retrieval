@@ -26,9 +26,7 @@ def _canonical_json(value: Any) -> str:
     return json.dumps(value, ensure_ascii=False, separators=(",", ":"), sort_keys=True)
 
 
-def _frozen_safe_metadata(
-    value: Mapping[str, Any], field_name: str
-) -> Mapping[str, Any]:
+def _frozen_safe_metadata(value: Mapping[str, Any], field_name: str) -> Mapping[str, Any]:
     if not isinstance(value, Mapping):
         raise TypeError(f"{field_name} must be a mapping")
     copied = dict(value)
@@ -80,9 +78,7 @@ class ProposalEvidence:
         _validate_code(self.identifier, "identifier")
         if not isinstance(self.version, str) or not self.version:
             raise ValueError("version must be a non-empty string")
-        object.__setattr__(
-            self, "metadata", _frozen_safe_metadata(self.metadata, "metadata")
-        )
+        object.__setattr__(self, "metadata", _frozen_safe_metadata(self.metadata, "metadata"))
 
     def to_dict(self) -> dict[str, Any]:
         return {
@@ -134,9 +130,7 @@ class SourceTrustConfiguration:
     def to_dict(self) -> dict[str, Any]:
         return {
             source.value: trust.to_dict()
-            for source, trust in sorted(
-                self.sources.items(), key=lambda item: item[0].value
-            )
+            for source, trust in sorted(self.sources.items(), key=lambda item: item[0].value)
         }
 
 
@@ -146,9 +140,7 @@ class ProposalContext:
 
     document: SourceDocument
     text_views: Mapping[str, TextView]
-    source_trust: SourceTrustConfiguration = field(
-        default_factory=SourceTrustConfiguration
-    )
+    source_trust: SourceTrustConfiguration = field(default_factory=SourceTrustConfiguration)
 
     def __post_init__(self) -> None:
         if not isinstance(self.document, SourceDocument):
@@ -252,9 +244,7 @@ class SpanProposal:
     ) -> "SpanProposal":
         view = context.view_for(view_name)
         if not 0 <= view_start < view_end <= len(view.text):
-            raise ValueError(
-                "proposal span must be a non-empty interval in its text view"
-            )
+            raise ValueError("proposal span must be a non-empty interval in its text view")
         evidence = tuple(evidence)
         return cls(
             make_proposal_id(
@@ -328,9 +318,6 @@ class MockSpanProposer:
             if proposal.source is not self.source:
                 raise ValueError("mock proposal source must match proposer source")
             view = context.view_for(proposal.view_name)
-            if (
-                proposal.proposed_text
-                != view.text[proposal.view_start : proposal.view_end]
-            ):
+            if proposal.proposed_text != view.text[proposal.view_start : proposal.view_end]:
                 raise ValueError("mock proposal text must match its text view")
         return self.proposals

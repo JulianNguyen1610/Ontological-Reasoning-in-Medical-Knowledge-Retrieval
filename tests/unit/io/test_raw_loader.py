@@ -13,7 +13,6 @@ from medlink_ie.io.raw_loader import (
     load_path,
 )
 
-
 UTF8_BOM = b"\xef\xbb\xbf"
 
 
@@ -24,9 +23,7 @@ UTF8_BOM = b"\xef\xbb\xbf"
         (BomPolicy.STRIP, "khám"),
     ],
 )
-def test_utf8_bom_is_handled_by_the_explicit_policy(
-    policy: BomPolicy, expected_text: str
-) -> None:
+def test_utf8_bom_is_handled_by_the_explicit_policy(policy: BomPolicy, expected_text: str) -> None:
     raw_bytes = UTF8_BOM + "khám".encode("utf-8")
 
     document = load_bytes(raw_bytes, "bom-note", RawLoaderConfig(bom_policy=policy))

@@ -76,7 +76,10 @@ def _serialize(value: Any) -> Any:
     if isinstance(value, Enum):
         return value.value
     if isinstance(value, Mapping):
-        return {str(key): _serialize(item) for key, item in sorted(value.items(), key=lambda pair: str(pair[0]))}
+        return {
+            str(key): _serialize(item)
+            for key, item in sorted(value.items(), key=lambda pair: str(pair[0]))
+        }
     if isinstance(value, tuple):
         return [_serialize(item) for item in value]
     if isinstance(value, list):
@@ -164,7 +167,9 @@ class TextView(_Serializable):
             previous = boundary
 
     def to_dict(self) -> dict[str, Any]:
-        return _serialize({"name": self.name, "text": self.text, "boundary_to_raw": self.boundary_to_raw})
+        return _serialize(
+            {"name": self.name, "text": self.text, "boundary_to_raw": self.boundary_to_raw}
+        )
 
 
 @dataclass(frozen=True, slots=True)
@@ -288,11 +293,27 @@ class EntityHypothesis(_Serializable):
 
     def __post_init__(self) -> None:
         object.__setattr__(self, "evidence_sources", tuple(self.evidence_sources))
-        object.__setattr__(self, "source_scores", _frozen_mapping(self.source_scores, "source_scores"))
-        object.__setattr__(self, "type_probabilities", _frozen_mapping(self.type_probabilities, "type_probabilities"))
-        object.__setattr__(self, "assertion_probabilities", _frozen_mapping(self.assertion_probabilities, "assertion_probabilities"))
-        object.__setattr__(self, "structured_slots", _frozen_mapping(self.structured_slots, "structured_slots"))
-        object.__setattr__(self, "candidate_scores", tuple(_frozen_mapping(item, "candidate_scores item") for item in self.candidate_scores))
+        object.__setattr__(
+            self, "source_scores", _frozen_mapping(self.source_scores, "source_scores")
+        )
+        object.__setattr__(
+            self,
+            "type_probabilities",
+            _frozen_mapping(self.type_probabilities, "type_probabilities"),
+        )
+        object.__setattr__(
+            self,
+            "assertion_probabilities",
+            _frozen_mapping(self.assertion_probabilities, "assertion_probabilities"),
+        )
+        object.__setattr__(
+            self, "structured_slots", _frozen_mapping(self.structured_slots, "structured_slots")
+        )
+        object.__setattr__(
+            self,
+            "candidate_scores",
+            tuple(_frozen_mapping(item, "candidate_scores item") for item in self.candidate_scores),
+        )
         self.validate()
 
     def validate(self) -> None:
@@ -357,7 +378,9 @@ class FinalEntity(_Serializable):
         _validate_interval(self.position[0], self.position[1], "position")
         if any(not isinstance(label, AssertionLabel) for label in self.assertions):
             raise TypeError("assertions must contain AssertionLabel values")
-        if self.candidates is not None and any(not isinstance(candidate, str) or not candidate for candidate in self.candidates):
+        if self.candidates is not None and any(
+            not isinstance(candidate, str) or not candidate for candidate in self.candidates
+        ):
             raise ValueError("candidates must contain non-empty strings")
         if document is not None:
             if not isinstance(document, SourceDocument):

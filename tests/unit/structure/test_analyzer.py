@@ -31,7 +31,9 @@ def test_medication_history_becomes_section_and_newline_medication_list() -> Non
     assert structure.sections[0].label == "medication_history"
     assert structure.list_blocks[0].rule_ids == ("list.medication_lines",)
     assert _texts(text, structure.list_items) == ["Aspirin 81 mg po daily", "Metformin 500 mg bid"]
-    assert all(item.parent_list_id == structure.list_blocks[0].unit_id for item in structure.list_items)
+    assert all(
+        item.parent_list_id == structure.list_blocks[0].unit_id for item in structure.list_items
+    )
     _assert_raw_spans(text, structure)
 
 
@@ -40,8 +42,15 @@ def test_lab_report_lines_remain_distinct_sentences_with_section_context() -> No
     structure = StructuralAnalyzer().analyze(_document(text))
 
     assert structure.sections[0].label == "laboratory"
-    assert _texts(text, structure.sentences) == ["Cận lâm sàng:", "Glucose: 5.6 mmol/L", "HbA1c: 6.2%"]
-    assert all(sentence.parent_section_id == structure.sections[0].unit_id for sentence in structure.sentences)
+    assert _texts(text, structure.sentences) == [
+        "Cận lâm sàng:",
+        "Glucose: 5.6 mmol/L",
+        "HbA1c: 6.2%",
+    ]
+    assert all(
+        sentence.parent_section_id == structure.sections[0].unit_id
+        for sentence in structure.sentences
+    )
     _assert_raw_spans(text, structure)
 
 
@@ -54,7 +63,12 @@ def test_numbered_and_bullet_lists_are_grouped_with_parent_child_links() -> None
         ("list.numbered",),
         ("list.bullet",),
     ]
-    assert _texts(text, structure.list_items) == ["1. Aspirin", "2. Metformin", "- Không sốt", "• Ho nhiều"]
+    assert _texts(text, structure.list_items) == [
+        "1. Aspirin",
+        "2. Metformin",
+        "- Không sốt",
+        "• Ho nhiều",
+    ]
     _assert_raw_spans(text, structure)
 
 
@@ -76,7 +90,9 @@ def test_contrast_clause_segmentation_keeps_cue_for_future_scope_logic() -> None
     assert _texts(text, structure.clauses) == ["Không sốt ", "nhưng ho nhiều"]
     assert structure.clauses[1].cue == "nhưng"
     assert structure.clauses[1].rule_ids == ("clause.contrast.nhung",)
-    assert all(clause.parent_sentence_id == structure.sentences[0].unit_id for clause in structure.clauses)
+    assert all(
+        clause.parent_sentence_id == structure.sentences[0].unit_id for clause in structure.clauses
+    )
     _assert_raw_spans(text, structure)
 
 
@@ -95,7 +111,14 @@ def test_empty_and_one_line_documents_are_valid() -> None:
     empty = analyzer.analyze(_document(""))
     one_line = analyzer.analyze(_document("Ho, sốt."))
 
-    assert empty.sections == empty.list_blocks == empty.list_items == empty.sentences == empty.clauses == ()
+    assert (
+        empty.sections
+        == empty.list_blocks
+        == empty.list_items
+        == empty.sentences
+        == empty.clauses
+        == ()
+    )
     assert _texts("Ho, sốt.", one_line.sentences) == ["Ho, sốt."]
     _assert_raw_spans("Ho, sốt.", one_line)
 

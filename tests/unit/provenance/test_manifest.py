@@ -95,7 +95,12 @@ def test_loaders_create_frozen_typed_manifests(tmp_path: Path) -> None:
     rxnorm_path = tmp_path / "rxnorm.csv"
     model_path = tmp_path / "model.bin"
     data_path = tmp_path / "synthetic.jsonl"
-    for path, content in ((icd_path, b"icd"), (rxnorm_path, b"rxnorm"), (model_path, b"model"), (data_path, b"data")):
+    for path, content in (
+        (icd_path, b"icd"),
+        (rxnorm_path, b"rxnorm"),
+        (model_path, b"model"),
+        (data_path, b"data"),
+    ):
         path.write_bytes(content)
     terminology_path = tmp_path / "terminology.yaml"
     artifact_path = tmp_path / "artifact.yaml"

@@ -8,7 +8,6 @@ from collections.abc import Callable
 from medlink_ie.domain import SourceDocument, TextView
 from medlink_ie.normalization.boundary_map import BoundaryMap
 
-
 RAW_VIEW = "raw"
 NFC_SEARCH_VIEW = "nfc_search"
 LOWERCASE_RETRIEVAL_VIEW = "lowercase_retrieval"
@@ -48,9 +47,7 @@ def _nfc(text: str) -> str:
 def _remove_accents(text: str) -> str:
     decomposed = unicodedata.normalize("NFD", text)
     unaccented = "".join(
-        character
-        for character in decomposed
-        if not unicodedata.category(character).startswith("M")
+        character for character in decomposed if not unicodedata.category(character).startswith("M")
     )
     return unaccented.translate(str.maketrans(ACCENT_TRANSLATION))
 
@@ -72,9 +69,7 @@ def _transform_view(
         else:
             boundaries[-1] = raw_end
     text = "".join(output)
-    return BoundaryMap(tuple(boundaries), len(text), raw_length).to_text_view(
-        name, text
-    )
+    return BoundaryMap(tuple(boundaries), len(text), raw_length).to_text_view(name, text)
 
 
 def _collapse_whitespace(source: TextView, raw_length: int) -> TextView:

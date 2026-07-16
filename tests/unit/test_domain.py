@@ -142,7 +142,9 @@ def test_invalid_confidences_are_rejected(confidence: float) -> None:
 
 def test_unsupported_enum_labels_are_rejected() -> None:
     with pytest.raises(TypeError, match="ProposalSource"):
-        SpanProposal("proposal-1", "span_model", "raw", "ho", None, None, None, None, None, None, 0.5)  # type: ignore[arg-type]
+        SpanProposal(
+            "proposal-1", "span_model", "raw", "ho", None, None, None, None, None, None, 0.5
+        )  # type: ignore[arg-type]
     with pytest.raises(TypeError, match="EntityType"):
         FinalEntity("ho", "TRIỆU_CHỨNG", (0, 2), (), None)  # type: ignore[arg-type]
     with pytest.raises(TypeError, match="AssertionLabel"):

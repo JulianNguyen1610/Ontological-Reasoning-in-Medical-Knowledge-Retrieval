@@ -75,7 +75,9 @@ class DecisionTraceEvent:
             "stage": stage,
             "subject_id": subject_id,
         }
-        event_id = f"event-{hashlib.sha256(_canonical_json(payload).encode('utf-8')).hexdigest()[:24]}"
+        event_id = (
+            f"event-{hashlib.sha256(_canonical_json(payload).encode('utf-8')).hexdigest()[:24]}"
+        )
         return cls(
             event_id,
             subject_id,

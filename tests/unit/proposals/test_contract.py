@@ -26,9 +26,7 @@ def context() -> ProposalContext:
     return ProposalContext(
         document=document,
         text_views={raw_view.name: raw_view},
-        source_trust=SourceTrustConfiguration(
-            {ProposalSource.SPAN_MODEL: SourceTrust(0.7, True)}
-        ),
+        source_trust=SourceTrustConfiguration({ProposalSource.SPAN_MODEL: SourceTrust(0.7, True)}),
     )
 
 
@@ -65,15 +63,9 @@ def test_proposal_id_is_deterministic_and_changes_with_provenance(
     context: ProposalContext,
 ) -> None:
     evidence = (ProposalEvidence("rule_match", "rule-42", "1.0", {"lexicon": "local"}),)
-    first = make_proposal_id(
-        context, ProposalSource.SPAN_MODEL, "model-1", "raw", 3, 5, evidence
-    )
-    second = make_proposal_id(
-        context, ProposalSource.SPAN_MODEL, "model-1", "raw", 3, 5, evidence
-    )
-    changed = make_proposal_id(
-        context, ProposalSource.SPAN_MODEL, "model-2", "raw", 3, 5, evidence
-    )
+    first = make_proposal_id(context, ProposalSource.SPAN_MODEL, "model-1", "raw", 3, 5, evidence)
+    second = make_proposal_id(context, ProposalSource.SPAN_MODEL, "model-1", "raw", 3, 5, evidence)
+    changed = make_proposal_id(context, ProposalSource.SPAN_MODEL, "model-2", "raw", 3, 5, evidence)
 
     assert first == second
     assert first != changed
@@ -113,9 +105,7 @@ def test_context_rejects_unknown_view_and_mock_rejects_wrong_source(
     context: ProposalContext,
 ) -> None:
     with pytest.raises(ValueError, match="unknown text view"):
-        SpanProposal.create(
-            context, ProposalSource.SPAN_MODEL, "model-1", "missing", 0, 1, 0.5, ()
-        )
+        SpanProposal.create(context, ProposalSource.SPAN_MODEL, "model-1", "missing", 0, 1, 0.5, ())
 
     proposal = SpanProposal.create(
         context, ProposalSource.SPAN_MODEL, "model-1", "raw", 3, 5, 0.5, ()
