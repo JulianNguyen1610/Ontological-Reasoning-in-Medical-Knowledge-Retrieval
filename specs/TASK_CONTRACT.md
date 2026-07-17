@@ -1,9 +1,9 @@
 # TASK CONTRACT — Viettel AI Race Medical IE
 
-**Version:** 1.0.0-framework_v1
+**Version:** 1.1.0-framework_v1
 **Status:** Draft — external competition contract and scorer material pending
 **Owners:** Unassigned
-**Last updated:** 2026-07-16
+**Last updated:** 2026-07-17
 
 ## 1. Purpose and evidence policy
 
@@ -48,6 +48,8 @@ contract.
 | C020 | Output directory and zip structure | Framework proposes `output/<sample>.json` directly inside the zip; official naming/count rules are absent. | Framework §18.4/§18.5 | ASSUMED | Packaging rejection despite valid entities. | BTC packaging instructions and a reference zip. | G029 zip tree, filename, count, and reopen test. |
 | C021 | Medication span assembly | A `THUỐC` proposal begins at an ingredient/brand alias and includes contiguous strength, unit/range, form, route, frequency, duration, PRN, release modifier, and combination components. Include internal component punctuation; exclude terminal punctuation, list markers, and treatment indications. | BTC-provided Framework §1.2, §8.1, §13.1; `ANNOTATION_GUIDE.md` MED-001–005 | CONFIRMED for project implementation | Boundary mismatch can reduce text score; scorer treatment remains unknown. | Unit fixtures for positive, negative, punctuation, list, and combination cases. | G030 framework output example; G031 `clonazepam 0.5 mg po qam:prn`; G032 combination; G033 dosage-only negative. |
 
+| C022 | Laboratory proposal boundaries and pairing | Under `framework_v1`, emit exact frozen test aliases plus locally paired numeric or recognized qualitative results. Numeric spans include contiguous value, recognized unit, and H/L flag; exclude parenthesized reference ranges and unpaired values/units. Pair to the nearest test in the list item, clause, or line. These are proposal kinds only, not final entity types/assertions. | User-authorized `framework_v1` policy (2026-07-17); `ANNOTATION_GUIDE.md` LAB-001 through LAB-004; `tests/unit/proposals/test_laboratory.py` | CONFIRMED for project implementation | BTC may differ on boundary, pairing, reference ranges, type, or assertion behavior. | Deterministic unit fixtures and raw-slice validation. | G034 exact test alias; G035 numeric/unit/flag; G036 qualitative result; G037 local nearest pairing; G038 unpaired/reference-range rejection. |
+
 ## 3. Current implementation boundaries
 
 1. Internal validation may enforce C001 and deterministic behavior without
@@ -72,6 +74,9 @@ release, TTY/granularity, checksums, licenses, and candidate eligibility remain
 blocked by C013/C014 until organizer material is supplied.
 
 ## 4. Golden-test plan
+
+G034 through G038 specify the framework_v1 laboratory proposal tests in C022;
+they are planned local goldens, not official competition golds.
 
 The G001–G029 cases above are planned tests, not official golds. Their expected
 competition outputs remain blocked until BTC material is received. Each case
@@ -153,3 +158,10 @@ When official artifacts arrive, implement the cases first in
 ### 0.1 — prior draft
 
 - Initial blank contract template and BTC question list.
+
+### 1.1.0-framework_v1 — 2026-07-17
+
+- Added C022: a user-authorized, deterministic laboratory proposal and pairing
+  policy for Task 2.3.
+- Explicitly limited C022 to local `framework_v1` proposals rather than final
+  lab type/assertion labels or organizer scorer behavior.

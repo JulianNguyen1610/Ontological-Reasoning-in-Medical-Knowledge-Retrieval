@@ -1,6 +1,6 @@
 # ANNOTATION GUIDE — Medical Entity Extraction
 
-**Version:** 1.0.0-framework_v1
+**Version:** 1.1.0-framework_v1
 **Status:** Framework-derived annotation policy; scorer-dependent rules remain configurable
 
 ## 1. Status and rule-ID convention
@@ -20,7 +20,7 @@ generator is not annotation authority.
 | SPAN-001 through SPAN-006 | NEEDS_ADJUDICATION | Boundary, nesting, overlap, and repeated-mention policy. |
 | ASSERT-001 through ASSERT-006 | NEEDS_ADJUDICATION | Assertion triggers, scope, and combinations. |
 | MED-001 through MED-005 | CONFIRMED | Framework-derived medication component boundaries, authorized for implementation on 2026-07-16. |
-| LAB-001 through LAB-004 | NEEDS_ADJUDICATION | Laboratory name/result boundaries. |
+| LAB-001 through LAB-004 | CONFIRMED for `framework_v1` | Deterministic laboratory proposal boundaries, authorized for implementation on 2026-07-17; not BTC scorer policy. |
 
 ## 2. Entity-type decision trees
 
@@ -98,10 +98,10 @@ No assertion is inferred from a cue until BTC confirms trigger and scope rules.
 | MED-003 | CONFIRMED | Include contiguous combination components and their internal separator when they form one medication expression; do not split a combination solely because it has multiple ingredients. |
 | MED-004 | CONFIRMED | Do not include a list marker, terminal punctuation, or an indication/treatment clause in the medication span. Assertion scope for historical/current/discontinued status remains governed by ASSERT rules. |
 | MED-005 | CONFIRMED | Preserve internal punctuation required by a component, including dosage slashes/hyphens and `:` in compact frequency/PRN forms such as `qam:prn`; preserve the exact raw substring. |
-| LAB-001 | NEEDS_ADJUDICATION | Test/procedure name and abbreviation inclusion. |
-| LAB-002 | NEEDS_ADJUDICATION | Numeric value, unit, range, and H/L flag inclusion. |
-| LAB-003 | NEEDS_ADJUDICATION | Qualitative and microbiology finding boundaries. |
-| LAB-004 | NEEDS_ADJUDICATION | Imaging/procedure finding type and assertion treatment. |
+| LAB-001 | CONFIRMED for `framework_v1` | A test-name proposal is the exact raw substring matching a frozen local test alias, including a matched abbreviation. It carries no terminology code or final entity type. |
+| LAB-002 | CONFIRMED for `framework_v1` | A numeric result proposal includes its contiguous number (decimal, range, or inequality), recognized unit, and adjacent `H`/`L` flag. A unit/value without a locally paired test is rejected. |
+| LAB-003 | CONFIRMED for `framework_v1` | A qualitative result proposal is the exact recognized finding (`tăng`, `giảm`, `cao`, `thấp`, `dương tính`, `âm tính`, or `không phát hiện`) only when locally paired with a test. |
+| LAB-004 | CONFIRMED for `framework_v1` | Pair a result only to the nearest frozen test alias in the same list item; otherwise in the same clause; otherwise on the same line. Exclude parenthesized reference ranges. Do not infer imaging/procedure findings, final entity type, or assertions. |
 
 ### 5.1 Medication boundary policy
 
@@ -128,6 +128,29 @@ split `q6h:prn` structurally.
 
 These rules govern proposal assembly only. They do not infer RxNorm codes or
 final assertions, and all final positions remain raw-text positions.
+
+### 5.2 Laboratory proposal policy
+
+The following policy is frozen as a precision-first, deterministic
+`framework_v1` proposal contract following explicit user authorization on
+2026-07-17. It produces source-level proposal kinds only (`test_name` and
+`test_result`); downstream classification remains responsible for final entity
+type and assertion decisions.
+
+1. Match test names only against a supplied frozen local lexicon, case
+   insensitively with token boundaries; retain the exact raw substring.
+2. For a paired numeric result, include the contiguous value, optional
+   recognized unit, and optional adjacent `H`/`L` flag. Supported value forms
+   are decimals, inclusive ranges, and `<`, `>`, `<=`, `>=`, `≤`, or `≥`
+   inequalities.
+3. For a paired qualitative result, include only the recognized finding phrase.
+   Do not emit standalone units, values, or medication dosage fragments.
+4. Pair only within the most local structural scope: list item, then clause,
+   then line. Resolve multiple compatible tests by minimum distance; tie-break
+   by the later test position and then deterministic proposal ID.
+5. Exclude a numeric reference range when its entire candidate is enclosed in
+   parentheses. Handling of other reference-range formats remains outside this
+   policy.
 
 ## 6. Overlap, nesting, and repeated mentions
 
@@ -181,3 +204,12 @@ reviewer_decision:
 - Added an implementable medication span-assembly policy for Task 2.2.
 - Kept laboratory, type, assertion, offset, overlap, and scorer-dependent
   rules pending where the framework does not resolve them.
+
+### 1.1.0-framework_v1 — 2026-07-17
+
+- Froze LAB-001 through LAB-004 as a precision-first local proposal policy
+  after explicit user authorization.
+- Defined exact alias, numeric/qualitative-result, local-pairing, and
+  parenthesized-reference-range behavior for Task 2.3.
+- Kept final lab entity type, assertion semantics, and organizer scorer
+  behavior outside the policy.

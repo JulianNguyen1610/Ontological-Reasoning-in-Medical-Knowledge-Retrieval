@@ -10,6 +10,15 @@ from medlink_ie.proposals.contract import (
     SpanProposer,
     make_proposal_id,
 )
+from medlink_ie.proposals.laboratory import (
+    LAB_TEST_NAME,
+    LAB_TEST_RESULT,
+    FrozenLaboratoryTestLexicon,
+    LaboratoryResultProposer,
+    LaboratorySpanProposer,
+    LaboratoryTest,
+    LaboratoryTestNameProposer,
+)
 from medlink_ie.proposals.medication import (
     MedicationAlias,
     MedicationAliasLexicon,
@@ -31,4 +40,11 @@ __all__ = [
     "SpanProposal",
     "SpanProposer",
     "make_proposal_id",
+    "LAB_TEST_NAME",
+    "LAB_TEST_RESULT",
+    "FrozenLaboratoryTestLexicon",
+    "LaboratoryResultProposer",
+    "LaboratorySpanProposer",
+    "LaboratoryTest",
+    "LaboratoryTestNameProposer",
 ]
