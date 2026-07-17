@@ -13,7 +13,10 @@ dependencies = ["PyYAML>=6.0"]
 dev = [
     "mypy>=1.13",
     "pytest>=8.3",
+    "python-dotenv>=1.0.0",
+    "requests>=2.28.0",
     "ruff>=0.8",
+    "tqdm>=4.65.0",
     "types-PyYAML>=6.0",
 ]
 

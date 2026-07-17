@@ -39,6 +39,8 @@ class ProposalSource(str, Enum):
 class GroundingMethod(str, Enum):
     EXACT_RAW = "exact_raw"
     EXACT_VIEW = "exact_view"
+    CASE_INSENSITIVE = "case_insensitive"
+    TOKEN_ALIGNED = "token_aligned"
     FUZZY_RAW = "fuzzy_raw"
 
 
@@ -229,6 +231,30 @@ class SpanProposal(_Serializable):
 
 
 @dataclass(frozen=True, slots=True)
+class GroundingCandidate(_Serializable):
+    raw_start: int
+    raw_end: int
+    score: float
+    reason: str
+
+    def __post_init__(self) -> None:
+        _validate_interval(self.raw_start, self.raw_end, "raw")
+        _validate_confidence(self.score, "score")
+        if not isinstance(self.reason, str) or not self.reason:
+            raise ValueError("reason must be a non-empty string")
+
+    def to_dict(self) -> dict[str, Any]:
+        return _serialize(
+            {
+                "raw_start": self.raw_start,
+                "raw_end": self.raw_end,
+                "score": self.score,
+                "reason": self.reason,
+            }
+        )
+
+
+@dataclass(frozen=True, slots=True)
 class GroundedSpan(_Serializable):
     proposal_id: str
     raw_start: int
@@ -236,8 +262,11 @@ class GroundedSpan(_Serializable):
     text: str
     method: GroundingMethod
     confidence: float
+    candidate_occurrences: tuple[GroundingCandidate, ...] = ()
+    selected_reason: str = "legacy"
 
     def __post_init__(self) -> None:
+        object.__setattr__(self, "candidate_occurrences", tuple(self.candidate_occurrences))
         self.validate()
 
     def validate(self) -> None:
@@ -249,6 +278,13 @@ class GroundedSpan(_Serializable):
         if not isinstance(self.method, GroundingMethod):
             raise TypeError("method must be a GroundingMethod")
         _validate_confidence(self.confidence, "confidence")
+        if any(
+            not isinstance(candidate, GroundingCandidate)
+            for candidate in self.candidate_occurrences
+        ):
+            raise TypeError("candidate_occurrences must contain GroundingCandidate values")
+        if not isinstance(self.selected_reason, str) or not self.selected_reason:
+            raise ValueError("selected_reason must be a non-empty string")
 
     def to_dict(self) -> dict[str, Any]:
         return _serialize(
@@ -259,6 +295,10 @@ class GroundedSpan(_Serializable):
                 "text": self.text,
                 "method": self.method,
                 "confidence": self.confidence,
+                "candidate_occurrences": tuple(
+                    candidate.to_dict() for candidate in self.candidate_occurrences
+                ),
+                "selected_reason": self.selected_reason,
             }
         )
 
