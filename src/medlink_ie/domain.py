@@ -31,6 +31,7 @@ class AssertionLabel(str, Enum):
 class ProposalSource(str, Enum):
     MEDICATION_RULES = "medication_rules"
     LAB_RULES = "lab_rules"
+    CONCEPT_RULES = "concept_rules"
     SPAN_MODEL = "span_model"
     LLM_PROPOSER = "llm_proposer"
 
