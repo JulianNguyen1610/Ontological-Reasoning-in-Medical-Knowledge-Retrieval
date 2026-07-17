@@ -38,7 +38,7 @@ contract.
 | C010 | Wrong-type behavior | The possibility of a wrong-type double penalty is unresolved. | Framework §3.1; playbook Task 0.2 | UNKNOWN | Decoder utility and type thresholds can be materially wrong. | Score right-span/wrong-type prediction using official scorer. | G014 right span, wrong type. |
 | C011 | Allowed entity types | Allowed types are `TRIỆU_CHỨNG`, `TÊN_XÉT_NGHIỆM`, `KẾT_QUẢ_XÉT_NGHIỆM`, `CHẨN_ĐOÁN`, and `THUỐC`. | BTC-provided Framework §1.3 | CONFIRMED | Rejecting a valid type or emitting an invalid one. | Schema validator and one fixture per type. | G015 one valid entity of each type; G016 unsupported type rejection. |
 | C012 | Assertion labels and applicability | Labels are `isNegated`, `isHistorical`, and `isFamily`; assertions are multi-label. Applicability by entity type and exact combinations remain unknown. | BTC-provided Framework §1.4; `ANNOTATION_GUIDE.md` ASSERT-001–006 | CONFIRMED labels/multi-label; UNKNOWN applicability | Invalid fields or incorrect assertion Jaccard. | BTC schema or examples with empty, single, and multi-label assertions. | G017 assertion presence; G018 empty list; G019 multi-label. |
-| C013 | Candidate applicability and terminology | Project mapping is diagnosis→ICD and medication→RxNorm; terminology variant, release, code granularity, and candidate policy are unknown. | Framework §1.3/§3.1 and §14; `terminology_manifest.yaml` contains `TBD` | CONFIRMED mapping; UNKNOWN snapshot/policy | Invalid codes, lost valid codes, or incorrect linking score. | BTC terminology manifest and schema. | G020 type-specific candidates; G021 invalid snapshot code. |
+| C013 | Candidate applicability and terminology | Project mapping is diagnosis→ICD and medication→RxNorm. The frozen baseline uses WHO ICD-10 2019 (including COVID-19 updates) and NLM RxNorm Current Prescribable Content 2026-07-06; only the manifest-declared code levels and TTYs are allowed. | Framework §1.3/§3.1 and §14; user-authorized external baseline in `terminology_manifest.yaml` | CONFIRMED for project baseline | The external baseline can differ from an unavailable organizer snapshot. | Verify archive checksums offline and validate every candidate against canonical tables. | G020 type-specific candidates; G021 invalid snapshot code. |
 | C014 | Candidate list multiplicity, ordering, and duplicates | Candidate multiplicity, order significance, and duplicate handling are unknown. Internal output must be deterministic and duplicate-free only after BTC confirms equivalence. | Framework §3.1 and §14.7; no official scorer | UNKNOWN | Candidate Jaccard can change substantially. | Official scorer cases for one, multiple, reordered, and duplicate codes. | G022 candidate exact/missing/extra/reordered/duplicate. |
 | C015 | Missing versus empty `assertions` / `candidates` | Field presence requirements are unknown for every type. Do not serialize a fixed policy as competition behavior. | Framework §3.1 and §18.1 defer to task contract | UNKNOWN | Schema rejection or score mismatch. | BTC JSON schema and official zero-field samples. | G018 empty/omitted assertions; G023 empty/omitted candidates. |
 | C016 | Duplicate output objects | Remove exact duplicate output objects; never merge distinct positions by surface text alone. | Framework §17.1 and §18.1; `AGENTS.md` decision trace invariant. | CONFIRMED for framework_v1 | Official duplicate scoring remains unknown. | Exact-duplicate and repeated-position fixtures. | G010 exact duplicate and G024 same text/different positions. |
@@ -134,6 +134,13 @@ When official artifacts arrive, implement the cases first in
   candidate mappings to `CONFIRMED` at project level.
 - Added C021 and linked it to the frozen framework-derived medication policy
   in `ANNOTATION_GUIDE.md`.
+
+### 0.3.1 — 2026-07-17
+
+- Froze the user-authorized external terminology baseline in
+  `terminology_manifest.yaml`: WHO ICD-10 2019 and NLM RxNorm Current
+  Prescribable Content 2026-07-06.
+- Recorded the baseline limitation: it is not an organizer-provided snapshot.
 
 ### 0.2.0 — 2026-07-16
 

@@ -1,34 +1,41 @@
-# Template only. Replace every TBD value with organizer-provided provenance
-# before loading it with medlink_ie.provenance.manifest.
+# User-authorized external baseline. All paths and hashes refer to local,
+# immutable archives; inference must not download terminology data.
 schema_version: 1
 
 icd:
-  source: organizer_provided
-  variant: TBD # ICD-10, ICD-10-CM, or ICD-11
-  version: TBD
-  release_date: TBD # YYYY-MM-DD
-  source_path: data/terminology/icd
-  checksum_sha256: TBD
-  license_or_usage_basis: TBD
+  source: WHO ICD-10 Download Page
+  variant: ICD-10
+  version: "2019 including COVID-19 updates"
+  release_date: 2020-02-01
+  source_path: ../data/terminology/icd/icd102019enMeta.zip
+  checksum_sha256: a9fa787fa79076e199e46ca645bbc076449853e93e62cd3b2050b96dc96bbc1d
+  license_or_usage_basis: "WHO ICD-10 licensing terms; research/internal evaluation use."
   include_inactive: false
-  allowed_code_levels: [TBD]
+  allowed_code_levels: [category_3, subcategory_4]
 
 rxnorm:
-  source: organizer_provided
-  release: TBD
-  release_date: TBD # YYYY-MM-DD
-  source_path: data/terminology/rxnorm
-  checksum_sha256: TBD
-  license_or_usage_basis: TBD
+  source: NLM RxNorm Current Prescribable Content
+  release: "2026-07-06"
+  release_date: 2026-07-06
+  source_path: ../data/terminology/RxNorm_full_prescribe_07062026.zip
+  checksum_sha256: e81e29a27575718dc1f0cf80b1371b283bcba53f446f27fc85f74c71def99829
+  license_or_usage_basis: "NLM RxNorm Current Prescribable Content; public domain, no license required."
   include_obsolete: false
-  allowed_ttys: [TBD]
-  granularity: TBD
+  allowed_ttys: [IN, PIN, MIN, BN, SCD, SBD, GPCK, BPCK, DF]
+  granularity: active current-prescribable drug, ingredient, brand, pack, and dose-form concepts
 
 alias_enrichment_sources:
-  - name: organizer_aliases
-    kind: alias # alias or enrichment
-    source: organizer_provided
-    version: TBD
-    source_path: data/terminology/aliases
-    checksum_sha256: TBD
-    license_or_usage_basis: TBD
+  - name: rxnorm-rxnconso
+    kind: alias
+    source: NLM RxNorm Current Prescribable Content RXNCONSO
+    version: "2026-07-06"
+    source_path: ../data/terminology/RxNorm_full_prescribe_07062026.zip
+    checksum_sha256: e81e29a27575718dc1f0cf80b1371b283bcba53f446f27fc85f74c71def99829
+    license_or_usage_basis: "NLM RxNorm Current Prescribable Content; public domain, no license required."
+  - name: framework-v1-medication-aliases
+    kind: enrichment
+    source: framework_v1_adjudicated_aliases
+    version: "2026-07-17"
+    source_path: ../data/terminology/aliases/framework_v1_medication_aliases.yaml
+    checksum_sha256: cea05c0a2354b57406a75f2e39c73eddc60e68b0448e644411c3d9f74603f832
+    license_or_usage_basis: "Project-local framework_v1 adjudication artifact."

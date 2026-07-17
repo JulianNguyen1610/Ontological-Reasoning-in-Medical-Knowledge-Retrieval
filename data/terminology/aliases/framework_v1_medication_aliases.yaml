@@ -1,0 +1,9 @@
+schema_version: 1
+source: framework_v1_adjudicated_aliases
+version: 2026-07-17
+license_or_usage_basis: Project-local framework_v1 adjudication artifact.
+aliases:
+  - alias: Paracetamol
+    alias_id: framework-v1-paracetamol
+    concept_label: acetaminophen-equivalent
+    rationale: Required by adjudicated medication fixture MF01; retained as an alias only, not a candidate code.

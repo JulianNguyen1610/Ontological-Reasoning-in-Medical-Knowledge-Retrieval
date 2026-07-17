@@ -15,6 +15,7 @@ from types import MappingProxyType
 from typing import Any, Protocol, runtime_checkable
 
 from medlink_ie.domain import ProposalSource, SourceDocument, TextView
+from medlink_ie.structure.analyzer import DocumentStructure
 
 _SAFE_CODE = re.compile(r"^[a-z0-9][a-z0-9_.-]*$")
 _SENSITIVE_METADATA_KEYS = frozenset(
@@ -141,6 +142,7 @@ class ProposalContext:
     document: SourceDocument
     text_views: Mapping[str, TextView]
     source_trust: SourceTrustConfiguration = field(default_factory=SourceTrustConfiguration)
+    structure: DocumentStructure | None = None
 
     def __post_init__(self) -> None:
         if not isinstance(self.document, SourceDocument):
@@ -157,6 +159,10 @@ class ProposalContext:
                 raise ValueError("text view mapping keys must match TextView.name")
         if not isinstance(self.source_trust, SourceTrustConfiguration):
             raise TypeError("source_trust must be a SourceTrustConfiguration")
+        if self.structure is not None:
+            if not isinstance(self.structure, DocumentStructure):
+                raise TypeError("structure must be a DocumentStructure or None")
+            self.structure.validate(self.document.raw_text)
         object.__setattr__(self, "text_views", MappingProxyType(views))
 
     def view_for(self, name: str) -> TextView:
