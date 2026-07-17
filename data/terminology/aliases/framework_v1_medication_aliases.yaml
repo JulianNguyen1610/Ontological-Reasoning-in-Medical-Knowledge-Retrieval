@@ -6,4 +6,7 @@ aliases:
   - alias: Paracetamol
     alias_id: framework-v1-paracetamol
     concept_label: acetaminophen-equivalent
+    system: RXNORM
+    concept_id: "161"
+    alias_type: enrichment
     rationale: Required by adjudicated medication fixture MF01; retained as an alias only, not a candidate code.

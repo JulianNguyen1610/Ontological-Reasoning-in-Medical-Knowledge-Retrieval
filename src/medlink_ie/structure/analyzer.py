@@ -35,6 +35,7 @@ class StructuralAnalyzerConfig:
             "medication_history",
             (
                 "thuốc trước nhập viện",
+                "danh sách thuốc trước nhập viện",
                 "medications",
                 "current medications",
                 "medication history",

@@ -5,6 +5,7 @@ from __future__ import annotations
 from dataclasses import dataclass, field, replace
 from typing import Mapping
 
+from medlink_ie.assertions import AssertionScopeEngine
 from medlink_ie.domain import (
     AssertionLabel,
     DecisionTrace,
@@ -258,25 +259,27 @@ class HeuristicTypeClassifier:
 class BasicAssertionEngine:
     def __init__(self, config: BaselineConfig) -> None:
         self.config = config
+        self._scope_engine = AssertionScopeEngine()
 
     def apply(
         self, hypotheses: tuple[EntityHypothesis, ...], context: ProposalContext
     ) -> tuple[EntityHypothesis, ...]:
         output: list[EntityHypothesis] = []
         for hypothesis in hypotheses:
-            scope, section_label = self._scope(context, hypothesis.raw_start)
             probabilities = {label: 0.0 for label in AssertionLabel}
-            if section_label == "family_history" or any(
-                cue in scope for cue in self.config.family_cues
-            ):
-                probabilities[AssertionLabel.FAMILY] = self.config.assertion_score
-            if section_label in {"medical_history", "medication_history"} or any(
-                cue in scope for cue in self.config.historical_cues
-            ):
-                probabilities[AssertionLabel.HISTORICAL] = self.config.assertion_score
-            local = self._after_last_contrast(scope)
-            if any(cue in local for cue in self.config.negation_cues):
-                probabilities[AssertionLabel.NEGATED] = self.config.assertion_score
+            decisions = self._scope_engine.classify(
+                context.document.raw_text,
+                hypothesis.raw_start,
+                hypothesis.raw_end,
+                context.structure,
+            )
+            for decision in decisions:
+                if not decision.applies:
+                    continue
+                probabilities[decision.label] = max(
+                    probabilities[decision.label],
+                    min(self.config.assertion_score, decision.score),
+                )
             top_type = max(
                 hypothesis.type_probabilities,
                 key=lambda entity_type: hypothesis.type_probabilities[entity_type],
@@ -288,39 +291,21 @@ class BasicAssertionEngine:
                 probabilities = {label: 0.0 for label in AssertionLabel}
                 reason = "assertion:masked:lab_type"
             else:
-                reason = "assertion:kept:cue_and_local_scope"
+                reason = "assertion:kept:cue_structure_scope"
             output.append(
                 replace(
                     hypothesis,
                     assertion_probabilities=probabilities,
+                    structured_slots={
+                        **hypothesis.structured_slots,
+                        "assertion_decisions": tuple(item.to_dict() for item in decisions),
+                    },
                     decision_trace=DecisionTrace(
-                        hypothesis.decision_trace.decisions + ("assertion_scoped", reason)
+                        hypothesis.decision_trace.decisions
+                        + ("assertion_scoped",)
+                        + tuple(f"assertion:applied:{item.rule_id}" for item in decisions)
+                        + (reason,)
                     ),
                 )
             )
         return tuple(output)
-
-    def _scope(self, context: ProposalContext, start: int) -> tuple[str, str | None]:
-        text = context.document.raw_text
-        clause = next(
-            (
-                item
-                for item in (context.structure.clauses if context.structure else ())
-                if item.start <= start < item.end
-            ),
-            None,
-        )
-        section = next(
-            (
-                item
-                for item in (context.structure.sections if context.structure else ())
-                if item.start <= start < item.end
-            ),
-            None,
-        )
-        left = clause.start if clause else text.rfind("\n", 0, start) + 1
-        return text[left:start].casefold(), section.label if section else None
-
-    def _after_last_contrast(self, scope: str) -> str:
-        positions = [scope.rfind(cue) for cue in self.config.contrast_cues]
-        return scope[max(positions) + 1 :] if max(positions) >= 0 else scope

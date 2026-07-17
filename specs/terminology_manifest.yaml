@@ -37,5 +37,5 @@ alias_enrichment_sources:
     source: framework_v1_adjudicated_aliases
     version: "2026-07-17"
     source_path: ../data/terminology/aliases/framework_v1_medication_aliases.yaml
-    checksum_sha256: cea05c0a2354b57406a75f2e39c73eddc60e68b0448e644411c3d9f74603f832
+    checksum_sha256: fbaa537e90996268af47485ecad36dcc0fa0f84eeddcfb993d5137490078214b
     license_or_usage_basis: "Project-local framework_v1 adjudication artifact."

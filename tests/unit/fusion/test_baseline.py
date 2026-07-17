@@ -42,6 +42,7 @@ def test_baseline_clusters_types_and_scopes_assertions():
         and out.assertion_probabilities
         and "assertion_scoped" in out.decision_trace.decisions
     )
+    assert out.structured_slots["assertion_decisions"]
 
 
 def _evidence(ctx, text, source, metadata=None):
