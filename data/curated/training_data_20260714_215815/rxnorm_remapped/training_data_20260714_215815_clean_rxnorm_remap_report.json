@@ -1,0 +1,14 @@
+{
+  "format_version": 1,
+  "input_path": "D:\\MedicalRetrieval\\data\\curated\\training_data_20260714_215815\\training_data_20260714_215815_clean.jsonl",
+  "policy": "exact active RxNorm alias only; ambiguous or unmatched mentions are rejected",
+  "counts": {
+    "input": 297,
+    "accepted": 243,
+    "rejected": 54,
+    "remapped_entities": 426
+  },
+  "rejection_reasons": {
+    "no_exact_active_rxnorm_alias": 54
+  }
+}

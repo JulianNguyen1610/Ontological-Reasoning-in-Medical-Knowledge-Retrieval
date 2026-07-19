@@ -1,0 +1,2 @@
+# Exact runtime dependency set for the deterministic CPU baseline.
+PyYAML==6.0.3

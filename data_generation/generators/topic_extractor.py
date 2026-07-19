@@ -4,11 +4,14 @@ Luồng 1: Trích xuất chủ đề lâm sàng từ knowledge seeds
 """
 import json
 import random
+import copy
 from pathlib import Path
 from typing import List, Dict, Tuple
 from dataclasses import dataclass
 from data_generation.config import FAMILY_HISTORY_DIAGNOSIS_CODES
 from data_generation.generation_planner import CHALLENGE_PROFILES
+from data_generation.rxnorm_candidate_regenerator import build_active_rxnorm_alias_index
+from medlink_ie.terminology.preparation import normalize_alias_for_retrieval
 
 @dataclass
 class ClinicalScenario:
@@ -25,7 +28,18 @@ class ClinicalScenario:
 class TopicExtractor:
     def __init__(self, seeds_dir: Path):
         self.icd10_seeds = self._load_json(seeds_dir / "icd10_seeds.json")
-        self.rxnorm_seeds = self._load_json(seeds_dir / "rxnorm_seeds.json")
+        raw_rxnorm_seeds = self._load_json(seeds_dir / "rxnorm_seeds.json")
+        manifest_path = Path(__file__).resolve().parents[2] / "specs" / "terminology_manifest.yaml"
+        alias_index = build_active_rxnorm_alias_index(manifest_path)
+        self.rxnorm_seeds = []
+        for seed in raw_rxnorm_seeds:
+            candidates = alias_index.get(normalize_alias_for_retrieval(seed["name_en"]), ())
+            if len(candidates) == 1:
+                remapped_seed = copy.deepcopy(seed)
+                remapped_seed["rxcui"] = candidates[0]
+                self.rxnorm_seeds.append(remapped_seed)
+        if not self.rxnorm_seeds:
+            raise ValueError("No RxNorm seed has an exact active alias in the local snapshot")
         self.symptom_seeds = self._load_json(seeds_dir / "symptom_seeds.json")
         self.lab_seeds = self._load_json(seeds_dir / "test_lab_seeds.json")
         

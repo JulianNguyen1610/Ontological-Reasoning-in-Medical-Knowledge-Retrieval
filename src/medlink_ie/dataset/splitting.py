@@ -254,13 +254,19 @@ def _assign_groups(
     assignments: dict[str, list[str]] = {name: [] for name in SPLIT_NAMES}
     counts = {name: 0 for name in SPLIT_NAMES}
     group_order = sorted(groups, key=lambda group_id: _seeded_key(group_id, config.seed))
-    for group_id in group_order:
+    # Seed each non-empty requested split before greedy balancing.  Without this,
+    # a small target split can consume the earliest groups and leave train empty.
+    initial = min(len(group_order), len(SPLIT_NAMES))
+    for split, group_id in zip(SPLIT_NAMES, group_order[:initial], strict=True):
+        assignments[split].append(group_id)
+        counts[split] += len(groups[group_id])
+    for group_id in group_order[initial:]:
         size = len(groups[group_id])
         split = min(
             SPLIT_NAMES,
             key=lambda name: (
-                abs((counts[name] + size) - targets[name]),
                 counts[name] / targets[name] if targets[name] else 0.0,
+                counts[name],
                 SPLIT_NAMES.index(name),
             ),
         )

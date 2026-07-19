@@ -1,0 +1,14 @@
+.git
+.codegraph
+.codex
+.agents
+.env
+artifacts
+data
+input
+outputs
+__pycache__
+*.py[cod]
+.pytest_cache
+.mypy_cache
+.ruff_cache

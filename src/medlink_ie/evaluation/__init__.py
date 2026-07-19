@@ -7,6 +7,14 @@ from .linking import (
     LinkingVariantPrediction,
     evaluate_linking,
 )
+from .ontology_ablation import (
+    AblationCase,
+    AblationConfig,
+    MergeDecision,
+    OntologyAblationReport,
+    VariantMetrics,
+    run_ontology_ablation,
+)
 from .reporting import (
     EvaluationReport,
     PredictionEntity,
@@ -22,10 +30,14 @@ from .scorer import ScoreBreakdown, ScoringConfig, score_entities
 
 __all__ = [
     "EvaluationReport",
+    "AblationCase",
+    "AblationConfig",
     "CandidatePrediction",
     "FrozenLinkingGold",
     "LinkingEvaluationReport",
     "LinkingVariantPrediction",
+    "MergeDecision",
+    "OntologyAblationReport",
     "PredictionEntity",
     "PredictionSample",
     "RunComparison",
@@ -34,10 +46,12 @@ __all__ = [
     "RetrievalGoldMention",
     "ScoreBreakdown",
     "ScoringConfig",
+    "VariantMetrics",
     "compare_runs",
     "evaluate_predictions",
     "evaluate_linking",
     "evaluate_retrieval",
     "score_entities",
+    "run_ontology_ablation",
     "write_reports",
 ]

@@ -3,3 +3,12 @@ proposal_sources:
   lab_rules: true
   span_model: false
   llm_proposer: false
+
+ollama_span_proposer:
+  enabled: false
+  endpoint: http://127.0.0.1:11434
+  model: qwen3.5:9b
+  max_documents_per_batch: 8
+  max_input_characters: 12000
+  max_output_tokens: 512
+  timeout_seconds: 30

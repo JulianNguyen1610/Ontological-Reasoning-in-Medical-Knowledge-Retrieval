@@ -1,0 +1,27 @@
+schema_version: 1
+artifacts:
+  - name: who-icd10-2019
+    path: ../data/terminology/icd/icd102019enMeta.zip
+    size_bytes: 237071
+    sha256: a9fa787fa79076e199e46ca645bbc076449853e93e62cd3b2050b96dc96bbc1d
+    license: WHO ICD-10 licensing terms; research/internal evaluation use.
+    required: true
+  - name: rxnorm-current-prescribable-2026-07-06
+    path: ../data/terminology/RxNorm_full_prescribe_07062026.zip
+    size_bytes: 74197746
+    sha256: e81e29a27575718dc1f0cf80b1371b283bcba53f446f27fc85f74c71def99829
+    license: NLM RxNorm Current Prescribable Content; public domain.
+    required: true
+  - name: framework-v1-medication-aliases
+    path: ../data/terminology/aliases/framework_v1_medication_aliases.yaml
+    size_bytes: 454
+    sha256: fbaa537e90996268af47485ecad36dcc0fa0f84eeddcfb993d5137490078214b
+    license: Project-local framework_v1 adjudication artifact.
+    required: true
+  - name: xlm-roberta-provisional-synthetic-v1
+    path: ../artifacts/runs/xlm-roberta-base/provisional_synthetic_v1_seed17_epoch1_verified/model.safetensors
+    size_bytes: 1109870108
+    sha256: 4bcb7168491a10f9c78c2a39fd33063f94024eb654bea9010c5b78974bef95d2
+    license: Model artifact derived from XLM-R base; verify upstream license before competition use.
+    required: false
+    parameter_count: 277461515

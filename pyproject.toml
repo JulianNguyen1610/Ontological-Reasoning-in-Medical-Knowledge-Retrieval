@@ -9,6 +9,9 @@ description = "MedLink-IE medical information extraction framework"
 requires-python = ">=3.11"
 dependencies = ["PyYAML>=6.0"]
 
+[project.scripts]
+medlink-ie = "medlink_ie.cli:main"
+
 [project.optional-dependencies]
 dev = [
     "mypy>=1.13",

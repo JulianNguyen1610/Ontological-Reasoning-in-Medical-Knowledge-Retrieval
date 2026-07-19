@@ -1,0 +1,37 @@
+# Local-only encoder baseline for Task 6.2.
+# This is a pinned base checkpoint, not a trained competition model.
+schema_version: 1
+benchmark_status: provisional_synthetic_only
+implementation_key: huggingface_token_classifier_v1
+
+base_checkpoint:
+  repository: FacebookAI/xlm-roberta-base
+  revision: e23220098f67c680ce7e59075f8361a4d75f081c
+  local_directory: artifacts/models/xlm-roberta-base-e23220098f67c680ce7e59075f8361a4d75f081c
+  weights_path: artifacts/models/xlm-roberta-base-e23220098f67c680ce7e59075f8361a4d75f081c/pytorch_model.bin
+  weights_sha256: 9d83baaafea92d36de26002c8135a427d55ee6fdc4faaa6e400be4c47724a07e
+  tokenizer_path: artifacts/models/xlm-roberta-base-e23220098f67c680ce7e59075f8361a4d75f081c/tokenizer.json
+  tokenizer_sha256: a898ea75433890f6610f4e470b8ebeb0c21dce5c8dd61f892eb09eb5919d2e2c
+  base_parameter_count: 278043648
+
+span_type:
+  label_scheme: BIO
+  entity_types:
+    - TRIỆU_CHỨNG
+    - TÊN_XÉT_NGHIỆM
+    - KẾT_QUẢ_XÉT_NGHIỆM
+    - CHẨN_ĐOÁN
+    - THUỐC
+  max_subwords: 512
+  structural_context: append_after_separator
+
+runtime:
+  local_files_only: true
+  device: cpu
+  mixed_precision: false
+
+training:
+  allowed_split_manifest: data/benchmarks/provisional_synthetic_v1/grouped_split_manifest.json
+  allow_test_fit: false
+  require_grouped_split: true
+  output_directory: artifacts/runs/xlm-roberta-base

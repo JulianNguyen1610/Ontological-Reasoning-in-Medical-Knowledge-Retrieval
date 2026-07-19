@@ -1,0 +1,12 @@
+profile: fast_fallback
+offline: true
+paths:
+  input: input
+  run_dir: run
+artifacts:
+  inventory: ../../specs/artifact_inventory.yaml
+batch:
+  batch_size: 1
+  resume_policy: never
+  timeout_seconds: 30
+  capture_memory: true

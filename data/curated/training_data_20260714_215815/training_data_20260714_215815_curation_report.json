@@ -1,0 +1,22 @@
+{
+  "format_version": 1,
+  "input_path": "C:\\Users\\PC\\Downloads\\training_data_20260714_215815.jsonl",
+  "rules": [
+    "exact_span",
+    "valid_entity_type",
+    "valid_assertion",
+    "nonempty_linking_candidate",
+    "repeated_profile_has_multiple_annotated_positions",
+    "no_cjk_surface_noise"
+  ],
+  "counts": {
+    "input": 500,
+    "accepted": 297,
+    "rejected": 203
+  },
+  "rejection_reasons": {
+    "contains_cjk_noise": 158,
+    "empty_linking_candidate": 13,
+    "missing_repeated_annotation": 32
+  }
+}

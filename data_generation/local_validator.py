@@ -7,6 +7,9 @@ from typing import Dict, List
 from data_generation.config import FAMILY_HISTORY_DIAGNOSIS_CODES, VALID_ASSERTIONS, VALID_ENTITY_TYPES
 
 
+CJK_PATTERN = re.compile(r"[\u3400-\u4dbf\u4e00-\u9fff]")
+
+
 class LocalSampleValidator:
     def __init__(self, assertion_cues: Dict[str, List[str]]):
         self.assertion_cues = assertion_cues
@@ -15,6 +18,8 @@ class LocalSampleValidator:
         self, text: str, entities: List[Dict], challenge_profile: str = "basic"
     ) -> Dict[str, List[str] | bool]:
         errors, warnings = [], []
+        if CJK_PATTERN.search(text):
+            errors.append("contains_cjk_noise")
         for entity in entities:
             entity_type = entity.get("type")
             assertions = entity.get("assertions", [])

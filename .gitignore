@@ -6,6 +6,8 @@ __pycache__/
 .pytest_cache/
 *.egg-info/
 artifacts/*
+!artifacts/prompts/
+!artifacts/prompts/ollama_span_proposer_v1.json
 outputs/*
 !artifacts/.gitkeep
 !outputs/.gitkeep

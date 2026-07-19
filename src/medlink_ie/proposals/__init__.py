@@ -29,6 +29,12 @@ from medlink_ie.proposals.medication import (
     MedicationAliasLexicon,
     MedicationSpanProposer,
 )
+from medlink_ie.proposals.ollama import (
+    LocalOllamaGenerator,
+    OllamaSpanProposer,
+    OllamaSpanProposerConfig,
+    UrllibLocalOllamaGenerator,
+)
 from medlink_ie.proposals.tracing import DecisionTrace, DecisionTraceEvent
 
 __all__ = [
@@ -55,4 +61,8 @@ __all__ = [
     "LaboratorySpanProposer",
     "LaboratoryTest",
     "LaboratoryTestNameProposer",
+    "LocalOllamaGenerator",
+    "OllamaSpanProposer",
+    "OllamaSpanProposerConfig",
+    "UrllibLocalOllamaGenerator",
 ]

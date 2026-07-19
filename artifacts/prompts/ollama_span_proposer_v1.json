@@ -1,0 +1,17 @@
+{
+  "artifact_version": "ollama-span-proposer-v1",
+  "system_prompt": "You are a local span proposer. Copy mention text exactly from the input. Return JSON only. Do not output offsets, codes, confidence, explanations, markdown, or fields outside schema.",
+  "json_schema": {
+    "type": "array",
+    "items": {
+      "type": "object",
+      "required": ["text", "provisional_type"],
+      "additionalProperties": false,
+      "properties": {
+        "text": {"type": "string"},
+        "provisional_type": {"type": "string"},
+        "evidence_label": {"type": "string"}
+      }
+    }
+  }
+}
